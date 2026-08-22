@@ -35,7 +35,7 @@ export function HabitableZoneScene({ starTemp }: { starTemp: number }) {
   const { performanceMode } = useAppStore();
   const hasWebGL = useWebGL();
   const effectiveMode = performanceMode === 'auto' ? (isMobileDevice() ? 'low' : 'high') : performanceMode;
-  const visiblePlanets = planets.filter(p => p.distance <= 15);
+  const visiblePlanets = planets.filter(p => p.distance <= 15 && p.id !== 'sun');
 
   if (hasWebGL === false) return <WebGLFallback />;
 

@@ -120,14 +120,20 @@ export default async function ProfilePage() {
               <History className="w-5 h-5 md:w-6 md:h-6 text-white/70 flex-shrink-0" />
               <h2 className="text-lg md:text-2xl font-bold tracking-wider md:tracking-widest uppercase whitespace-nowrap truncate">Liked Reels</h2>
             </div>
-            <Link href="/reels" className="text-xs md:text-sm text-blue-400 hover:text-blue-300 font-semibold tracking-wider transition-colors whitespace-nowrap flex-shrink-0">
-              Watch More &rarr;
-            </Link>
+            {(likesCount || 0) > 4 ? (
+              <Link href="/profile/liked" className="text-xs md:text-sm text-blue-400 hover:text-blue-300 font-semibold tracking-wider transition-colors whitespace-nowrap flex-shrink-0">
+                View All &rarr;
+              </Link>
+            ) : (
+              <Link href="/reels" className="text-xs md:text-sm text-blue-400 hover:text-blue-300 font-semibold tracking-wider transition-colors whitespace-nowrap flex-shrink-0">
+                Watch More &rarr;
+              </Link>
+            )}
           </div>
 
           {likedReels.length > 0 ? (
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {likedReels.map((reel) => (
+              {likedReels.slice(0, (likesCount || 0) > 4 ? 3 : 4).map((reel) => (
                 <Link href={`/reels/${reel.id}`} key={reel.id} className="group relative aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 bg-neutral-900 cursor-pointer block">
                   <video 
                     src={reel.video_url} 
@@ -144,6 +150,19 @@ export default async function ProfilePage() {
                   </div>
                 </Link>
               ))}
+              
+              {(likesCount || 0) > 4 && (
+                <Link href="/profile/liked" className="group relative aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 bg-neutral-900 cursor-pointer flex flex-col items-center justify-center transition-all hover:bg-white/5 hover:border-white/20">
+                  <div className="absolute inset-0 bg-gradient-to-b from-pink-900/20 to-black/60 pointer-events-none" />
+                  <div className="z-10 flex flex-col items-center">
+                    <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+                      <Heart className="w-6 h-6 text-white" />
+                    </div>
+                    <span className="text-white font-bold text-lg">View More</span>
+                    <span className="text-white/50 text-xs mt-1">+{(likesCount || 0) - 3} Liked Reels</span>
+                  </div>
+                </Link>
+              )}
             </div>
           ) : (
             <div className="text-center py-12 bg-white/5 rounded-2xl border border-white/10">

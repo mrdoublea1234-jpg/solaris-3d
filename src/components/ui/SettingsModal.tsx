@@ -4,13 +4,15 @@ import { useAppStore } from '@/store/useAppStore';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Image as ImageIcon, Video, Heart, MonitorSmartphone, User } from 'lucide-react';
 import Link from 'next/link';
-import { SignInButton, UserButton, Show } from '@clerk/nextjs';
+import { SignInButton, UserButton, Show, useClerk } from '@clerk/nextjs';
 import { useEffect, useState } from 'react';
 import { supabase } from '@/lib/supabase';
 
 export function SettingsModal() {
   const { isSettingsOpen, setSettingsOpen, language, qualityMode, setQualityMode } = useAppStore();
   const [version, setVersion] = useState<string>('1.0.0');
+  const [showLogoutConfirm, setShowLogoutConfirm] = useState(false);
+  const { signOut } = useClerk();
 
   useEffect(() => {
     const fetchVersion = async () => {
@@ -42,6 +44,7 @@ export function SettingsModal() {
       settings: 'Settings',
       account: 'Account',
       login: 'Log In',
+      logout: 'Log Out',
       profile: 'My Profile',
       quality: 'Graphics Quality',
       low: 'Low (Performance)',
@@ -55,6 +58,7 @@ export function SettingsModal() {
       settings: 'सेटिंग्स',
       account: 'खाता',
       login: 'लॉग इन',
+      logout: 'लॉग आउट',
       profile: 'मेरा प्रोफाइल',
       quality: 'ग्राफिक्स क्वालिटी',
       low: 'कम (बेहतर परफॉर्मेंस)',
@@ -68,6 +72,7 @@ export function SettingsModal() {
       settings: 'সেটিংস',
       account: 'অ্যাকাউন্ট',
       login: 'লগ ইন',
+      logout: 'লগ আউট',
       profile: 'প্রোফাইল',
       quality: 'গ্রাফিক্স কোয়ালিটি',
       low: 'কম (পারফরম্যান্স)',
@@ -118,9 +123,19 @@ export function SettingsModal() {
               
               {/* Account Section */}
               <div className="bg-white/5 p-4 rounded-xl border border-white/5">
-                <div className="flex items-center gap-3 mb-4 text-white/80">
-                  <User className="w-5 h-5" />
-                  <h3 className="text-sm font-medium uppercase tracking-wider">{texts.account}</h3>
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center gap-3 text-white/80">
+                    <User className="w-5 h-5" />
+                    <h3 className="text-sm font-medium uppercase tracking-wider">{texts.account}</h3>
+                  </div>
+                  <Show when="signed-in">
+                    <button 
+                      onClick={() => setShowLogoutConfirm(true)}
+                      className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-red-400 hover:text-red-300 transition-colors"
+                    >
+                      {texts.logout}
+                    </button>
+                  </Show>
                 </div>
                 
                 <div className="flex items-center justify-between">
@@ -225,6 +240,45 @@ export function SettingsModal() {
                 </div>
               </Link>
             </div>
+
+            {/* Logout Confirmation Popup */}
+            <AnimatePresence>
+              {showLogoutConfirm && (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  className="absolute inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm rounded-2xl"
+                >
+                  <motion.div
+                    initial={{ scale: 0.9, y: 20 }}
+                    animate={{ scale: 1, y: 0 }}
+                    exit={{ scale: 0.9, y: 20 }}
+                    className="bg-[#111] p-6 rounded-xl border border-white/20 text-center max-w-[80%] shadow-2xl"
+                  >
+                    <h3 className="text-lg font-bold mb-2 uppercase tracking-widest">{texts.logout}?</h3>
+                    <p className="text-xs text-white/60 mb-6 font-medium">Are you sure you want to log out?</p>
+                    <div className="flex gap-3 justify-center">
+                      <button 
+                        onClick={() => setShowLogoutConfirm(false)}
+                        className="px-6 py-2.5 rounded-lg bg-white/10 hover:bg-white/20 text-xs font-bold uppercase tracking-wider transition-colors"
+                      >
+                        No
+                      </button>
+                      <button 
+                        onClick={() => {
+                          signOut();
+                          setShowLogoutConfirm(false);
+                        }}
+                        className="px-6 py-2.5 rounded-lg bg-red-500/20 text-red-400 hover:bg-red-500/30 border border-red-500/50 text-xs font-bold uppercase tracking-wider transition-colors"
+                      >
+                        Yes
+                      </button>
+                    </div>
+                  </motion.div>
+                </motion.div>
+              )}
+            </AnimatePresence>
           </motion.div>
         </div>
       )}
