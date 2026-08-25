@@ -92,7 +92,7 @@ export function ReelVideo({ reel, isActive, preventViewCount }: ReelVideoProps) 
         loop
         muted={isMuted}
         playsInline
-        className="absolute inset-0 w-full h-full object-cover cursor-pointer"
+        className="absolute inset-0 w-full h-full object-contain cursor-pointer"
         onClick={togglePlay}
       />
 

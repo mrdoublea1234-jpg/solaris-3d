@@ -2,7 +2,7 @@
 
 import { useAppStore } from '@/store/useAppStore';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Image as ImageIcon, Video, Heart, MonitorSmartphone, User } from 'lucide-react';
+import { X, Image as ImageIcon, Video, Heart, MonitorSmartphone, User, Bug, Globe } from 'lucide-react';
 import Link from 'next/link';
 import { SignInButton, UserButton, Show, useClerk } from '@clerk/nextjs';
 import { useEffect, useState } from 'react';
@@ -50,6 +50,8 @@ export function SettingsModal() {
       low: 'Low (Performance)',
       high: 'High (Realistic 3D)',
       reels: 'Space Reels',
+      others: 'Others',
+      reportBug: 'Report a Bug',
       donation: 'Support the Project',
       about: 'About Developer',
       version: 'Version',
@@ -64,6 +66,8 @@ export function SettingsModal() {
       low: 'कम (बेहतर परफॉर्मेंस)',
       high: 'अधिक (वास्तविक 3D)',
       reels: 'अंतरिक्ष रील्स',
+      others: 'अन्य',
+      reportBug: 'बग रिपोर्ट करें',
       donation: 'प्रोजेक्ट का समर्थन करें',
       about: 'डेवलपर के बारे में',
       version: 'संस्करण',
@@ -78,6 +82,8 @@ export function SettingsModal() {
       low: 'কম (পারফরম্যান্স)',
       high: 'বেশি (বাস্তব 3D)',
       reels: 'স্পেস রিলস',
+      others: 'অন্যান্য',
+      reportBug: 'রিপোর্ট আ বাগ',
       donation: 'প্রজেক্ট সাপোর্ট করুন',
       about: 'ডেভেলপার সম্পর্কে',
       version: 'ভার্সন',
@@ -89,25 +95,37 @@ export function SettingsModal() {
   return (
     <AnimatePresence>
       {isSettingsOpen && (
-        <div className="fixed inset-0 z-[60] flex items-center justify-center p-4 sm:p-6 pointer-events-none">
+        <div className="fixed inset-0 z-[60] flex items-end md:items-center justify-center p-0 md:p-6 pointer-events-none">
           {/* Backdrop */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.2 }}
+            transition={{ duration: 0.3 }}
             onClick={() => setSettingsOpen(false)}
-            className="absolute inset-0 bg-black/80 md:bg-black/60 md:backdrop-blur-sm pointer-events-auto"
+            style={{ willChange: "opacity" }}
+            className="absolute inset-0 bg-black/80 md:bg-black/80 pointer-events-auto"
           />
 
           {/* Modal */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.95, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.95, y: 10 }}
-            transition={{ duration: 0.2, ease: 'easeOut' }}
-            className="relative z-10 w-full max-w-md p-6 rounded-2xl bg-[#111] md:bg-black/80 md:backdrop-blur-xl border border-white/20 text-white shadow-2xl overflow-hidden pointer-events-auto"
+            initial={{ opacity: 0, y: "100%" }}
+            animate={{ 
+              opacity: 1, 
+              y: 0, 
+              transition: { type: "tween", duration: 0.6, ease: "easeOut" } 
+            }}
+            exit={{ 
+              opacity: 0, 
+              y: "100%", 
+              transition: { type: "tween", duration: 0.6, ease: "easeInOut" } 
+            }}
+            style={{ willChange: "transform, opacity" }}
+            className="relative z-10 w-full max-w-md p-6 rounded-t-3xl md:rounded-2xl bg-[#111] md:bg-[#1a1a1a] border-t md:border border-white/20 text-white shadow-[0_-20px_40px_rgba(0,0,0,0.5)] md:shadow-2xl overflow-hidden pointer-events-auto mt-auto md:mt-0"
           >
+            {/* Mobile Drag Handle */}
+            <div className="w-12 h-1.5 bg-white/20 rounded-full mx-auto mb-6 md:hidden" />
+            
             {/* Header */}
             <div className="flex items-center justify-between mb-8">
               <h2 className="text-2xl font-light tracking-wider uppercase">{texts.settings}</h2>
@@ -119,7 +137,7 @@ export function SettingsModal() {
               </button>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-6 max-h-[65vh] overflow-y-auto scrollbar-hide pb-2">
               
               {/* Account Section */}
               <div className="bg-white/5 p-4 rounded-xl border border-white/5">
@@ -209,7 +227,26 @@ export function SettingsModal() {
                   <Video className="w-6 h-6 text-white/70" />
                   <span className="text-[10px] sm:text-xs uppercase tracking-wider text-center">{texts.reels}</span>
                 </Link>
+
+                <Link 
+                  href="/others" 
+                  onClick={() => setSettingsOpen(false)}
+                  className="flex flex-col items-center justify-center p-4 gap-2 bg-white/5 hover:bg-white/10 transition-colors rounded-xl border border-white/5 text-blue-400 group"
+                >
+                  <Globe className="w-6 h-6 group-hover:scale-110 transition-transform" />
+                  <span className="text-[10px] sm:text-xs uppercase tracking-wider text-white text-center">{texts.others}</span>
+                </Link>
                 
+                <a 
+                  href="https://wa.me/918145532826?text=I%20found%20a%20bug%20in%20Solaris%203D:" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col items-center justify-center p-4 gap-2 bg-white/5 hover:bg-white/10 transition-colors rounded-xl border border-white/5 text-red-400 group"
+                >
+                  <Bug className="w-6 h-6 group-hover:scale-110 transition-transform" />
+                  <span className="text-[10px] sm:text-xs uppercase tracking-wider text-white text-center">{texts.reportBug}</span>
+                </a>
+
                 <Link 
                   href="/support" 
                   onClick={() => setSettingsOpen(false)}

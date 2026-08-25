@@ -2,6 +2,7 @@
 
 import { useAppStore, Language } from '@/store/useAppStore';
 import { motion } from 'framer-motion';
+import { useId } from 'react';
 
 const languages: { code: Language; label: string }[] = [
   { code: 'en', label: 'EN' },
@@ -11,6 +12,7 @@ const languages: { code: Language; label: string }[] = [
 
 export function LanguageSwitcher() {
   const { language, setLanguage } = useAppStore();
+  const id = useId();
 
   return (
     <div className="flex bg-black/40 backdrop-blur-md border border-white/10 rounded-full p-1">
@@ -24,7 +26,7 @@ export function LanguageSwitcher() {
         >
           {language === lang.code && (
             <motion.div
-              layoutId="activeTab"
+              layoutId={`activeTab-${id}`}
               className="absolute inset-0 bg-white/20 rounded-full"
               style={{ willChange: "transform" }}
               transition={{ type: 'spring', stiffness: 400, damping: 30 }}

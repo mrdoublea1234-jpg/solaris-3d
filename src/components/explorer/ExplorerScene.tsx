@@ -30,7 +30,7 @@ function SunTexturedMaterial({ planet, textureUrl }: { planet: PlanetData; textu
   return <meshBasicMaterial map={texture} color="#ffffff" />;
 }
 
-function IsolatedBody({ planet }: IsolatedBodyProps) {
+function IsolatedBody({ planet, interactingRef }: IsolatedBodyProps & { interactingRef: React.MutableRefObject<boolean> }) {
   const meshRef = useRef<THREE.Mesh>(null);
   const ringsRef = useRef<THREE.Mesh>(null);
   const { performanceMode, qualityMode } = useAppStore();
@@ -43,8 +43,9 @@ function IsolatedBody({ planet }: IsolatedBodyProps) {
     : planet.textureUrl;
 
   useFrame((_, delta) => {
-    if (meshRef.current) {
-      meshRef.current.rotation.y += planet.rotationSpeed * delta * 60;
+    if (meshRef.current && !interactingRef.current) {
+      // 10 multiplier instead of 60 for slower, more majestic rotation
+      meshRef.current.rotation.y += planet.rotationSpeed * delta * 10;
     }
   });
 
@@ -114,6 +115,7 @@ export function ExplorerScene({ planet }: { planet: PlanetData }) {
   const hasWebGL = useWebGL();
   const { performanceMode } = useAppStore();
   const effectiveMode = performanceMode === 'auto' ? (isMobileDevice() ? 'low' : 'high') : performanceMode;
+  const interactingRef = useRef(false);
 
   if (hasWebGL === false) return <WebGLFallback />;
   if (hasWebGL === null) return null;
@@ -139,10 +141,17 @@ export function ExplorerScene({ planet }: { planet: PlanetData }) {
 
         <Suspense fallback={null}>
           <Stars radius={100} depth={50} count={starCount} factor={4} saturation={0} fade speed={1} />
-          <IsolatedBody planet={planet} />
+          <IsolatedBody planet={planet} interactingRef={interactingRef} />
         </Suspense>
 
-        <OrbitControls enablePan={false} enableZoom={true} minDistance={planet.radius * 1.5} maxDistance={planet.radius * 10} />
+        <OrbitControls 
+          enablePan={false} 
+          enableZoom={true} 
+          minDistance={planet.radius * 1.5} 
+          maxDistance={planet.radius * 10}
+          onStart={() => { interactingRef.current = true; }}
+          onEnd={() => { interactingRef.current = false; }}
+        />
       </Canvas>
     </div>
   );
