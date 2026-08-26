@@ -9,9 +9,14 @@ import { useWebGL, isMobileDevice } from '@/hooks/useWebGL';
 import { WebGLFallback } from '@/components/ui/WebGLFallback';
 import { useAppStore } from '@/store/useAppStore';
 
-function TexturedMaterial({ textureUrl }: { textureUrl: string }) {
+function TexturedMaterial({ textureUrl, isStar }: { textureUrl: string, isStar: boolean }) {
   const texture = useTexture(textureUrl);
-  return <meshBasicMaterial map={texture} color="#ffffff" />;
+  texture.colorSpace = THREE.SRGBColorSpace;
+  
+  if (isStar) {
+    return <meshBasicMaterial map={texture} color="#ffffff" />;
+  }
+  return <meshStandardMaterial map={texture} roughness={0.8} metalness={0.1} />;
 }
 
 function IsolatedBody({ planet, interactingRef }: { planet: ExoplanetData, interactingRef: React.MutableRefObject<boolean> }) {
@@ -33,19 +38,19 @@ function IsolatedBody({ planet, interactingRef }: { planet: ExoplanetData, inter
       <group ref={meshRef}>
         <mesh>
           <sphereGeometry args={[planet.radius, segments, segments]} />
-          <TexturedMaterial textureUrl={planet.modelPath} />
+          <TexturedMaterial textureUrl={planet.modelPath} isStar={planet.type === 'Star'} />
           
-          {planet.type === 'Star' && (
+          {planet.type === 'Star' && planet.color && (
             <mesh>
               <sphereGeometry args={[planet.radius * 1.1, 32, 32]} />
               <meshBasicMaterial 
-                color={planet.color || "#ff9900"} 
+                color={planet.color} 
                 transparent 
                 opacity={0.3} 
                 blending={THREE.AdditiveBlending} 
                 depthWrite={false} 
               />
-              <pointLight intensity={2} distance={100} color={planet.color || "#ffffff"} />
+              <pointLight intensity={2} distance={100} color={planet.color} />
             </mesh>
           )}
         </mesh>
@@ -61,32 +66,40 @@ function IsolatedBody({ planet, interactingRef }: { planet: ExoplanetData, inter
   );
 }
 
-import { useLayoutEffect } from 'react';
+import { useMemo } from 'react';
 
 function GLBModel({ url, scale }: { url: string, scale: number }) {
-  const { scene } = useGLTF(url);
+  const { scene: originalScene } = useGLTF(url);
   
-  useLayoutEffect(() => {
+  const scene = useMemo(() => {
+    const cloned = originalScene.clone();
+    
+    // Reset any previous transformations just in case
+    cloned.scale.set(1, 1, 1);
+    cloned.position.set(0, 0, 0);
+    
     // Automatically center the model and scale it to fit within a 1x1x1 bounding box
-    const box = new THREE.Box3().setFromObject(scene);
+    const box = new THREE.Box3().setFromObject(cloned);
     const size = box.getSize(new THREE.Vector3());
-    const maxDim = Math.max(size.x, size.y, size.z);
+    // Fallback to 1 if maxDim is 0 to avoid Infinity
+    const maxDim = Math.max(size.x, size.y, size.z) || 1; 
     
     // Scale down to a unit size (1) then multiply by our desired scale
     const targetScale = (1 / maxDim) * (scale * 2); // * 2 because radius to diameter
-    scene.scale.setScalar(targetScale);
+    cloned.scale.setScalar(targetScale);
     
     // Center it
-    box.setFromObject(scene);
+    box.setFromObject(cloned);
     const center = box.getCenter(new THREE.Vector3());
-    scene.position.sub(center);
+    cloned.position.sub(center);
 
     // Fix materials that might be too metallic (which makes them gray without environment)
-    scene.traverse((child) => {
+    cloned.traverse((child) => {
       if ((child as THREE.Mesh).isMesh) {
         const mesh = child as THREE.Mesh;
         if (mesh.material) {
-          // If the material is standard, lower metalness to ensure it's visible even without strong environment
+          // Clone the material so we don't mutate the cached global material
+          mesh.material = (mesh.material as THREE.Material).clone();
           if ((mesh.material as THREE.MeshStandardMaterial).metalness !== undefined) {
              (mesh.material as THREE.MeshStandardMaterial).metalness = 0.1;
              (mesh.material as THREE.MeshStandardMaterial).needsUpdate = true;
@@ -94,7 +107,9 @@ function GLBModel({ url, scale }: { url: string, scale: number }) {
         }
       }
     });
-  }, [scene, scale]);
+    
+    return cloned;
+  }, [originalScene, scale]);
 
   return (
     <>
