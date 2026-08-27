@@ -780,5 +780,420 @@ export const exoplanets: ExoplanetData[] = [
         }
       ]
     }
+  },
+  {
+    id: 'kepler-90e',
+    type: 'Exoplanet',
+    name: {
+      en: 'Kepler-90e',
+      hi: 'केप्लर-90ई',
+      bn: 'কেপলার-৯০ই'
+    },
+    description: {
+      en: 'A sub-Neptune exoplanet orbiting the star Kepler-90, slightly smaller than its neighbor Kepler-90d.',
+      hi: 'केप्लर-90 तारे की परिक्रमा करने वाला एक उप-नेपच्यून एक्सोप्लैनेट, जो अपने पड़ोसी केप्लर-90डी से थोड़ा छोटा है।',
+      bn: 'কেপলার-৯০ নক্ষত্রকে আবর্তনকারী একটি সাব-নেপচুন গ্রহ, যা এর প্রতিবেশী কেপলার-৯০ডি এর চেয়ে সামান্য ছোট।'
+    },
+    distance: {
+      en: '2,840 Light Years',
+      hi: '2,840 प्रकाश वर्ष',
+      bn: '২,৮৪০ আলোকবর্ষ'
+    },
+    radius: 2.66,
+    modelType: 'texture',
+    modelPath: '/textures/exoplanets/kepler-90e.jpg',
+    details: {
+      overview: {
+        en: 'Kepler-90e is the fourth planet from the star in the Kepler-90 system. Like Kepler-90d, it is classified as a sub-Neptune or Mini-Neptune. It has a massive atmosphere composed primarily of hydrogen and helium, making it uninhabitable for life as we know it.',
+        hi: 'केप्लर-90ई केप्लर-90 प्रणाली में तारे से चौथा ग्रह है। केप्लर-90डी की तरह, इसे उप-नेपच्यून या मिनी-नेपच्यून के रूप में वर्गीकृत किया गया है। इसमें मुख्य रूप से हाइड्रोजन और हीलियम से बना एक विशाल वायुमंडल है।',
+        bn: 'কেপলার-৯০ই হলো কেপলার-৯০ সৌরজগতের চতুর্থ গ্রহ। কেপলার-৯০ডি-এর মতোই এটি একটি সাব-নেপচুন বা মিনি-নেপচুন। এর মূলত হাইড্রোজেন এবং হিলিয়ামের একটি বিশাল বায়ুমণ্ডল রয়েছে, যা এটিকে আমাদের পরিচিত জীবনের জন্য সম্পূর্ণ অনুপযোগী করে তুলেছে।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Unknown (Estimated around 6-8 Earths)',
+          hi: 'अज्ञात (अनुमानित 6-8 पृथ्वी)',
+          bn: 'অজানা (আনুমানিক পৃথিবীর ৬-৮ গুণ)'
+        },
+        diameter: {
+          en: 'Approx. 33,900 km (2.66 Earths)',
+          hi: 'लगभग 33,900 किमी (2.66 पृथ्वी)',
+          bn: 'প্রায় ৩৩,৯০০ কি.মি. (পৃথিবীর ২.৬৬ গুণ)'
+        },
+        gravity: {
+          en: 'Stronger than Earth',
+          hi: 'पृथ्वी से मजबूत',
+          bn: 'পৃথিবীর চেয়ে শক্তিশালী'
+        }
+      },
+      atmosphere: {
+        en: 'Likely a thick, crushing envelope of hydrogen and helium gas.',
+        hi: 'संभवतः हाइड्रोजन और हीलियम गैस का एक बहुत मोटा आवरण।',
+        bn: 'সম্ভবত হাইড্রোজেন এবং হিলিয়াম গ্যাসের একটি অত্যন্ত পুরু স্তর বা আবরণ রয়েছে।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits its star every 91.9 days.',
+        hi: 'हर 91.9 दिन में अपने तारे की परिक्रमा करता है।',
+        bn: 'এটি ৯১.৯ দিনে একবার এর নক্ষত্রকে প্রদক্ষিণ করে।'
+      },
+      moons: {
+        en: 'None known',
+        hi: 'कोई ज्ञात नहीं',
+        bn: 'অজানা'
+      },
+      surface: {
+        en: 'No solid surface; gas gradually transitions to a high-pressure liquid interior.',
+        hi: 'कोई ठोस सतह नहीं; गैस धीरे-धीरे उच्च दबाव वाले तरल आंतरिक भाग में बदल जाती है।',
+        bn: 'এর কোনো কঠিন পৃষ্ঠ নেই; গ্যাস ধীরে ধীরে উচ্চ চাপের তরল অভ্যন্তরে পরিণত হয়েছে।'
+      },
+      exploration: {
+        en: 'Discovered in 2013 by the Kepler Space Telescope along with the rest of the inner Kepler-90 system.',
+        hi: '2013 में केप्लर स्पेस टेलीस्कोप द्वारा खोजा गया।',
+        bn: '২০১৩ সালে কেপলার স্পেস টেলিস্কোপের মাধ্যমেই এটি আবিষ্কৃত হয়।'
+      },
+      didYouKnow: [
+        {
+          en: 'Its orbit is roughly similar in duration to Mercury’s orbit around our Sun (88 days), but Kepler-90e is a gas-rich planet rather than a barren rock.',
+          hi: 'इसकी कक्षा हमारे सूर्य (88 दिन) के चारों ओर बुध की कक्षा के समान है, लेकिन केप्लर-90ई एक बंजर चट्टान के बजाय गैस से भरपूर ग्रह है।',
+          bn: 'এর আবর্তনের সময়কাল (৯১.৯ দিন) আমাদের সৌরজগতে সূর্যের চারদিকে বুধ গ্রহের আবর্তনের (৮৮ দিন) প্রায় সমান। তবে বুধ গ্রহ পাথুরে হলেও, কেপলার-৯০ই গ্যাসে ভরপুর।'
+        },
+        {
+          en: 'Like all planets in this system, it orbits its star closer than Earth orbits the Sun, highlighting how incredibly compact the Kepler-90 system is.',
+          hi: 'इस प्रणाली के सभी ग्रहों की तरह, यह पृथ्वी की तुलना में अपने तारे के करीब परिक्रमा करता है।',
+          bn: 'এই সৌরজগতের অন্য সব গ্রহের মতো এটিও পৃথিবীর চেয়ে এর নক্ষত্রের অনেক বেশি কাছে আবর্তন করে, যা প্রমাণ করে কেপলার-৯০ সৌরজগতটি কতটা সংকুচিত বা কমপ্যাক্ট (Compact)।'
+        }
+      ]
+    }
+  },
+  {
+    id: 'kepler-90f',
+    type: 'Exoplanet',
+    name: {
+      en: 'Kepler-90f',
+      hi: 'केप्लर-90एफ',
+      bn: 'কেপলার-৯০এফ'
+    },
+    description: {
+      en: 'A sub-Neptune exoplanet orbiting the star Kepler-90, the fifth planet in its system.',
+      hi: 'केप्लर-90 तारे की परिक्रमा करने वाला एक उप-नेपच्यून एक्सोप्लैनेट, जो इसकी प्रणाली में पांचवां ग्रह है।',
+      bn: 'কেপলার-৯০ সৌরজগতের পঞ্চম গ্রহ, যা একটি সাব-নেপচুন এক্সোপ্ল্যানেট।'
+    },
+    distance: {
+      en: '2,840 Light Years',
+      hi: '2,840 प्रकाश वर्ष',
+      bn: '২,৮৪০ আলোকবর্ষ'
+    },
+    radius: 2.89,
+    modelType: 'texture',
+    modelPath: '/textures/exoplanets/kepler-90f.jpg',
+    details: {
+      overview: {
+        en: 'Kepler-90f is the fifth planet in the Kepler-90 system. Similar in size to Kepler-90d, it is a sub-Neptune world composed largely of gas over a denser core. It sits at a distance from its star that is comparable to Venus\'s distance from our Sun.',
+        hi: 'केप्लर-90एफ केप्लर-90 प्रणाली में पांचवां ग्रह है। केप्लर-90डी के आकार के समान, यह एक उप-नेपच्यून दुनिया है जो काफी हद तक एक सघन कोर के ऊपर गैस से बनी है।',
+        bn: 'কেপলার-৯০এফ হলো কেপলার-৯০ সৌরজগতের পঞ্চম গ্রহ। আকারে কেপলার-৯০ডি-এর মতোই এটি একটি সাব-নেপচুন গ্রহ, যার ঘন কেন্দ্রের ওপর মূলত গ্যাসের বিশাল স্তর রয়েছে।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Unknown (Estimated around 8-10 Earths)',
+          hi: 'अज्ञात (अनुमानित 8-10 पृथ्वी)',
+          bn: 'অজানা (আনুমানিক পৃথিবীর ৮-১০ গুণ)'
+        },
+        diameter: {
+          en: 'Approx. 36,800 km (2.89 Earths)',
+          hi: 'लगभग 36,800 किमी (2.89 पृथ्वी)',
+          bn: 'প্রায় ৩৬,৮০০ কি.মি. (পৃথিবীর ২.৮৯ গুণ)'
+        },
+        gravity: {
+          en: 'Stronger than Earth',
+          hi: 'पृथ्वी से मजबूत',
+          bn: 'পৃথিবীর চেয়ে শক্তিশালী'
+        }
+      },
+      atmosphere: {
+        en: 'Expected to have a thick hydrogen-helium atmosphere.',
+        hi: 'एक घने हाइड्रोजन-हीलियम वायुमंडल की उम्मीद है।',
+        bn: 'হাইড্রোজেন এবং হিলিয়ামের একটি পুরু বায়ুমণ্ডল রয়েছে বলে ধারণা করা হয়।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits its star every 124.9 days.',
+        hi: 'हर 124.9 दिन में अपने तारे की परिक्रमा करता है।',
+        bn: 'এটি ১২৪.৯ দিনে একবার এর নক্ষত্রকে প্রদক্ষিণ করে।'
+      },
+      moons: {
+        en: 'None known',
+        hi: 'कोई ज्ञात नहीं',
+        bn: 'অজানা'
+      },
+      surface: {
+        en: 'No solid surface; likely transitions from gas to a liquid or solid core.',
+        hi: 'कोई ठोस सतह नहीं; संभवतः गैस से तरल या ठोस कोर में संक्रमण होता है।',
+        bn: 'এর কোনো কঠিন পৃষ্ঠ নেই; সম্ভবত গ্যাস ধীরে ধীরে তরল বা কঠিন কেন্দ্রে পরিণত হয়েছে।'
+      },
+      exploration: {
+        en: 'Discovered in 2013 by the Kepler Space Telescope using the transit method.',
+        hi: '2013 में केप्लर स्पेस टेलीस्कोप द्वारा खोजा गया।',
+        bn: '২০১৩ সালে কেপলার স্পেস টেলিস্কোপ এটি আবিষ্কার করে।'
+      },
+      didYouKnow: [
+        {
+          en: 'Its orbit is about the same size as Venus\'s orbit in our Solar System.',
+          hi: 'इसकी कक्षा हमारे सौर मंडल में शुक्र की कक्षा के लगभग समान आकार की है।',
+          bn: 'আমাদের সৌরজগতে শুক্র গ্রহের কক্ষপথের আকার যতটা, এর কক্ষপথের আকারও প্রায় ততটাই।'
+        },
+        {
+          en: 'Together with Kepler-90d and e, it forms a trio of mini-Neptunes tightly packed in the middle of the Kepler-90 system.',
+          hi: 'केप्लर-90डी और ई के साथ, यह केप्लर-90 प्रणाली के मध्य में कसकर पैक किए गए मिनी-नेपच्यून की तिकड़ी बनाता है।',
+          bn: 'কেপলার-৯০ডি এবং ই-এর সাথে মিলে এটি কেপলার-৯০ সৌরজগতের মাঝখানে মিনি-নেপচুন গ্রহগুলোর একটি দারুণ ত্রয়ী (Trio) তৈরি করেছে।'
+        }
+      ]
+    }
+  },
+  {
+    id: 'kepler-90g',
+    type: 'Exoplanet',
+    name: {
+      en: 'Kepler-90g',
+      hi: 'केप्लर-90जी',
+      bn: 'কেপলার-৯০জি'
+    },
+    description: {
+      en: 'A gas giant exoplanet in the Kepler-90 system, significantly larger than the inner planets.',
+      hi: 'केप्लर-90 प्रणाली में एक गैस विशाल एक्सोप्लैनेट, जो आंतरिक ग्रहों से काफी बड़ा है।',
+      bn: 'কেপলার-৯০ সৌরজগতের একটি গ্যাস জায়ান্ট (Gas Giant) এক্সোপ্ল্যানেট, যা ভেতরের দিকের গ্রহগুলোর চেয়ে বেশ বড়।'
+    },
+    distance: {
+      en: '2,840 Light Years',
+      hi: '2,840 प्रकाश वर्ष',
+      bn: '২,৮৪০ আলোকবর্ষ'
+    },
+    radius: 8.13,
+    modelType: 'texture',
+    modelPath: '/textures/exoplanets/kepler-90g.jpg',
+    details: {
+      overview: {
+        en: 'Kepler-90g is the sixth planet from the star in the Kepler-90 system. It marks a transition in the system from the inner rocky and sub-Neptune planets to the outer gas giants. With a radius roughly eight times that of Earth, it is similar in size to Saturn in our Solar System.',
+        hi: 'केप्लर-90जी केप्लर-90 प्रणाली में तारे से छठा ग्रह है। यह प्रणाली में आंतरिक चट्टानी और उप-नेपच्यून ग्रहों से बाहरी गैस दिग्गजों में एक संक्रमण का प्रतीक है। इसका आकार हमारे सौर मंडल में शनि के समान है।',
+        bn: 'কেপলার-৯০জি হলো কেপলার-৯০ সৌরজগতের ষষ্ঠ গ্রহ। এই গ্রহটি থেকেই মূলত সৌরজগতের গ্যাস জায়ান্ট বা বিশাল গ্যাসীয় গ্রহগুলোর শুরু হয়েছে। এর আকার আমাদের সৌরজগতের শনি (Saturn) গ্রহের কাছাকাছি।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Unknown (Estimated around 15-20 Earths or more)',
+          hi: 'अज्ञात (अनुमानित लगभग 15-20 पृथ्वी या अधिक)',
+          bn: 'অজানা (আনুমানিক পৃথিবীর ১৫-২০ গুণ বা তার বেশি)'
+        },
+        diameter: {
+          en: 'Approx. 103,500 km (8.13 Earths)',
+          hi: 'लगभग 103,500 किमी (8.13 पृथ्वी)',
+          bn: 'প্রায় ১,০৩,৫০০ কি.মি. (পৃথিবীর ৮.১৩ গুণ)'
+        },
+        gravity: {
+          en: 'Strong, typical of gas giants',
+          hi: 'मजबूत, गैस दिग्गजों के विशिष्ट',
+          bn: 'গ্যাস জায়ান্টদের মতোই বেশ শক্তিশালী'
+        }
+      },
+      atmosphere: {
+        en: 'A massive atmosphere of hydrogen and helium, likely with turbulent cloud layers.',
+        hi: 'हाइड्रोजन और हीलियम का एक विशाल वायुमंडल, जिसमें संभवतः अशांत बादल परतें हैं।',
+        bn: 'হাইড্রোজেন এবং হিলিয়ামের এক বিশাল বায়ুমণ্ডল রয়েছে, যেখানে সম্ভবত প্রচণ্ড ঝোড়ো মেঘের স্তর রয়েছে।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits its star every 210.6 days.',
+        hi: 'हर 210.6 दिन में अपने तारे की परिक्रमा करता है।',
+        bn: 'এটি ২১০.৬ দিনে একবার এর নক্ষত্রকে প্রদক্ষিণ করে।'
+      },
+      moons: {
+        en: 'Unknown, but large gas giants typically host multiple moons.',
+        hi: 'अज्ञात, लेकिन बड़े गैस दिग्गज आमतौर पर कई चंद्रमाओं की मेजबानी करते हैं।',
+        bn: 'অজানা, তবে এই ধরনের বিশাল গ্যাসীয় গ্রহগুলোতে সাধারণত অনেক উপগ্রহ থাকে।'
+      },
+      surface: {
+        en: 'No solid surface; it is a gas giant.',
+        hi: 'कोई ठोस सतह नहीं; यह एक गैस दिग्गज है।',
+        bn: 'এটি একটি গ্যাস জায়ান্ট, তাই এর কোনো কঠিন পৃষ্ঠ নেই।'
+      },
+      exploration: {
+        en: 'Discovered in 2013 by the Kepler Space Telescope.',
+        hi: '2013 में केप्लर स्पेस टेलीस्कोप द्वारा खोजा गया।',
+        bn: '২০১৩ সালে নাসার কেপলার স্পেস টেলিস্কোপ এটি আবিষ্কার করে।'
+      },
+      didYouKnow: [
+        {
+          en: 'Its orbit is close to the inner edge of the habitable zone, but as a gas giant, it would not have a solid surface for life.',
+          hi: 'इसकी कक्षा रहने योग्य क्षेत्र के आंतरिक किनारे के करीब है, लेकिन एक गैस दिग्गज के रूप में, इसमें जीवन के लिए एक ठोस सतह नहीं होगी।',
+          bn: 'এর কক্ষপথ নক্ষত্রের হ্যাবিটেবল জোনের (Habitable Zone) বেশ কাছাকাছি, তবে গ্যাস জায়ান্ট হওয়ার কারণে এতে জীবনের কোনো সম্ভাবনা নেই।'
+        },
+        {
+          en: 'The Kepler-90 system is incredibly ordered, with small planets close to the star and massive gas giants like Kepler-90g further out, much like our Solar System.',
+          hi: 'केप्लर-90 प्रणाली अविश्वसनीय रूप से व्यवस्थित है, जिसमें छोटे ग्रह तारे के करीब हैं और बड़े गैस दिग्गज आगे हैं, जो हमारे सौर मंडल की तरह है।',
+          bn: 'কেপলার-৯০ সৌরজগতটি আমাদের সৌরজগতের মতোই অত্যন্ত সুশৃঙ্খল; এর ভেতরের দিকে ছোট পাথুরে গ্রহ এবং বাইরের দিকে বড় গ্যাস জায়ান্ট গ্রহগুলো অবস্থিত।'
+        }
+      ]
+    }
+  },
+  {
+    id: 'kepler-90h',
+    type: 'Exoplanet',
+    name: {
+      en: 'Kepler-90h',
+      hi: 'केप्लर-90एच',
+      bn: 'কেপলার-৯০এইচ'
+    },
+    description: {
+      en: 'The outermost known planet in the Kepler-90 system, a massive gas giant similar in size to Jupiter.',
+      hi: 'केप्लर-90 प्रणाली में सबसे बाहरी ज्ञात ग्रह, बृहस्पति के आकार के समान एक विशाल गैस दिग्गज।',
+      bn: 'কেপলার-৯০ সৌরজগতের সবচেয়ে বাইরের গ্রহ, যা আকারে আমাদের সৌরজগতের বৃহস্পতি (Jupiter) গ্রহের মতোই একটি বিশাল গ্যাস জায়ান্ট।'
+    },
+    distance: {
+      en: '2,840 Light Years',
+      hi: '2,840 प्रकाश वर्ष',
+      bn: '২,৮৪০ আলোকবর্ষ'
+    },
+    radius: 11.32,
+    modelType: 'texture',
+    modelPath: '/textures/exoplanets/kepler-90h.jpg',
+    details: {
+      overview: {
+        en: 'Kepler-90h is the seventh and outermost known planet of the Kepler-90 system (before the discovery of 90i between the inner planets). It is a massive gas giant, similar in size and likely composition to Jupiter in our own Solar System. Its discovery helped confirm the system\'s architectural resemblance to ours.',
+        hi: 'केप्लर-90एच केप्लर-90 प्रणाली का सातवां और सबसे बाहरी ज्ञात ग्रह है। यह एक विशाल गैस दिग्गज है, जो हमारे अपने सौर मंडल में बृहस्पति के आकार और संभावित संरचना के समान है।',
+        bn: 'কেপলার-৯০এইচ হলো কেপলার-৯০ সৌরজগতের সবচেয়ে বাইরের দিকের গ্রহ। এটি একটি সুবিশাল গ্যাস জায়ান্ট, যার আকার এবং গঠন অনেকটা আমাদের সৌরজগতের বৃহস্পতি (Jupiter) গ্রহের মতোই।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Unknown (Expected to be comparable to Jupiter)',
+          hi: 'अज्ञात (बृहस्पति के बराबर होने की उम्मीद)',
+          bn: 'অজানা (সম্ভবত বৃহস্পতির ভরের সমান)'
+        },
+        diameter: {
+          en: 'Approx. 144,000 km (11.32 Earths)',
+          hi: 'लगभग 144,000 किमी (11.32 पृथ्वी)',
+          bn: 'প্রায় ১,৪৪,০০০ কি.মি. (পৃথিবীর ১১.৩২ গুণ)'
+        },
+        gravity: {
+          en: 'Very strong, typical of Jupiter-like gas giants',
+          hi: 'बहुत मजबूत, बृहस्पति जैसे गैस दिग्गजों के विशिष्ट',
+          bn: 'বৃহস্পতির মতো অত্যন্ত শক্তিশালী'
+        }
+      },
+      atmosphere: {
+        en: 'A very deep and massive atmosphere of hydrogen, helium, and complex storms.',
+        hi: 'हाइड्रोजन, हीलियम और जटिल तूफानों का एक बहुत गहरा और विशाल वायुमंडल।',
+        bn: 'হাইড্রোজেন, হিলিয়াম এবং প্রচণ্ড ঘূর্ণিঝড়ে ভরপুর এক গভীর ও সুবিশাল বায়ুমণ্ডল।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits its star every 331.6 days. Its year is similar to Earth\'s year.',
+        hi: 'हर 331.6 दिन में अपने तारे की परिक्रमा करता है। इसका वर्ष पृथ्वी के वर्ष के समान है।',
+        bn: 'এটি ৩৩১.৬ দিনে এর নক্ষত্রকে একবার প্রদক্ষিণ করে। অর্থাৎ এখানকার এক বছর পৃথিবীর এক বছরের প্রায় সমান।'
+      },
+      moons: {
+        en: 'Unknown, but highly likely to have a large moon system.',
+        hi: 'अज्ञात, लेकिन एक बड़े चंद्रमा प्रणाली होने की अत्यधिक संभावना है।',
+        bn: 'অজানা, তবে এর চারপাশে একটি বিশাল উপগ্রহ-পরিবার থাকার প্রবল সম্ভাবনা রয়েছে।'
+      },
+      surface: {
+        en: 'No solid surface; consists entirely of gas transitioning to liquid at extreme depths.',
+        hi: 'कोई ठोस सतह नहीं; पूरी तरह से गैस से मिलकर बनता है जो अत्यधिक गहराई पर तरल में परिवर्तित हो जाता है।',
+        bn: 'এর কোনো কঠিন পৃষ্ঠ নেই; গ্যাস চরম চাপে তরলে পরিণত হয়েছে।'
+      },
+      exploration: {
+        en: 'Discovered in 2013 by the Kepler Space Telescope.',
+        hi: '2013 में केप्लर स्पेस टेलीस्कोप द्वारा खोजा गया।',
+        bn: '২০১৩ সালে নাসার কেপলার স্পেস টেলিস্কোপ এটি আবিষ্কার করে।'
+      },
+      didYouKnow: [
+        {
+          en: 'Although it is the outermost known planet in its system, its orbit is only about the same distance from its star as Earth is from the Sun.',
+          hi: 'यद्यपि यह अपने सिस्टम में सबसे बाहरी ज्ञात ग्रह है, इसकी कक्षा अपने तारे से लगभग उतनी ही दूरी पर है जितनी पृथ्वी सूर्य से है।',
+          bn: 'যদিও এটি এই সৌরজগতের সবচেয়ে বাইরের দিকের গ্রহ, কিন্তু এর কক্ষপথটি নক্ষত্র থেকে ঠিক ততটাই দূরে অবস্থিত, যতটা দূরে সূর্য থেকে পৃথিবী অবস্থিত।'
+        },
+        {
+          en: 'Kepler-90h\'s presence solidifies the idea that other star systems can have an "inner rocky, outer gas giant" arrangement just like our Solar System.',
+          hi: 'केप्लर-90एच की उपस्थिति इस विचार को पुष्ट करती है कि अन्य तारा प्रणालियों में हमारे सौर मंडल की तरह "आंतरिक चट्टानी, बाहरी गैस विशाल" व्यवस्था हो सकती है।',
+          bn: 'কেপলার-৯০এইচ প্রমাণ করে যে, আমাদের সৌরজগতের মতো মহাবিশ্বের অন্য সৌরজগতগুলোতেও ভেতরের দিকে পাথুরে গ্রহ এবং বাইরের দিকে বিশাল গ্যাসীয় গ্রহ থাকতে পারে।'
+        }
+      ]
+    }
+  },
+  {
+    id: 'kepler-452b',
+    type: 'Exoplanet',
+    name: {
+      en: 'Kepler-452b',
+      hi: 'केप्लर-452बी',
+      bn: 'কেপলার-৪৫২বি'
+    },
+    description: {
+      en: 'Often called Earth 2.0, an exoplanet orbiting a Sun-like star in the habitable zone.',
+      hi: 'अक्सर इसे पृथ्वी 2.0 कहा जाता है, यह रहने योग्य क्षेत्र में सूर्य जैसे तारे की परिक्रमा करने वाला एक एक्सोप्लैनेट है।',
+      bn: 'প্রায়শই "পৃথিবী ২.০" (Earth 2.0) নামে পরিচিত, এটি এমন একটি এক্সোপ্ল্যানেট যা সূর্যের মতো একটি নক্ষত্রের বাসযোগ্য অঞ্চলে (Habitable Zone) আবর্তন করছে।'
+    },
+    distance: {
+      en: '1,800 Light Years',
+      hi: '1,800 प्रकाश वर्ष',
+      bn: '১,৮০০ আলোকবর্ষ'
+    },
+    radius: 1.63,
+    modelType: 'glb',
+    modelPath: '/models/kepler-452b.glb',
+    details: {
+      overview: {
+        en: 'Kepler-452b, sometimes dubbed "Earth 2.0" or "Earth\'s Cousin", is a super-Earth exoplanet orbiting within the inner edge of the habitable zone of the sun-like star Kepler-452. It is one of the most Earth-like planets discovered in terms of its size and the type of star it orbits.',
+        hi: 'केप्लर-452बी, जिसे कभी-कभी "पृथ्वी 2.0" या "पृथ्वी का चचेरा भाई" कहा जाता है, एक सुपर-अर्थ एक्सोप्लैनेट है जो सूर्य जैसे तारे केप्लर-452 के रहने योग्य क्षेत्र के आंतरिक किनारे के भीतर परिक्रमा करता है। यह अपने आकार और जिस तारे की परिक्रमा करता है उसके प्रकार के संदर्भ में खोजे गए सबसे पृथ्वी जैसे ग्रहों में से एक है।',
+        bn: 'কেপলার-৪৫২বি, যা অনেক সময় "পৃথিবী ২.০" বা "পৃথিবীর খালাতো ভাই" নামেও পরিচিত, একটি সুপার-আর্থ এক্সোপ্ল্যানেট। এটি কেপলার-৪৫২ নামক একটি নক্ষত্রের (আমাদের সূর্যের মতোই) বাসযোগ্য অঞ্চলের ঠিক ভেতরের অংশে প্রদক্ষিণ করছে। এর আকার এবং নক্ষত্রের ধরন বিচার করলে এটি এযাবৎ আবিষ্কৃত অন্যতম পৃথিবী-সদৃশ গ্রহ।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Unknown (Estimated around 5 Earths)',
+          hi: 'अज्ञात (अनुमानित लगभग 5 पृथ्वी)',
+          bn: 'অজানা (আনুমানিক পৃথিবীর ৫ গুণ)'
+        },
+        diameter: {
+          en: 'Approx. 20,800 km (1.63 Earths)',
+          hi: 'लगभग 20,800 किमी (1.63 पृथ्वी)',
+          bn: 'প্রায় ২০,৮০০ কি.মি. (পৃথিবীর ১.৬৩ গুণ)'
+        },
+        gravity: {
+          en: 'Estimated to be roughly twice that of Earth',
+          hi: 'पृथ्वी के गुरुत्वाकर्षण का लगभग दोगुना होने का अनुमान',
+          bn: 'পৃথিবীর মধ্যাকর্ষণের প্রায় দ্বিগুণ বলে ধারণা করা হয়'
+        }
+      },
+      atmosphere: {
+        en: 'Could have a thick atmosphere and a runaway greenhouse effect due to its aging star.',
+        hi: 'अपने उम्रदराज तारे के कारण इसमें घना वायुमंडल और एक भगोड़ा ग्रीनहाउस प्रभाव हो सकता है।',
+        bn: 'নক্ষত্রের বয়স বেশি হওয়ার কারণে সম্ভবত এর একটি পুরু বায়ুমণ্ডল এবং রানাওয়ে গ্রিনহাউস ইফেক্ট (Runaway Greenhouse Effect) রয়েছে।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits its star every 385 Earth days, making its year very similar to ours.',
+        hi: 'हर 385 पृथ्वी दिनों में अपने तारे की परिक्रमा करता है, जिससे इसका वर्ष हमारे वर्ष के बहुत समान हो जाता है।',
+        bn: 'এটি ৩৮৫ দিনে এর নক্ষত্রকে প্রদক্ষিণ করে, ফলে এর এক বছর পৃথিবীর এক বছরের একদম কাছাকাছি।'
+      },
+      moons: {
+        en: 'Unknown',
+        hi: 'अज्ञात',
+        bn: 'অজানা'
+      },
+      surface: {
+        en: 'Expected to be a rocky planet, possibly with active volcanoes and oceans, though its surface could be boiling away.',
+        hi: 'एक चट्टानी ग्रह होने की उम्मीद है, संभवतः सक्रिय ज्वालामुखियों और महासागरों के साथ, हालांकि इसकी सतह उबल सकती है।',
+        bn: 'সম্ভবত এটি একটি পাথুরে গ্রহ যেখানে সক্রিয় আগ্নেয়গিরি বা মহাসাগর থাকতে পারে, তবে প্রচণ্ড তাপে পৃষ্ঠের জল হয়তো ফুটছে।'
+      },
+      exploration: {
+        en: 'Discovered in 2015 by the Kepler Space Telescope.',
+        hi: '2015 में केप्लर स्पेस टेलीस्कोप द्वारा खोजा गया।',
+        bn: '২০১৫ সালে নাসার কেপলার স্পেস টেলিস্কোপ এটি আবিষ্কার করে।'
+      },
+      didYouKnow: [
+        {
+          en: 'Its host star is 1.5 billion years older than our Sun, giving us a glimpse into Earth’s potential future as the Sun ages.',
+          hi: 'इसका मेजबान तारा हमारे सूर्य से 1.5 अरब वर्ष पुराना है, जो हमें सूर्य की उम्र बढ़ने के साथ पृथ्वी के संभावित भविष्य की एक झलक देता है।',
+          bn: 'এর নক্ষত্রটি আমাদের সূর্যের চেয়ে ১.৫ বিলিয়ন বছর বেশি পুরনো, যা আমাদের বলে দেয় যে সূর্যের বয়স বাড়লে ভবিষ্যতে পৃথিবীর অবস্থাও ঠিক কেমন হতে পারে।'
+        },
+        {
+          en: 'A person who weighs 100 lbs on Earth would weigh nearly 200 lbs on Kepler-452b due to its stronger gravity.',
+          hi: 'पृथ्वी पर 100 पाउंड वजन वाले व्यक्ति का वजन केप्लर-452बी पर इसके मजबूत गुरुत्वाकर्षण के कारण लगभग 200 पाउंड होगा।',
+          bn: 'এর শক্তিশালী মধ্যাকর্ষণের কারণে পৃথিবীতে কারও ওজন যদি ৫০ কেজি হয়, তবে এই গ্রহে তার ওজন হবে প্রায় ১০০ কেজি!'
+        }
+      ]
+    }
   }
 ];

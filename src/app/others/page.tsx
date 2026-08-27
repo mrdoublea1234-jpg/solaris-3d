@@ -1,7 +1,8 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
-import { ChevronLeft, Globe, Star, Info } from 'lucide-react';
+import { ChevronLeft, Globe, Star, Info, Search } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { useAppStore } from '@/store/useAppStore';
 import { LanguageSwitcher } from '@/components/ui/LanguageSwitcher';
@@ -17,10 +18,33 @@ const NOTE_TEXT = {
 export default function OthersPage() {
   const router = useRouter();
   const { setSettingsOpen, language } = useAppStore();
+  
+  const [searchQuery, setSearchQuery] = useState('');
+  const [filter, setFilter] = useState<'ALL' | 'STARS' | 'EXOPLANETS'>('ALL');
 
   const handleBack = () => {
     router.push('/');
   };
+
+  const filteredExoplanets = exoplanets.filter((item) => {
+    // Search matching
+    const searchLower = searchQuery.toLowerCase().replace(/[\s-]/g, '');
+    const normalizeName = (name: string) => name.toLowerCase().replace(/[\s-]/g, '');
+    
+    const nameMatch = 
+      normalizeName(item.name.en).includes(searchLower) || 
+      normalizeName(item.name.hi).includes(searchLower) || 
+      normalizeName(item.name.bn).includes(searchLower);
+      
+    // Filter matching
+    const itemType = item.type.toUpperCase();
+    const filterMatch = 
+      filter === 'ALL' || 
+      (filter === 'STARS' && itemType === 'STAR') || 
+      (filter === 'EXOPLANETS' && itemType === 'EXOPLANET');
+
+    return nameMatch && filterMatch;
+  });
 
   return (
     <main className="h-[100dvh] overflow-y-auto overflow-x-hidden bg-black text-white p-6 md:p-12 pb-24 relative">
@@ -62,43 +86,80 @@ export default function OthersPage() {
         </div>
 
         {/* Note Box */}
-        <div className="mb-12 bg-white/5 border border-white/10 rounded-xl p-5 backdrop-blur-sm">
+        <div className="mb-8 bg-white/5 border border-white/10 rounded-xl p-5 backdrop-blur-sm">
           <p className="text-sm text-white/70 leading-relaxed font-light">
             <Info className="w-5 h-5 text-blue-400 inline-block align-text-bottom mr-2" />
             {NOTE_TEXT[language]}
           </p>
         </div>
 
+        {/* Search & Filter */}
+        <div className="mb-12 flex flex-col sm:flex-row gap-4">
+          <div className="relative flex-1">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-white/40" />
+            <input 
+              type="text" 
+              placeholder={language === 'en' ? 'Search Exoplanets or Stars...' : language === 'hi' ? 'एक्सोप्लैनेट या तारे खोजें...' : 'এক্সোপ্ল্যানেট বা নক্ষত্র খুঁজুন...'}
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full bg-white/5 border border-white/10 rounded-xl py-3 pl-12 pr-4 text-white placeholder-white/40 focus:outline-none focus:border-white/30 focus:bg-white/10 transition-all font-light"
+            />
+          </div>
+          <div className="flex gap-2 sm:shrink-0 bg-white/5 p-1 rounded-xl border border-white/10">
+            {['ALL', 'STARS', 'EXOPLANETS'].map((f) => (
+              <button
+                key={f}
+                onClick={() => setFilter(f as any)}
+                className={`flex-1 sm:flex-none px-4 py-2 rounded-lg text-xs font-bold tracking-widest uppercase transition-all ${
+                  filter === f 
+                    ? 'bg-white text-black' 
+                    : 'text-white/50 hover:text-white hover:bg-white/5'
+                }`}
+              >
+                {f}
+              </button>
+            ))}
+          </div>
+        </div>
+
         {/* List */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {exoplanets.map((item) => (
-            <div 
-              key={item.id}
-              className="bg-[#111] md:bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-white/20 transition-all group cursor-pointer"
-            >
-              <div className="flex items-start justify-between mb-4">
-                <div className={`p-3 rounded-xl bg-white/5 group-hover:bg-white/10 transition-colors ${item.type === 'Exoplanet' ? (item.id === 'kepler-186f' ? 'text-emerald-400' : 'text-blue-400') : 'text-red-400'}`}>
-                  {item.type === 'Exoplanet' ? <Globe className="w-6 h-6" /> : <Star className="w-6 h-6" />}
+          {filteredExoplanets.length > 0 ? (
+            filteredExoplanets.map((item) => (
+              <div 
+                key={item.id}
+                className="bg-[#111] md:bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-white/20 transition-all group cursor-pointer"
+              >
+                <div className="flex items-start justify-between mb-4">
+                  <div className={`p-3 rounded-xl bg-white/5 group-hover:bg-white/10 transition-colors ${item.type === 'Exoplanet' ? (item.id === 'kepler-186f' ? 'text-emerald-400' : 'text-blue-400') : 'text-red-400'}`}>
+                    {item.type === 'Exoplanet' ? <Globe className="w-6 h-6" /> : <Star className="w-6 h-6" />}
+                  </div>
+                  <div className="text-[10px] font-mono tracking-widest text-white/40 bg-black/50 px-3 py-1 rounded-full uppercase mt-1">
+                    {item.distance[language]}
+                  </div>
                 </div>
-                <div className="text-[10px] font-mono tracking-widest text-white/40 bg-black/50 px-3 py-1 rounded-full uppercase mt-1">
-                  {item.distance[language]}
+                
+                <h2 className="text-xl font-bold tracking-wider uppercase mb-1">{item.name[language]}</h2>
+                <div className="text-xs text-white/50 tracking-widest uppercase mb-4">
+                  {item.type === 'Exoplanet' ? (language === 'en' ? 'Exoplanet' : language === 'hi' ? 'एक्सोप्लैनेट' : 'এক্সোপ্ল্যানেট') : (language === 'en' ? 'Star' : language === 'hi' ? 'तारा' : 'নক্ষত্র')}
                 </div>
-              </div>
-              
-              <h2 className="text-xl font-bold tracking-wider uppercase mb-1">{item.name[language]}</h2>
-              <div className="text-xs text-white/50 tracking-widest uppercase mb-4">
-                {item.type === 'Exoplanet' ? (language === 'en' ? 'Exoplanet' : language === 'hi' ? 'एक्सोप्लैनेट' : 'এক্সোপ্ল্যানেট') : (language === 'en' ? 'Star' : language === 'hi' ? 'तारा' : 'নক্ষত্র')}
-              </div>
-              
-              <p className="text-sm text-white/70 leading-relaxed mb-6 h-16 overflow-hidden">
-                {item.description[language]}
-              </p>
+                
+                <p className="text-sm text-white/70 leading-relaxed mb-6 h-16 overflow-hidden">
+                  {item.description[language]}
+                </p>
 
-              <Link href={`/others/${item.id}`} className="block w-full py-3 rounded-lg border border-white/20 text-xs font-bold tracking-widest uppercase hover:bg-white hover:text-black transition-colors text-center">
-                {language === 'en' ? 'Explore 3D' : language === 'hi' ? '3D में देखें' : 'থ্রিডি এক্সপ্লোর করুন'}
-              </Link>
+                <Link href={`/others/${item.id}`} className="block w-full py-3 rounded-lg border border-white/20 text-xs font-bold tracking-widest uppercase hover:bg-white hover:text-black transition-colors text-center">
+                  {language === 'en' ? 'Explore 3D' : language === 'hi' ? '3D में देखें' : 'থ্রিডি এক্সপ্লোর করুন'}
+                </Link>
+              </div>
+            ))
+          ) : (
+            <div className="col-span-1 md:col-span-2 text-center py-12">
+              <p className="text-white/50">
+                {language === 'en' ? 'No destinations found.' : language === 'hi' ? 'कोई गंतव्य नहीं मिला।' : 'কোনো গন্তব্য পাওয়া যায়নি।'}
+              </p>
             </div>
-          ))}
+          )}
         </div>
         
         <div className="mt-12 text-center">
