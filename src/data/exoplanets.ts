@@ -1195,5 +1195,420 @@ export const exoplanets: ExoplanetData[] = [
         }
       ]
     }
+  },
+  {
+    id: 'trappist-1b',
+    type: 'Exoplanet',
+    name: {
+      en: 'TRAPPIST-1b',
+      hi: 'ट्रैपिस्ट-1बी',
+      bn: 'ট্রাপিস্ট-১বি'
+    },
+    description: {
+      en: 'The innermost planet of the TRAPPIST-1 system, a hot and rocky world similar in size to Earth.',
+      hi: 'ट्रैपिस्ट-1 प्रणाली का सबसे भीतरी ग्रह, एक गर्म और चट्टानी दुनिया जो आकार में पृथ्वी के समान है।',
+      bn: 'ট্রাপিস্ট-১ সৌরজগতের সবচেয়ে ভেতরের দিকের গ্রহ। এটি আকারে পৃথিবীর সমান হলেও একটি অত্যন্ত উত্তপ্ত পাথুরে গ্রহ।'
+    },
+    distance: {
+      en: '39 Light Years',
+      hi: '39 प्रकाश वर्ष',
+      bn: '৩৯ আলোকবর্ষ'
+    },
+    radius: 1.116,
+    modelType: 'texture',
+    modelPath: '/textures/exoplanets/trappist-1b.jpg',
+    details: {
+      overview: {
+        en: 'TRAPPIST-1b is the innermost exoplanet orbiting the ultra-cool dwarf star TRAPPIST-1. It is a rocky, Earth-sized planet that receives about 4 times more solar irradiation than Earth does from the Sun, making it far too hot for liquid water on its surface.',
+        hi: 'ट्रैपिस्ट-1बी अल्ट्रा-कूल बौने तारे ट्रैपिस्ट-1 की परिक्रमा करने वाला सबसे भीतरी एक्सोप्लैनेट है। यह एक चट्टानी, पृथ्वी के आकार का ग्रह है जो सूर्य से पृथ्वी की तुलना में लगभग 4 गुना अधिक सौर विकिरण प्राप्त करता है, जिससे यह अपनी सतह पर तरल पानी के लिए बहुत गर्म हो जाता है।',
+        bn: 'ট্রাপিস্ট-১বি হলো অতি-শীতল বামন নক্ষত্র ট্রাপিস্ট-১ কে আবর্তনকারী সবচেয়ে ভেতরের দিকের একটি এক্সোপ্ল্যানেট। এটি পৃথিবীর সমান আকারের একটি পাথুরে গ্রহ, যা পৃথিবীর তুলনায় সূর্য (নক্ষত্র) থেকে প্রায় ৪ গুণ বেশি তাপ গ্রহণ করে। ফলে এর পৃষ্ঠে তরল পানি থাকার কোনো সম্ভাবনা নেই।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Approx. 1.37 Earths',
+          hi: 'लगभग 1.37 पृथ्वी',
+          bn: 'প্রায় ১.৩৭ গুণ (পৃথিবীর তুলনায়)'
+        },
+        diameter: {
+          en: 'Approx. 14,200 km (1.116 Earths)',
+          hi: 'लगभग 14,200 किमी (1.116 पृथ्वी)',
+          bn: 'প্রায় ১৪,২০০ কি.মি. (পৃথিবীর ১.১১৬ গুণ)'
+        },
+        gravity: {
+          en: 'Slightly stronger than Earth',
+          hi: 'पृथ्वी से थोड़ा मजबूत',
+          bn: 'পৃথিবীর চেয়ে সামান্য বেশি'
+        }
+      },
+      atmosphere: {
+        en: 'Observations suggest it lacks a thick, puffy atmosphere of hydrogen, but it could have a dense secondary atmosphere or no atmosphere at all.',
+        hi: 'अवलोकनों से पता चलता है कि इसमें हाइड्रोजन के एक मोटे, फूले हुए वायुमंडल का अभाव है, लेकिन इसमें एक घना द्वितीयक वायुमंडल या कोई वायुमंडल नहीं हो सकता है।',
+        bn: 'পর্যবেক্ষণ থেকে ধারণা করা হয় যে এতে হাইড্রোজেনের কোনো পুরু বায়ুমণ্ডল নেই। তবে এতে একটি ঘন গৌণ বায়ুমণ্ডল থাকতে পারে, অথবা কোনো বায়ুমণ্ডল নাও থাকতে পারে।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits its star in just 1.5 Earth days. It is likely tidally locked, meaning one side always faces the star.',
+        hi: 'केवल 1.5 पृथ्वी दिनों में अपने तारे की परिक्रमा करता है। इसके टाइडली लॉक्ड होने की संभावना है, जिसका अर्थ है कि एक पक्ष हमेशा तारे की ओर रहता है।',
+        bn: 'এটি মাত্র ১.৫ দিনে এর নক্ষত্রকে একবার প্রদক্ষিণ করে। এটি সম্ভবত টাইডালি লকড (Tidally Locked), অর্থাৎ এর একটি দিক সব সময় নক্ষত্রের দিকে মুখ করে থাকে।'
+      },
+      moons: {
+        en: 'None known',
+        hi: 'कोई ज्ञात नहीं',
+        bn: 'অজানা'
+      },
+      surface: {
+        en: 'Rocky and extremely hot. The day side could be hot enough to melt rocks if no atmosphere redistributes the heat.',
+        hi: 'चट्टानी और बेहद गर्म। यदि कोई वायुमंडल गर्मी को पुनर्वितरित नहीं करता है, तो दिन का पक्ष चट्टानों को पिघलाने के लिए पर्याप्त गर्म हो सकता है।',
+        bn: 'পাথুরে এবং অত্যন্ত উত্তপ্ত। বায়ুমণ্ডল না থাকলে এর নক্ষত্রের দিকের অংশের তাপমাত্রা এত বেশি হতে পারে যে পাথরও গলে যেতে পারে।'
+      },
+      exploration: {
+        en: 'Discovered in 2016 using the TRAPPIST telescope in Chile. Further studied extensively by the James Webb Space Telescope (JWST).',
+        hi: '2016 में चिली में ट्रैपिस्ट टेलीस्कोप का उपयोग करके खोजा गया। जेम्स वेब स्पेस टेलीस्कोप (JWST) द्वारा बड़े पैमाने पर अध्ययन किया गया।',
+        bn: 'চিলিতে অবস্থিত ট্রাপিস্ট (TRAPPIST) টেলিস্কোপের মাধ্যমে ২০১৬ সালে এটি আবিষ্কৃত হয়। পরবর্তীতে জেমস ওয়েব স্পেস টেলিস্কোপ দিয়ে এর বিষয়ে আরও বিস্তারিত গবেষণা করা হয়।'
+      },
+      didYouKnow: [
+        {
+          en: 'Recent JWST data suggests TRAPPIST-1b might be a bare rock with no significant atmosphere, absorbing and instantly re-radiating the star\'s heat.',
+          hi: 'हाल ही में जेडब्ल्यूएसटी डेटा से पता चलता है कि ट्रैपिस्ट-1बी बिना किसी महत्वपूर्ण वायुमंडल के एक नंगी चट्टान हो सकता है, जो तारे की गर्मी को अवशोषित और तुरंत फिर से विकिरण करता है।',
+          bn: 'জেমস ওয়েবের সাম্প্রতিক ডেটা থেকে ধারণা করা হয় যে, ট্রাপিস্ট-১বি কোনো গুরুত্বপূর্ণ বায়ুমণ্ডল ছাড়াই একটি সম্পূর্ণ খালি পাথুরে গ্রহ হতে পারে, যা নক্ষত্রের তাপ শোষণ করে এবং সাথে সাথেই আবার বিকিরণ করে দেয়।'
+        },
+        {
+          en: 'Because the star is so close, TRAPPIST-1b would appear massive in its sky, taking up nearly 6 degrees of the sky—about 12 times larger than the Sun appears from Earth.',
+          hi: 'चूंकि तारा बहुत करीब है, इसलिए ट्रैपिस्ट-1बी अपने आसमान में विशाल दिखाई देगा, जो आसमान का लगभग 6 डिग्री हिस्सा लेता है - पृथ्वी से सूर्य जितना दिखाई देता है उससे लगभग 12 गुना बड़ा।',
+          bn: 'নক্ষত্রটির খুব কাছাকাছি হওয়ায়, এই গ্রহের আকাশ থেকে এর নক্ষত্রটিকে অনেক বড় দেখাবে। পৃথিবী থেকে সূর্যকে যতটা বড় দেখায়, এই গ্রহ থেকে এর নক্ষত্রটিকে তার চেয়েও প্রায় ১২ গুণ বেশি বড় দেখাবে!'
+        }
+      ]
+    }
+  },
+  {
+    id: 'trappist-1c',
+    type: 'Exoplanet',
+    name: {
+      en: 'TRAPPIST-1c',
+      hi: 'ट्रैपिस्ट-1सी',
+      bn: 'ট্রাপিস্ট-১সি'
+    },
+    description: {
+      en: 'The second planet in the TRAPPIST-1 system, a rocky world slightly larger and more massive than Earth.',
+      hi: 'ट्रैपिस्ट-1 प्रणाली का दूसरा ग्रह, पृथ्वी से थोड़ा बड़ा और अधिक विशाल एक चट्टानी दुनिया।',
+      bn: 'ট্রাপিস্ট-১ সৌরজগতের দ্বিতীয় গ্রহ, যা পৃথিবীর চেয়ে সামান্য বড় এবং ভারী একটি পাথুরে গ্রহ।'
+    },
+    distance: {
+      en: '39 Light Years',
+      hi: '39 प्रकाश वर्ष',
+      bn: '৩৯ আলোকবর্ষ'
+    },
+    radius: 1.097,
+    modelType: 'texture',
+    modelPath: '/textures/exoplanets/trappist-1c.jpg',
+    details: {
+      overview: {
+        en: 'TRAPPIST-1c is the second planet orbiting the ultra-cool dwarf star TRAPPIST-1. It is a dense, rocky planet that is slightly larger than Earth. Like Venus in our Solar System, it receives a high amount of stellar radiation, making it unlikely to host liquid water.',
+        hi: 'ट्रैपिस्ट-1सी अल्ट्रा-कूल बौने तारे ट्रैपिस्ट-1 की परिक्रमा करने वाला दूसरा ग्रह है। यह एक घना, चट्टानी ग्रह है जो पृथ्वी से थोड़ा बड़ा है। हमारे सौर मंडल में शुक्र की तरह, यह भारी मात्रा में तारकीय विकिरण प्राप्त करता है।',
+        bn: 'ট্রাপিস্ট-১সি হলো অতি-শীতল বামন নক্ষত্র ট্রাপিস্ট-১ কে আবর্তনকারী দ্বিতীয় এক্সোপ্ল্যানেট। এটি একটি ঘন ও পাথুরে গ্রহ, যা পৃথিবীর চেয়ে সামান্য বড়। আমাদের সৌরজগতের শুক্র (Venus) গ্রহের মতোই এটি নক্ষত্র থেকে প্রচুর তাপ গ্রহণ করে, তাই এতে তরল পানি থাকার কোনো সম্ভাবনা নেই।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Approx. 1.31 Earths',
+          hi: 'लगभग 1.31 पृथ्वी',
+          bn: 'প্রায় ১.৩১ গুণ (পৃথিবীর তুলনায়)'
+        },
+        diameter: {
+          en: 'Approx. 13,980 km (1.097 Earths)',
+          hi: 'लगभग 13,980 किमी (1.097 पृथ्वी)',
+          bn: 'প্রায় ১৩,৯৮০ কি.মি. (পৃথিবীর ১.০৯৭ গুণ)'
+        },
+        gravity: {
+          en: 'Slightly stronger than Earth',
+          hi: 'पृथ्वी से थोड़ा मजबूत',
+          bn: 'পৃথিবীর চেয়ে সামান্য বেশি'
+        }
+      },
+      atmosphere: {
+        en: 'JWST observations strongly suggest it lacks a thick carbon dioxide atmosphere like Venus, making it likely a bare rock or possessing a very thin atmosphere.',
+        hi: 'जेडब्ल्यूएसटी के अवलोकनों से दृढ़ता से पता चलता है कि इसमें शुक्र की तरह एक मोटा कार्बन डाइऑक्साइड वायुमंडल नहीं है, जिससे इसके एक नंगी चट्टान होने या बहुत पतला वायुमंडल होने की संभावना है।',
+        bn: 'জেমস ওয়েবের পর্যবেক্ষণ থেকে ধারণা করা হয় যে, এতে শুক্র গ্রহের মতো কার্বন ডাই-অক্সাইডের কোনো পুরু বায়ুমণ্ডল নেই। এটি মূলত একটি সম্পূর্ণ খালি পাথুরে গ্রহ অথবা এর খুব পাতলা কোনো বায়ুমণ্ডল থাকতে পারে।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits its star every 2.4 Earth days. It is presumed to be tidally locked.',
+        hi: 'हर 2.4 पृथ्वी दिनों में अपने तारे की परिक्रमा करता है। इसे टाइडली लॉक्ड माना जाता है।',
+        bn: 'এটি মাত্র ২.৪ দিনে এর নক্ষত্রকে প্রদক্ষিণ করে। এটিও সম্ভবত টাইডালি লকড (Tidally Locked)।'
+      },
+      moons: {
+        en: 'None known',
+        hi: 'कोई ज्ञात नहीं',
+        bn: 'অজানা'
+      },
+      surface: {
+        en: 'Rocky, barren, and scorchingly hot on the day side, likely devoid of any oceans.',
+        hi: 'दिन के समय चट्टानी, बंजर और झुलसाने वाला गर्म, संभवतः किसी भी महासागर से रहित।',
+        bn: 'এর দিন-অংশটি পাথুরে, ঊষর এবং প্রচণ্ড উত্তপ্ত, যেখানে মহাসাগর থাকার কোনো সম্ভাবনাই নেই।'
+      },
+      exploration: {
+        en: 'Discovered in 2016 by the TRAPPIST telescope and extensively observed by the James Webb Space Telescope.',
+        hi: '2016 में ट्रैपिस्ट टेलीस्कोप द्वारा खोजा गया और जेम्स वेब स्पेस टेलीस्कोप द्वारा बड़े पैमाने पर देखा गया।',
+        bn: '২০১৬ সালে ট্রাপিস্ট টেলিস্কোপ দিয়ে এটি আবিষ্কৃত হয় এবং পরে জেমস ওয়েব স্পেস টেলিস্কোপ দিয়ে গভীরভাবে পর্যবেক্ষণ করা হয়।'
+      },
+      didYouKnow: [
+        {
+          en: 'Although often compared to Venus due to its received starlight, TRAPPIST-1c seems to have lost all its atmosphere, unlike Venus which kept a thick, toxic one.',
+          hi: 'हालांकि अक्सर प्राप्त तारों की रोशनी के कारण शुक्र से तुलना की जाती है, ट्रैपिस्ट-1सी ने अपना सारा वायुमंडल खो दिया है, शुक्र के विपरीत जिसने एक मोटा, जहरीला वायुमंडल रखा है।',
+          bn: 'নক্ষত্র থেকে পাওয়া তাপের কারণে একে প্রায়ই শুক্র গ্রহের সাথে তুলনা করা হলেও, শুক্র গ্রহ যেখানে একটি বিষাক্ত ও পুরু বায়ুমণ্ডল ধরে রেখেছে, সেখানে ট্রাপিস্ট-১সি সম্ভবত তার সমস্ত বায়ুমণ্ডল হারিয়ে ফেলেছে।'
+        },
+        {
+          en: 'If you stood on its surface, the star would look massive and glow with a deep, dull red color.',
+          hi: 'यदि आप इसकी सतह पर खड़े होते, तो तारा विशाल दिखाई देता और गहरे, सुस्त लाल रंग के साथ चमकता।',
+          bn: 'আপনি যদি এই গ্রহের পৃষ্ঠে দাঁড়ান, তবে নক্ষত্রটিকে অনেক বিশাল দেখাবে এবং এটি গাঢ়, অনুজ্জ্বল লাল রঙে জ্বলতে দেখা যাবে।'
+        }
+      ]
+    }
+  },
+  {
+    id: 'trappist-1d',
+    type: 'Exoplanet',
+    name: {
+      en: 'TRAPPIST-1d',
+      hi: 'ट्रैपिस्ट-1डी',
+      bn: 'ট্রাপিস্ট-১ডি'
+    },
+    description: {
+      en: 'The third planet in the TRAPPIST-1 system, a small rocky world that sits near the inner edge of the habitable zone.',
+      hi: 'ट्रैपिस्ट-1 प्रणाली का तीसरा ग्रह, एक छोटी चट्टानी दुनिया जो रहने योग्य क्षेत्र के आंतरिक किनारे के पास स्थित है।',
+      bn: 'ট্রাপিস্ট-১ সৌরজগতের তৃতীয় গ্রহ, যা বাসযোগ্য অঞ্চলের (Habitable Zone) ভেতরের দিকের ঠিক সীমানায় অবস্থিত একটি ছোট পাথুরে গ্রহ।'
+    },
+    distance: {
+      en: '39 Light Years',
+      hi: '39 प्रकाश वर्ष',
+      bn: '৩৯ আলোকবর্ষ'
+    },
+    radius: 0.788,
+    modelType: 'texture',
+    modelPath: '/textures/exoplanets/trappist-1d.jpg',
+    details: {
+      overview: {
+        en: 'TRAPPIST-1d is the third planet of the TRAPPIST-1 system. It is one of the smallest and lightest planets in the system, with a mass about 30% that of Earth. It orbits near the inner edge of the habitable zone, making it a subject of great interest for habitability studies.',
+        hi: 'ट्रैपिस्ट-1डी ट्रैपिस्ट-1 प्रणाली का तीसरा ग्रह है। यह प्रणाली के सबसे छोटे और सबसे हल्के ग्रहों में से एक है, जिसका द्रव्यमान पृथ्वी का लगभग 30% है। यह रहने योग्य क्षेत्र के आंतरिक किनारे के पास परिक्रमा करता है।',
+        bn: 'ট্রাপিস্ট-১ডি হলো ট্রাপিস্ট-১ সৌরজগতের তৃতীয় গ্রহ। এটি এই সৌরজগতের অন্যতম ছোট এবং হালকা একটি গ্রহ, যার ভর পৃথিবীর মাত্র ৩০%। এটি নক্ষত্রের বাসযোগ্য অঞ্চলের (Habitable Zone) ভেতরের দিকের ঠিক সীমানার কাছে আবর্তন করে, যা একে বাসযোগ্যতা গবেষণার জন্য একটি দারুণ বিষয় করে তুলেছে।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Approx. 0.38 Earths',
+          hi: 'लगभग 0.38 पृथ्वी',
+          bn: 'প্রায় ০.৩৮ গুণ (পৃথিবীর তুলনায়)'
+        },
+        diameter: {
+          en: 'Approx. 10,040 km (0.788 Earths)',
+          hi: 'लगभग 10,040 किमी (0.788 पृथ्वी)',
+          bn: 'প্রায় ১০,০৪০ কি.মি. (পৃথিবীর ০.৭৮৮ গুণ)'
+        },
+        gravity: {
+          en: 'About 60% of Earth\'s gravity',
+          hi: 'पृथ्वी के गुरुत्वाकर्षण का लगभग 60%',
+          bn: 'পৃথিবীর মধ্যাকর্ষণের প্রায় ৬০%'
+        }
+      },
+      atmosphere: {
+        en: 'Unknown, but studies suggest it could potentially hold onto a significant atmosphere, possibly even supporting liquid water.',
+        hi: 'अज्ञात, लेकिन अध्ययनों से पता चलता है कि यह संभावित रूप से एक महत्वपूर्ण वायुमंडल को पकड़ सकता है, संभवतः तरल पानी का भी समर्थन कर सकता है।',
+        bn: 'অজানা, তবে গবেষণায় ধারণা করা হয় যে এটি একটি যথেষ্ট পরিমাণ বায়ুমণ্ডল ধরে রাখতে পারে, যা এমনকি তরল পানিকেও সমর্থন করতে পারে।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits its star every 4.05 Earth days. It is presumed to be tidally locked.',
+        hi: 'हर 4.05 पृथ्वी दिनों में अपने तारे की परिक्रमा करता है। इसे टाइडली लॉक्ड माना जाता है।',
+        bn: 'এটি মাত্র ৪.০৫ দিনে এর নক্ষত্রকে একবার প্রদক্ষিণ করে। এটিও সম্ভবত টাইডালি লকড (Tidally Locked)।'
+      },
+      moons: {
+        en: 'None known',
+        hi: 'कोई ज्ञात नहीं',
+        bn: 'অজানা'
+      },
+      surface: {
+        en: 'Rocky. Its exact surface conditions depend heavily on its unknown atmosphere, ranging from a barren rock to a world with liquid water.',
+        hi: 'चट्टानी। इसकी सटीक सतह की स्थिति काफी हद तक इसके अज्ञात वायुमंडल पर निर्भर करती है, जो एक बंजर चट्टान से लेकर तरल पानी वाली दुनिया तक हो सकती है।',
+        bn: 'পাথুরে। এর পৃষ্ঠের সঠিক অবস্থা মূলত এর অজানা বায়ুমণ্ডলের ওপর নির্ভর করে, যা একে একটি শুকনো পাথুরে গ্রহ থেকে শুরু করে তরল পানিযুক্ত একটি গ্রহে পরিণত করতে পারে।'
+      },
+      exploration: {
+        en: 'Discovered in 2016 by the TRAPPIST telescope in Chile.',
+        hi: '2016 में चिली में ट्रैपिस्ट टेलीस्कोप द्वारा खोजा गया।',
+        bn: 'চিলিতে অবস্থিত ট্রাপিস্ট (TRAPPIST) টেলিস্কোপের মাধ্যমে ২০১৬ সালে এটি আবিষ্কৃত হয়।'
+      },
+      didYouKnow: [
+        {
+          en: 'It is the lightest planet in the TRAPPIST-1 system, weighing barely more than a third of Earth\'s mass.',
+          hi: 'यह ट्रैपिस्ट-1 प्रणाली का सबसे हल्का ग्रह है, जिसका वजन पृथ्वी के द्रव्यमान के एक तिहाई से भी कम है।',
+          bn: 'এটি ট্রাপিস্ট-১ সৌরজগতের সবচেয়ে হালকা গ্রহ, যার ভর পৃথিবীর ভরের এক-তৃতীয়াংশের চেয়ে সামান্য বেশি।'
+        },
+        {
+          en: 'Depending on its atmosphere, it might be just cool enough for water to condense into oceans on its surface.',
+          hi: 'इसके वायुमंडल के आधार पर, इसकी सतह पर महासागरों में संघनित होने के लिए पानी पर्याप्त ठंडा हो सकता है।',
+          bn: 'এর বায়ুমণ্ডলের ওপর ভিত্তি করে, এটি হয়তো তরল পানি থেকে মহাসাগর তৈরি হওয়ার জন্য ঠিক ততটাই ঠান্ডা হতে পারে, যতটা প্রয়োজন।'
+        }
+      ]
+    }
+  },
+  {
+    id: 'trappist-1e',
+    type: 'Exoplanet',
+    name: {
+      en: 'TRAPPIST-1e',
+      hi: 'ट्रैपिस्ट-1ई',
+      bn: 'ট্রাপিস্ট-১ই'
+    },
+    description: {
+      en: 'An Earth-sized exoplanet orbiting within the habitable zone of its star, making it a prime candidate for holding liquid water.',
+      hi: 'अपने तारे के रहने योग्य क्षेत्र के भीतर परिक्रमा करने वाला एक पृथ्वी के आकार का एक्सोप्लैनेट, जो इसे तरल पानी रखने के लिए एक प्रमुख उम्मीदवार बनाता है।',
+      bn: 'নক্ষত্রের বাসযোগ্য অঞ্চলের (Habitable Zone) ঠিক মাঝখানে অবস্থিত একটি পৃথিবীর আকারের এক্সোপ্ল্যানেট, যা তরল পানি ধারণ করার জন্য অন্যতম প্রধান প্রার্থী।'
+    },
+    distance: {
+      en: '39 Light Years',
+      hi: '39 प्रकाश वर्ष',
+      bn: '৩৯ আলোকবর্ষ'
+    },
+    radius: 0.920,
+    modelType: 'texture',
+    modelPath: '/textures/exoplanets/trappist-1e.jpg',
+    details: {
+      overview: {
+        en: 'TRAPPIST-1e is the fourth planet of the TRAPPIST-1 system and sits comfortably within its star’s habitable zone. With a mass and radius remarkably close to Earth’s, it is considered one of the most promising potentially habitable exoplanets discovered so far.',
+        hi: 'ट्रैपिस्ट-1ई ट्रैपिस्ट-1 प्रणाली का चौथा ग्रह है और अपने तारे के रहने योग्य क्षेत्र के भीतर आराम से बैठता है। पृथ्वी के उल्लेखनीय रूप से करीब द्रव्यमान और त्रिज्या के साथ, इसे अब तक खोजे गए सबसे होनहार संभावित रूप से रहने योग्य एक्सोप्लैनेट में से एक माना जाता है।',
+        bn: 'ট্রাপিস্ট-১ই হলো ট্রাপিস্ট-১ সৌরজগতের চতুর্থ গ্রহ, যা নক্ষত্রের বাসযোগ্য অঞ্চলের (Habitable Zone) ঠিক মাঝখানে অবস্থিত। এর ভর এবং আকার পৃথিবীর প্রায় সমান হওয়ায়, এটি এখন পর্যন্ত আবিষ্কৃত সম্ভাব্য বাসযোগ্য এক্সোপ্ল্যানেটগুলোর মধ্যে অন্যতম সেরা।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Approx. 0.69 Earths',
+          hi: 'लगभग 0.69 पृथ्वी',
+          bn: 'প্রায় ০.৬৯ গুণ (পৃথিবীর তুলনায়)'
+        },
+        diameter: {
+          en: 'Approx. 11,730 km (0.920 Earths)',
+          hi: 'लगभग 11,730 किमी (0.920 पृथ्वी)',
+          bn: 'প্রায় ১১,৭৩০ কি.মি. (পৃথিবীর ০.৯২ গুণ)'
+        },
+        gravity: {
+          en: 'About 82% of Earth\'s gravity',
+          hi: 'पृथ्वी के गुरुत्वाकर्षण का लगभग 82%',
+          bn: 'পৃথিবীর মধ্যাকর্ষণের প্রায় ৮২%'
+        }
+      },
+      atmosphere: {
+        en: 'Current research suggests it may possess a compact, heavier atmosphere (similar to Earth’s) rather than a puffy hydrogen one, which is favorable for habitability.',
+        hi: 'वर्तमान शोध से पता चलता है कि इसमें एक फूले हुए हाइड्रोजन वायुमंडल के बजाय एक सघन, भारी वायुमंडल (पृथ्वी के समान) हो सकता है, जो रहने की क्षमता के लिए अनुकूल है।',
+        bn: 'বর্তমান গবেষণায় ধারণা করা হয় যে, এর বায়ুমণ্ডলটি হয়তো পৃথিবীর মতোই একটি ঘন ও ভারী বায়ুমণ্ডল, যা এর বাসযোগ্য হওয়ার সম্ভাবনাকে আরও বাড়িয়ে দেয়।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits its star in 6.1 Earth days. Like its siblings, it is likely tidally locked.',
+        hi: '6.1 पृथ्वी दिनों में अपने तारे की परिक्रमा करता है। अपने भाई-बहनों की तरह, इसके टाइडली लॉक्ड होने की संभावना है।',
+        bn: 'এটি ৬.১ দিনে নক্ষত্রকে প্রদক্ষিণ করে। সৌরজগতের অন্যান্য গ্রহের মতোই এটিও সম্ভবত টাইডালি লকড (Tidally Locked)।'
+      },
+      moons: {
+        en: 'None known',
+        hi: 'कोई ज्ञात नहीं',
+        bn: 'অজানা'
+      },
+      surface: {
+        en: 'Thought to be rocky. If it has the right atmosphere, it could host oceans of liquid water on its surface.',
+        hi: 'चट्टानी माना जाता है। यदि इसके पास सही वायुमंडल है, तो यह अपनी सतह पर तरल पानी के महासागरों की मेजबानी कर सकता है।',
+        bn: 'ধারণা করা হয় এটি একটি পাথুরে গ্রহ। যদি এর সঠিক বায়ুমণ্ডল থাকে, তবে এর পৃষ্ঠে তরল পানির মহাসাগর থাকতে পারে।'
+      },
+      exploration: {
+        en: 'Discovered in 2017 using the Spitzer Space Telescope and ground-based observatories.',
+        hi: '2017 में स्पिट्जर स्पेस टेलीस्कोप और जमीन-आधारित वेधशालाओं का उपयोग करके खोजा गया।',
+        bn: '২০১৭ সালে স্পিৎজার স্পেস টেলিস্কোপ এবং ভূপৃষ্ঠের অবজারভেটরির মাধ্যমে এটি আবিষ্কৃত হয়।'
+      },
+      didYouKnow: [
+        {
+          en: 'It receives almost the exact same amount of solar energy as Earth receives from the Sun, making its temperatures potentially very Earth-like.',
+          hi: 'यह लगभग उतनी ही सौर ऊर्जा प्राप्त करता है जितनी पृथ्वी सूर्य से प्राप्त करती है, जिससे इसका तापमान संभावित रूप से बहुत पृथ्वी जैसा हो जाता है।',
+          bn: 'পৃথিবী সূর্য থেকে ঠিক যতটুকু তাপ ও শক্তি পায়, এই গ্রহটিও এর নক্ষত্র থেকে প্রায় ততটুকুই শক্তি পায়। ফলে এর তাপমাত্রা অনেকটা পৃথিবীর মতোই হতে পারে।'
+        },
+        {
+          en: 'Because the TRAPPIST-1 planets are so close to each other, you could look up into the sky of TRAPPIST-1e and see its neighboring planets appearing as large as our Moon, or even larger.',
+          hi: 'चूंकि ट्रैपिस्ट-1 ग्रह एक-दूसरे के बहुत करीब हैं, इसलिए आप ट्रैपिस्ट-1ई के आकाश में देख सकते हैं और इसके पड़ोसी ग्रहों को हमारे चंद्रमा के रूप में या उससे भी बड़ा देख सकते हैं।',
+          bn: 'ট্রাপিস্ট-১ সৌরজগতের গ্রহগুলো একে অপরের এত কাছাকাছি অবস্থিত যে, আপনি যদি ট্রাপিস্ট-১ই এর আকাশে তাকান, তবে এর পাশের গ্রহগুলোকে চাঁদের মতো বা তার চেয়েও অনেক বড় দেখতে পাবেন।'
+        }
+      ]
+    }
+  },
+  {
+    id: 'trappist-1f',
+    type: 'Exoplanet',
+    name: {
+      en: 'TRAPPIST-1f',
+      hi: 'ट्रैपिस्ट-1एफ',
+      bn: 'ট্রাপিস্ট-১এফ'
+    },
+    description: {
+      en: 'An Earth-sized planet in the outer habitable zone of TRAPPIST-1, potentially an icy world or one with a thick atmosphere.',
+      hi: 'ट्रैपिस्ट-1 के बाहरी रहने योग्य क्षेत्र में एक पृथ्वी के आकार का ग्रह, संभावित रूप से एक बर्फीली दुनिया या घने वायुमंडल वाला।',
+      bn: 'ট্রাপিস্ট-১ নক্ষত্রের বাসযোগ্য অঞ্চলের বাইরের দিকে অবস্থিত একটি পৃথিবীর আকারের গ্রহ। এটি একটি বরফে ঢাকা বিশ্ব হতে পারে অথবা এর ঘন বায়ুমণ্ডল থাকতে পারে।'
+    },
+    distance: {
+      en: '39 Light Years',
+      hi: '39 प्रकाश वर्ष',
+      bn: '৩৯ আলোকবর্ষ'
+    },
+    radius: 1.045,
+    modelType: 'texture',
+    modelPath: '/textures/exoplanets/trappist-1f.jpg',
+    details: {
+      overview: {
+        en: 'TRAPPIST-1f is the fifth planet from its star, orbiting near the outer edge of the habitable zone. It is similar in size to Earth but slightly less massive, which suggests it might be rich in water—either as global oceans, ice shells, or thick vapor depending on its atmosphere.',
+        hi: 'ट्रैपिस्ट-1एफ अपने तारे से पांचवां ग्रह है, जो रहने योग्य क्षेत्र के बाहरी किनारे के पास परिक्रमा करता है। यह आकार में पृथ्वी के समान है लेकिन थोड़ा कम विशाल है, जो बताता है कि यह पानी से समृद्ध हो सकता है।',
+        bn: 'ট্রাপিস্ট-১এফ হলো এর নক্ষত্র থেকে পঞ্চম গ্রহ, যা বাসযোগ্য অঞ্চলের বাইরের দিকের সীমানার কাছে আবর্তন করে। এর আকার পৃথিবীর মতোই, তবে ভর কিছুটা কম। ধারণা করা হয় যে এটিতে প্রচুর পরিমাণে পানি থাকতে পারে, যা এর বায়ুমণ্ডলের ওপর নির্ভর করে বরফ, মহাসাগর বা ঘন বাষ্প হিসেবে থাকতে পারে।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Approx. 0.68 Earths',
+          hi: 'लगभग 0.68 पृथ्वी',
+          bn: 'প্রায় ০.৬৮ গুণ (পৃথিবীর তুলনায়)'
+        },
+        diameter: {
+          en: 'Approx. 13,320 km (1.045 Earths)',
+          hi: 'लगभग 13,320 किमी (1.045 पृथ्वी)',
+          bn: 'প্রায় ১৩,৩২০ কি.মি. (পৃথিবীর ১.০৪৫ গুণ)'
+        },
+        gravity: {
+          en: 'About 62% of Earth\'s gravity',
+          hi: 'पृथ्वी के गुरुत्वाकर्षण का लगभग 62%',
+          bn: 'পৃথিবীর মধ্যাকর্ষণের প্রায় ৬২%'
+        }
+      },
+      atmosphere: {
+        en: 'It is a prime target for the James Webb Space Telescope to check for a thick, heat-trapping atmosphere that could keep its surface warm enough for liquid water.',
+        hi: 'तरल पानी के लिए इसकी सतह को पर्याप्त गर्म रखने वाले एक मोटे, गर्मी-फंसाने वाले वायुमंडल की जांच करने के लिए यह जेम्स वेब स्पेस टेलीस्कोप का एक प्रमुख लक्ष्य है।',
+        bn: 'এর পৃষ্ঠকে তরল পানির জন্য যথেষ্ট উষ্ণ রাখতে পারে এমন কোনো ঘন এবং তাপ আটকে রাখার মতো বায়ুমণ্ডল আছে কি না, তা জেমস ওয়েব স্পেস টেলিস্কোপ দিয়ে গবেষণা করার জন্য এটি একটি অন্যতম প্রধান লক্ষ্য।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits its star every 9.2 Earth days. Expected to be tidally locked.',
+        hi: 'हर 9.2 पृथ्वी दिनों में अपने तारे की परिक्रमा करता है। इसके टाइडली लॉक्ड होने की उम्मीद है।',
+        bn: 'এটি ৯.২ দিনে নক্ষত্রকে প্রদক্ষিণ করে। এটিও টাইডালি লকড (Tidally Locked) বলে ধারণা করা হয়।'
+      },
+      moons: {
+        en: 'None known',
+        hi: 'कोई ज्ञात नहीं',
+        bn: 'অজানা'
+      },
+      surface: {
+        en: 'Without a thick greenhouse atmosphere, its surface is likely covered in ice. With enough greenhouse gases, it could have a global ocean.',
+        hi: 'एक मोटे ग्रीनहाउस वायुमंडल के बिना, इसकी सतह संभवतः बर्फ से ढकी है। पर्याप्त ग्रीनहाउस गैसों के साथ, इसमें एक वैश्विक महासागर हो सकता है।',
+        bn: 'গ্রিনহাউস গ্যাসের কোনো ঘন বায়ুমণ্ডল না থাকলে, এর পৃষ্ঠ সম্ভবত বরফে ঢাকা থাকবে। তবে পর্যাপ্ত গ্রিনহাউস গ্যাস থাকলে এটি একটি সম্পূর্ণ মহাসাগরীয় গ্রহ হতে পারে।'
+      },
+      exploration: {
+        en: 'Discovered in 2017 using the Spitzer Space Telescope and ground-based telescopes.',
+        hi: '2017 में स्पिट्जर स्पेस टेलीस्कोप और जमीन-आधारित दूरबीनों का उपयोग करके खोजा गया।',
+        bn: '২০১৭ সালে স্পিৎজার স্পেস টেলিস্কোপ এবং ভূপৃষ্ঠের টেলিস্কোপের মাধ্যমে এটি আবিষ্কৃত হয়।'
+      },
+      didYouKnow: [
+        {
+          en: 'Because of its slightly lower density compared to Earth, some models suggest TRAPPIST-1f could be up to 20% water by mass—far more water than Earth has.',
+          hi: 'पृथ्वी की तुलना में इसके थोड़े कम घनत्व के कारण, कुछ मॉडल बताते हैं कि ट्रैपिस्ट-1एफ में द्रव्यमान के हिसाब से 20% तक पानी हो सकता है - पृथ्वी की तुलना में बहुत अधिक पानी।',
+          bn: 'পৃথিবীর তুলনায় এর ঘনত্ব কিছুটা কম হওয়ায় কিছু গবেষণায় ধারণা করা হয় যে, ট্রাপিস্ট-১এফ এর মোট ভরের প্রায় ২০% অংশই হতে পারে পানি—যা পৃথিবীর মোট পানির পরিমাণের চেয়ে বহুগুণ বেশি!'
+        },
+        {
+          en: 'Its star, TRAPPIST-1, is so dim that high noon on TRAPPIST-1f would look no brighter than a sunset on Earth.',
+          hi: 'इसका तारा, ट्रैपिस्ट-1, इतना मंद है कि ट्रैपिस्ट-1एफ पर दोपहर पृथ्वी पर सूर्यास्त से अधिक उज्ज्वल नहीं दिखेगी।',
+          bn: 'এর নক্ষত্র ট্রাপিস্ট-১ এতই অনুজ্জ্বল যে, ট্রাপিস্ট-১এফ গ্রহে ঠিক দুপুরের সময়কার আলোও পৃথিবীতে সূর্যাস্তের সময়ের আলোর চেয়ে বেশি উজ্জ্বল মনে হবে না।'
+        }
+      ]
+    }
   }
 ];
