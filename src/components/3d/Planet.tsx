@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useRef, useState, useMemo } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 import { useTexture } from '@react-three/drei';
@@ -27,6 +27,21 @@ function TexturedMaterial({ planet }: { planet: PlanetData }) {
     />
   );
 }
+
+function TexturedRingMaterial({ textureUrl }: { textureUrl: string }) {
+  const texture = useTexture(textureUrl);
+  return (
+    <meshStandardMaterial 
+      map={texture}
+      color="#ffffff"
+      transparent 
+      opacity={0.9} 
+      side={THREE.DoubleSide} 
+    />
+  );
+}
+
+import { GeneratedRingMaterial } from './GeneratedRingMaterial';
 
 export function Planet({ planet, sizeScale = 1, distanceScale = 1, speedScale = 1 }: PlanetProps) {
   const groupRef = useRef<THREE.Group>(null);
@@ -111,13 +126,19 @@ export function Planet({ planet, sizeScale = 1, distanceScale = 1, speedScale = 
       {/* Optional Rings */}
       {planet.hasRings && (
         <mesh ref={ringsRef} rotation={[-Math.PI / 2 + 0.3, 0, 0]}>
-          <ringGeometry args={[scaledRadius * 1.5, scaledRadius * 2.5, segments]} />
-          <meshStandardMaterial 
-            color={planet.color} 
-            transparent 
-            opacity={0.8} 
-            side={THREE.DoubleSide} 
-          />
+          <ringGeometry args={[scaledRadius * 1.2, scaledRadius * 2.1, segments]} />
+          {planet.id === 'saturn' ? (
+            <GeneratedRingMaterial />
+          ) : planet.ringTextureUrl ? (
+            <TexturedRingMaterial textureUrl={planet.ringTextureUrl} />
+          ) : (
+            <meshStandardMaterial 
+              color={planet.color} 
+              transparent 
+              opacity={0.8} 
+              side={THREE.DoubleSide} 
+            />
+          )}
         </mesh>
       )}
 

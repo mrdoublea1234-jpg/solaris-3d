@@ -30,6 +30,7 @@ export interface PlanetData {
   rotationSpeed: number;    // Multiplier for axial rotation
   color: string;            // Primary base color
   hasRings?: boolean;       // Specific to Saturn/Uranus
+  ringTextureUrl?: string;  // Texture for the rings
   atmosphereColor?: string; // Optional atmosphere glow
   textureUrl?: string;      // Placeholder for future textures
   highResTextureUrl?: string; // High-quality 2K/4K realistic texture

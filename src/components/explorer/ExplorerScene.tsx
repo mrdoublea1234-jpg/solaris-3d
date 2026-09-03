@@ -8,6 +8,7 @@ import { useRef, Suspense } from 'react';
 import { useWebGL, isMobileDevice } from '@/hooks/useWebGL';
 import { WebGLFallback } from '@/components/ui/WebGLFallback';
 import { useAppStore } from '@/store/useAppStore';
+import { GeneratedRingMaterial } from '@/components/3d/GeneratedRingMaterial';
 
 interface IsolatedBodyProps {
   planet: PlanetData;
@@ -84,13 +85,17 @@ function IsolatedBody({ planet, interactingRef }: IsolatedBodyProps & { interact
 
       {planet.hasRings && (
         <mesh ref={ringsRef} rotation={[-Math.PI / 2 + 0.3, 0, 0]}>
-          <ringGeometry args={[planet.radius * 1.5, planet.radius * 2.5, 64]} />
-          <meshStandardMaterial
-            color={planet.color}
-            transparent
-            opacity={0.8}
-            side={THREE.DoubleSide}
-          />
+          <ringGeometry args={[planet.radius * 1.2, planet.radius * 2.1, 64]} />
+          {planet.id === 'saturn' ? (
+            <GeneratedRingMaterial />
+          ) : (
+            <meshStandardMaterial
+              color={planet.color}
+              transparent
+              opacity={0.8}
+              side={THREE.DoubleSide}
+            />
+          )}
         </mesh>
       )}
 
@@ -111,7 +116,10 @@ function IsolatedBody({ planet, interactingRef }: IsolatedBodyProps & { interact
 }
 
 export function ExplorerScene({ planet }: { planet: PlanetData }) {
-  const cameraDistance = planet.radius * 3.5;
+  const isMobile = isMobileDevice();
+  const cameraDistance = planet.hasRings 
+    ? (isMobile ? planet.radius * 5.5 : planet.radius * 7.0) 
+    : planet.radius * 3.5;
   const hasWebGL = useWebGL();
   const { performanceMode } = useAppStore();
   const effectiveMode = performanceMode === 'auto' ? (isMobileDevice() ? 'low' : 'high') : performanceMode;
