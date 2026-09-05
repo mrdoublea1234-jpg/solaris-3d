@@ -1610,5 +1610,835 @@ export const exoplanets: ExoplanetData[] = [
         }
       ]
     }
+  },
+  {
+    id: 'trappist-1g',
+    type: 'Exoplanet',
+    name: {
+      en: 'TRAPPIST-1g',
+      hi: 'ट्रैपिस्ट-1जी',
+      bn: 'ট্রাপিস্ট-১জি'
+    },
+    description: {
+      en: 'The largest planet in the TRAPPIST-1 system, located just outside the habitable zone, likely a cold and icy world.',
+      hi: 'ट्रैपिस्ट-1 प्रणाली का सबसे बड़ा ग्रह, जो रहने योग्य क्षेत्र के ठीक बाहर स्थित है, संभवतः एक ठंडी और बर्फीली दुनिया।',
+      bn: 'ট্রাপিস্ট-১ সৌরজগতের সবচেয়ে বড় গ্রহ, যা বাসযোগ্য অঞ্চলের ঠিক বাইরে অবস্থিত। এটি সম্ভবত একটি বরফ আচ্ছাদিত শীতল গ্রহ।'
+    },
+    distance: {
+      en: '39 Light Years',
+      hi: '39 प्रकाश वर्ष',
+      bn: '৩৯ আলোকবর্ষ'
+    },
+    radius: 1.127,
+    modelType: 'texture',
+    modelPath: '/textures/exoplanets/trappist-1g.jpg',
+    details: {
+      overview: {
+        en: 'TRAPPIST-1g is the sixth planet from the star and the largest in the TRAPPIST-1 system. Orbiting just beyond the traditional habitable zone, it receives significantly less starlight than Earth, making it a very cold world that may be completely frozen.',
+        hi: 'ट्रैपिस्ट-1जी तारे से छठा ग्रह है और ट्रैपिस्ट-1 प्रणाली में सबसे बड़ा है। पारंपरिक रहने योग्य क्षेत्र के ठीक परे परिक्रमा करते हुए, यह पृथ्वी की तुलना में काफी कम तारों की रोशनी प्राप्त करता है, जिससे यह एक बहुत ठंडी दुनिया बन जाती है जो पूरी तरह से जमी हुई हो सकती है।',
+        bn: 'ট্রাপিস্ট-১জি হলো নক্ষত্র থেকে ষষ্ঠ এবং পুরো ট্রাপিস্ট-১ সৌরজগতের সবচেয়ে বড় গ্রহ। এটি বাসযোগ্য অঞ্চলের ঠিক বাইরে অবস্থান করছে বলে পৃথিবী থেকে অনেক কম আলো ও তাপ গ্রহণ করে, যা একে সম্পূর্ণ বরফে ঢাকা একটি অত্যন্ত শীতল গ্রহে পরিণত করে থাকতে পারে।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Approx. 1.32 Earths',
+          hi: 'लगभग 1.32 पृथ्वी',
+          bn: 'প্রায় ১.৩২ গুণ (পৃথিবীর তুলনায়)'
+        },
+        diameter: {
+          en: 'Approx. 14,360 km (1.127 Earths)',
+          hi: 'लगभग 14,360 किमी (1.127 पृथ्वी)',
+          bn: 'প্রায় ১৪,৩৬০ কি.মি. (পৃথিবীর ১.১২৭ গুণ)'
+        },
+        gravity: {
+          en: 'Slightly stronger than Earth',
+          hi: 'पृथ्वी से थोड़ा मजबूत',
+          bn: 'পৃথিবীর চেয়ে সামান্য বেশি'
+        }
+      },
+      atmosphere: {
+        en: 'It is expected to lack a primordial hydrogen-helium atmosphere, but might have a secondary atmosphere created by volcanic outgassing, though it would be very cold.',
+        hi: 'इसमें एक आदिम हाइड्रोजन-हीलियम वायुमंडल की कमी होने की उम्मीद है, लेकिन ज्वालामुखीय आउटगैसिंग द्वारा बनाया गया एक द्वितीयक वायुमंडल हो सकता है, हालांकि यह बहुत ठंडा होगा।',
+        bn: 'আদিম হাইড্রোজেন-হিলিয়ামের কোনো বায়ুমণ্ডল এতে না থাকারই সম্ভাবনা বেশি। তবে আগ্নেয়গিরির কারণে সৃষ্ট কোনো গৌণ বায়ুমণ্ডল এতে থাকতে পারে, যদিও সেটি অত্যন্ত শীতল হবে।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits its star every 12.4 Earth days. Likely tidally locked.',
+        hi: 'हर 12.4 पृथ्वी दिनों में अपने तारे की परिक्रमा करता है। संभवतः टाइडली लॉक्ड।',
+        bn: 'এটি ১২.৪ দিনে নক্ষত্রকে একবার প্রদক্ষিণ করে। সম্ভবত এটিও টাইডালি লকড (Tidally Locked)।'
+      },
+      moons: {
+        en: 'None known',
+        hi: 'कोई ज्ञात नहीं',
+        bn: 'অজানা'
+      },
+      surface: {
+        en: 'Likely a global ice sheet. If it has a dense enough atmosphere or internal heating from tidal forces, there might be a subsurface ocean.',
+        hi: 'संभवतः एक वैश्विक बर्फ की चादर। यदि इसके पास पर्याप्त घना वायुमंडल या ज्वारीय बलों से आंतरिक ताप है, तो एक उपसतह महासागर हो सकता है।',
+        bn: 'সম্ভবত এটি পুরোটাই বরফে ঢাকা একটি গ্রহ। যদি এর বায়ুমণ্ডল যথেষ্ট ঘন হয় অথবা টাইডাল ফোর্স থেকে কোনো অভ্যন্তরীণ তাপ তৈরি হয়, তবে বরফের নিচে কোনো মহাসাগর থাকতেও পারে।'
+      },
+      exploration: {
+        en: 'Discovered in 2017 using the Spitzer Space Telescope and ground-based telescopes.',
+        hi: '2017 में स्पिट्जर स्पेस टेलीस्कोप और जमीन-आधारित दूरबीनों का उपयोग करके खोजा गया।',
+        bn: '২০১৭ সালে স্পিৎজার স্পেস টেলিস্কোপ এবং ভূপৃষ্ঠের টেলিস্কোপের মাধ্যমে এটি আবিষ্কৃত হয়।'
+      },
+      didYouKnow: [
+        {
+          en: 'Despite being the largest planet in its system, TRAPPIST-1g is still only about 13% wider than Earth.',
+          hi: 'अपनी प्रणाली में सबसे बड़ा ग्रह होने के बावजूद, ट्रैपिस्ट-1जी अभी भी पृथ्वी की तुलना में केवल लगभग 13% चौड़ा है।',
+          bn: 'সৌরজগতের সবচেয়ে বড় গ্রহ হওয়া সত্ত্বেও, ট্রাপিস্ট-১জি পৃথিবীর তুলনায় মাত্র ১৩% বেশি চওড়া।'
+        },
+        {
+          en: 'Because it orbits so far from its dim star, the starlight reaching TRAPPIST-1g is hundreds of times weaker than the sunlight we feel on Earth.',
+          hi: 'चूंकि यह अपने मंद तारे से बहुत दूर परिक्रमा करता है, ट्रैपिस्ट-1जी तक पहुंचने वाले तारों की रोशनी उस धूप से सैकड़ों गुना कमजोर है जिसे हम पृथ्वी पर महसूस करते हैं।',
+          bn: 'অনুজ্জ্বল নক্ষত্র থেকে অনেকটা দূরে আবর্তন করায়, ট্রাপিস্ট-১জি যে পরিমাণ আলো পায়, তা পৃথিবীতে আমাদের পাওয়া সূর্যের আলোর চেয়ে শত শত গুণ বেশি দুর্বল।'
+        }
+      ]
+    }
+  },
+  {
+    id: 'trappist-1h',
+    type: 'Exoplanet',
+    name: {
+      en: 'TRAPPIST-1h',
+      hi: 'ट्रैपिस्ट-1एच',
+      bn: 'ট্রাপিস্ট-১এইচ'
+    },
+    description: {
+      en: 'The farthest and smallest planet in the TRAPPIST-1 system, an extremely cold world located well outside the habitable zone.',
+      hi: 'ट्रैपिस्ट-1 प्रणाली में सबसे दूर और सबसे छोटा ग्रह, जो रहने योग्य क्षेत्र के बाहर स्थित एक अत्यंत ठंडी दुनिया है।',
+      bn: 'ট্রাপিস্ট-১ সৌরজগতের সবচেয়ে দূরবর্তী এবং সবচেয়ে ছোট গ্রহ, যা বাসযোগ্য অঞ্চলের অনেক বাইরে অবস্থিত একটি অত্যন্ত শীতল বিশ্ব।'
+    },
+    distance: {
+      en: '39 Light Years',
+      hi: '39 प्रकाश वर्ष',
+      bn: '৩৯ আলোকবর্ষ'
+    },
+    radius: 0.755,
+    modelType: 'texture',
+    modelPath: '/textures/exoplanets/trappist-1h.jpg',
+    details: {
+      overview: {
+        en: 'TRAPPIST-1h is the seventh and outermost known planet of the TRAPPIST-1 system. It is also the smallest, with a mass less than a third of Earth\'s. Orbiting far beyond the habitable zone, it is a frozen world, likely resembling a large icy moon more than a typical planet.',
+        hi: 'ट्रैपिस्ट-1एच ट्रैपिस्ट-1 प्रणाली का सातवां और सबसे बाहरी ज्ञात ग्रह है। यह पृथ्वी के एक तिहाई से भी कम द्रव्यमान वाला सबसे छोटा ग्रह भी है।',
+        bn: 'ট্রাপিস্ট-১এইচ হলো ট্রাপিস্ট-১ সৌরজগতের সপ্তম এবং সবচেয়ে বাইরের দিকের গ্রহ। এটি এই সিস্টেমের সবচেয়ে ছোট গ্রহও বটে, যার ভর পৃথিবীর তিনভাগের একভাগের চেয়েও কম। বাসযোগ্য অঞ্চলের অনেক দূরে অবস্থিত হওয়ায় এটি পুরোপুরি বরফে ঢাকা, যা দেখতে সাধারণ কোনো গ্রহের চেয়ে বরফ আচ্ছাদিত বিশাল কোনো উপগ্রহের মতোই মনে হয়।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Approx. 0.33 Earths',
+          hi: 'लगभग 0.33 पृथ्वी',
+          bn: 'প্রায় ০.৩৩ গুণ (পৃথিবীর তুলনায়)'
+        },
+        diameter: {
+          en: 'Approx. 9,620 km (0.755 Earths)',
+          hi: 'लगभग 9,620 किमी (0.755 पृथ्वी)',
+          bn: 'প্রায় ৯,৬২০ কি.মি. (পৃথিবীর ০.৭৫৫ গুণ)'
+        },
+        gravity: {
+          en: 'About 57% of Earth\'s gravity',
+          hi: 'पृथ्वी के गुरुत्वाकर्षण का लगभग 57%',
+          bn: 'পৃথিবীর মধ্যাকর্ষণের প্রায় ৫৭%'
+        }
+      },
+      atmosphere: {
+        en: 'Expected to have no significant atmosphere, or perhaps a very thin exosphere, due to its low gravity and extreme cold.',
+        hi: 'इसके कम गुरुत्वाकर्षण और अत्यधिक ठंड के कारण कोई महत्वपूर्ण वायुमंडल नहीं होने की उम्मीद है, या शायद एक बहुत पतला एक्सोस्फीयर।',
+        bn: 'এর অত্যন্ত কম মধ্যাকর্ষণ এবং প্রচণ্ড ঠান্ডার কারণে এতে কোনো উল্লেখযোগ্য বায়ুমণ্ডল থাকার সম্ভাবনা নেই, তবে খুব পাতলা কোনো এক্সোস্ফিয়ার থাকতে পারে।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits its star every 18.8 Earth days. Like the others, it is likely tidally locked.',
+        hi: 'हर 18.8 पृथ्वी दिनों में अपने तारे की परिक्रमा करता है। दूसरों की तरह, इसके टाइडली लॉक्ड होने की संभावना है।',
+        bn: 'এটি ১৮.৮ দিনে নক্ষত্রকে একবার প্রদক্ষিণ করে। সৌরজগতের অন্যান্য গ্রহের মতোই এটিও সম্ভবত টাইডালি লকড (Tidally Locked)।'
+      },
+      moons: {
+        en: 'None known',
+        hi: 'कोई ज्ञात नहीं',
+        bn: 'অজানা'
+      },
+      surface: {
+        en: 'Most likely completely frozen, covered in a global shell of ice.',
+        hi: 'सबसे अधिक संभावना पूरी तरह से जमी हुई है, जो बर्फ के वैश्विक आवरण से ढकी है।',
+        bn: 'খুব সম্ভবত এটি সম্পূর্ণভাবে বরফে ঢাকা, যার পুরো পৃষ্ঠটিই একটি বিশাল বরফের খোলস দিয়ে মোড়ানো।'
+      },
+      exploration: {
+        en: 'Its existence was confirmed in 2017 after further analysis of data from the Spitzer Space Telescope and ground observatories.',
+        hi: '2017 में स्पिट्जर स्पेस टेलीस्कोप और ग्राउंड वेधशालाओं से डेटा के आगे के विश्लेषण के बाद इसके अस्तित्व की पुष्टि की गई थी।',
+        bn: 'স্পিৎজার স্পেস টেলিস্কোপ এবং ভূপৃষ্ঠের অবজারভেটরির ডেটা আরও গভীরভাবে বিশ্লেষণ করার পর ২০১৭ সালে এর অস্তিত্ব নিশ্চিত করা হয়।'
+      },
+      didYouKnow: [
+        {
+          en: 'Even though it is the farthest planet in its system, TRAPPIST-1h is still closer to its star than Mercury is to our Sun.',
+          hi: 'भले ही यह अपने सिस्टम का सबसे दूर का ग्रह है, ट्रैपिस्ट-1एच अभी भी बुध की तुलना में अपने तारे के करीब है जो हमारे सूर्य के करीब है।',
+          bn: 'সৌরজগতের সবচেয়ে দূরের গ্রহ হওয়া সত্ত্বেও, আমাদের সূর্য থেকে বুধ (Mercury) গ্রহের যে দূরত্ব, তার চেয়েও ট্রাপিস্ট-১এইচ এর নক্ষত্রের দূরত্ব অনেক কম!'
+        },
+        {
+          en: 'Because of its small size and low temperature, TRAPPIST-1h receives similar amounts of energy as the dwarf planet Ceres in our Solar System.',
+          hi: 'अपने छोटे आकार और कम तापमान के कारण, ट्रैपिस्ट-1एच को हमारे सौर मंडल में बौने ग्रह सेरेस के समान ऊर्जा प्राप्त होती है।',
+          bn: 'এর ছোট আকার এবং প্রচণ্ড কম তাপমাত্রার কারণে, আমাদের সৌরজগতের বামন গ্রহ সেরেস (Ceres) যে পরিমাণ শক্তি পায়, ট্রাপিস্ট-১এইচ ঠিক ততটুকুই শক্তি গ্রহণ করে।'
+        }
+      ]
+    }
+  },
+  {
+    id: 'proxima-centauri-d',
+    type: 'Exoplanet',
+    name: {
+      en: 'Proxima Centauri d',
+      hi: 'प्रॉक्सिमा सेंटॉरी डी',
+      bn: 'প্রক্সিমা সেন্টোরি ডি'
+    },
+    description: {
+      en: 'A sub-Earth exoplanet orbiting extremely close to Proxima Centauri, making it one of the lightest known exoplanets.',
+      hi: 'प्रॉक्सिमा सेंटॉरी के बेहद करीब परिक्रमा करने वाला एक उप-पृथ्वी एक्सोप्लैनेट, जो इसे सबसे हल्के ज्ञात एक्सोप्लैनेट में से एक बनाता है।',
+      bn: 'এটি প্রক্সিমা সেন্টোরি নক্ষত্রের খুব কাছাকাছি আবর্তনকারী একটি সাব-আর্থ (পৃথিবীর চেয়ে ছোট) এক্সোপ্ল্যানেট, যা এখন পর্যন্ত আবিষ্কৃত সবচেয়ে হালকা এক্সোপ্ল্যানেটগুলোর মধ্যে একটি।'
+    },
+    distance: {
+      en: '4.24 Light Years',
+      hi: '4.24 प्रकाश वर्ष',
+      bn: '৪.২৪ আলোকবর্ষ'
+    },
+    radius: 0.81,
+    modelType: 'texture',
+    modelPath: '/textures/exoplanets/proxima-centauri-d.jpg',
+    details: {
+      overview: {
+        en: 'Proxima Centauri d is the innermost and smallest known planet in the Proxima Centauri system. Orbiting its star at an incredibly close distance, it zips around in just a few days. Its discovery highlighted the ability of modern instruments to detect incredibly light planets.',
+        hi: 'प्रॉक्सिमा सेंटॉरी डी प्रॉक्सिमा सेंटॉरी प्रणाली में सबसे भीतरी और सबसे छोटा ज्ञात ग्रह है। अपने तारे की अविश्वसनीय रूप से करीब से परिक्रमा करते हुए, यह कुछ ही दिनों में चक्कर लगाता है।',
+        bn: 'প্রক্সিমা সেন্টোরি ডি হলো প্রক্সিমা সেন্টোরি সৌরজগতের সবচেয়ে ভেতরের এবং সবচেয়ে ছোট গ্রহ। এটি নক্ষত্রের এতটাই কাছে থেকে প্রদক্ষিণ করে যে, মাত্র কয়েক দিনের মধ্যেই এর এক বছর পূর্ণ হয়ে যায়। এর আবিষ্কার প্রমাণ করে যে, আধুনিক যন্ত্রপাতি দিয়ে এখন অত্যন্ত হালকা ভরের গ্রহও শনাক্ত করা সম্ভব।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Approx. 0.26 Earths (Minimum)',
+          hi: 'लगभग 0.26 पृथ्वी (न्यूनतम)',
+          bn: 'প্রায় ০.২৬ গুণ (পৃথিবীর তুলনায়)'
+        },
+        diameter: {
+          en: 'Estimated ~10,300 km (0.81 Earths)',
+          hi: 'अनुमानित ~10,300 किमी (0.81 पृथ्वी)',
+          bn: 'আনুমানিক ১০,৩০০ কি.মি. (পৃথিবীর ০.৮১ গুণ)'
+        },
+        gravity: {
+          en: 'Roughly 40% of Earth\'s gravity',
+          hi: 'पृथ्वी के गुरुत्वाकर्षण का लगभग 40%',
+          bn: 'পৃথিবীর মধ্যাকর্ষণের প্রায় ৪০%'
+        }
+      },
+      atmosphere: {
+        en: 'Because it orbits so close to its active red dwarf star, any primordial atmosphere was likely stripped away long ago by stellar flares and winds.',
+        hi: 'चूंकि यह अपने सक्रिय लाल बौने तारे के बहुत करीब परिक्रमा करता है, कोई भी आदिम वायुमंडल बहुत पहले तारकीय ज्वाला और हवाओं से छिन्न-भिन्न हो गया था।',
+        bn: 'যেহেতু এটি একটি অত্যন্ত সক্রিয় লাল বামন নক্ষত্রের এত কাছাকাছি আবর্তন করে, তাই ধারণা করা হয় যে নক্ষত্রের তীব্র সৌরঝড় এবং বিকিরণের কারণে এর আদিম বায়ুমণ্ডল অনেক আগেই বিলুপ্ত হয়ে গেছে।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits its star in just 5.1 Earth days. It is certainly tidally locked, meaning one side always faces the star.',
+        hi: 'सिर्फ 5.1 पृथ्वी दिनों में अपने तारे की परिक्रमा करता है। यह निश्चित रूप से टाइडली लॉक्ड है, जिसका अर्थ है कि एक तरफ हमेशा तारे का सामना करता है।',
+        bn: 'এটি মাত্র ৫.১ দিনেই এর নক্ষত্রকে প্রদক্ষিণ করে। এটি নিশ্চিতভাবেই টাইডালি লকড (Tidally Locked), যার মানে এর এক পাশ সবসময় নক্ষত্রের দিকে মুখ করে থাকে।'
+      },
+      moons: {
+        en: 'None known',
+        hi: 'कोई ज्ञात नहीं',
+        bn: 'অজানা'
+      },
+      surface: {
+        en: 'Likely a barren, scorched rocky surface on the day side, and a freezing wasteland on the night side.',
+        hi: 'दिन की ओर संभवतः बंजर, झुलसी हुई चट्टानी सतह, और रात की ओर एक ठंडी बंजर भूमि।',
+        bn: 'এর দিন-অংশটি সম্ভবত শুষ্ক ও দগ্ধ একটি পাথুরে পৃষ্ঠ এবং রাতের অংশটি একটি হাড় কাঁপানো বরফের মরুভূমি।'
+      },
+      exploration: {
+        en: 'Discovered in 2022 using the ESPRESSO instrument on the Very Large Telescope (VLT) in Chile by measuring tiny wobbles in the star\'s motion.',
+        hi: '2022 में चिली में वेरी लार्ज टेलीस्कोप (VLT) पर ESPRESSO उपकरण का उपयोग करके तारे की गति में छोटे डगमगाहट को मापकर खोजा गया।',
+        bn: '২০২২ সালে চিলির ভেরি লার্জ টেলিস্কোপে (VLT) থাকা ESPRESSO যন্ত্রের সাহায্যে নক্ষত্রের গতির সামান্য পরিবর্তন মেপে এটি আবিষ্কার করা হয়।'
+      },
+      didYouKnow: [
+        {
+          en: 'The radial velocity signal (the "wobble") caused by Proxima d on its star is only about 40 centimeters per second—a walking pace!',
+          hi: 'प्रॉक्सिमा डी द्वारा अपने तारे पर उत्पन्न रेडियल वेग संकेत ("डगमगाहट") केवल लगभग 40 सेंटीमीटर प्रति सेकंड है - एक चलने की गति!',
+          bn: 'নক্ষত্রের ওপর প্রক্সিমা ডি এর মহাকর্ষের কারণে যে সামান্য "দোলনের" সৃষ্টি হয়, তার গতি প্রতি সেকেন্ডে মাত্র ৪০ সেন্টিমিটার—যা একজন মানুষের হাঁটার গতির সমান!'
+        },
+        {
+          en: 'It is one of the lightest exoplanets ever detected using the radial velocity method.',
+          hi: 'यह रेडियल वेग विधि का उपयोग करके अब तक खोजे गए सबसे हल्के एक्सोप्लैनेट में से एक है।',
+          bn: 'রেডিয়াল ভেলোসিটি বা ডপলার পদ্ধতির মাধ্যমে শনাক্ত করা সবচেয়ে হালকা এক্সোপ্ল্যানেটগুলোর মধ্যে এটি একটি।'
+        }
+      ]
+    }
+  },
+  {
+    id: '55-cancri',
+    type: 'Star',
+    name: {
+      en: '55 Cancri',
+      hi: '55 कैनक्री',
+      bn: '৫৫ ক্যানক্রি'
+    },
+    description: {
+      en: 'A Sun-like star hosting a system of five known planets, including a famous "super-Earth" that might be rich in carbon.',
+      hi: 'एक सूर्य जैसा तारा जो पाँच ज्ञात ग्रहों की एक प्रणाली की मेजबानी करता है, जिसमें एक प्रसिद्ध "सुपर-अर्थ" भी शामिल है जो कार्बन से भरपूर हो सकता है।',
+      bn: 'একটি সূর্যের মতো নক্ষত্র, যার চারপাশে ৫টি গ্রহ আবর্তন করছে। এর মধ্যে একটি বিখ্যাত "সুপার-আর্থ" রয়েছে, যা সম্ভবত প্রচুর কার্বনে ভরপুর।'
+    },
+    distance: {
+      en: '41 Light Years',
+      hi: '41 प्रकाश वर्ष',
+      bn: '৪১ আলোকবর্ষ'
+    },
+    radius: 20.0,
+    modelType: 'texture',
+    modelPath: '/textures/exoplanets/55-cancri.jpg',
+    details: {
+      overview: {
+        en: '55 Cancri, also officially named Copernicus, is a yellow dwarf star very much like our own Sun. It is the central star of a planetary system that currently has five known exoplanets, making it one of the more populated systems discovered so far.',
+        hi: '55 कैनक्री, जिसे आधिकारिक तौर पर कोपरनिकस नाम दिया गया है, एक पीला बौना तारा है जो बिल्कुल हमारे सूर्य जैसा है। यह एक ग्रह प्रणाली का केंद्रीय तारा है जिसमें वर्तमान में पांच ज्ञात एक्सोप्लैनेट हैं।',
+        bn: '৫৫ ক্যানক্রি (অফিসিয়াল নাম কোপারনিকাস) হলো আমাদের সূর্যের মতোই একটি হলুদ বামন নক্ষত্র। এটি এমন একটি গ্রহজগতের কেন্দ্র, যেখানে এখন পর্যন্ত পাঁচটি এক্সোপ্ল্যানেট আবিষ্কৃত হয়েছে, যা একে সবচেয়ে জনবহুল সৌরজগতগুলোর মধ্যে একটি করে তুলেছে।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Approx. 0.95 Solar Masses',
+          hi: 'लगभग 0.95 सौर द्रव्यमान',
+          bn: 'প্রায় ০.৯৫ গুণ (সূর্যের তুলনায়)'
+        },
+        diameter: {
+          en: 'Approx. 1.3 million km (0.94 Solar Radii)',
+          hi: 'लगभग 1.3 मिलियन किमी (0.94 सौर रेडी)',
+          bn: 'প্রায় ১৩ লক্ষ কি.মি. (সূর্যের ০.৯৪ গুণ)'
+        },
+        gravity: {
+          en: 'Similar to our Sun',
+          hi: 'हमारे सूर्य के समान',
+          bn: 'আমাদের সূর্যের মতোই'
+        }
+      },
+      atmosphere: {
+        en: 'Being a star, it has no planetary atmosphere, but rather a glowing photosphere, chromosphere, and a hot corona.',
+        hi: 'एक तारा होने के नाते, इसका कोई ग्रहीय वायुमंडल नहीं है, बल्कि एक चमकता हुआ फोटोस्फीयर, क्रोमोस्फीयर और एक गर्म कोरोना है।',
+        bn: 'নক্ষত্র হওয়ায় এর কোনো গ্রহের মতো বায়ুমণ্ডল নেই, বরং এর রয়েছে একটি জ্বলন্ত ফটোস্ফিয়ার, ক্রোমোস্ফিয়ার এবং একটি উত্তপ্ত করোনা।'
+      },
+      orbitAndRotation: {
+        en: 'It rotates on its axis once every 42 days, slightly slower than our Sun.',
+        hi: 'यह हर 42 दिनों में एक बार अपनी धुरी पर घूमता है, जो हमारे सूर्य से थोड़ा धीमा है।',
+        bn: 'এটি প্রতি ৪২ দিনে একবার নিজের অক্ষে ঘোরে, যা আমাদের সূর্যের ঘূর্ণনের চেয়ে কিছুটা ধীর।'
+      },
+      moons: {
+        en: '5 known planets (no moons of its own)',
+        hi: '5 ज्ञात ग्रह',
+        bn: '৫টি গ্রহ (এর কোনো উপগ্রহ নেই)'
+      },
+      surface: {
+        en: 'A searing surface of plasma at roughly 5,196 °C (5,469 K).',
+        hi: 'लगभग 5,196 °C (5,469 K) पर प्लाज्मा की एक जलती हुई सतह।',
+        bn: 'এর পৃষ্ঠটি প্লাজমা দিয়ে তৈরি, যার তাপমাত্রা প্রায় ৫,১৯৬ °C (৫,৪৬৯ কেলভিন)।'
+      },
+      exploration: {
+        en: 'Its first planet was discovered in 1996, making it one of the earliest known multi-planet systems.',
+        hi: 'इसका पहला ग्रह 1996 में खोजा गया था, जिससे यह शुरुआती ज्ञात बहु-ग्रह प्रणालियों में से एक बन गया।',
+        bn: '১৯৯৬ সালে এর প্রথম গ্রহ আবিষ্কৃত হয়, যা একে মানবজাতির জানা সবচেয়ে পুরোনো বহুমুখী গ্রহজগতের একটিতে পরিণত করে।'
+      },
+      didYouKnow: [
+        {
+          en: '55 Cancri forms a binary system with a distant red dwarf companion star, but its planets orbit only the primary Sun-like star.',
+          hi: '55 कैनक्री एक दूर के लाल बौने साथी तारे के साथ एक द्विआधारी प्रणाली बनाता है, लेकिन इसके ग्रह केवल प्राथमिक सूर्य-जैसे तारे की परिक्रमा करते हैं।',
+          bn: '৫৫ ক্যানক্রি আসলে একটি বাইনারি নক্ষত্রমণ্ডলীর অংশ। এর একটি দূরবর্তী লাল বামন সঙ্গী নক্ষত্রও রয়েছে, তবে এর সবকটি গ্রহ কেবল প্রধান নক্ষত্রটিকেই প্রদক্ষিণ করে।'
+        },
+        {
+          en: 'In 2015, the IAU officially named this star Copernicus in honor of the astronomer Nicolaus Copernicus.',
+          hi: '2015 में, IAU ने आधिकारिक तौर पर इस तारे का नाम खगोलशास्त्री निकोलस कोपरनिकस के सम्मान में कोपरनिकस रखा।',
+          bn: 'বিখ্যাত জ্যোতির্বিজ্ঞানী নিকোলাস কোপারনিকাসের সম্মানার্থে, ২০১৫ সালে ইন্টারন্যাশনাল অ্যাস্ট্রোনমিক্যাল ইউনিয়ন (IAU) আনুষ্ঠানিকভাবে এই নক্ষত্রের নাম রাখে "কোপারনিকাস"।'
+        }
+      ]
+    }
+  },
+  {
+    id: '55-cancri-e',
+    type: 'Exoplanet',
+    name: {
+      en: '55 Cancri e',
+      hi: '55 कैनक्री ई',
+      bn: '৫৫ ক্যানক্রি ই'
+    },
+    description: {
+      en: 'A super-Earth known as the "Diamond Planet," orbiting its star so closely that its surface is an ocean of magma.',
+      hi: 'एक सुपर-अर्थ जिसे "डायमंड प्लैनेट" के रूप में जाना जाता है, जो अपने तारे की इतनी बारीकी से परिक्रमा करता है कि इसकी सतह मैग्मा का एक महासागर है।',
+      bn: '"হীরকের গ্রহ" নামে পরিচিত একটি সুপার-আর্থ, যা এর নক্ষত্রের এত কাছাকাছি আবর্তন করে যে এর পুরো পৃষ্ঠটিই ম্যাগমার এক বিশাল মহাসাগর।'
+    },
+    distance: {
+      en: '41 Light Years',
+      hi: '41 प्रकाश वर्ष',
+      bn: '৪১ আলোকবর্ষ'
+    },
+    radius: 1.875,
+    modelType: 'texture',
+    modelPath: '/textures/exoplanets/55-cancri-e.jpg',
+    details: {
+      overview: {
+        en: '55 Cancri e, officially named Janssen, is a blistering "super-Earth" that orbits its star in less than a day. Its incredibly high temperatures and dense composition led to early theories that its interior could be largely composed of diamond. Today, we know it is a hellish world, likely covered in oceans of lava.',
+        hi: '55 कैनक्री ई, जिसे आधिकारिक तौर पर जानसेन नाम दिया गया है, एक धधकती हुई "सुपर-अर्थ" है जो एक दिन से भी कम समय में अपने तारे की परिक्रमा करती है।',
+        bn: '৫৫ ক্যানক্রি ই, যার অফিসিয়াল নাম জ্যানসেন (Janssen), হলো একটি প্রচণ্ড উত্তপ্ত "সুপার-আর্থ"। এটি এক দিনেরও কম সময়ে এর নক্ষত্রকে প্রদক্ষিণ করে। এর প্রচণ্ড তাপমাত্রা এবং ঘনত্বের কারণে বিজ্ঞানীরা একসময় ধারণা করতেন যে, গ্রহটির ভেতরের বেশিরভাগ অংশই সম্ভবত হীরা দিয়ে তৈরি। বর্তমানে এটি একটি নরকতুল্য গ্রহ হিসেবে পরিচিত, যার পৃষ্ঠ হয়তো পুরোটাই ফুটন্ত লাভার মহাসাগরে আবৃত।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Approx. 7.99 Earths',
+          hi: 'लगभग 7.99 पृथ्वी',
+          bn: 'প্রায় ৭.৯৯ গুণ (পৃথিবীর তুলনায়)'
+        },
+        diameter: {
+          en: 'Approx. 23,890 km (1.875 Earths)',
+          hi: 'लगभग 23,890 किमी (1.875 पृथ्वी)',
+          bn: 'প্রায় ২৩,৮৯০ কি.মি. (পৃথিবীর ১.৮৭৫ গুণ)'
+        },
+        gravity: {
+          en: 'More than twice Earth\'s gravity',
+          hi: 'पृथ्वी के गुरुत्वाकर्षण से दोगुने से अधिक',
+          bn: 'পৃথিবীর মধ্যাকর্ষণের দ্বিগুণেরও বেশি'
+        }
+      },
+      atmosphere: {
+        en: 'Recent James Webb observations suggest it might have a thin atmosphere composed of carbon monoxide or carbon dioxide, bubbling up from its magma ocean.',
+        hi: 'हाल ही में जेम्स वेब के अवलोकनों से पता चलता है कि इसमें कार्बन मोनोऑक्साइड या कार्बन डाइऑक्साइड से बना एक पतला वायुमंडल हो सकता है, जो इसके मैग्मा महासागर से उबलता है।',
+        bn: 'জেমস ওয়েবের সাম্প্রতিক পর্যবেক্ষণে ধারণা করা হয় যে, এর ম্যাগমা মহাসাগর থেকে নির্গত কার্বন মনোক্সাইড বা কার্বন ডাই-অক্সাইডের তৈরি একটি পাতলা বায়ুমণ্ডল হয়তো এতে থাকতে পারে।'
+      },
+      orbitAndRotation: {
+        en: 'Takes only 18 hours to orbit its star. It is completely tidally locked.',
+        hi: 'अपने तारे की परिक्रमा करने में केवल 18 घंटे लगते हैं। यह पूरी तरह से टाइडली लॉक्ड है।',
+        bn: 'এর এক বছর পূর্ণ হতে মাত্র ১৮ ঘণ্টা সময় লাগে! এটি সম্পূর্ণভাবে টাইডালি লকড (Tidally Locked)।'
+      },
+      moons: {
+        en: 'None known',
+        hi: 'कोई ज्ञात नहीं',
+        bn: 'অজানা'
+      },
+      surface: {
+        en: 'A global ocean of boiling lava, with temperatures exceeding 2,400 °C (4,300 °F) on the dayside.',
+        hi: 'उबलते लावा का एक वैश्विक महासागर, दिन के समय तापमान 2,400 °C (4,300 °F) से अधिक हो जाता है।',
+        bn: 'এর দিন-অংশটি ফুটন্ত লাভার একটি বিশাল মহাসাগর, যার তাপমাত্রা ২,৪০০ °C (৪,৩০০ °F) এরও বেশি!'
+      },
+      exploration: {
+        en: 'Discovered in 2004 via the radial velocity method, and later confirmed via transits in 2011, making it one of the most studied exoplanets.',
+        hi: '2004 में रेडियल वेग विधि के माध्यम से खोजा गया, और बाद में 2011 में पारगमन के माध्यम से पुष्टि की गई, जिससे यह सबसे अधिक अध्ययन किए गए एक्सोप्लैनेट में से एक बन गया।',
+        bn: '২০০৪ সালে ডপলার পদ্ধতির মাধ্যমে এটি আবিষ্কৃত হয় এবং ২০১১ সালে ট্রানজিট পদ্ধতিতে তা নিশ্চিত করা হয়। এটি এখন পর্যন্ত সবচেয়ে বেশি গবেষণা করা এক্সোপ্ল্যানেটগুলোর মধ্যে একটি।'
+      },
+      didYouKnow: [
+        {
+          en: 'The theory that 55 Cancri e is a "diamond planet" arose because early data suggested the host star was extremely rich in carbon, though later data revised this.',
+          hi: 'यह सिद्धांत कि 55 कैनक्री ई एक "हीरे का ग्रह" है, इसलिए उत्पन्न हुआ क्योंकि शुरुआती डेटा ने सुझाव दिया था कि मेजबान तारा कार्बन से अत्यधिक समृद्ध था, हालांकि बाद के डेटा ने इसे संशोधित किया।',
+          bn: '৫৫ ক্যানক্রি ই কে "হীরকের গ্রহ" বলা হতো, কারণ প্রাথমিক ডেটা থেকে বিজ্ঞানীরা ধারণা করেছিলেন যে এর নক্ষত্রটিতে প্রচুর কার্বন রয়েছে, যদিও পরবর্তীতে এই ধারণা কিছুটা পরিবর্তন করা হয়।'
+        },
+        {
+          en: 'It is so close to its star that it literally orbits through the outermost, hottest parts of the star\'s atmosphere (the corona).',
+          hi: 'यह अपने तारे के इतना करीब है कि यह सचमुच तारे के वायुमंडल (कोरोना) के सबसे बाहरी, सबसे गर्म हिस्सों के माध्यम से परिक्रमा करता है।',
+          bn: 'এটি এর নক্ষত্রের এতই কাছাকাছি রয়েছে যে, আবর্তনের সময় এটি আক্ষরিক অর্থেই নক্ষত্রের বায়ুমণ্ডলের (করোনা) সবচেয়ে বাইরের উত্তপ্ত অংশের ভেতর দিয়ে যাতায়াত করে।'
+        }
+      ]
+    }
+  },
+  {
+    id: '55-cancri-b',
+    type: 'Exoplanet',
+    name: {
+      en: '55 Cancri b',
+      hi: '55 कैनक्री बी',
+      bn: '৫৫ ক্যানক্রি বি'
+    },
+    description: {
+      en: 'A "hot Jupiter" gas giant orbiting its star closely, discovered as the first planet in this famous system.',
+      hi: 'एक "गर्म बृहस्पति" गैस विशालकाय जो अपने तारे की निकटता से परिक्रमा करता है, जिसे इस प्रसिद्ध प्रणाली में पहले ग्रह के रूप में खोजा गया था।',
+      bn: 'একটি "হট জুপিটার" (উত্তপ্ত বৃহস্পতি) গ্যাস জায়ান্ট, যা এর নক্ষত্রের খুব কাছাকাছি অবস্থান করছে। এটিই এই বিখ্যাত সৌরজগতের আবিষ্কৃত প্রথম গ্রহ।'
+    },
+    distance: {
+      en: '41 Light Years',
+      hi: '41 प्रकाश वर्ष',
+      bn: '৪১ আলোকবর্ষ'
+    },
+    radius: 13.9,
+    modelType: 'texture',
+    modelPath: '/textures/exoplanets/55-cancri-b.jpg',
+    details: {
+      overview: {
+        en: '55 Cancri b, officially named Galileo, is a hot gas giant. It was the first planet discovered in the 55 Cancri system back in 1996. Because it orbits so close to its star, its atmosphere is intensely heated, swelling the planet\'s size and creating violent global weather patterns.',
+        hi: '55 कैनक्री बी, जिसे आधिकारिक तौर पर गैलीलियो नाम दिया गया है, एक गर्म गैस विशालकाय है। यह 1996 में 55 कैनक्री प्रणाली में खोजा गया पहला ग्रह था।',
+        bn: '৫৫ ক্যানক্রি বি, যার অফিসিয়াল নাম গ্যালিলিও (Galileo), হলো একটি অত্যন্ত উত্তপ্ত গ্যাস জায়ান্ট বা গ্যাসের দানব। ১৯৯৬ সালে এটিই প্রথম ৫৫ ক্যানক্রি সৌরজগতে আবিষ্কৃত হয়েছিল। নক্ষত্রের এত কাছাকাছি থাকার কারণে এর বায়ুমণ্ডল প্রচণ্ড উত্তপ্ত হয়ে ওঠে, যা গ্রহটির আকারকে ফুলিয়ে দেয় এবং গ্রহজুড়ে ভয়াবহ আবহাওয়ার সৃষ্টি করে।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Approx. 263 Earths (0.83 Jupiters)',
+          hi: 'लगभग 263 पृथ्वी (0.83 बृहस्पति)',
+          bn: 'প্রায় ২৬৩ গুণ (পৃথিবীর তুলনায়), অথবা ০.৮৩ গুণ (বৃহস্পতির তুলনায়)'
+        },
+        diameter: {
+          en: 'Estimated ~165,000 km (13.9 Earths)',
+          hi: 'अनुमानित ~165,000 किमी (13.9 पृथ्वी)',
+          bn: 'আনুমানিক ১,৬৫,০০০ কি.মি. (পৃথিবীর ১৩.৯ গুণ)'
+        },
+        gravity: {
+          en: 'Stronger than Earth, but low for its size due to atmospheric expansion',
+          hi: 'पृथ्वी की तुलना में अधिक मजबूत, लेकिन वायुमंडलीय विस्तार के कारण इसके आकार के लिए कम',
+          bn: 'পৃথিবীর চেয়ে শক্তিশালী, তবে প্রসারিত বায়ুমণ্ডলের কারণে এর বিশাল আকারের তুলনায় কিছুটা কম।'
+        }
+      },
+      atmosphere: {
+        en: 'A deep, thick atmosphere composed mostly of hydrogen and helium, likely featuring massive storms and high-speed winds driven by stellar heating.',
+        hi: 'ज्यादातर हाइड्रोजन और हीलियम से बना एक गहरा, घना वायुमंडल, जिसमें तारकीय ताप द्वारा संचालित बड़े पैमाने पर तूफान और तेज गति वाली हवाएं होने की संभावना है।',
+        bn: 'হাইড্রোজেন এবং হিলিয়াম দিয়ে তৈরি এর একটি গভীর ও ঘন বায়ুমণ্ডল রয়েছে, যেখানে নক্ষত্রের প্রচণ্ড তাপের কারণে সম্ভবত বিশাল ঘূর্ণিঝড় এবং অতি-উচ্চ গতির বাতাসের সৃষ্টি হয়।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits its star every 14.6 Earth days. It is likely tidally locked.',
+        hi: 'हर 14.6 पृथ्वी दिनों में अपने तारे की परिक्रमा करता है। इसके टाइडली लॉक्ड होने की संभावना है।',
+        bn: 'মাত্র ১৪.৬ দিনেই এটি এর নক্ষত্রকে একবার প্রদক্ষিণ করে। সম্ভবত এটিও টাইডালি লকড (Tidally Locked)।'
+      },
+      moons: {
+        en: 'None discovered (difficult to maintain stable moons so close to a star)',
+        hi: 'कोई खोज नहीं की गई (एक तारे के इतने करीब स्थिर चंद्रमाओं को बनाए रखना मुश्किल है)',
+        bn: 'কোনো উপগ্রহ নেই (নক্ষত্রের এত কাছাকাছি কোনো উপগ্রহের টিকে থাকা খুবই কঠিন)।'
+      },
+      surface: {
+        en: 'As a gas giant, it has no solid surface. Spacecraft would simply sink into denser and hotter layers of gas until crushed by extreme pressure.',
+        hi: 'एक गैस विशालकाय के रूप में, इसकी कोई ठोस सतह नहीं है। अंतरिक्ष यान बस अत्यधिक दबाव से कुचल जाने तक गैस की सघन और गर्म परतों में डूब जाएगा।',
+        bn: 'একটি গ্যাস জায়ান্ট হওয়ায় এর কোনো কঠিন পৃষ্ঠ নেই। কোনো মহাকাশযান এর ভেতরে প্রবেশ করলে তা ক্রমশ আরও ঘন ও উত্তপ্ত গ্যাসে তলিয়ে যাবে এবং একপর্যায়ে প্রচণ্ড চাপে চূর্ণ-বিচূর্ণ হয়ে যাবে।'
+      },
+      exploration: {
+        en: 'Discovered in 1996 by astronomers using the radial velocity method, paving the way for the discovery of the rest of the 55 Cancri system.',
+        hi: '1996 में खगोलविदों द्वारा रेडियल वेग विधि का उपयोग करके खोजा गया, जिसने बाकी 55 कैनक्री प्रणाली की खोज का मार्ग प्रशस्त किया।',
+        bn: '১৯৯৬ সালে ডপলার পদ্ধতির মাধ্যমে জ্যোতির্বিজ্ঞানীরা এটি আবিষ্কার করেন, যা পরবর্তীতে ৫৫ ক্যানক্রি সৌরজগতের বাকি গ্রহগুলো আবিষ্কারের পথ প্রশস্ত করেছিল।'
+      },
+      didYouKnow: [
+        {
+          en: 'The planet is officially named Galileo, honoring the famous Italian astronomer Galileo Galilei.',
+          hi: 'प्रसिद्ध इतालवी खगोलशास्त्री गैलीलियो गैलीली के सम्मान में ग्रह का आधिकारिक नाम गैलीलियो रखा गया है।',
+          bn: 'বিখ্যাত ইতালীয় জ্যোতির্বিজ্ঞানী গ্যালিলিও গ্যালিলি-র প্রতি সম্মান জানিয়ে এই গ্রহের অফিসিয়াল নাম রাখা হয়েছে "গ্যালিলিও"।'
+        },
+        {
+          en: 'Because it is a "hot Jupiter," it is constantly bombarded with intense radiation, which may be slowly blowing its atmosphere away into space.',
+          hi: 'चूंकि यह एक "गर्म बृहस्पति" है, इस पर लगातार तीव्र विकिरण की बमबारी होती है, जो धीरे-धीरे इसके वायुमंडल को अंतरिक्ष में उड़ा सकती है।',
+          bn: 'একটি "হট জুপিটার" হওয়ার কারণে এটি সারাক্ষণ নক্ষত্রের তীব্র বিকিরণের শিকার হয়, যা সম্ভবত ধীরে ধীরে এর বায়ুমণ্ডলকে মহাকাশে উড়িয়ে নিয়ে যাচ্ছে।'
+        }
+      ]
+    }
+  },
+  {
+    id: '55-cancri-c',
+    type: 'Exoplanet',
+    name: {
+      en: '55 Cancri c',
+      hi: '55 कैनक्री सी',
+      bn: '৫৫ ক্যানক্রি সি'
+    },
+    description: {
+      en: 'A Saturn-mass gas giant in a moderately close orbit, formally named Brahe.',
+      hi: 'एक मध्यम करीबी कक्षा में शनि-द्रव्यमान गैस विशालकाय, जिसे औपचारिक रूप से ब्राहे नाम दिया गया है।',
+      bn: 'মাঝারি দূরত্বের কক্ষপথে থাকা শনি গ্রহের ভরের সমান একটি গ্যাস জায়ান্ট, যার আনুষ্ঠানিক নাম ব্রাহে (Brahe)।'
+    },
+    distance: {
+      en: '41 Light Years',
+      hi: '41 प्रकाश वर्ष',
+      bn: '৪১ আলোকবর্ষ'
+    },
+    radius: 10.6,
+    modelType: 'texture',
+    modelPath: '/textures/exoplanets/55-cancri-c.jpg',
+    details: {
+      overview: {
+        en: '55 Cancri c, officially named Brahe, is a gas giant with a mass comparable to Saturn. It is the third planet from its star and has an orbit that takes about 44 days to complete.',
+        hi: '55 कैनक्री सी, जिसे आधिकारिक तौर पर ब्राहे नाम दिया गया है, शनि के बराबर द्रव्यमान वाला एक गैस विशालकाय है। यह अपने तारे से तीसरा ग्रह है और इसकी एक कक्षा है जिसे पूरा करने में लगभग 44 दिन लगते हैं।',
+        bn: '৫৫ ক্যানক্রি সি, যার আনুষ্ঠানিক নাম ব্রাহে (Brahe), শনি গ্রহের ভরের কাছাকাছি একটি গ্যাস জায়ান্ট। এটি এর নক্ষত্র থেকে দূরত্বের দিক দিয়ে তৃতীয় এবং মাত্র ৪৪ দিনে নক্ষত্রটিকে একবার প্রদক্ষিণ করে।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Approx. 54 Earths (0.17 Jupiters)',
+          hi: 'लगभग 54 पृथ्वी (0.17 बृहस्पति)',
+          bn: 'প্রায় ৫৪ গুণ (পৃথিবীর তুলনায়), অথবা ০.১৭ গুণ (বৃহস্পতির তুলনায়)'
+        },
+        diameter: {
+          en: 'Estimated ~135,000 km (10.6 Earths)',
+          hi: 'अनुमानित ~135,000 किमी (10.6 पृथ्वी)',
+          bn: 'আনুমানিক ১,৩৫,০০০ কি.মি. (পৃথিবীর ১০.৬ গুণ)'
+        },
+        gravity: {
+          en: 'Likely similar to Saturn\'s',
+          hi: 'संभवतः शनि के समान',
+          bn: 'সম্ভবত শনি গ্রহের কাছাকাছি'
+        }
+      },
+      atmosphere: {
+        en: 'A thick, gaseous envelope primarily composed of hydrogen and helium.',
+        hi: 'मुख्य रूप से हाइड्रोजन और हीलियम से बना एक मोटा, गैसीय लिफाफा।',
+        bn: 'মূলত হাইড্রোজেন ও হিলিয়াম দিয়ে তৈরি একটি অত্যন্ত পুরু ও গ্যাসীয় বায়ুমণ্ডল।'
+      },
+      orbitAndRotation: {
+        en: 'Completes an orbit in 44.3 Earth days. It has a slightly eccentric (oval-shaped) orbit.',
+        hi: '44.3 पृथ्वी दिनों में एक कक्षा पूरी करता है। इसकी कक्षा थोड़ी सनकी (अंडाकार) है।',
+        bn: '৪৪.৩ দিনে এর এক বছর পূর্ণ হয়। এর কক্ষপথটি সামান্য ডিম্বাকার (Eccentric)।'
+      },
+      moons: {
+        en: 'Unknown, but theoretically possible',
+        hi: 'अज्ञात, लेकिन सैद्धांतिक रूप से संभव',
+        bn: 'অজানা, তবে তাত্ত্বিকভাবে উপগ্রহ থাকার সম্ভাবনা রয়েছে।'
+      },
+      surface: {
+        en: 'Lacks a solid surface, being a gas giant.',
+        hi: 'एक गैस विशालकाय होने के कारण, इसमें ठोस सतह का अभाव है।',
+        bn: 'গ্যাস জায়ান্ট হওয়ায় এর কোনো কঠিন পৃষ্ঠ নেই।'
+      },
+      exploration: {
+        en: 'Discovered in 2002 by the California and Carnegie Planet Search team through radial velocity measurements.',
+        hi: '2002 में कैलिफ़ोर्निया और कार्नेगी प्लैनेट सर्च टीम द्वारा रेडियल वेग माप के माध्यम से खोजा गया।',
+        bn: '২০০২ সালে ক্যালিফোর্নিয়া এবং কার্নেগি প্ল্যানেট সার্চ দলের বিজ্ঞানীরা ডপলার পদ্ধতির মাধ্যমে এটি আবিষ্কার করেন।'
+      },
+      didYouKnow: [
+        {
+          en: 'The planet is named after the famous Danish astronomer Tycho Brahe.',
+          hi: 'ग्रह का नाम प्रसिद्ध डेनिश खगोलशास्त्री टाइको ब्राहे के नाम पर रखा गया है।',
+          bn: 'বিখ্যাত ডেনিশ জ্যোতির্বিজ্ঞানী টাইকো ব্রাহে (Tycho Brahe) এর সম্মানে এই গ্রহের নাম রাখা হয়েছে "ব্রাহে"।'
+        },
+        {
+          en: 'While still close to its star, it doesn\'t experience the extreme "roasting" like the inner planets b and e.',
+          hi: 'हालांकि अभी भी अपने तारे के करीब है, यह आंतरिक ग्रहों बी और ई की तरह अत्यधिक "रोस्टिंग" का अनुभव नहीं करता है।',
+          bn: 'নক্ষত্রের কাছাকাছি থাকা সত্ত্বেও, ভেতরের গ্রহ b এবং e এর মতো এটি এতটাও পুড়তে থাকে না।'
+        }
+      ]
+    }
+  },
+  {
+    id: '55-cancri-f',
+    type: 'Exoplanet',
+    name: {
+      en: '55 Cancri f',
+      hi: '55 कैनक्री एफ',
+      bn: '৫৫ ক্যানক্রি এফ'
+    },
+    description: {
+      en: 'A massive gas giant that spends part of its orbit within the habitable zone of its star.',
+      hi: 'एक विशाल गैस विशालकाय जो अपनी कक्षा का कुछ हिस्सा अपने तारे के रहने योग्य क्षेत्र में बिताता है।',
+      bn: 'একটি সুবিশাল গ্যাস জায়ান্ট বা গ্যাসের দানব, যার কক্ষপথের একটি অংশ এর নক্ষত্রের বাসযোগ্য অঞ্চলের (Habitable Zone) ভেতর দিয়ে গেছে।'
+    },
+    distance: {
+      en: '41 Light Years',
+      hi: '41 प्रकाश वर्ष',
+      bn: '৪১ আলোকবর্ষ'
+    },
+    radius: 9.2,
+    modelType: 'texture',
+    modelPath: '/textures/exoplanets/55-cancri-f.jpg',
+    details: {
+      overview: {
+        en: '55 Cancri f, officially named Harriot, is a gas giant exoplanet. Uniquely for the 55 Cancri system, its orbit places it right within the "habitable zone," where liquid water could theoretically exist on a solid surface.',
+        hi: '55 कैनक्री एफ, जिसे आधिकारिक तौर पर हैरियट नाम दिया गया है, एक गैस विशालकाय एक्सोप्लैनेट है। 55 कैनक्री प्रणाली के लिए विशिष्ट रूप से, इसकी कक्षा इसे "रहने योग्य क्षेत्र" के ठीक भीतर रखती है।',
+        bn: '৫৫ ক্যানক্রি এফ, যার আনুষ্ঠানিক নাম হ্যারিয়ট (Harriot), হলো একটি গ্যাস জায়ান্ট এক্সোপ্ল্যানেট। ৫৫ ক্যানক্রি সৌরজগতের অন্যান্য গ্রহের তুলনায় এর একটি অনন্য বৈশিষ্ট্য হলো, এটি নক্ষত্রের "বাসযোগ্য অঞ্চলে" অবস্থান করছে, যেখানে তাত্ত্বিকভাবে কঠিন পৃষ্ঠে তরল পানি থাকার সম্ভাবনা থাকে।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Approx. 45 Earths (0.14 Jupiters)',
+          hi: 'लगभग 45 पृथ्वी (0.14 बृहस्पति)',
+          bn: 'প্রায় ৪৫ গুণ (পৃথিবীর তুলনায়), অথবা ০.১৪ গুণ (বৃহস্পতির তুলনায়)'
+        },
+        diameter: {
+          en: 'Estimated ~117,000 km (9.2 Earths)',
+          hi: 'अनुमानित ~117,000 किमी (9.2 पृथ्वी)',
+          bn: 'আনুমানিক ১,১৭,০০০ কি.মি. (পৃথিবীর ৯.২ গুণ)'
+        },
+        gravity: {
+          en: 'Likely close to Earth\'s gravity at the cloud tops',
+          hi: 'बादलों के शीर्ष पर पृथ्वी के गुरुत्वाकर्षण के करीब होने की संभावना है',
+          bn: 'গ্রহের মেঘের উপরিভাগে এর মহাকর্ষ সম্ভবত পৃথিবীর কাছাকাছি'
+        }
+      },
+      atmosphere: {
+        en: 'Primarily hydrogen and helium. If it has any rocky moons with thick atmospheres, they could potentially host life.',
+        hi: 'मुख्य रूप से हाइड्रोजन और हीलियम। यदि इसमें घने वायुमंडल वाले कोई चट्टानी चंद्रमा हैं, तो वे संभावित रूप से जीवन की मेजबानी कर सकते हैं।',
+        bn: 'প্রাথমিকভাবে হাইড্রোজেন এবং হিলিয়াম দিয়ে গঠিত। যদি এর চারপাশে পৃথিবীর মতো কোনো পাথুরে উপগ্রহ থাকে, তবে সেখানে প্রাণের অস্তিত্ব থাকার একটি তাত্ত্বিক সম্ভাবনা রয়েছে।'
+      },
+      orbitAndRotation: {
+        en: 'Takes about 260 days to complete one orbit around its star.',
+        hi: 'अपने तारे के चारों ओर एक कक्षा पूरी करने में लगभग 260 दिन लगते हैं।',
+        bn: 'এর নক্ষত্রকে একবার প্রদক্ষিণ করতে এর প্রায় ২৬০ দিন সময় লাগে।'
+      },
+      moons: {
+        en: 'None discovered yet, but habitable exomoons are a topic of much speculation.',
+        hi: 'अभी तक कोई खोजा नहीं गया है, लेकिन रहने योग्य एक्सोमून बहुत अटकलों का विषय है।',
+        bn: 'এখন পর্যন্ত কোনো উপগ্রহ আবিষ্কৃত হয়নি, তবে এর বাসযোগ্য উপগ্রহ (Exomoon) নিয়ে বিজ্ঞানীদের মধ্যে প্রচুর কৌতূহল রয়েছে।'
+      },
+      surface: {
+        en: 'As a gas giant, it does not have a solid surface.',
+        hi: 'एक गैस विशालकाय के रूप में, इसमें ठोस सतह नहीं होती है।',
+        bn: 'গ্যাস জায়ান্ট হওয়ায় এর কোনো কঠিন পৃষ্ঠ নেই।'
+      },
+      exploration: {
+        en: 'Discovered in 2005 using the radial velocity method, confirming that this system is packed with multiple planets.',
+        hi: '2005 में रेडियल वेग विधि का उपयोग करके खोजा गया, यह पुष्टि करता है कि यह प्रणाली कई ग्रहों से भरी हुई है।',
+        bn: '২০০৫ সালে রেডিয়াল ভেলোসিটি পদ্ধতির মাধ্যমে এটি আবিষ্কৃত হয়, যা প্রমাণ করে যে এই সৌরজগতটিতে সত্যিই অনেকগুলো গ্রহ রয়েছে।'
+      },
+      didYouKnow: [
+        {
+          en: 'It is officially named Harriot after the English astronomer Thomas Harriot.',
+          hi: 'इसका आधिकारिक नाम अंग्रेजी खगोलशास्त्री थॉमस हैरियट के नाम पर हैरियट रखा गया है।',
+          bn: 'বিখ্যাত ইংরেজ জ্যোতির্বিজ্ঞানী টমাস হ্যারিয়ট (Thomas Harriot)-এর সম্মানে এর আনুষ্ঠানিক নাম রাখা হয়েছে "হ্যারিয়ট"।'
+        },
+        {
+          en: 'Because it is in the habitable zone, astronomers often study it to model how large gas giants might migrate and influence the habitability of a system.',
+          hi: 'चूंकि यह रहने योग्य क्षेत्र में है, इसलिए खगोलविद अक्सर यह मॉडल करने के लिए इसका अध्ययन करते हैं कि कैसे बड़े गैस दिग्गज पलायन कर सकते हैं और किसी प्रणाली की रहने योग्यता को प्रभावित कर सकते हैं।',
+          bn: 'যেহেতু এটি বাসযোগ্য অঞ্চলে অবস্থিত, তাই গ্যাস জায়ান্ট গ্রহগুলো কীভাবে এক জায়গা থেকে অন্য জায়গায় সরে যায় এবং তা সৌরজগতের বাসযোগ্যতাকে কীভাবে প্রভাবিত করে, তা বুঝতে বিজ্ঞানীরা প্রায়ই এই গ্রহটিকে মডেল হিসেবে ব্যবহার করেন।'
+        }
+      ]
+    }
+  },
+  {
+    id: '55-cancri-d',
+    type: 'Exoplanet',
+    name: {
+      en: '55 Cancri d',
+      hi: '55 कैनक्री डी',
+      bn: '৫৫ ক্যানক্রি ডি'
+    },
+    description: {
+      en: 'The outermost known planet in the 55 Cancri system, a colossal gas giant with an orbit similar to Jupiter\'s.',
+      hi: '55 कैनक्री प्रणाली में सबसे बाहरी ज्ञात ग्रह, बृहस्पति के समान कक्षा वाला एक विशाल गैस विशालकाय।',
+      bn: '৫৫ ক্যানক্রি সৌরজগতের সবচেয়ে বাইরের দিকের একটি সুবিশাল গ্যাস জায়ান্ট, যার কক্ষপথ অনেকটা আমাদের সৌরজগতের বৃহস্পতি গ্রহের মতোই।'
+    },
+    distance: {
+      en: '41 Light Years',
+      hi: '41 प्रकाश वर्ष',
+      bn: '৪১ আলোকবর্ষ'
+    },
+    radius: 12.0,
+    modelType: 'texture',
+    modelPath: '/textures/exoplanets/55-cancri-d.jpg',
+    details: {
+      overview: {
+        en: '55 Cancri d, officially named Lipperhey, is a massive gas giant and the outermost known planet of its system. Orbiting its star at a distance comparable to Jupiter in our own Solar System, it is a cold and immense world.',
+        hi: '55 कैनक्री डी, जिसे आधिकारिक तौर पर लिपरहे नाम दिया गया है, एक विशाल गैस विशालकाय और अपनी प्रणाली का सबसे बाहरी ज्ञात ग्रह है। हमारे अपने सौर मंडल में बृहस्पति के बराबर दूरी पर अपने तारे की परिक्रमा करते हुए, यह एक ठंडी और विशाल दुनिया है।',
+        bn: '৫৫ ক্যানক্রি ডি, যার আনুষ্ঠানিক নাম লিপারহে (Lipperhey), হলো একটি বিশাল গ্যাস জায়ান্ট বা গ্যাসের দানব এবং এটি এর সৌরজগতের সবচেয়ে বাইরের দিকের গ্রহ। আমাদের সৌরজগতের বৃহস্পতি গ্রহ সূর্য থেকে ঠিক যতটা দূরে রয়েছে, এটিও এর নক্ষত্র থেকে প্রায় ততটাই দূরে থেকে প্রদক্ষিণ করছে। এটি মূলত একটি বিশাল এবং শীতল গ্রহ।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Approx. 3.12 Jupiters (nearly 1000 Earths)',
+          hi: 'लगभग 3.12 बृहस्पति (लगभग 1000 पृथ्वी)',
+          bn: 'প্রায় ৩.১২ গুণ (বৃহস্পতির তুলনায়), অথবা প্রায় ১০০০ গুণ (পৃথিবীর তুলনায়)'
+        },
+        diameter: {
+          en: 'Estimated ~140,000 km (12 Earths)',
+          hi: 'अनुमानित ~140,000 किमी (12 पृथ्वी)',
+          bn: 'আনুমানিক ১,৪০,০০০ কি.মি. (পৃথিবীর ১২ গুণ)'
+        },
+        gravity: {
+          en: 'Incredibly strong, much greater than Jupiter\'s',
+          hi: 'अविश्वसनीय रूप से मजबूत, बृहस्पति से बहुत अधिक',
+          bn: 'অত্যন্ত শক্তিশালী, যা আমাদের বৃহস্পতি গ্রহের চেয়েও অনেক বেশি'
+        }
+      },
+      atmosphere: {
+        en: 'A vast, dense atmosphere of hydrogen and helium, possibly featuring ammonia clouds similar to Jupiter and Saturn.',
+        hi: 'हाइड्रोजन और हीलियम का एक विशाल, घना वायुमंडल, जिसमें संभवतः बृहस्पति और शनि के समान अमोनिया बादल शामिल हैं।',
+        bn: 'হাইড্রোজেন ও হিলিয়াম দিয়ে তৈরি একটি সুবিশাল ও অত্যন্ত ঘন বায়ুমণ্ডল রয়েছে। ধারণা করা হয়, এতে বৃহস্পতি এবং শনি গ্রহের মতোই অ্যামোনিয়ার তৈরি বিশাল মেঘমালা থাকতে পারে।'
+      },
+      orbitAndRotation: {
+        en: 'Takes nearly 14.3 years to complete one orbit, traveling on a nearly circular path.',
+        hi: 'एक कक्षा पूरी करने में लगभग 14.3 वर्ष लगते हैं, जो लगभग गोलाकार पथ पर यात्रा करता है।',
+        bn: 'এর এক বছর পূর্ণ হতে প্রায় ১৪.৩ বছর সময় লাগে। এর কক্ষপথটি প্রায় সম্পূর্ণ গোলাকার।'
+      },
+      moons: {
+        en: 'Given its distance and immense mass, it is highly likely to host a large system of moons.',
+        hi: 'इसकी दूरी और अपार द्रव्यमान को देखते हुए, इसमें चंद्रमाओं की एक बड़ी प्रणाली की मेजबानी करने की अत्यधिक संभावना है।',
+        bn: 'নক্ষত্র থেকে এর বিশাল দূরত্ব এবং এর বিশাল ভরের কারণে, ধারণা করা হয় যে এটিকে ঘিরে অনেকগুলো উপগ্রহের একটি বড় জগত থাকতে পারে।'
+      },
+      surface: {
+        en: 'It has no solid surface; its outer gases simply get hotter and denser until they transition into a strange fluid metal state near the core.',
+        hi: 'इसकी कोई ठोस सतह नहीं है; इसकी बाहरी गैसें बस गर्म और सघन हो जाती हैं जब तक कि वे कोर के पास एक अजीब द्रव धातु अवस्था में नहीं आ जातीं।',
+        bn: 'এর কোনো কঠিন পৃষ্ঠ নেই; গ্রহের যতই গভীরে যাওয়া যায়, এর গ্যাসীয় স্তর ততই উত্তপ্ত ও ঘন হতে থাকে, যা একেবারে কেন্দ্রে গিয়ে তরল ধাতুর মতো অদ্ভুত অবস্থায় পরিণত হয়।'
+      },
+      exploration: {
+        en: 'Discovered in 2002 via the radial velocity method, its long orbital period required years of continuous observation to confirm.',
+        hi: '2002 में रेडियल वेग विधि के माध्यम से खोजा गया, इसकी लंबी कक्षीय अवधि की पुष्टि के लिए वर्षों के निरंतर अवलोकन की आवश्यकता थी।',
+        bn: '২০০২ সালে রেডিয়াল ভেলোসিটি পদ্ধতির মাধ্যমে এটি আবিষ্কৃত হয়। এর বিশাল কক্ষপথের কারণে, এর আবিষ্কার নিশ্চিত করতে বিজ্ঞানীদের বছরের পর বছর ধরে টানা পর্যবেক্ষণ করতে হয়েছিল।'
+      },
+      didYouKnow: [
+        {
+          en: 'The planet is named after Hans Lipperhey, a German-Dutch spectacle maker commonly associated with the invention of the telescope.',
+          hi: 'ग्रह का नाम हंस लिपरहे के नाम पर रखा गया है, जो एक जर्मन-डच तमाशा निर्माता है जो आमतौर पर दूरबीन के आविष्कार से जुड़ा है।',
+          bn: 'হ্যান্স লিপারহে (Hans Lipperhey) নামক একজন জার্মান-ডাচ চশমা নির্মাতার নামানুসারে এই গ্রহের নাম রাখা হয়েছে, যাকে সাধারণত টেলিস্কোপ আবিষ্কারের সাথে যুক্ত করা হয়।'
+        },
+        {
+          en: 'Because it is so far from its host star, 55 Cancri d marks the frozen outer boundary of this densely packed planetary system.',
+          hi: 'चूंकि यह अपने मेजबान तारे से बहुत दूर है, इसलिए 55 कैनक्री डी इस सघन ग्रह प्रणाली की जमी हुई बाहरी सीमा को चिह्नित करता है।',
+          bn: 'নক্ষত্র থেকে এত দূরে অবস্থিত হওয়ায়, ৫৫ ক্যানক্রি ডি মূলত এই ঘনবসতিপূর্ণ গ্রহজগতের সবচেয়ে বাইরের একটি হিমশীতল সীমানা তৈরি করেছে।'
+        }
+      ]
+    }
+  },
+  {
+    id: 'hr-8799',
+    type: 'Star',
+    name: {
+      en: 'HR 8799',
+      hi: 'एचआर 8799',
+      bn: 'এইচআর ৮৭৯৯'
+    },
+    description: {
+      en: 'A young, massive star famously known for being the first system where multiple planets were directly imaged.',
+      hi: 'एक युवा, विशाल तारा जिसे उस पहली प्रणाली के रूप में जाना जाता है जहां कई ग्रहों की सीधे तस्वीर ली गई थी।',
+      bn: 'একটি তরুণ ও বিশাল নক্ষত্র, যা ইতিহাসে প্রথমবারের মতো এর চারপাশের গ্রহগুলোর সরাসরি ছবি তোলার জন্য বিখ্যাত।'
+    },
+    distance: {
+      en: '133 Light Years',
+      hi: '133 प्रकाश वर्ष',
+      bn: '১৩৩ আলোকবর্ষ'
+    },
+    radius: 30.0,
+    modelType: 'texture',
+    modelPath: '/textures/exoplanets/hr-8799.jpg',
+    details: {
+      overview: {
+        en: 'HR 8799 is a young main-sequence star, much hotter and larger than our Sun, located in the constellation of Pegasus. It became world-famous in 2008 when astronomers announced they had directly imaged three (later four) massive planets orbiting it. It also possesses a massive debris disk, similar to our Solar System\'s Kuiper Belt, but much more active.',
+        hi: 'एचआर 8799 एक युवा मुख्य-अनुक्रम तारा है, जो हमारे सूर्य से बहुत अधिक गर्म और बड़ा है, जो पेगासस तारामंडल में स्थित है। यह 2008 में विश्व प्रसिद्ध हो गया जब खगोलविदों ने घोषणा की कि उन्होंने इसकी परिक्रमा करने वाले तीन (बाद में चार) विशाल ग्रहों की सीधे तस्वीर ली है।',
+        bn: 'এইচআর ৮৭৯৯ (HR 8799) পেগাসাস তারামণ্ডলে অবস্থিত একটি তরুণ নক্ষত্র, যা আমাদের সূর্যের চেয়ে অনেক বেশি উত্তপ্ত এবং বড়। ২০০৮ সালে জ্যোতির্বিজ্ঞানীরা প্রথমবারের মতো এই নক্ষত্রটিকে কেন্দ্র করে আবর্তনরত তিনটি (পরবর্তীতে চারটি) বিশাল গ্রহের সরাসরি ছবি তুলেছিলেন, যা এটিকে বিশ্বব্যাপী বিখ্যাত করে তোলে। আমাদের সৌরজগতের কুইপার বেল্টের মতোই এর চারদিকেও বিশাল ধ্বংসাবশেষ বা গ্রহাণুর বলয় রয়েছে।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Approx. 1.47 Solar Masses',
+          hi: 'लगभग 1.47 सौर द्रव्यमान',
+          bn: 'প্রায় ১.৪৭ গুণ (সূর্যের তুলনায়)'
+        },
+        diameter: {
+          en: 'Approx. 1.86 million km (1.34 Solar Radii)',
+          hi: 'लगभग 1.86 मिलियन किमी (1.34 सौर रेडी)',
+          bn: 'প্রায় ১৮.৬ লক্ষ কি.মি. (সূর্যের ১.৩৪ গুণ)'
+        },
+        gravity: {
+          en: 'Similar to our Sun',
+          hi: 'हमारे सूर्य के समान',
+          bn: 'আমাদের সূর্যের মতোই'
+        }
+      },
+      atmosphere: {
+        en: 'Like most stars, it has no planetary atmosphere but rather a brilliant photosphere and a hot corona.',
+        hi: 'अधिकांश तारों की तरह, इसका कोई ग्रहीय वायुमंडल नहीं है बल्कि एक शानदार फोटोस्फीयर और एक गर्म कोरोना है।',
+        bn: 'অন্যান্য নক্ষত্রের মতোই এর কোনো গ্রহের মতো বায়ুমণ্ডল নেই, বরং এর রয়েছে একটি উজ্জ্বল ফটোস্ফিয়ার এবং উত্তপ্ত করোনা।'
+      },
+      orbitAndRotation: {
+        en: 'Rotates rapidly, taking roughly half a day to complete one spin on its axis.',
+        hi: 'तेजी से घूमता है, अपनी धुरी पर एक चक्कर पूरा करने में लगभग आधा दिन लगता है।',
+        bn: 'এটি খুব দ্রুত ঘোরে; নিজের অক্ষে একবার ঘুরতে এর মাত্র অর্ধেক দিন সময় লাগে।'
+      },
+      moons: {
+        en: 'Hosts a system of at least 4 directly-imaged gas giant planets.',
+        hi: 'कम से कम 4 सीधे-चित्रित गैस विशाल ग्रहों की एक प्रणाली की मेजबानी करता है।',
+        bn: 'এর কোনো উপগ্রহ নেই, তবে এটি অন্তত ৪টি বিশাল গ্যাস জায়ান্ট গ্রহের কেন্দ্রস্থল।'
+      },
+      surface: {
+        en: 'A blazing surface of plasma with an effective temperature around 7,200 °C (7,470 K), much hotter than the Sun.',
+        hi: 'लगभग 7,200 °C (7,470 K) के प्रभावी तापमान वाले प्लाज्मा की धधकती सतह, जो सूर्य से बहुत अधिक गर्म है।',
+        bn: 'প্লাজমার তৈরি একটি জ্বলন্ত পৃষ্ঠ, যার তাপমাত্রা প্রায় ৭,২০০ °C (৭,৪৭০ কেলভিন), যা সূর্যের চেয়ে অনেক বেশি উত্তপ্ত।'
+      },
+      exploration: {
+        en: 'Made history in 2008 when the Keck and Gemini observatories released the first-ever direct images of an exoplanetary system around a normal star.',
+        hi: '2008 में इतिहास रच दिया जब केक और जेमिनी वेधशालाओं ने एक सामान्य तारे के चारों ओर एक्सोप्लैनेटरी सिस्टम की पहली प्रत्यक्ष छवियां जारी कीं।',
+        bn: '২০০৮ সালে কিক এবং জেমিনি মানমন্দির থেকে যখন এই নক্ষত্রের চারপাশের গ্রহগুলোর সরাসরি ছবি প্রকাশ করা হয়, তখন এটি ইতিহাস রচনা করেছিল।'
+      },
+      didYouKnow: [
+        {
+          en: 'The star is quite young—only about 30 million years old, compared to our Sun\'s 4.6 billion years.',
+          hi: 'तारा काफी युवा है-केवल लगभग 30 मिलियन वर्ष पुराना, हमारे सूर्य के 4.6 अरब वर्ष की तुलना में।',
+          bn: 'নক্ষত্রটি বেশ তরুণ—এর বয়স মাত্র ৩ কোটি বছর, যেখানে আমাদের সূর্যের বয়স প্রায় ৪৬০ কোটি বছর!'
+        },
+        {
+          en: 'Because the star and its planets are so young, the planets are still glowing brightly from the heat of their formation, which is why we can see them directly.',
+          hi: 'चूंकि तारा और उसके ग्रह इतने युवा हैं, इसलिए ग्रह अभी भी अपने निर्माण की गर्मी से चमक रहे हैं, यही कारण है कि हम उन्हें सीधे देख सकते हैं।',
+          bn: 'যেহেতু নক্ষত্র এবং এর গ্রহগুলো খুব তরুণ, তাই গ্রহগুলো এখনো তাদের সৃষ্টির সময়কার তীব্র তাপে উজ্জ্বল হয়ে জ্বলছে, আর ঠিক এই কারণেই আমরা গ্রহগুলোর সরাসরি ছবি তুলতে সক্ষম হয়েছি।'
+        }
+      ]
+    }
   }
 ];
