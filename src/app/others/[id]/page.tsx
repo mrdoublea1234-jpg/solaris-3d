@@ -2,9 +2,8 @@ import { exoplanets } from '@/data/exoplanets';
 import { ClientExoplanetScene } from '@/components/explorer/ClientExoplanetScene';
 import { ExoplanetInformation } from '@/components/explorer/ExoplanetInformation';
 import { notFound } from 'next/navigation';
-import Link from 'next/link';
-import { ChevronLeft } from 'lucide-react';
 import { LanguageSwitcher } from '@/components/ui/LanguageSwitcher';
+import { BackButton } from '@/components/ui/BackButton';
 
 export async function generateStaticParams() {
   return exoplanets.map((planet) => ({
@@ -24,9 +23,7 @@ export default async function ExoplanetExplorerPage({ params }: { params: Promis
     <div className="w-full h-screen flex flex-col md:flex-row pt-20 md:pt-0 bg-black relative">
       {/* Back Button (Absolute) */}
       <div className="absolute top-6 left-6 z-50">
-        <Link href="/others" className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors flex items-center justify-center text-white backdrop-blur-md">
-          <ChevronLeft className="w-6 h-6" />
-        </Link>
+        <BackButton defaultHref="/others" />
       </div>
 
       {/* Language Switcher (Absolute) */}

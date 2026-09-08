@@ -53,7 +53,7 @@ export const exoplanets: ExoplanetData[] = [
     },
     radius: 1.1,
     modelType: 'texture',
-    modelPath: '/textures/exoplanets/kepler-186f.jpg',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/kepler-186f.jpg',
     details: {
       overview: {
         en: 'Kepler-186f is an exoplanet orbiting the red dwarf Kepler-186, about 582 light-years from Earth. It was the first planet with a radius similar to Earths to be discovered in the habitable zone of another star.',
@@ -219,7 +219,7 @@ export const exoplanets: ExoplanetData[] = [
     },
     radius: 3.5, 
     modelType: 'texture',
-    modelPath: '/textures/exoplanets/trappist-1.jpg',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/trappist-1.jpg',
     color: '#ff4422',
     details: {
       overview: {
@@ -386,7 +386,7 @@ export const exoplanets: ExoplanetData[] = [
     },
     radius: 1.2,
     modelType: 'texture',
-    modelPath: '/textures/exoplanets/kepler-90.jpg',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/kepler-90.jpg',
     details: {
       overview: {
         en: 'Kepler-90 is a G-type main-sequence star located around 2,840 light-years away in the constellation Draco. It is notable for having a planetary system with eight known planets, matching the number of planets in our own Solar System.',
@@ -469,7 +469,7 @@ export const exoplanets: ExoplanetData[] = [
     },
     radius: 1.31,
     modelType: 'texture',
-    modelPath: '/textures/exoplanets/kepler-90b.jpg',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/kepler-90b.jpg',
     details: {
       overview: {
         en: 'Kepler-90b is the innermost planet of the Kepler-90 system. It is a rocky super-Earth that orbits dangerously close to its host star, completing a year in just 7 Earth days.',
@@ -552,7 +552,7 @@ export const exoplanets: ExoplanetData[] = [
     },
     radius: 1.18,
     modelType: 'texture',
-    modelPath: '/textures/exoplanets/kepler-90c.jpg',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/kepler-90c.jpg',
     details: {
       overview: {
         en: 'Kepler-90c is the second planet from the star in the Kepler-90 system. Like its inner neighbor, it is a rocky super-Earth that orbits dangerously close to its star, making it extremely hot and uninhabitable.',
@@ -635,7 +635,7 @@ export const exoplanets: ExoplanetData[] = [
     },
     radius: 1.32,
     modelType: 'texture',
-    modelPath: '/textures/exoplanets/kepler-90i.jpg',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/kepler-90i.jpg',
     details: {
       overview: {
         en: 'Kepler-90i is a super-Earth exoplanet orbiting the star Kepler-90. Its discovery was a milestone in astronomy because it was found by applying machine learning to data from the Kepler Space Telescope, making Kepler-90 the first known star system to have as many planets as our Solar System.',
@@ -718,7 +718,7 @@ export const exoplanets: ExoplanetData[] = [
     },
     radius: 2.88,
     modelType: 'texture',
-    modelPath: '/textures/exoplanets/kepler-90d.jpg',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/kepler-90d.jpg',
     details: {
       overview: {
         en: 'Kepler-90d is the third planet in the Kepler-90 system. Unlike the inner rocky planets, it is a sub-Neptune, meaning it is significantly larger than Earth and likely has a thick atmosphere of hydrogen and helium over a rocky or icy core.',
@@ -801,7 +801,7 @@ export const exoplanets: ExoplanetData[] = [
     },
     radius: 2.66,
     modelType: 'texture',
-    modelPath: '/textures/exoplanets/kepler-90e.jpg',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/kepler-90e.jpg',
     details: {
       overview: {
         en: 'Kepler-90e is the fourth planet from the star in the Kepler-90 system. Like Kepler-90d, it is classified as a sub-Neptune or Mini-Neptune. It has a massive atmosphere composed primarily of hydrogen and helium, making it uninhabitable for life as we know it.',
@@ -884,7 +884,7 @@ export const exoplanets: ExoplanetData[] = [
     },
     radius: 2.89,
     modelType: 'texture',
-    modelPath: '/textures/exoplanets/kepler-90f.jpg',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/kepler-90f.jpg',
     details: {
       overview: {
         en: 'Kepler-90f is the fifth planet in the Kepler-90 system. Similar in size to Kepler-90d, it is a sub-Neptune world composed largely of gas over a denser core. It sits at a distance from its star that is comparable to Venus\'s distance from our Sun.',
@@ -967,7 +967,7 @@ export const exoplanets: ExoplanetData[] = [
     },
     radius: 8.13,
     modelType: 'texture',
-    modelPath: '/textures/exoplanets/kepler-90g.jpg',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/kepler-90g.jpg',
     details: {
       overview: {
         en: 'Kepler-90g is the sixth planet from the star in the Kepler-90 system. It marks a transition in the system from the inner rocky and sub-Neptune planets to the outer gas giants. With a radius roughly eight times that of Earth, it is similar in size to Saturn in our Solar System.',
@@ -1050,7 +1050,7 @@ export const exoplanets: ExoplanetData[] = [
     },
     radius: 11.32,
     modelType: 'texture',
-    modelPath: '/textures/exoplanets/kepler-90h.jpg',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/kepler-90h.jpg',
     details: {
       overview: {
         en: 'Kepler-90h is the seventh and outermost known planet of the Kepler-90 system (before the discovery of 90i between the inner planets). It is a massive gas giant, similar in size and likely composition to Jupiter in our own Solar System. Its discovery helped confirm the system\'s architectural resemblance to ours.',
@@ -1216,7 +1216,7 @@ export const exoplanets: ExoplanetData[] = [
     },
     radius: 1.116,
     modelType: 'texture',
-    modelPath: '/textures/exoplanets/trappist-1b.jpg',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/trappist-1b.jpg',
     details: {
       overview: {
         en: 'TRAPPIST-1b is the innermost exoplanet orbiting the ultra-cool dwarf star TRAPPIST-1. It is a rocky, Earth-sized planet that receives about 4 times more solar irradiation than Earth does from the Sun, making it far too hot for liquid water on its surface.',
@@ -1299,7 +1299,7 @@ export const exoplanets: ExoplanetData[] = [
     },
     radius: 1.097,
     modelType: 'texture',
-    modelPath: '/textures/exoplanets/trappist-1c.jpg',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/trappist-1c.jpg',
     details: {
       overview: {
         en: 'TRAPPIST-1c is the second planet orbiting the ultra-cool dwarf star TRAPPIST-1. It is a dense, rocky planet that is slightly larger than Earth. Like Venus in our Solar System, it receives a high amount of stellar radiation, making it unlikely to host liquid water.',
@@ -1382,7 +1382,7 @@ export const exoplanets: ExoplanetData[] = [
     },
     radius: 0.788,
     modelType: 'texture',
-    modelPath: '/textures/exoplanets/trappist-1d.jpg',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/trappist-1d.jpg',
     details: {
       overview: {
         en: 'TRAPPIST-1d is the third planet of the TRAPPIST-1 system. It is one of the smallest and lightest planets in the system, with a mass about 30% that of Earth. It orbits near the inner edge of the habitable zone, making it a subject of great interest for habitability studies.',
@@ -1465,7 +1465,7 @@ export const exoplanets: ExoplanetData[] = [
     },
     radius: 0.920,
     modelType: 'texture',
-    modelPath: '/textures/exoplanets/trappist-1e.jpg',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/trappist-1e.jpg',
     details: {
       overview: {
         en: 'TRAPPIST-1e is the fourth planet of the TRAPPIST-1 system and sits comfortably within its star’s habitable zone. With a mass and radius remarkably close to Earth’s, it is considered one of the most promising potentially habitable exoplanets discovered so far.',
@@ -1548,7 +1548,7 @@ export const exoplanets: ExoplanetData[] = [
     },
     radius: 1.045,
     modelType: 'texture',
-    modelPath: '/textures/exoplanets/trappist-1f.jpg',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/trappist-1f.jpg',
     details: {
       overview: {
         en: 'TRAPPIST-1f is the fifth planet from its star, orbiting near the outer edge of the habitable zone. It is similar in size to Earth but slightly less massive, which suggests it might be rich in water—either as global oceans, ice shells, or thick vapor depending on its atmosphere.',
@@ -1631,7 +1631,7 @@ export const exoplanets: ExoplanetData[] = [
     },
     radius: 1.127,
     modelType: 'texture',
-    modelPath: '/textures/exoplanets/trappist-1g.jpg',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/trappist-1g.jpg',
     details: {
       overview: {
         en: 'TRAPPIST-1g is the sixth planet from the star and the largest in the TRAPPIST-1 system. Orbiting just beyond the traditional habitable zone, it receives significantly less starlight than Earth, making it a very cold world that may be completely frozen.',
@@ -1714,7 +1714,7 @@ export const exoplanets: ExoplanetData[] = [
     },
     radius: 0.755,
     modelType: 'texture',
-    modelPath: '/textures/exoplanets/trappist-1h.jpg',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/trappist-1h.jpg',
     details: {
       overview: {
         en: 'TRAPPIST-1h is the seventh and outermost known planet of the TRAPPIST-1 system. It is also the smallest, with a mass less than a third of Earth\'s. Orbiting far beyond the habitable zone, it is a frozen world, likely resembling a large icy moon more than a typical planet.',
@@ -1797,7 +1797,7 @@ export const exoplanets: ExoplanetData[] = [
     },
     radius: 0.81,
     modelType: 'texture',
-    modelPath: '/textures/exoplanets/proxima-centauri-d.jpg',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/proxima-centauri-d.jpg',
     details: {
       overview: {
         en: 'Proxima Centauri d is the innermost and smallest known planet in the Proxima Centauri system. Orbiting its star at an incredibly close distance, it zips around in just a few days. Its discovery highlighted the ability of modern instruments to detect incredibly light planets.',
@@ -1880,7 +1880,7 @@ export const exoplanets: ExoplanetData[] = [
     },
     radius: 20.0,
     modelType: 'texture',
-    modelPath: '/textures/exoplanets/55-cancri.jpg',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/55-cancri.jpg',
     details: {
       overview: {
         en: '55 Cancri, also officially named Copernicus, is a yellow dwarf star very much like our own Sun. It is the central star of a planetary system that currently has five known exoplanets, making it one of the more populated systems discovered so far.',
@@ -1963,7 +1963,7 @@ export const exoplanets: ExoplanetData[] = [
     },
     radius: 1.875,
     modelType: 'texture',
-    modelPath: '/textures/exoplanets/55-cancri-e.jpg',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/55-cancri-e.jpg',
     details: {
       overview: {
         en: '55 Cancri e, officially named Janssen, is a blistering "super-Earth" that orbits its star in less than a day. Its incredibly high temperatures and dense composition led to early theories that its interior could be largely composed of diamond. Today, we know it is a hellish world, likely covered in oceans of lava.',
@@ -2046,7 +2046,7 @@ export const exoplanets: ExoplanetData[] = [
     },
     radius: 13.9,
     modelType: 'texture',
-    modelPath: '/textures/exoplanets/55-cancri-b.jpg',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/55-cancri-b.jpg',
     details: {
       overview: {
         en: '55 Cancri b, officially named Galileo, is a hot gas giant. It was the first planet discovered in the 55 Cancri system back in 1996. Because it orbits so close to its star, its atmosphere is intensely heated, swelling the planet\'s size and creating violent global weather patterns.',
@@ -2129,7 +2129,7 @@ export const exoplanets: ExoplanetData[] = [
     },
     radius: 10.6,
     modelType: 'texture',
-    modelPath: '/textures/exoplanets/55-cancri-c.jpg',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/55-cancri-c.jpg',
     details: {
       overview: {
         en: '55 Cancri c, officially named Brahe, is a gas giant with a mass comparable to Saturn. It is the third planet from its star and has an orbit that takes about 44 days to complete.',
@@ -2212,7 +2212,7 @@ export const exoplanets: ExoplanetData[] = [
     },
     radius: 9.2,
     modelType: 'texture',
-    modelPath: '/textures/exoplanets/55-cancri-f.jpg',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/55-cancri-f.jpg',
     details: {
       overview: {
         en: '55 Cancri f, officially named Harriot, is a gas giant exoplanet. Uniquely for the 55 Cancri system, its orbit places it right within the "habitable zone," where liquid water could theoretically exist on a solid surface.',
@@ -2295,7 +2295,7 @@ export const exoplanets: ExoplanetData[] = [
     },
     radius: 12.0,
     modelType: 'texture',
-    modelPath: '/textures/exoplanets/55-cancri-d.jpg',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/55-cancri-d.jpg',
     details: {
       overview: {
         en: '55 Cancri d, officially named Lipperhey, is a massive gas giant and the outermost known planet of its system. Orbiting its star at a distance comparable to Jupiter in our own Solar System, it is a cold and immense world.',
@@ -2378,7 +2378,7 @@ export const exoplanets: ExoplanetData[] = [
     },
     radius: 30.0,
     modelType: 'texture',
-    modelPath: '/textures/exoplanets/hr-8799.jpg',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/hr-8799.jpg',
     details: {
       overview: {
         en: 'HR 8799 is a young main-sequence star, much hotter and larger than our Sun, located in the constellation of Pegasus. It became world-famous in 2008 when astronomers announced they had directly imaged three (later four) massive planets orbiting it. It also possesses a massive debris disk, similar to our Solar System\'s Kuiper Belt, but much more active.',
