@@ -26,7 +26,9 @@ export function Sun({ sizeScale = 1 }: SunProps) {
 
   const effectiveMode = performanceMode === 'auto' ? (isMobileDevice() ? 'low' : 'high') : performanceMode;
   const segments = qualityMode === 'high' ? 128 : (effectiveMode === 'low' ? 32 : 64);
-  const currentTextureUrl = qualityMode === 'high' ? '/textures/high-res/sun.jpg' : '/textures/sun.jpg';
+  const currentTextureUrl = qualityMode === 'high' 
+    ? 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/sun_hd.jpg' 
+    : 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/sun.jpg';
 
   useFrame((state) => {
     if (sunRef.current) {

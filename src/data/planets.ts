@@ -53,8 +53,8 @@ export const planets: PlanetData[] = [
     orbitSpeed: 0,
     rotationSpeed: 0.002,
     color: '#ff9900',
-    textureUrl: '/textures/sun.jpg',
-    highResTextureUrl: '/textures/high-res/sun.jpg',
+    textureUrl: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/sun.jpg',
+    highResTextureUrl: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/sun_hd.jpg',
     details: {
       overview: {
         en: 'The Sun is a yellow dwarf star, a hot ball of glowing gases at the heart of our solar system. Its gravity holds the solar system together, keeping everything from the biggest planets to the smallest particles of debris in its orbit.',
@@ -111,8 +111,8 @@ export const planets: PlanetData[] = [
     orbitSpeed: 0.04,
     rotationSpeed: 0.01,
     color: '#a8a8a8',
-    textureUrl: '/textures/mercury.jpg',
-    highResTextureUrl: '/textures/high-res/mercury.jpg',
+    textureUrl: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/mercury.jpg',
+    highResTextureUrl: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/mercury_hd.jpg',
     details: {
       overview: {
         en: 'Mercury is the smallest planet in our solar system and the closest to the Sun. It is a rocky world with a heavily cratered surface, resembling Earth\'s Moon.',
@@ -170,8 +170,8 @@ export const planets: PlanetData[] = [
     rotationSpeed: -0.005,
     color: '#e3bb76',
     atmosphereColor: '#ffcc99',
-    textureUrl: '/textures/venus.jpg',
-    highResTextureUrl: '/textures/high-res/venus.jpg',
+    textureUrl: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/venus.jpg',
+    highResTextureUrl: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/venus_hd.jpg',
     details: {
       overview: {
         en: 'Venus is the second planet from the Sun and Earth\'s closest planetary neighbor. It’s one of the four inner, terrestrial planets, and its often called Earth’s twin because it’s similar in size and density.',
@@ -229,8 +229,8 @@ export const planets: PlanetData[] = [
     rotationSpeed: 0.02,
     color: '#2b82c9',
     atmosphereColor: '#4db8ff',
-    textureUrl: '/textures/earth.jpg',
-    highResTextureUrl: '/textures/high-res/earth.jpg',
+    textureUrl: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/earth.jpg',
+    highResTextureUrl: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/earth_hd.jpg',
     details: {
       overview: {
         en: 'Earth is the third planet from the Sun and the only astronomical object known to harbor life. About 29% of Earth\'s surface is land consisting of continents and islands.',
@@ -288,8 +288,8 @@ export const planets: PlanetData[] = [
     rotationSpeed: 0.02,
     color: '#c1440e',
     atmosphereColor: '#ff6600',
-    textureUrl: '/textures/mars.jpg',
-    highResTextureUrl: '/textures/high-res/mars.jpg',
+    textureUrl: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/mars.jpg',
+    highResTextureUrl: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/mars_hd.jpg',
     details: {
       overview: {
         en: 'Mars is the fourth planet from the Sun – a dusty, cold, desert world with a very thin atmosphere. It is a dynamic planet with seasons, polar ice caps, canyons, and extinct volcanoes.',
@@ -346,8 +346,8 @@ export const planets: PlanetData[] = [
     orbitSpeed: 0.004,
     rotationSpeed: 0.05,
     color: '#d39c7e',
-    textureUrl: '/textures/jupiter.jpg',
-    highResTextureUrl: '/textures/high-res/jupiter.jpg',
+    textureUrl: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/jupiter.jpg',
+    highResTextureUrl: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/jupiter_hd.jpg',
     details: {
       overview: {
         en: 'Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined.',
@@ -404,8 +404,8 @@ export const planets: PlanetData[] = [
     rotationSpeed: 0.028,
     color: '#e3e0c0',
     hasRings: true,
-    textureUrl: '/textures/saturn.jpg',
-    highResTextureUrl: '/textures/high-res/saturn.jpg',
+    textureUrl: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/saturn.jpg',
+    highResTextureUrl: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/saturn_hd.jpg',
     details: {
       overview: {
         en: 'Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is adorned with a dazzling system of icy rings.',
@@ -462,7 +462,8 @@ export const planets: PlanetData[] = [
     rotationSpeed: -0.03,
     color: '#d1e7e7',
     atmosphereColor: '#aee4e4',
-    textureUrl: '/textures/uranus.jpg',
+    textureUrl: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/uranus.jpg',
+    highResTextureUrl: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/uranus_hd.jpg',
     details: {
       overview: {
         en: 'Uranus is the seventh planet from the Sun. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System. It is classified as an ice giant.',
@@ -519,7 +520,8 @@ export const planets: PlanetData[] = [
     rotationSpeed: 0.032,
     color: '#3f54ba',
     atmosphereColor: '#5c7ee6',
-    textureUrl: '/textures/neptune.jpg',
+    textureUrl: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/neptune.jpg',
+    highResTextureUrl: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/neptune_hd.jpg',
     details: {
       overview: {
         en: 'Neptune is the eighth and farthest-known Solar planet from the Sun. Dark, cold, and whipped by supersonic winds, it is the last of the planets in our solar system.',

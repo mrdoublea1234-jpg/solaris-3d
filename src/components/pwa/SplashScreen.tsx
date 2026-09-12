@@ -57,7 +57,9 @@ export function SplashScreen({ isStandalone }: SplashScreenProps) {
             className="flex flex-col items-center"
           >
             <img 
-              src="/logo-512.png" 
+              src="/logo-192.png" 
+              srcSet="/logo-192.png 192w, /logo-512.png 512w"
+              sizes="(max-width: 768px) 160px, 288px"
               alt="Solaris 3D" 
               className="w-40 h-40 md:w-72 md:h-72 mb-8 object-cover" 
             />
