@@ -1,7 +1,9 @@
 'use client';
 
-import { useState, useMemo, useRef, useEffect } from 'react';
+import { useState, useMemo, useRef, useEffect, useLayoutEffect } from 'react';
 import Link from 'next/link';
+
+const useIsomorphicLayoutEffect = typeof window !== 'undefined' ? useLayoutEffect : useEffect;
 import { 
   ChevronLeft, 
   Globe, 
@@ -84,12 +86,32 @@ export default function OthersPage() {
   const tabsContainerRef = useRef<HTMLDivElement>(null);
   const isTabsRestoredRef = useRef(false);
   
-  const [searchQuery, setSearchQuery] = useState('');
-  const [typeFilter, setTypeFilter] = useState<'ALL' | 'STARS' | 'EXOPLANETS'>('ALL');
-  const [selectedSystemId, setSelectedSystemId] = useState<string>('ALL');
+  const [searchQuery, setSearchQuery] = useState(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        return sessionStorage.getItem('others_search_query') || '';
+      } catch (e) {}
+    }
+    return '';
+  });
+  const [typeFilter, setTypeFilter] = useState<'ALL' | 'STARS' | 'EXOPLANETS'>(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        return (sessionStorage.getItem('others_type_filter') as any) || 'ALL';
+      } catch (e) {}
+    }
+    return 'ALL';
+  });
+  const [selectedSystemId, setSelectedSystemId] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        return sessionStorage.getItem('others_selected_system') || 'ALL';
+      } catch (e) {}
+    }
+    return 'ALL';
+  });
   const [collapsedSystems, setCollapsedSystems] = useState<Record<string, boolean>>({});
   const [highlightedCardId, setHighlightedCardId] = useState<string | null>(null);
-  const [isInitialized, setIsInitialized] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   // Helper to reliably center card inside main scroll container (Mobile & Desktop)
@@ -112,20 +134,8 @@ export default function OthersPage() {
     // Mathematical vertical centering relative to visible area
     const targetTop = currentScrollTop + (elRect.top - containerRect.top) - stickyHeight - (availableHeight / 2) + (elRect.height / 2);
 
-    // Only 'All Systems' tab uses instant jump (0s delay, no dizzying long scroll for 100+ items).
-    // All other individual system tabs continue using elegant 'smooth' scroll!
-    if (selectedSystemId === 'ALL') {
-      container.scrollTop = Math.max(0, targetTop);
-    } else {
-      try {
-        container.scrollTo({
-          top: Math.max(0, targetTop),
-          behavior: 'smooth'
-        });
-      } catch (e) {
-        container.scrollTop = Math.max(0, targetTop);
-      }
-    }
+    // Center card immediately without any scroll animation across all tabs to eliminate lag on mobile devices
+    container.scrollTop = Math.max(0, targetTop);
 
     setHighlightedCardId(cardId);
     setTimeout(() => setHighlightedCardId(null), 2500);
@@ -154,40 +164,55 @@ export default function OthersPage() {
       }
     } else {
       container.scrollLeft = targetLeft;
-      try {
-        container.scrollTo({ left: targetLeft, behavior: 'auto' });
-      } catch (e) {}
     }
     return true;
   };
 
-  // 1. Restore saved system, search, and type filter on mount
-  useEffect(() => {
-    try {
-      const savedSystem = sessionStorage.getItem('others_selected_system');
-      const savedSearch = sessionStorage.getItem('others_search_query');
-      const savedType = sessionStorage.getItem('others_type_filter');
+  // 1. Immediately restore scroll positions BEFORE browser paint (Eliminates top-of-page flash & lag)
+  useIsomorphicLayoutEffect(() => {
+    let savedScrollTop: string | null = null;
+    let savedTabsScroll: string | null = null;
+    let targetPlanetId: string | null = null;
 
-      if (savedSystem) {
-        setSelectedSystemId(savedSystem);
+    try {
+      savedScrollTop = sessionStorage.getItem('others_scroll_top');
+      savedTabsScroll = sessionStorage.getItem('others_tabs_scroll');
+      targetPlanetId = sessionStorage.getItem('others_last_planet');
+    } catch (e) {}
+
+    // Restore horizontal tab scroll immediately before paint
+    if (tabsContainerRef.current) {
+      if (savedTabsScroll !== null) {
+        const targetLeft = parseFloat(savedTabsScroll);
+        if (!isNaN(targetLeft)) {
+          tabsContainerRef.current.scrollLeft = targetLeft;
+          isTabsRestoredRef.current = true;
+        }
+      } else if (selectedSystemId !== 'ALL') {
+        centerPill(selectedSystemId, false);
+        isTabsRestoredRef.current = true;
       }
-      if (savedSearch) {
-        setSearchQuery(savedSearch);
+    }
+
+    // Restore vertical main scroll immediately before paint
+    if (mainRef.current && savedScrollTop !== null) {
+      const top = parseFloat(savedScrollTop);
+      if (!isNaN(top)) {
+        mainRef.current.scrollTop = top;
       }
-      if (savedType) {
-        setTypeFilter(savedType as any);
+    }
+
+    // Ensure target section is expanded if in ALL view
+    if (targetPlanetId) {
+      const sys = getSystemForPlanet(targetPlanetId);
+      if (sys && selectedSystemId === 'ALL') {
+        setCollapsedSystems(prev => ({ ...prev, [sys.id]: false }));
       }
-    } catch (e) {
-      // Ignore
-    } finally {
-      setIsInitialized(true);
     }
   }, []);
 
-  // 2. Center card reliably when returning, polling until DOM layout is ready on mobile & desktop
+  // 2. Fine-tune card centering and highlight on mount (Fast, single requestAnimationFrame)
   useEffect(() => {
-    if (!isInitialized) return;
-
     let targetPlanetId: string | null = null;
     try {
       targetPlanetId = sessionStorage.getItem('others_last_planet');
@@ -195,103 +220,30 @@ export default function OthersPage() {
 
     if (!targetPlanetId) return;
 
-    // Ensure the section is expanded if in ALL view
-    const sys = getSystemForPlanet(targetPlanetId);
-    if (sys && selectedSystemId === 'ALL') {
-      setCollapsedSystems(prev => ({ ...prev, [sys.id]: false }));
-    }
-
-    let attempts = 0;
-    const maxAttempts = 25;
-
-    const interval = setInterval(() => {
-      attempts++;
+    const performCentering = () => {
       if (targetPlanetId && centerCard(targetPlanetId)) {
-        clearInterval(interval);
         try {
           sessionStorage.removeItem('others_last_planet');
+          sessionStorage.removeItem('others_scroll_top');
         } catch (e) {}
-      } else if (attempts >= maxAttempts) {
-        clearInterval(interval);
-        try {
-          sessionStorage.removeItem('others_last_planet');
-        } catch (e) {}
+        return true;
       }
-    }, 50);
-
-    return () => clearInterval(interval);
-  }, [isInitialized, selectedSystemId]);
-
-  // 3. Restore horizontal star system tabs scroll position on mount (Mobile & Desktop)
-  useEffect(() => {
-    if (!isInitialized) return;
-
-    let savedTabsScroll: string | null = null;
-    try {
-      savedTabsScroll = sessionStorage.getItem('others_tabs_scroll');
-    } catch (e) {}
-
-    let attempts = 0;
-    const maxAttempts = 30;
-
-    const applyTabsRestoration = () => {
-      const container = tabsContainerRef.current;
-      if (!container) return false;
-
-      // Wait for layout to be non-zero
-      if (container.clientWidth === 0 || container.scrollWidth === 0) return false;
-
-      // 1. If user had a specific saved pixel scroll position, restore it directly
-      if (savedTabsScroll !== null) {
-        const targetLeft = parseFloat(savedTabsScroll);
-        if (!isNaN(targetLeft)) {
-          container.scrollLeft = targetLeft;
-          try {
-            container.scrollTo({ left: targetLeft, behavior: 'auto' });
-          } catch (e) {}
-
-          if (Math.abs(container.scrollLeft - targetLeft) <= 5 || container.scrollWidth <= container.clientWidth) {
-            isTabsRestoredRef.current = true;
-            return true;
-          }
-        }
-      }
-
-      // 2. If a specific system is active, center that pill as primary / fallback
-      if (selectedSystemId !== 'ALL') {
-        if (centerPill(selectedSystemId, false)) {
-          isTabsRestoredRef.current = true;
-          try {
-            sessionStorage.setItem('others_tabs_scroll', String(container.scrollLeft));
-          } catch (e) {}
-          return true;
-        }
-        return false;
-      }
-
-      isTabsRestoredRef.current = true;
-      return true;
+      return false;
     };
 
-    if (applyTabsRestoration()) return;
+    // Try centering immediately; if not ready retry on next frame
+    if (!performCentering()) {
+      const raf = requestAnimationFrame(() => {
+        if (!performCentering()) {
+          setTimeout(performCentering, 50);
+        }
+      });
+      return () => cancelAnimationFrame(raf);
+    }
+  }, [selectedSystemId]);
 
-    const timer = setInterval(() => {
-      attempts++;
-      if (applyTabsRestoration() || attempts >= maxAttempts) {
-        clearInterval(timer);
-        isTabsRestoredRef.current = true;
-      }
-    }, 40);
-
-    return () => {
-      clearInterval(timer);
-      isTabsRestoredRef.current = true;
-    };
-  }, [isInitialized, selectedSystemId]);
-
-  // 4. Persist state changes in sessionStorage only AFTER initial load
+  // 3. Persist state changes in sessionStorage
   useEffect(() => {
-    if (!isInitialized) return;
     try {
       sessionStorage.setItem('others_selected_system', selectedSystemId);
       sessionStorage.setItem('others_search_query', searchQuery);
@@ -299,7 +251,7 @@ export default function OthersPage() {
     } catch (e) {
       // Ignore
     }
-  }, [selectedSystemId, searchQuery, typeFilter, isInitialized]);
+  }, [selectedSystemId, searchQuery, typeFilter]);
 
   const handleTabsScroll = (e: React.UIEvent<HTMLDivElement>) => {
     if (!isTabsRestoredRef.current) return;
@@ -351,6 +303,7 @@ export default function OthersPage() {
       sessionStorage.removeItem('others_type_filter');
       sessionStorage.removeItem('others_last_planet');
       sessionStorage.removeItem('others_tabs_scroll');
+      sessionStorage.removeItem('others_scroll_top');
     } catch (e) {}
     router.push('/');
   };
@@ -363,6 +316,9 @@ export default function OthersPage() {
       sessionStorage.setItem('others_type_filter', typeFilter);
       if (tabsContainerRef.current) {
         sessionStorage.setItem('others_tabs_scroll', String(tabsContainerRef.current.scrollLeft));
+      }
+      if (mainRef.current) {
+        sessionStorage.setItem('others_scroll_top', String(mainRef.current.scrollTop));
       }
     } catch (e) {}
   };
@@ -439,12 +395,11 @@ export default function OthersPage() {
       <motion.div 
         key={item.id}
         id={`card-${item.id}`}
-        layout
-        initial={{ opacity: 0, scale: 0.96 }}
-        animate={{ opacity: 1, scale: 1 }}
-        exit={{ opacity: 0, scale: 0.96 }}
-        transition={{ duration: 0.2 }}
-        className={`group relative border rounded-2xl p-5 sm:p-6 transition-all duration-300 flex flex-col justify-between ${
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.15 }}
+        className={`group relative border rounded-2xl p-5 sm:p-6 transition-colors duration-200 flex flex-col justify-between ${
           isHighlighted
             ? 'bg-[#152136] border-blue-400 ring-2 ring-blue-400 shadow-2xl shadow-blue-500/30'
             : 'bg-[#0b0f17]/90 hover:bg-[#121824] border-white/10 hover:border-blue-500/40 shadow-lg shadow-black/40 hover:shadow-blue-950/20'
@@ -530,17 +485,11 @@ export default function OthersPage() {
       className="h-[100dvh] overflow-y-auto overflow-x-hidden bg-black text-white px-4 sm:px-6 md:px-12 pb-24 pt-0 relative selection:bg-blue-600 selection:text-white"
     >
       {/* Dynamic Cosmic Background Glow */}
-      <motion.div 
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1.2, ease: 'easeOut' }}
-        className="fixed top-[-20%] right-[-10%] w-[60vw] h-[60vw] bg-blue-900/15 blur-[140px] rounded-full pointer-events-none" 
+      <div 
+        className="fixed top-[-20%] right-[-10%] w-[60vw] h-[60vw] bg-blue-900/15 blur-[90px] sm:blur-[140px] rounded-full pointer-events-none transform-gpu" 
       />
-      <motion.div 
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1.4, ease: 'easeOut' }}
-        className="fixed bottom-[-20%] left-[-10%] w-[50vw] h-[50vw] bg-purple-900/15 blur-[140px] rounded-full pointer-events-none" 
+      <div 
+        className="fixed bottom-[-20%] left-[-10%] w-[50vw] h-[50vw] bg-purple-900/15 blur-[90px] sm:blur-[140px] rounded-full pointer-events-none transform-gpu" 
       />
 
       <motion.div 
