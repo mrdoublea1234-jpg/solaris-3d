@@ -86,14 +86,7 @@ export default function OthersPage() {
   const tabsContainerRef = useRef<HTMLDivElement>(null);
   const isTabsRestoredRef = useRef(false);
   
-  const [searchQuery, setSearchQuery] = useState(() => {
-    if (typeof window !== 'undefined') {
-      try {
-        return sessionStorage.getItem('others_search_query') || '';
-      } catch (e) {}
-    }
-    return '';
-  });
+  const [searchQuery, setSearchQuery] = useState('');
   const [typeFilter, setTypeFilter] = useState<'ALL' | 'STARS' | 'EXOPLANETS'>(() => {
     if (typeof window !== 'undefined') {
       try {
@@ -246,12 +239,11 @@ export default function OthersPage() {
   useEffect(() => {
     try {
       sessionStorage.setItem('others_selected_system', selectedSystemId);
-      sessionStorage.setItem('others_search_query', searchQuery);
       sessionStorage.setItem('others_type_filter', typeFilter);
     } catch (e) {
       // Ignore
     }
-  }, [selectedSystemId, searchQuery, typeFilter]);
+  }, [selectedSystemId, typeFilter]);
 
   const handleTabsScroll = (e: React.UIEvent<HTMLDivElement>) => {
     if (!isTabsRestoredRef.current) return;
@@ -270,8 +262,10 @@ export default function OthersPage() {
 
   const handleSelectSystem = (systemId: string) => {
     setSelectedSystemId(systemId);
+    setSearchQuery('');
     try {
       sessionStorage.setItem('others_selected_system', systemId);
+      sessionStorage.removeItem('others_search_query');
     } catch (err) {}
 
     if (systemId === 'ALL') {
@@ -372,7 +366,10 @@ export default function OthersPage() {
     const groups: { system: StarSystem; items: ExoplanetData[] }[] = [];
 
     STAR_SYSTEMS.forEach(sys => {
-      const itemsInSystem = filteredExoplanets.filter(planet => sys.planetIds.includes(planet.id));
+      const itemsInSystem = filteredExoplanets.filter(planet => {
+        const pSys = getSystemForPlanet(planet.id);
+        return pSys?.id === sys.id || sys.planetIds.includes(planet.id);
+      });
       if (itemsInSystem.length > 0) {
         groups.push({
           system: sys,
@@ -380,6 +377,39 @@ export default function OthersPage() {
         });
       }
     });
+
+    // Fallback: any uncategorized exoplanet or star so it NEVER vanishes
+    const uncategorized = filteredExoplanets.filter(planet => !getSystemForPlanet(planet.id));
+    if (uncategorized.length > 0) {
+      groups.push({
+        system: {
+          id: 'other-discoveries',
+          name: {
+            en: 'Other Stellar Discoveries',
+            hi: 'अन्य तारकीय खोजें',
+            bn: 'অন্যান্য মহাজাগতিক আবিষ্কার'
+          },
+          badge: '🌌',
+          hostStar: {
+            en: 'Deep Space',
+            hi: 'गहरा अंतरिक्ष',
+            bn: 'মহাশূন্য'
+          },
+          distance: {
+            en: 'Various Distances',
+            hi: 'विभिन्न दूरियां',
+            bn: 'বিভিন্ন দূরত্ব'
+          },
+          tagline: {
+            en: 'Newly discovered exoplanets and stellar bodies across the cosmos.',
+            hi: 'ब्रह्मांड भर में नए खोजे गए एक्सोप्लैनेट्स और तारकीय पिंड।',
+            bn: 'মহাবিশ্ব জুড়ে নতুন আবিষ্কৃত এক্সোপ্ল্যানেট ও নক্ষত্রসমূহ।'
+          },
+          planetIds: uncategorized.map(p => p.id)
+        },
+        items: uncategorized
+      });
+    }
 
     return groups;
   }, [filteredExoplanets]);
@@ -474,6 +504,7 @@ export default function OthersPage() {
   return (
     <main 
       ref={mainRef} 
+      suppressHydrationWarning
       onScroll={(e) => {
         const top = e.currentTarget.scrollTop;
         if (top > 40 && !isScrolled) {
@@ -650,7 +681,7 @@ export default function OthersPage() {
               {/* Individual System Pills */}
               {STAR_SYSTEMS.map((sys) => {
                 const isSelected = selectedSystemId === sys.id;
-                const count = sys.planetIds.length;
+                const count = exoplanets.filter(p => getSystemForPlanet(p.id)?.id === sys.id || sys.planetIds.includes(p.id)).length;
 
                 return (
                   <button

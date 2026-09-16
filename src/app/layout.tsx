@@ -1,5 +1,6 @@
 import { ClerkProvider } from '@clerk/nextjs';
 import type { Metadata, Viewport } from 'next';
+import Script from 'next/script';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { GlobalAudio } from '@/components/audio/GlobalAudio';
@@ -60,15 +61,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script dangerouslySetInnerHTML={{
-          __html: `
-            window.deferredPwaPrompt = null;
-            window.addEventListener('beforeinstallprompt', (e) => {
-              e.preventDefault();
-              window.deferredPwaPrompt = e;
-            });
-          `
-        }} />
+        <Script
+          id="deferred-pwa-prompt"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.deferredPwaPrompt = null;
+              window.addEventListener('beforeinstallprompt', (e) => {
+                e.preventDefault();
+                window.deferredPwaPrompt = e;
+              });
+            `
+          }}
+        />
       </head>
       <body className={`${inter.className} bg-black overflow-hidden`}>
         <ClerkProvider>

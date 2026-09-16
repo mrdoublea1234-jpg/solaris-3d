@@ -193,11 +193,71 @@ export const STAR_SYSTEMS: StarSystem[] = [
       bn: 'একটি তরুণ নক্ষত্র, যার চারপাশের গ্রহগুলোর প্রথমবারের মতো সরাসরি ছবি তোলা সম্ভব হয়েছিল।'
     },
     planetIds: [
-      'hr-8799'
+      'hr-8799',
+      'hr-8799-e',
+      'hr-8799-d',
+      'hr-8799-c',
+      'hr-8799-b'
+    ]
+  },
+  {
+    id: 'toi-700',
+    name: {
+      en: 'TOI-700 System',
+      hi: 'टीओआई-700 प्रणाली',
+      bn: 'টিওআই-৭০০ সৌরজগৎ'
+    },
+    badge: '🔴',
+    hostStar: {
+      en: 'TOI-700 (Red Dwarf)',
+      hi: 'टीओआई-700 (लाल बौना)',
+      bn: 'টিওআই-৭০০ (লাল বামন নক্ষত্র)'
+    },
+    distance: {
+      en: '101.4 Light Years',
+      hi: '101.4 प्रकाश वर्ष',
+      bn: '১০১.৪ আলোকবর্ষ'
+    },
+    tagline: {
+      en: 'A quiet red dwarf hosting four Earth-sized planets, including two located inside the habitable zone.',
+      hi: 'चार पृथ्वी के आकार के ग्रहों की मेजबानी करने वाला एक शांत लाल बौना तारा, जिसमें दो रहने योग्य क्षेत्र में हैं।',
+      bn: '৪টি পৃথিবী-আকারের গ্রহ বিশিষ্ট একটি শান্ত লাল বামন নক্ষত্র, যার ২টি গ্রহ সরাসরি বাসযোগ্য অঞ্চলে অবস্থিত।'
+    },
+    planetIds: [
+      'toi-700',
+      'toi-700-b',
+      'toi-700-c',
+      'toi-700-e',
+      'toi-700-d'
     ]
   }
 ];
 
 export function getSystemForPlanet(planetId: string): StarSystem | undefined {
-  return STAR_SYSTEMS.find(sys => sys.planetIds.includes(planetId));
+  if (!planetId) return undefined;
+  const cleanId = planetId.toLowerCase();
+
+  // 1. Explicit match in planetIds
+  const explicit = STAR_SYSTEMS.find(sys => sys.planetIds.includes(cleanId));
+  if (explicit) return explicit;
+
+  // 2. Intelligent prefix matching for known star systems
+  for (const sys of STAR_SYSTEMS) {
+    const sysId = sys.id.toLowerCase();
+    if (cleanId === sysId || cleanId.startsWith(`${sysId}-`) || cleanId.startsWith(`${sysId}_`)) {
+      return sys;
+    }
+  }
+
+  // 3. Special cases: Proxima Centauri
+  if (cleanId.startsWith('proxima')) {
+    return STAR_SYSTEMS.find(sys => sys.id === 'proxima-centauri');
+  }
+
+  // 4. Special cases: Kepler habitable candidates (kepler-186f, kepler-22b, kepler-452b, etc.)
+  if (cleanId.startsWith('kepler-') && !cleanId.startsWith('kepler-90')) {
+    return STAR_SYSTEMS.find(sys => sys.id === 'kepler-habitable');
+  }
+
+  return undefined;
 }

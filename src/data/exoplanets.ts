@@ -2440,5 +2440,752 @@ export const exoplanets: ExoplanetData[] = [
         }
       ]
     }
+  },
+  {
+    id: 'hr-8799-e',
+    type: 'Exoplanet',
+    name: {
+      en: 'HR 8799 e',
+      hi: 'एचआर 8799 ई',
+      bn: 'এইচআর ৮৭৯৯ ই'
+    },
+    description: {
+      en: 'The innermost planet discovered in the famous HR 8799 multi-planet system, directly imaged glowing in infrared.',
+      hi: 'प्रसिद्ध एचआर 8799 बहु-ग्रह प्रणाली में खोजा गया सबसे आंतरिक ग्रह, जिसे सीधे अवरक्त में चमकते हुए चित्रित किया गया है।',
+      bn: 'বিখ্যাত এইচআর ৮৭৯৯ বহু-গ্রহ সৌরজগতের সবচেয়ে ভেতরের গ্রহ, যা ইনফ্রারেড আলোয় সরাসরি ছবি তুলে আবিষ্কার করা হয়েছিল।'
+    },
+    distance: {
+      en: '133 Light Years',
+      hi: '133 प्रकाश वर्ष',
+      bn: '১৩৩ আলোকবর্ষ'
+    },
+    radius: 13.0,
+    modelType: 'texture',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/hr-8799-e.jpg',
+    details: {
+      overview: {
+        en: 'HR 8799 e is a super-Jupiter exoplanet orbiting the star HR 8799. Discovered in 2010, it was the fourth planet confirmed in the system. Because it is extremely young and massive, it still radiates strong internal heat, appearing brightly in infrared observations.',
+        hi: 'एचआर 8799 ई तारे एचआर 8799 की परिक्रमा करने वाला एक सुपर-बृहस्पति एक्सोप्लैनेट है। 2010 में खोजा गया, यह प्रणाली में पुष्टि किया गया चौथा ग्रह था। क्योंकि यह बेहद युवा और विशाल है, यह अभी भी मजबूत आंतरिक गर्मी विकीर्ण करता है।',
+        bn: 'এইচআর ৮৭৯৯ ই হলো এইচআর ৮৭৯৯ নক্ষত্রকে প্রদক্ষিণকারী একটি "সুপার-জুপিটার" (বৃহস্পতির চেয়েও বড়) এক্সোপ্ল্যানেট। ২০১০ সালে আবিষ্কৃত এটি এই সৌরজগতের চতুর্থ নিশ্চিত গ্রহ। এটি অত্যন্ত তরুণ এবং বিশাল আকারের হওয়ায় এখনও এর অভ্যন্তর থেকে তীব্র তাপ নির্গত হচ্ছে, যার ফলে ইনফ্রারেড পর্যবেক্ষণে এটি অত্যন্ত উজ্জ্বল দেখায়।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Approx. 5 to 10 Jupiter Masses',
+          hi: 'लगभग 5 से 10 बृहस्पति द्रव्यमान',
+          bn: 'প্রায় ৫ থেকে ১০ গুণ (বৃহস্পতির তুলনায়)'
+        },
+        diameter: {
+          en: 'Estimated ~150,000 km (1.17 Jupiters)',
+          hi: 'अनुमानित ~150,000 किमी (1.17 बृहस्पति)',
+          bn: 'আনুমানিক ১,৫০,০০০ কি.মি. (বৃহস্পতির ১.১৭ গুণ)'
+        },
+        gravity: {
+          en: 'Extremely high, multiple times that of Jupiter',
+          hi: 'अत्यधिक उच्च, बृहस्पति से कई गुना',
+          bn: 'অত্যন্ত প্রবল, বৃহস্পতির চেয়েও কয়েক গুণ বেশি'
+        }
+      },
+      atmosphere: {
+        en: 'A stormy, turbulent atmosphere with clouds of iron and silicate dust churned by extreme convection.',
+        hi: 'लोहे और सिलिकेट धूल के बादलों के साथ एक तूफानी, अशांत वातावरण जो अत्यधिक संवहन द्वारा मंथन किया जाता है।',
+        bn: 'তীব্র তাপীয় আলোড়নে তৈরি একটি অত্যন্ত অশান্ত বায়ুমণ্ডল, যাতে লোহা এবং সিলিকেট ধূলিকণার মেঘ উড়ছে।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits its host star at roughly 14.5 AU with an orbital period of about 45 to 50 Earth years.',
+        hi: 'लगभग 45 से 50 पृथ्वी वर्षों की कक्षीय अवधि के साथ लगभग 14.5 एयू पर अपने मेजबान तारे की परिक्रमा करता है।',
+        bn: 'নক্ষত্র থেকে প্রায় ১৪.৫ এইউ দূরত্বে অবস্থান করে এবং একবার প্রদক্ষিণ করতে এর প্রায় ৪৫ থেকে ৫০ বছর সময় লাগে।'
+      },
+      moons: {
+        en: 'Likely possesses an extensive system of moons, though none can be detected at this distance.',
+        hi: 'संभवतः चंद्रमाओं की एक व्यापक प्रणाली है, हालांकि इस दूरी पर किसी का भी पता नहीं लगाया जा सकता है।',
+        bn: 'বিশাল আকারের কারণে এর চারপাশে অসংখ্য উপগ্রহ থাকার প্রবল সম্ভাবনা রয়েছে, তবে এত দূর থেকে সেগুলো দেখা সম্ভব নয়।'
+      },
+      surface: {
+        en: 'Lacks a solid surface; it is a gas giant with crushing pressures and scalding interior temperatures.',
+        hi: 'एक ठोस सतह का अभाव है; यह कुचलने वाले दबाव और अत्यधिक आंतरिक तापमान वाला एक गैस विशालकाय है।',
+        bn: 'গ্যাস জায়ান্ট হওয়ায় এর কোনো কঠিন পৃষ্ঠ নেই; এর ভেতরটা প্রচণ্ড চাপ এবং উত্তপ্ত গ্যাসে পরিপূর্ণ।'
+      },
+      exploration: {
+        en: 'Discovered in 2010 through direct imaging using the Keck telescope, marking a milestone in observing multiple planets orbiting another star.',
+        hi: 'केक दूरबीन का उपयोग करके प्रत्यक्ष इमेजिंग के माध्यम से 2010 में खोजा गया।',
+        bn: '২০১০ সালে ডব্লিউ. এম. কিক টেলিস্কোপের মাধ্যমে সরাসরি ছবি তুলে এটি আবিষ্কার করা হয়েছিল।'
+      },
+      didYouKnow: [
+        {
+          en: 'The atmosphere contains patchy clouds of vaporized silicate minerals, meaning it essentially has clouds made of sand and rock!',
+          hi: 'वायुमंडल में वाष्पीकृत सिलिकेट खनिजों के धब्बेदार बादल होते हैं, जिसका अर्थ है कि इसमें अनिवार्य रूप से रेत और चट्टान से बने बादल हैं!',
+          bn: 'এর বায়ুমণ্ডলে বাষ্পীভূত সিলিকেট খনিজ রয়েছে, অর্থাৎ সহজ কথায় এই গ্রহে পাথর এবং বালুর তৈরি মেঘ উড়ছে!'
+        },
+        {
+          en: 'Even though it is the innermost planet of HR 8799, its distance from the star is still comparable to Saturn’s distance from our Sun.',
+          hi: 'भले ही यह एचआर 8799 का सबसे आंतरिक ग्रह है, फिर भी तारे से इसकी दूरी हमारे सूर्य से शनि की दूरी के बराबर है।',
+          bn: 'এইচআর ৮৭৯৯ সৌরজগতের সবচেয়ে ভেতরের গ্রহ হওয়া সত্ত্বেও, নক্ষত্র থেকে এর দূরত্ব আমাদের সূর্য থেকে শনি গ্রহের দূরত্বের কাছাকাছি।'
+        }
+      ]
+    }
+  },
+  {
+    id: 'hr-8799-d',
+    type: 'Exoplanet',
+    name: {
+      en: 'HR 8799 d',
+      hi: 'एचआर 8799 डी',
+      bn: 'এইচআর ৮৭৯৯ ডি'
+    },
+    description: {
+      en: 'A massive gas giant planet orbiting inside the debris ring of HR 8799, directly imaged in 2008.',
+      hi: 'एचआर 8799 के मलबे के छल्ले के अंदर परिक्रमा करने वाला एक विशाल गैस विशाल ग्रह, जिसे 2008 में सीधे चित्रित किया गया था।',
+      bn: 'এইচআর ৮৭৯৯ নক্ষত্রের গ্রহাণু বলয়ের ভেতরে অবস্থিত একটি সুবিশাল গ্যাস জায়ান্ট, যা ২০০৮ সালে সরাসরি ছবি তুলে আবিষ্কৃত হয়েছিল।'
+    },
+    distance: {
+      en: '133 Light Years',
+      hi: '133 प्रकाश वर्ष',
+      bn: '১৩৩ আলোকবর্ষ'
+    },
+    radius: 13.5,
+    modelType: 'texture',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/hr-8799-d.jpg',
+    details: {
+      overview: {
+        en: 'HR 8799 d is a super-Jupiter exoplanet located approximately 27 AU from its host star. Discovered in 2008 alongside planets b and c, it was one of the very first exoplanets ever to have its orbital motion observed directly over time.',
+        hi: 'एचआर 8799 डी अपने मेजबान तारे से लगभग 27 एयू दूर स्थित एक सुपर-बृहस्पति एक्सोप्लैनेट है। 2008 में ग्रहों बी और सी के साथ खोजा गया, यह समय के साथ अपनी कक्षीय गति को सीधे देखे जाने वाले पहले एक्सोप्लैनेट्स में से एक था।',
+        bn: 'এইচআর ৮৭৯৯ ডি হলো এর মূল নক্ষত্র থেকে প্রায় ২৭ এইউ দূরত্বে অবস্থিত একটি সুপার-জুপিটার এক্সোপ্ল্যানেট। ২০০৮ সালে গ্রহ b এবং c এর সাথে একসাথে আবিষ্কৃত হওয়া এই গ্রহটি বিজ্ঞানের ইতিহাসে এমন প্রথম কিছু গ্রহের অন্যতম যার নিজের কক্ষপথে চলার দৃশ্য সরাসরি ক্যামেরায় রেকর্ড করা সম্ভব হয়েছিল।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Approx. 7 to 10 Jupiter Masses',
+          hi: 'लगभग 7 से 10 बृहस्पति द्रव्यमान',
+          bn: 'প্রায় ৭ থেকে ১০ গুণ (বৃহস্পতির তুলনায়)'
+        },
+        diameter: {
+          en: 'Estimated ~155,000 km (1.2 Jupiters)',
+          hi: 'अनुमानित ~155,000 किमी (1.2 बृहस्पति)',
+          bn: 'আনুমানিক ১,৫৫,০০০ কি.মি. (বৃহস্পতির ১.২ গুণ)'
+        },
+        gravity: {
+          en: 'Crushingly strong, many times Earth and Jupiter',
+          hi: 'अत्यंत शक्तिशाली, पृथ्वी और बृहस्पति से कई गुना',
+          bn: 'অত্যন্ত শক্তিশালী, পৃথিবী ও বৃহস্পতির চেয়ে বহু গুণ বেশি'
+        }
+      },
+      atmosphere: {
+        en: 'A stormy atmosphere dominated by water vapor, carbon monoxide, and methane with thick clouds of silicate dust.',
+        hi: 'जलवाष्प, कार्बन मोनोऑक्साइड और मीथेन के साथ सिलिकेट धूल के घने बादलों वाला एक तूफानी वातावरण।',
+        bn: 'জলীয় বাষ্প, কার্বন মনোক্সাইড ও মিথেন সমৃদ্ধ একটি উত্তাল বায়ুমণ্ডল, যাতে সিলিকেট ধূলিকণার ঘন মেঘ রয়েছে।'
+      },
+      orbitAndRotation: {
+        en: 'Takes about 100 Earth years to orbit HR 8799 once, locked in a orbital resonance with its sibling planets.',
+        hi: 'अपने भाई-बहनों के ग्रहों के साथ एक कक्षीय प्रतिध्वनि में बंद, एचआर 8799 की एक बार परिक्रमा करने में लगभग 100 पृथ्वी वर्ष लगते हैं।',
+        bn: 'নক্ষত্রটিকে একবার প্রদক্ষিণ করতে এর প্রায় ১০০ বছর সময় লাগে। এটি এর সহোদর গ্রহগুলোর সাথে সুনির্দিষ্ট কক্ষীয় রেজোন্যান্সে রয়েছে।'
+      },
+      moons: {
+        en: 'Could harbor large icy moons, though undetected with current technology.',
+        hi: 'बड़े बर्फीले चंद्रमा हो सकते हैं, हालांकि वर्तमान तकनीक से इसका पता नहीं चला है।',
+        bn: 'বিশাল ভরের কারণে এর চারপাশে বরফে ঢাকা বড় উপগ্রহ থাকার সম্ভাবনা রয়েছে।'
+      },
+      surface: {
+        en: 'No solid surface; it is a gas giant with immense internal heat and crushing pressures.',
+        hi: 'कोई ठोस सतह नहीं; यह अत्यधिक आंतरिक गर्मी और कुचलने वाले दबावों वाला एक गैस विशालकाय है।',
+        bn: 'কোনো কঠিন পৃষ্ঠ নেই; এটি উত্তপ্ত গ্যাসীয় পদার্থ ও তীব্র চাপে গঠিত এক গ্যাসের দানব।'
+      },
+      exploration: {
+        en: 'Announced in November 2008 by a team of Canadian and American astronomers using Keck and Gemini telescopes.',
+        hi: 'केक और जेमिनी दूरबीनों का उपयोग करके कनाडाई और अमेरिकी खगोलविदों की एक टीम द्वारा नवंबर 2008 में घोषित किया गया।',
+        bn: '২০০৮ সালের নভেম্বরে কিক এবং জেমিনি টেলিস্কোপ ব্যবহার করে কানাডিয়ান ও আমেরিকান গবেষক দল এটি আবিষ্কারের ঘোষণা দেয়।'
+      },
+      didYouKnow: [
+        {
+          en: 'The planets of HR 8799 are in a 1:2:4:8 resonance, meaning for every 1 orbit planet b makes, planet d makes 4 orbits!',
+          hi: 'एचआर 8799 के ग्रह 1:2:4:8 के अनुपात में हैं, जिसका अर्थ है कि ग्रह बी द्वारा लगाए जाने वाले प्रत्येक 1 चक्कर के लिए, ग्रह डी 4 चक्कर लगाता है!',
+          bn: 'এইচআর ৮৭৯৯ সিস্টেমের গ্রহগুলো ১:২:৪:৮ রেজোন্যান্সে ঘোরে, অর্থাৎ গ্রহ b যখন ১ বার ঘোরে, গ্রহ d ঠিক ৪ বার প্রদক্ষিণ করে ফেলে!'
+        },
+        {
+          en: 'Its glowing heat emission allows astronomers to study the chemical fingerprints of its atmosphere across 133 light years.',
+          hi: 'इसका चमकता हुआ ऊष्मा उत्सर्जन खगोलविदों को 133 प्रकाश वर्ष दूर इसके वायुमंडल के रासायनिक फिंगरप्रिंट का अध्ययन करने की अनुमति देता है।',
+          bn: 'এর নিজস্ব উজ্জ্বল তাপ বিকিরণের কারণে জ্যোতির্বিজ্ঞানীরা ১৩৩ আলোকবর্ষ দূর থেকেও এর বায়ুমণ্ডলের রাসায়নিক উপাদান নিখুঁতভাবে পরীক্ষা করতে পেরেছেন।'
+        }
+      ]
+    }
+  },
+  {
+    id: 'hr-8799-c',
+    type: 'Exoplanet',
+    name: {
+      en: 'HR 8799 c',
+      hi: 'एचआर 8799 सी',
+      bn: 'এইচআর ৮৭৯৯ সি'
+    },
+    description: {
+      en: 'A colossal super-Jupiter gas giant orbiting at 38 AU, directly imaged glowing with nascent thermal radiation.',
+      hi: '38 एयू पर परिक्रमा करने वाला एक विशाल सुपर-बृहस्पति गैस विशालकाय, जो नवजात थर्मल विकिरण के साथ सीधे चमकता हुआ चित्रित किया गया है।',
+      bn: 'নক্ষত্র থেকে ৩৮ এইউ দূরত্বে অবস্থিত একটি দানবাকৃতির সুপার-জুপিটার এক্সোপ্ল্যানেট, যার সৃষ্টিলগ্নের তাপীয় আলোয় সরাসরি ছবি তোলা হয়েছিল।'
+    },
+    distance: {
+      en: '133 Light Years',
+      hi: '133 प्रकाश वर्ष',
+      bn: '১৩৩ আলোকবর্ষ'
+    },
+    radius: 13.6,
+    modelType: 'texture',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/hr-8799-c.jpg',
+    details: {
+      overview: {
+        en: 'HR 8799 c is a massive young gas giant orbiting HR 8799 at a distance similar to Pluto\'s orbit in our Solar System. Discovered in 2008, it has a high concentration of water vapor and carbon monoxide in its scorching atmosphere.',
+        hi: 'एचआर 8799 सी एक विशाल युवा गैस विशालकाय है जो हमारे सौर मंडल में प्लूटो की कक्षा के समान दूरी पर एचआर 8799 की परिक्रमा करता है। 2008 में खोजा गया, इसके चिलचिलाती वातावरण में जल वाष्प और कार्बन मोनोऑक्साइड की उच्च सांद्रता है।',
+        bn: 'এইচআর ৮৭৯৯ সি হলো আমাদের সৌরজগতের প্লুটোর সমান দূরত্বে (৩৮ এইউ) অবস্থিত একটি তরুণ এবং সুবিশাল গ্যাস জায়ান্ট। ২০০৮ সালে আবিষ্কৃত হওয়া এই গ্রহটির উত্তপ্ত বায়ুমণ্ডলে প্রচুর পরিমাণে জলীয় বাষ্প ও কার্বন মনোক্সাইডের উপস্থিতি শনাক্ত করা গেছে।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Approx. 7 to 10 Jupiter Masses',
+          hi: 'लगभग 7 से 10 बृहस्पति द्रव्यमान',
+          bn: 'প্রায় ৭ থেকে ১০ গুণ (বৃহস্পতির তুলনায়)'
+        },
+        diameter: {
+          en: 'Estimated ~160,000 km (1.25 Jupiters)',
+          hi: 'अनुमानित ~160,000 किमी (1.25 बृहस्पति)',
+          bn: 'আনুমানিক ১,৬০,০০০ কি.মি. (বৃহস্পতির ১.২৫ গুণ)'
+        },
+        gravity: {
+          en: 'Immense gravitational pull, far surpassing Jupiter',
+          hi: 'अत्यधिक गुरुत्वाकर्षण खिंचाव, बृहस्पति से कहीं अधिक',
+          bn: 'সুবিশাল মহাকর্ষীয় টান, যা বৃহস্পতির চেয়েও অনেক বেশি'
+        }
+      },
+      atmosphere: {
+        en: 'Thick, patchy clouds of silicates and iron droplets suspended in high-velocity atmospheric winds.',
+        hi: 'उच्च वेग वाली वायुमंडलीय हवाओं में लटके सिलिकेट्स और लोहे की बूंदों के घने, धब्बेदार बादल।',
+        bn: 'তীব্র বেগের বায়ুপ্রবাহের মাঝে সিলিকেট এবং গলিত লোহার কণার ঘন মেঘের চাদর।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits its host star every 190 Earth years on a circular, stable orbital trajectory.',
+        hi: 'एक गोलाकार, स्थिर कक्षीय प्रक्षेपवक्र पर हर 190 पृथ्वी वर्षों में अपने मेजबान तारे की परिक्रमा करता है।',
+        bn: 'স্থির ও প্রায় বৃত্তাকার কক্ষপথে এর মূল নক্ষত্রকে একবার প্রদক্ষিণ করতে প্রায় ১৯০ বছর সময় লাগে।'
+      },
+      moons: {
+        en: 'Expected to possess a large family of natural satellites, though impossible to observe directly.',
+        hi: 'प्राकृतिक उपग्रहों का एक बड़ा परिवार होने की उम्मीद है, हालांकि सीधे निरीक्षण करना असंभव है।',
+        bn: 'বিশাল আকারের কারণে এর চারপাশে অসংখ্য উপগ্রহ থাকার সম্ভাবনা থাকলেও বর্তমান প্রযুক্তিতে তা দেখা অসম্ভব।'
+      },
+      surface: {
+        en: 'No solid crust; transitions continuously from stormy gas layers to a super-pressurized metallic core.',
+        hi: 'कोई ठोस पपड़ी नहीं; तूफानी गैस परतों से एक अत्यधिक दबाव वाले धात्विक कोर में लगातार संक्रमण।',
+        bn: 'কোনো কঠিন ভূপৃষ্ঠ নেই; এর উত্তাল গ্যাসীয় স্তরগুলো ভেতরের দিকে ক্রমশ ধাতব ও ঘন কোরে রূপ নিয়েছে।'
+      },
+      exploration: {
+        en: 'First imaged in 2008 by Christian Marois and his research team using the Keck Observatory.',
+        hi: 'केक वेधशाला का उपयोग करके क्रिश्चियन मारोइस और उनकी शोध टीम द्वारा 2008 में पहली बार चित्रित किया गया।',
+        bn: '২০০৮ সালে জ্যোতির্বিজ্ঞানী ক্রিশ্চিয়ান মারোইস ও তার গবেষণা দল কিক মানমন্দির ব্যবহার করে এর ছবি ধারণ করেন।'
+      },
+      didYouKnow: [
+        {
+          en: 'Astronomers used high-resolution spectroscopy to detect both water and carbon monoxide directly in planet c’s atmosphere!',
+          hi: 'खगोलविदों ने ग्रह सी के वायुमंडल में सीधे पानी और कार्बन मोनोऑक्साइड दोनों का पता लगाने के लिए उच्च-रिज़ॉल्यूशन स्पेक्ट्रोस्कोपी का उपयोग किया!',
+          bn: 'উচ্চ ক্ষমতাসম্পন্ন স্পেকট্রোস্কোপির মাধ্যমে বিজ্ঞানীরা এই গ্রহের বায়ুমণ্ডলে সরাসরি পানি ও কার্বন মনোক্সাইড শনাক্ত করেছিলেন!'
+        },
+        {
+          en: 'Because it is so far from its star, light from HR 8799 takes over 5 hours just to reach this planet.',
+          hi: 'क्योंकि यह अपने तारे से बहुत दूर है, एचआर 8799 से प्रकाश को इस ग्रह तक पहुंचने में 5 घंटे से अधिक समय लगता है।',
+          bn: 'নক্ষত্র থেকে এত দূরে থাকায়, এইচআর ৮৭৯৯ নক্ষত্রের আলো এই গ্রহে পৌঁছাতেই ৫ ঘণ্টার বেশি সময় লেগে যায়।'
+        }
+      ]
+    }
+  },
+  {
+    id: 'hr-8799-b',
+    type: 'Exoplanet',
+    name: {
+      en: 'HR 8799 b',
+      hi: 'एचआर 8799 बी',
+      bn: 'এইচআর ৮৭৯৯ বি'
+    },
+    description: {
+      en: 'The outermost known planet of HR 8799, orbiting just inside the massive cold dust belt of the system.',
+      hi: 'एचआर 8799 का सबसे बाहरी ज्ञात ग्रह, जो प्रणाली के विशाल ठंडे धूल बेल्ट के ठीक अंदर परिक्रमा करता है।',
+      bn: 'এইচআর ৮৭৯৯ সিস্টেমের সবচেয়ে বাইরের পরিচিত গ্রহ, যা এর সুবিশাল ও হিমশীতল গ্রহাণু বলয়ের সীমানায় প্রদক্ষিণ করে।'
+    },
+    distance: {
+      en: '133 Light Years',
+      hi: '133 प्रकाश वर्ष',
+      bn: '১৩৩ আলোকবর্ষ'
+    },
+    radius: 13.0,
+    modelType: 'texture',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/hr-8799-b.jpg',
+    details: {
+      overview: {
+        en: 'HR 8799 b is the outermost of the four known giant planets in the HR 8799 system, orbiting at an immense distance of approximately 68 AU. Discovered in 2008, it has an extraordinary orbital period of nearly 460 Earth years.',
+        hi: 'एचआर 8799 बी एचआर 8799 प्रणाली में चार ज्ञात विशाल ग्रहों में से सबसे बाहरी है, जो लगभग 68 एयू की अत्यधिक दूरी पर परिक्रमा करता है। 2008 में खोजा गया, इसकी लगभग 460 पृथ्वी वर्षों की एक असाधारण कक्षीय अवधि है।',
+        bn: 'এইচআর ৮৭৯৯ বি হলো এইচআর ৮৭৯৯ সৌরজগতের চারটি পরিচিত দানব গ্রহের মধ্যে সবচেয়ে দূরবর্তী গ্রহ, যা প্রায় ৬৮ এইউ দূরত্বে অবস্থিত। ২০০৮ সালে আবিষ্কৃত এই গ্রহটির নক্ষত্রকে একবার প্রদক্ষিণ করতে প্রায় ৪৬০ বছর সময় লাগে।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Approx. 5 to 7 Jupiter Masses',
+          hi: 'लगभग 5 से 7 बृहस्पति द्रव्यमान',
+          bn: 'প্রায় ৫ থেকে ৭ গুণ (বৃহস্পতির তুলনায়)'
+        },
+        diameter: {
+          en: 'Estimated ~145,000 km (1.15 Jupiters)',
+          hi: 'अनुमानित ~145,000 किमी (1.15 बृहस्पति)',
+          bn: 'আনুমানিক ১,৪৫,০০০ কি.মি. (বৃহস্পতির ১.১৫ গুণ)'
+        },
+        gravity: {
+          en: 'Multiple times Earth and Jupiter\'s surface pull',
+          hi: 'पृथ्वी और बृहस्पति के सतह के खिंचाव से कई गुना',
+          bn: 'পৃথিবী ও বৃহস্পতির চেয়ে বহু গুণ বেশি'
+        }
+      },
+      atmosphere: {
+        en: 'An exotic, cloudy atmosphere rich in water vapor and methane, showing evidence of non-equilibrium carbon chemistry.',
+        hi: 'जल वाष्प और मीथेन से समृद्ध एक विदेशी, बादलों से भरा वातावरण, गैर-संतुलन कार्बन रसायन विज्ञान के प्रमाण दिखाता है।',
+        bn: 'জলীয় বাষ্প ও মিথেন সমৃদ্ধ এক অনন্য মেঘলা বায়ুমণ্ডল, যাতে কার্বনের জটিল রাসায়নিক রূপান্তর লক্ষ করা গেছে।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits at 68 AU, requiring about 460 Earth years to complete one single revolution.',
+        hi: '68 एयू पर परिक्रमा करता है, एक चक्कर पूरा करने के लिए लगभग 460 पृथ्वी वर्षों की आवश्यकता होती है।',
+        bn: 'নক্ষত্র থেকে ৬৮ এইউ দূরে অবস্থান করে এর একবার প্রদক্ষিণ সম্পন্ন করতে প্রায় ৪৬০ বছর সময় লাগে।'
+      },
+      moons: {
+        en: 'Surrounded by the vast space of the outer debris disc, it likely captures or hosts multiple moons.',
+        hi: 'बाहरी मलबे की डिस्क के विशाल स्थान से घिरा, यह संभवतः कई चंद्रमाओं को पकड़ता है या उनकी मेजबानी करता है।',
+        bn: 'বাইরের বিশাল ধূলিবলয়ের কাছাকাছি থাকায় এর চারপাশে বেশ কিছু উপগ্রহ থাকার জোরালো সম্ভাবনা রয়েছে।'
+      },
+      surface: {
+        en: 'Lacks a solid crust; deep convective gases gradually compress into a dense core.',
+        hi: 'एक ठोस परत का अभाव है; गहरी संवहन गैसें धीरे-धीरे एक सघन कोर में संकुचित हो जाती हैं।',
+        bn: 'কোনো কঠিন ভূত্বক নেই; গভীর উত্তপ্ত গ্যাস ক্রমশ ঘনীভূত হয়ে ভেতরের কোরে পরিণত হয়েছে।'
+      },
+      exploration: {
+        en: 'Discovered in 2008 by direct imaging using the Keck and Gemini North telescopes.',
+        hi: 'केक और जेमिनी नॉर्थ दूरबीनों का उपयोग करके प्रत्यक्ष इमेजिंग द्वारा 2008 में खोजा गया।',
+        bn: '২০০৮ সালে কিক এবং জেমিনি নর্থ টেলিস্কোপের মাধ্যমে সরাসরি ছবি তুলে এটি আবিষ্কার করা হয়েছিল।'
+      },
+      didYouKnow: [
+        {
+          en: 'Because it takes ~460 years to orbit its star once, this planet has not completed even a single full year since the invention of the telescope on Earth!',
+          hi: 'क्योंकि अपने तारे की एक बार परिक्रमा करने में ~460 वर्ष लगते हैं, इसलिए पृथ्वी पर दूरबीन के आविष्कार के बाद से इस ग्रह ने एक भी पूरा वर्ष पूरा नहीं किया है!',
+          bn: 'নক্ষত্রকে একবার ঘুরতে প্রায় ৪৬০ বছর সময় নেওয়ায়, পৃথিবীতে দূরবীন আবিষ্কারের পর থেকে এখন পর্যন্ত এই গ্রহে ১ বছরও পূর্ণ হয়নি!'
+        },
+        {
+          en: 'It is so far from its host star that the star would look like a brilliantly bright spotlight rather than a blazing sun in its sky.',
+          hi: 'यह अपने मेजबान तारे से इतनी दूर है कि तारा अपने आकाश में एक धधकते सूरज के बजाय एक शानदार चमकदार स्पॉटलाइट की तरह दिखाई देगा।',
+          bn: 'নক্ষত্র থেকে এত দূরে থাকায়, এই গ্রহের আকাশ থেকে মূল নক্ষত্রটিকে সাধারণ সূর্যের বদলে দূরবর্তী এক প্রখর স্পটলাইটের মতো জ্বলতে দেখা যাবে।'
+        }
+      ]
+    }
+  },
+  {
+    id: 'toi-700',
+    type: 'Star',
+    name: {
+      en: 'TOI-700',
+      hi: 'टीओआई-700',
+      bn: 'টিওআই-৭০০'
+    },
+    description: {
+      en: 'A cool, quiet M-dwarf star discovered by NASA\'s TESS mission to host multiple habitable-zone Earth-sized worlds.',
+      hi: 'नासा के टीईएसएस मिशन द्वारा खोजा गया एक शांत लाल बौना तारा, जिसमें कई रहने योग्य पृथ्वी के आकार के ग्रह हैं।',
+      bn: 'নাসার টেস (TESS) মিশনের আবিষ্কৃত একটি শান্ত লাল বামন নক্ষত্র, যার চারপাশে বাসযোগ্য অঞ্চলে পৃথিবীর মতো গ্রহ রয়েছে।'
+    },
+    distance: {
+      en: '101.4 Light Years',
+      hi: '101.4 प्रकाश वर्ष',
+      bn: '১০১.৪ আলোকবর্ষ'
+    },
+    radius: 15.0,
+    modelType: 'texture',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/toi-700.jpg',
+    details: {
+      overview: {
+        en: 'TOI-700 is a small, quiet red dwarf (M-class) star located about 101.4 light-years away in the southern constellation Dorado. Unlike many young, active red dwarfs that blast lethal stellar flares, TOI-700 is unusually calm and stable, providing a benign environment for its orbiting planets, two of which reside in its habitable zone.',
+        hi: 'टीओआई-700 एक छोटा, शांत लाल बौना तारा है जो लगभग 101.4 प्रकाश वर्ष दूर स्थित है। कई अन्य लाल बौनों के विपरीत जो विनाशकारी तारकीय ज्वालाएं छोड़ते हैं, टीओआई-700 असाधारण रूप से शांत और स्थिर है।',
+        bn: 'টিওআই-৭০০ হলো ডোরাডো তারামণ্ডলে প্রায় ১০১.৪ আলোকবর্ষ দূরে অবস্থিত একটি শান্ত লাল বামন (M-type) নক্ষত্র। সাধারণত বেশিরভাগ লাল বামন নক্ষত্র মারাত্মক তেজস্ক্রিয় সৌরঝলক বা ফ্লেয়ার ছুড়লেও, টিওআই-৭০০ ব্যতিক্রমীভাবে শান্ত ও স্থির। ফলে এর চারপাশে প্রদক্ষিণরত গ্রহগুলো প্রাণের বিকাশের জন্য অনেক বেশি নিরাপদ ও অনুকূল পরিবেশ পায়।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Approx. 0.40 Solar Masses (40% of our Sun)',
+          hi: 'लगभग 0.40 सौर द्रव्यमान (हमारे सूर्य का 40%)',
+          bn: 'সূর্যের প্রায় ৪০% (০.৪০ সৌর ভর)'
+        },
+        diameter: {
+          en: 'Approx. 584,000 km (0.42 Solar Radii)',
+          hi: 'लगभग 584,000 किमी (0.42 सौर त्रिज्या)',
+          bn: 'প্রায় ৫,৮৪,০০০ কি.মি. (সূর্যের ৪২%)'
+        },
+        gravity: {
+          en: 'Higher surface gravity than the Sun due to compact stellar density',
+          hi: 'सघन तारकीय घनत्व के कारण सूर्य से अधिक सतह गुरुत्वाकर्षण',
+          bn: 'উচ্চ ঘনত্বের কারণে সূর্যের চেয়েও শক্তিশালী পৃষ্ঠীয় মহাকর্ষ'
+        }
+      },
+      atmosphere: {
+        en: 'A brilliant, relatively calm red photosphere with an effective temperature around 3,480 K (3,200 °C).',
+        hi: 'लगभग 3,480 K (3,200 °C) के प्रभावी तापमान वाला एक शानदार, अपेक्षाकृत शांत लाल फोटोस्फीयर।',
+        bn: 'প্রায় ৩,৪৮০ কেলভিন (৩,২০০ °C) তাপমাত্রার একটি উজ্জ্বল অথচ শান্ত লালচে ফটোস্ফিয়ার।'
+      },
+      orbitAndRotation: {
+        en: 'Rotates slowly on its axis, completing a single rotation roughly every 54 Earth days.',
+        hi: 'अपनी धुरी पर धीरे-धीरे घूमता है, लगभग हर 54 पृथ्वी दिनों में एक चक्कर पूरा करता है।',
+        bn: 'নিজের অক্ষে বেশ ধীরে ঘোরে; একবার সম্পূর্ণ পাক খেতে প্রায় ৫৪ দিন সময় লাগে।'
+      },
+      moons: {
+        en: 'Hosts at least four confirmed planets: TOI-700 b, c, d, and e.',
+        hi: 'कम से कम चार पुष्टि किए गए ग्रहों की मेजबानी करता है: टीओआई-700 बी, सी, डी और ई।',
+        bn: 'অন্তত ৪টি নিশ্চিত গ্রহ এর চারপাশে রয়েছে: টিওআই-৭০০ b, c, d এবং e।'
+      },
+      surface: {
+        en: 'A glowing convective plasma surface glowing with deep orange-red hues, showing very low magnetic flare activity.',
+        hi: 'गहरे नारंगी-लाल रंगों से चमकती एक संवहनी प्लाज्मा सतह, जो बहुत कम चुंबकीय ज्वाला गतिविधि दिखाती है।',
+        bn: 'কমলা-লাল আভায় জ্বলতে থাকা একটি শান্ত প্লাজমা পৃষ্ঠ, যাতে ক্ষতিকর সৌরঝড় বা ফ্লেয়ারের প্রভাব নেই বললেই চলে।'
+      },
+      exploration: {
+        en: 'Discovered in 2020 by NASA\'s Transiting Exoplanet Survey Satellite (TESS), hailed as one of the greatest finds in the search for habitable worlds.',
+        hi: '2020 में नासा के ट्रांजिटिंग एक्सोप्लैनेट सर्वे सैटेलाइट (TESS) द्वारा खोजा गया।',
+        bn: '২০২০ সালে নাসার টেস (TESS) স্পেস টেলিস্কোপ এটি আবিষ্কার করে, যা বাসযোগ্য পৃথিবীর সন্ধানে জ্যোতির্বিজ্ঞানের এক ঐতিহাসিক সাফল্য।'
+      },
+      didYouKnow: [
+        {
+          en: 'TOI stands for "TESS Object of Interest", signifying planets and stars cataloged by the TESS spacecraft.',
+          hi: 'टीओआई का अर्थ "TESS ऑब्जेक्ट ऑफ इंटरेस्ट" है, जो TESS अंतरिक्ष यान द्वारा सूचीबद्ध ग्रहों और तारों को दर्शाता है।',
+          bn: 'TOI-এর পূর্ণরূপ হলো "TESS Object of Interest", অর্থাৎ নাসার টেস মিশনের বিশেষ নজরে থাকা মহাজাগতিক বস্তু।'
+        },
+        {
+          en: 'Because red dwarfs burn their fuel extremely slowly, TOI-700 will continue shining for hundreds of billions of years—long after our Sun has died!',
+          hi: 'क्योंकि लाल बौने अपने ईंधन को बहुत धीरे जलाते हैं, टीओआई-700 सैकड़ों अरबों वर्षों तक चमकता रहेगा-हमारे सूर्य के मरने के बहुत बाद!',
+          bn: 'লাল বামন নক্ষত্রগুলো খুব ধীরে ধীরে তাদের পারমাণবিক জ্বালানি খরচ করে। ফলে আমাদের সূর্য বিলীন হয়ে যাওয়ার পরও টিওআই-৭০০ আরো শত শত কোটি বছর জ্বলবে!'
+        }
+      ]
+    }
+  },
+  {
+    id: 'toi-700-b',
+    type: 'Exoplanet',
+    name: {
+      en: 'TOI-700 b',
+      hi: 'टीओआई-700 बी',
+      bn: 'টিওআই-৭০০ বি'
+    },
+    description: {
+      en: 'An Earth-sized rocky world orbiting closest to the red dwarf TOI-700 every 10 days.',
+      hi: 'एक पृथ्वी के आकार का चट्टानी ग्रह जो हर 10 दिनों में लाल बौने टीओआई-700 की सबसे निकटतम परिक्रमा करता है।',
+      bn: 'পৃথিবীর আকারের একটি পাথুরে গ্রহ, যা লাল বামন নক্ষত্র টিওআই-৭০০ এর সবচেয়ে নিকটবর্তী কক্ষপথে মাত্র ১০ দিনে একবার প্রদক্ষিণ করে।'
+    },
+    distance: {
+      en: '101.4 Light Years',
+      hi: '101.4 प्रकाश वर्ष',
+      bn: '১০১.৪ আলোকবর্ষ'
+    },
+    radius: 1.01,
+    modelType: 'texture',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/toi-700-b.jpg',
+    details: {
+      overview: {
+        en: 'TOI-700 b is an Earth-sized terrestrial exoplanet orbiting closest to the star TOI-700. It is a rocky world roughly the same size as Earth, completing an orbit in approximately 9.98 days. Because it orbits so close to its parent star, it is tidally locked and subjected to intense solar radiation, making it significantly warmer than Earth with temperatures around 167 °C (440 K).',
+        hi: 'टीओआई-700 बी एक पृथ्वी के आकार का स्थलीय एक्सोप्लैनेट है जो तारे टीओआई-700 की सबसे करीबी परिक्रमा करता है। यह लगभग पृथ्वी के आकार की एक चट्टानी दुनिया है, जो लगभग 9.98 दिनों में एक चक्कर पूरा करती है। अपने तारे के इतने करीब होने के कारण, यह अत्यधिक गर्म है।',
+        bn: 'টিওআই-৭০০ বি হলো পৃথিবীর আকারের একটি পাথুরে এক্সোপ্ল্যানেট, যা টিওআই-৭০০ নক্ষত্রের সবচেয়ে ভেতরের কক্ষপথে অবস্থিত। এটি মাত্র ৯.৯৮ দিনে একবার নক্ষত্রকে প্রদক্ষিণ করে। মূল নক্ষত্রের খুব কাছাকাছি থাকায় এটি জোয়ারবদ্ধ (tidally locked) এবং এর উপরিভাগ বেশ উত্তপ্ত (প্রায় ১৬৭ ডিগ্রি সেলসিয়াস বা ৪৪০ কেলভিন)।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Approx. 1.07 Earth masses (1.07 M⊕)',
+          hi: 'लगभग 1.07 पृथ्वी द्रव्यमान',
+          bn: 'পৃথিবীর চেয়ে সামান্য ভারী (১.০৭ গুণ)'
+        },
+        diameter: {
+          en: 'Approx. 12,900 km (1.01 Earth diameters)',
+          hi: 'लगभग 12,900 किमी (1.01 पृथ्वी व्यास)',
+          bn: 'প্রায় ১২,৯০০ কি.মি. (পৃথিবীর ১.০১ গুণ)'
+        },
+        gravity: {
+          en: 'Approx. 10.3 m/s² (1.05x Earth gravity)',
+          hi: 'लगभग 10.3 m/s² (1.05x पृथ्वी गुरुत्वाकर्षण)',
+          bn: 'প্রায় ১০.৩ মি./সে.² (পৃথিবীর চেয়ে ৫% বেশি)'
+        }
+      },
+      atmosphere: {
+        en: 'Likely thin or stripped away due to intense stellar wind and radiation from close proximity to the star.',
+        hi: 'तारे की निकटता से तीव्र तारकीय हवा और विकिरण के कारण संभवतः पतला या नष्ट हो चुका वायुमंडल।',
+        bn: 'নক্ষত্রের চরম সান্নিধ্য ও বিকিরণের কারণে এর বায়ুমণ্ডল হয়তো অত্যন্ত পাতলা অথবা বহু আগেই বিলীন হয়ে গেছে।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits every 9.98 days at a distance of ~9.5 million km (0.0637 AU). Synchronously locked with permanent day and night hemispheres.',
+        hi: 'हर 9.98 दिनों में लगभग 95 लाख किमी की दूरी पर परिक्रमा करता है। हमेशा एक ही हिस्सा तारे के सामने रहता है।',
+        bn: 'মাত্র ৯.৯৮ দিনে প্রায় ৯৫ লক্ষ কি.মি. দূর দিয়ে নক্ষত্রকে ঘুরে আসে। জোয়ারবদ্ধ থাকায় এর একপাশে চিরন্তন দিন ও অন্যপাশে চিরন্তন রাত থাকে।'
+      },
+      moons: {
+        en: 'None detected (unlikely due to strong stellar tidal forces)',
+        hi: 'कोई ज्ञात चंद्रमा नहीं',
+        bn: 'কোনো উপগ্রহ নেই (নক্ষত্রের তীব্র মহাকর্ষের কারণে উপগ্রহ থাকা প্রায় অসম্ভব)'
+      },
+      surface: {
+        en: 'A cratered, sun-scorched rocky crust dominated by basaltic plains, heat cracks, and ancient volcanic terrain on its permanent dayside.',
+        hi: 'एक गड्ढों वाली, धूप से झुलसी चट्टानी सतह जिसमें बेसाल्टिक मैदान और प्राचीन ज्वालामुखीय भूभाग हैं।',
+        bn: 'গর্ত ও লাভাচ্ছন্ন পাথুরে ভূত্বক, যার স্থায়ী দিনের অংশটি প্রচণ্ড তাপে শুষ্ক ও ফাটলযুক্ত।'
+      },
+      exploration: {
+        en: 'Discovered in January 2020 by NASA\'s TESS space observatory using precision transit photometry.',
+        hi: 'जनवरी 2020 में नासा के टीईएसएस स्पेस ऑब्जर्वेटरी द्वारा पारगमन फोटोमेट्री का उपयोग करके खोजा गया।',
+        bn: '২০২০ সালের জানুয়ারিতে নাসার টেস (TESS) মহাকাশ টেলিস্কোপ নিখুঁত ট্রানজিট ফটোমেট্রি পদ্ধতিতে এটি আবিষ্কার করে।'
+      },
+      didYouKnow: [
+        {
+          en: 'TOI-700 b is almost a physical twin in size and mass to Earth, but orbits much closer to its sun than Mercury does to ours.',
+          hi: 'टीओआई-700 बी आकार और द्रव्यमान में लगभग पृथ्वी का जुड़वां है, लेकिन हमारे बुध की तुलना में अपने सूर्य के बहुत करीब परिक्रमा करता है।',
+          bn: 'আকার ও ভরে এটি হুবহু পৃথিবীর যমজের মতো হলেও, এটি আমাদের সৌরজগতের বুধ গ্রহের চেয়েও অনেক বেশি কাছ থেকে তার নক্ষত্রকে প্রদক্ষিণ করে।'
+        },
+        {
+          en: 'Because its host star is an M-dwarf, TOI-700 b receives about 5 times the solar energy that Earth receives from the Sun.',
+          hi: 'क्योंकि इसका मेजबान तारा एक लाल बौना है, टीओआई-700 बी को सूर्य से पृथ्वी की तुलना में लगभग 5 गुना अधिक सौर ऊर्जा प्राप्त होती है।',
+          bn: 'পৃথিবী সূর্যের কাছ থেকে যে পরিমাণ বিকিরণ পায়, টিওআই-৭০০ বি তার নক্ষত্র থেকে প্রায় ৫ গুণ বেশি সৌরশক্তি গ্রহণ করে।'
+        }
+      ]
+    }
+  },
+  {
+    id: 'toi-700-c',
+    type: 'Exoplanet',
+    name: {
+      en: 'TOI-700 c',
+      hi: 'टीओआई-700 सी',
+      bn: 'টিওআই-৭০০ সি'
+    },
+    description: {
+      en: 'A warm sub-Neptune exoplanet 2.6 times the size of Earth, enveloped in a thick gaseous atmosphere.',
+      hi: 'एक गर्म उप-नेपच्यून एक्सोप्लैनेट जो पृथ्वी के आकार का 2.6 गुना है और घने गैसीय वातावरण से घिरा हुआ है।',
+      bn: 'পৃথিবীর আকারের চেয়ে প্রায় ২.৬ গুণ বড় একটি সাব-নেপচুন গ্রহ, যা ঘন গ্যাসীয় বায়ুমণ্ডলে আবৃত।'
+    },
+    distance: {
+      en: '101.4 Light Years',
+      hi: '101.4 प्रकाश वर्ष',
+      bn: '১০১.৪ আলোকবর্ষ'
+    },
+    radius: 2.60,
+    modelType: 'texture',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/toi-700-c.jpg',
+    details: {
+      overview: {
+        en: 'TOI-700 c is the second planet from the red dwarf star TOI-700. Unlike its rocky Earth-sized siblings (planets b, d, and e), planet c is a sub-Neptune roughly 2.6 times the radius of Earth and about 7.5 times its mass. It orbits every 16 days and is enveloped in a deep, volatile atmosphere of hydrogen, helium, and steam.',
+        hi: 'टीओआई-700 सी लाल बौने तारे टीओआई-700 से दूसरा ग्रह है। अपने चट्टानी पृथ्वी के आकार के सहोदरों (ग्रह बी, डी और ई) के विपरीत, ग्रह सी एक उप-नेपच्यून है जो पृथ्वी की त्रिज्या से लगभग 2.6 गुना बड़ा है।',
+        bn: 'টিওআই-৭০০ সি হলো টিওআই-৭০০ নক্ষত্রের দ্বিতীয় গ্রহ। এর অন্য সঙ্গী গ্রহগুলো (b, d, এবং e) পাথুরে ও পৃথিবীর আকারের হলেও, প্ল্যানেট c ব্যতিক্রমীভাবে একটি সাব-নেপচুন (Mini-Neptune)। এটি পৃথিবীর চেয়ে প্রায় ২.৬ গুণ বড় এবং প্রায় ১৬ দিনে নক্ষত্রকে প্রদক্ষিণ করে। এর চারপাশে হাইড্রোজেন ও বাষ্পীয় গ্যাসের একটি ঘন স্তর রয়েছে।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Approx. 7.5 Earth masses (7.48 M⊕)',
+          hi: 'लगभग 7.5 पृथ्वी द्रव्यमान',
+          bn: 'প্রায় ৭.৫ গুণ পৃথিবীর ভর (৭.৪৮ M⊕)'
+        },
+        diameter: {
+          en: 'Approx. 33,100 km (2.60 Earth diameters)',
+          hi: 'लगभग 33,100 किमी (2.60 पृथ्वी व्यास)',
+          bn: 'প্রায় ৩৩,১০০ কি.মি. (পৃথিবীর ২.৬ গুণ)'
+        },
+        gravity: {
+          en: 'Approx. 10.8 m/s² (1.1x Earth gravity)',
+          hi: 'लगभग 10.8 m/s² (1.1x पृथ्वी गुरुत्वाकर्षण)',
+          bn: 'প্রায় ১০.৮ মি./সে.² (পৃথিবীর চেয়ে প্রায় ১০% বেশি)'
+        }
+      },
+      atmosphere: {
+        en: 'A dense, deep envelope rich in hydrogen, helium, water vapor, and methane with thick hazy clouds.',
+        hi: 'हाइड्रोजन, हीलियम, जलवाष्प और मीथेन से समृद्ध एक घना, गहरा आवरण जिसमें घने बादल हैं।',
+        bn: 'হাইড্রোজেন, হিলিয়াম, জলীয় বাষ্প এবং মিথেন সমৃদ্ধ একটি সুবিশাল ও ঘন গ্যাসীয় বায়ুমণ্ডল।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits the star every 16.05 days at a distance of ~13.8 million km (0.0925 AU).',
+        hi: 'हर 16.05 दिनों में लगभग 1.38 करोड़ किमी (0.0925 AU) की दूरी पर परिक्रमा करता है।',
+        bn: 'নক্ষত্র থেকে প্রায় ১ কোটি ৩৮ লক্ষ কি.মি. (০.০৯২৫ AU) দূরত্ব বজায় রেখে প্রতি ১৬.০৫ দিনে একবার প্রদক্ষিণ সম্পন্ন করে।'
+      },
+      moons: {
+        en: 'Unknown (could retain small icy moons or ring particles)',
+        hi: 'अज्ञात (संभवतः छोटे बर्फीले चंद्रमा हो सकते हैं)',
+        bn: 'অজানা (ক্ষুদ্র বরফাবৃত উপগ্রহ বা বলয় থাকার সম্ভাবনা রয়েছে)'
+      },
+      surface: {
+        en: 'Lacks a solid rocky surface; hot compressed atmospheric layers transition smoothly into a supercritical mantle.',
+        hi: 'एक ठोस चट्टानी सतह का अभाव है; गर्म संपीड़ित वायुमंडलीय परतें तरल में विलीन हो जाती हैं।',
+        bn: 'কোনো নির্দিষ্ট কঠিন পৃষ্ঠ নেই; উচ্চ চাপ ও তাপমাত্রায় গ্যাসীয় স্তর ধীরে ধীরে সুপারক্রিটিকাল তরল স্তরে রূপান্তরিত হয়েছে।'
+      },
+      exploration: {
+        en: 'Discovered in 2020 by NASA\'s TESS mission alongside planets b and d.',
+        hi: 'नासा के टीईएसएस मिशन द्वारा 2020 में ग्रह बी और डी के साथ खोजा गया।',
+        bn: '২০২০ সালে নাসার টেস (TESS) মিশন গ্রহ b এবং d এর সাথেই এটিকে আবিষ্কার করে।'
+      },
+      didYouKnow: [
+        {
+          en: 'TOI-700 c is a "system oddball": inside a system of compact terrestrial planets, it is the only large gaseous sub-Neptune!',
+          hi: 'टीओआई-700 सी एक अनोखा ग्रह है: चट्टानी स्थलीय ग्रहों की इस प्रणाली में, यह एकमात्र बड़ा गैसीय उप-नेपच्यून है!',
+          bn: 'টিওআই-৭০০ সৌরজগতে এটি একটি ব্যতিক্রমী গ্রহ: বাকি সবগুলো গ্রহ পাথুরে ও পৃথিবীর আকারের হলেও, একমাত্র এটিই সুবিশাল গ্যাসীয় সাব-নেপচুন!'
+        },
+        {
+          en: 'Its discovery helps astronomers understand the "radius valley"—the mystery of why planets between 1.5 and 2.0 Earth radii are rare in our galaxy.',
+          hi: 'इसकी खोज खगोलविदों को "रेडियस वैली" को समझने में मदद करती है।',
+          bn: 'এর আবিষ্কার জ্যোতির্বিজ্ঞানীদের গ্যালাক্সির "রেডিয়াস ভ্যালি" (Radius Valley) রহস্য উন্মোচনে সাহায্য করেছে।'
+        }
+      ]
+    }
+  },
+  {
+    id: 'toi-700-e',
+    type: 'Exoplanet',
+    name: {
+      en: 'TOI-700 e',
+      hi: 'টিओआई-700 ई',
+      bn: 'টিওআই-৭০০ ই'
+    },
+    description: {
+      en: 'An Earth-sized rocky world residing in the optimistic habitable zone, orbiting its star every 28 days.',
+      hi: 'आशावादी रहने योग्य क्षेत्र में स्थित पृथ्वी के आकार की एक चट्टानी दुनिया, जो हर 28 दिनों में अपने तारे की परिक्रमा करती है।',
+      bn: 'সম্ভাব্য বাসযোগ্য অঞ্চলে অবস্থিত পৃথিবীর আকারের একটি পাথুরে গ্রহ, যা প্রতি ২৮ দিনে নক্ষত্রকে প্রদক্ষিণ করে।'
+    },
+    distance: {
+      en: '101.4 Light Years',
+      hi: '101.4 प्रकाश वर्ष',
+      bn: '১০১.৪ আলোকবর্ষ'
+    },
+    radius: 0.95,
+    modelType: 'texture',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/toi-700-e.jpg',
+    details: {
+      overview: {
+        en: 'TOI-700 e is a rocky, Earth-sized exoplanet discovered in the optimistic habitable zone of the red dwarf TOI-700. Roughly 95% the size of Earth, it takes 27.8 days to complete an orbit between planets c and d. It receives about 85% of the energy Earth gets from the Sun, meaning surface liquid water could theoretically exist under the right atmospheric blanket.',
+        hi: 'टीओआई-700 ई एक चट्टानी, पृथ्वी के आकार का एक्सोप्लैनेट है जो लाल बौने तारे टीओआई-700 के रहने योग्य क्षेत्र में खोजा गया है। यह लगभग पृथ्वी के आकार का 95% है और ग्रह सी और डी के बीच 27.8 दिनों में एक चक्कर पूरा करता है। इसे सूर्य से पृथ्वी को मिलने वाली ऊर्जा का लगभग 85% प्राप्त होता है।',
+        bn: 'টিওআই-৭০০ ই হলো টিওআই-৭০০ নক্ষত্রের বাসযোগ্য অঞ্চলে (Habitable Zone) আবিষ্কৃত পৃথিবীর আকারের একটি পাথুরে গ্রহ। এটি আকারে পৃথিবীর প্রায় ৯৫% (০.৯৫ গুণ) এবং প্ল্যানেট c ও d এর মাঝামাঝি কক্ষপথে প্রায় ২৭.৮ দিনে নক্ষত্রকে প্রদক্ষিণ করে। এটি পৃথিবী সূর্যের কাছ থেকে প্রাপ্ত শক্তির প্রায় ৮৫% সৌরশক্তি গ্রহণ করে, যার ফলে অনুকূল বায়ুমণ্ডলে এর পৃষ্ঠে তরল পানি থাকার প্রবল সম্ভাবনা রয়েছে।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Approx. 0.82 - 0.85 Earth masses (estimated)',
+          hi: 'लगभग 0.82 - 0.85 पृथ्वी द्रव्यमान (अनुमानित)',
+          bn: 'আনুমানিক পৃথিবীর ভরের ০.৮২ - ০.৮৫ গুণ'
+        },
+        diameter: {
+          en: 'Approx. 12,140 km (0.95 Earth diameters)',
+          hi: 'लगभग 12,140 किमी (0.95 पृथ्वी व्यास)',
+          bn: 'প্রায় ১২,১৪০ কি.মি. (পৃথিবীর ৯৫%)'
+        },
+        gravity: {
+          en: 'Approx. 8.9 m/s² (0.91x Earth gravity)',
+          hi: 'लगभग 8.9 m/s² (0.91x पृथ्वी गुरुत्वाकर्षण)',
+          bn: 'প্রায় ৮.৯ মি./সে.² (পৃথিবীর চেয়ে কিছুটা কম)'
+        }
+      },
+      atmosphere: {
+        en: 'Potentially retains a moderate secondary atmosphere protected from violent stellar flares due to the host star\'s quiet nature.',
+        hi: 'शांत तारे के कारण हिंसक ज्वालाओं से सुरक्षित एक मध्यम माध्यमिक वायुमंडल बनाए रखने की क्षमता।',
+        bn: 'শান্ত প্রকৃতির নক্ষত্রের কারণে তীব্র সৌরঝড়ের হাত থেকে বেঁচে থাকা একটি মধ্যম ঘনত্বের বায়ুমণ্ডল বজায় থাকার জোরালো সম্ভাবনা রয়েছে।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits every 27.8 Earth days at a distance of ~20 million km (0.134 AU). Likely tidally locked with potential temperate twilight zones.',
+        hi: 'हर 27.8 पृथ्वी दिनों में लगभग 2 करोड़ किमी की दूरी पर परिक्रमा करता है।',
+        bn: 'নক্ষত্র থেকে প্রায় ২ কোটি কি.মি. (০.১৩৪ AU) দূরত্বে থেকে প্রতি ২৭.৮ দিনে এক পাক সম্পন্ন করে। সম্ভবত জোয়ারবদ্ধ হওয়ায় এর দিন-রাতের মিলনস্থলে নাতিশীতোষ্ণ বলয় থাকতে পারে।'
+      },
+      moons: {
+        en: 'None detected',
+        hi: 'कोई ज्ञात चंद्रमा नहीं',
+        bn: 'কোনো উপগ্রহ শনাক্ত হয়নি'
+      },
+      surface: {
+        en: 'A solid terrestrial surface consisting of rocky mountain ridges, basalt basins, and potential liquid water lakes or ice caps depending on atmospheric pressure.',
+        hi: 'पहाड़ी चट्टानी चोटियों, बेसाल्ट घाटियों और संभावित झीलों या बर्फ की परतों वाली एक ठोस सतह।',
+        bn: 'পাথুরে পাহাড়ের সারি, বেসাল্ট অববাহিকা এবং বায়ুমণ্ডলীয় চাপের ওপর নির্ভর করে তরল পানির জলাশয় বা বরফের চাদরযুক্ত কঠিন ভূত্বক।'
+      },
+      exploration: {
+        en: 'Discovered in January 2023 by a team led by Emily Gilbert using additional observation years from NASA\'s TESS satellite.',
+        hi: 'नासा के टीईएसएस उपग्रह से अतिरिक्त अवलोकन डेटा का उपयोग करके जनवरी 2023 में खोजा गया।',
+        bn: 'নাসার টেস (TESS) স্যাটেলাইটের ধারাবাহিক পর্যবেক্ষণের মাধ্যমে ২০২৩ সালের জানুয়ারিতে এমিলি গিলবার্টের নেতৃত্বাধীন দল এটি আবিষ্কার করে।'
+      },
+      didYouKnow: [
+        {
+          en: 'The discovery of TOI-700 e made the TOI-700 system one of only a few known stellar systems hosting multiple small, habitable-zone planets (along with TRAPPIST-1).',
+          hi: 'टीओआई-700 ई की खोज ने टीओआई-700 प्रणाली को रहने योग्य क्षेत्र में कई छोटे ग्रहों की मेजबानी करने वाले कुछ ज्ञात तारा प्रणालियों में से एक बना दिया।',
+          bn: 'টিওআই-৭০০ ই আবিষ্কারের মাধ্যমে টিওআই-৭০০ সৌরজগৎ ট্রাপিস্ট-১ এর মতোই এমন এক বিরল সিস্টেমে পরিণত হয়েছে, যার বাসযোগ্য অঞ্চলেই একাধিক পৃথিবী-আকারের গ্রহ রয়েছে।'
+        },
+        {
+          en: 'It orbits nicely in the sweet spot between its gaseous sibling (planet c) and its outer habitable sister (planet d).',
+          hi: 'यह अपने गैसीय सहोदर (ग्रह सी) और अपने बाहरी रहने योग्य साथी (ग्रह डी) के बीच एक आदर्श दूरी पर परिक्रमा करता है।',
+          bn: 'এটি গ্যাসীয় গ্রহ c এবং বাইরের বাসযোগ্য গ্রহ d এর মাঝামাঝি চমৎকার নাতিশীতোষ্ণ দূরত্বের কক্ষপথে অবস্থান করছে।'
+        }
+      ]
+    }
+  },
+  {
+    id: 'toi-700-d',
+    type: 'Exoplanet',
+    name: {
+      en: 'TOI-700 d',
+      hi: 'टीओआई-700 डी',
+      bn: 'টিওআই-৭০০ ডি'
+    },
+    description: {
+      en: 'A confirmed Earth-sized world orbiting comfortably within its star\'s habitable zone, capable of hosting liquid water oceans.',
+      hi: 'अपने तारे के रहने योग्य क्षेत्र में आराम से परिक्रमा करने वाला एक पृथ्वी के आकार का ग्रह, जो तरल पानी के महासागरों की मेजबानी करने में सक्षम है।',
+      bn: 'নক্ষত্রের মূল বাসযোগ্য অঞ্চলে ঘূর্ণায়মান পৃথিবীর আকারের একটি নিশ্চিত গ্রহ, যেখানে তরল পানির সমুদ্র থাকার জোরালো সম্ভাবনা রয়েছে।'
+    },
+    distance: {
+      en: '101.4 Light Years',
+      hi: '101.4 प्रकाश वर्ष',
+      bn: '১০১.৪ আলোকবর্ষ'
+    },
+    radius: 1.14,
+    modelType: 'texture',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/toi-700-d.jpg',
+    details: {
+      overview: {
+        en: 'TOI-700 d is an Earth-sized exoplanet orbiting within the conservative habitable zone of the red dwarf TOI-700. It is roughly 1.14 times the size of Earth and orbits its star every 37.4 days. Because its host star is remarkably quiet and lacks violent stellar flares, TOI-700 d is considered one of the prime candidates in the entire galaxy for temperate climate and surface liquid water oceans.',
+        hi: 'टीओआई-700 डी एक पृथ्वी के आकार का एक्सोप्लैनेट है जो लाल बौने तारे टीओआई-700 के रूढ़िवादी रहने योग्य क्षेत्र में परिक्रमा करता है। यह पृथ्वी के आकार का लगभग 1.14 गुना है और हर 37.4 दिनों में अपने तारे की परिक्रमा करता है। क्योंकि इसका मेजबान तारा उल्लेखनीय रूप से शांत है, टीओआई-700 डी को पूरे ब्रह्मांड में तरल पानी के लिए प्रमुख उम्मीदवारों में से एक माना जाता है।',
+        bn: 'টিওআই-৭০০ ডি হলো টিওআই-৭০০ নক্ষত্রের মূল বাসযোগ্য অঞ্চলে (Conservative Habitable Zone) অবস্থিত পৃথিবীর আকারের একটি পাথুরে এক্সোপ্ল্যানেট। এটি পৃথিবীর চেয়ে প্রায় ১৪% বড় (১.১৪ গুণ) এবং প্রতি ৩৭.৪ দিনে নক্ষত্রকে একবার প্রদক্ষিণ করে। মূল নক্ষত্রটি শান্ত ও ধ্বংসাত্মক সৌরঝড়মুক্ত হওয়ায়, গ্যালাক্সিতে তরল পানির সমুদ্র ও প্রাণের বিকাশের উপযোগী সেরা প্রার্থী গ্রহগুলোর মধ্যে এটি অন্যতম।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Approx. 1.25 - 1.72 Earth masses',
+          hi: 'लगभग 1.25 - 1.72 पृथ्वी द्रव्यमान',
+          bn: 'আনুমানিক পৃথিবীর ভরের ১.২৫ - ১.৭২ গুণ'
+        },
+        diameter: {
+          en: 'Approx. 14,500 km (1.14 Earth diameters)',
+          hi: 'लगभग 14,500 किमी (1.14 पृथ्वी व्यास)',
+          bn: 'প্রায় ১৪,৫০০ কি.মি. (পৃথিবীর ১.১৪ গুণ)'
+        },
+        gravity: {
+          en: 'Approx. 11.2 m/s² (1.14x Earth gravity)',
+          hi: 'लगभग 11.2 m/s² (1.14x पृथ्वी गुरुत्वाकर्षण)',
+          bn: 'প্রায় ১১.২ মি./সে.² (পৃথিবীর চেয়ে ১৪% বেশি)'
+        }
+      },
+      atmosphere: {
+        en: 'NASA computer climate models predict a dense, Earth-like nitrogen-oxygen or carbon dioxide rich atmosphere capable of preventing oceans from freezing or evaporating.',
+        hi: 'नासा के जलवायु मॉडल एक घने वायुमंडल की भविष्यवाणी करते हैं जो महासागरों को जमने या वाष्पित होने से रोकने में सक्षम है।',
+        bn: 'নাসার কম্পিউটার ক্লাইমেট মডেল অনুযায়ী, এতে নাইট্রোজেন, কার্বন ডাই-অক্সাইড বা অক্সিজেন সমৃদ্ধ একটি ঘন বায়ুমণ্ডল থাকতে পারে যা পানিকে জমাট বাঁধা বা বাষ্পীভূত হওয়া থেকে রক্ষা করে।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits every 37.42 Earth days at ~24.4 million km (0.163 AU). Tidally locked, likely resulting in an "eyeball world" with a central ocean facing the star.',
+        hi: 'हर 37.42 पृथ्वी दिनों में लगभग 2.44 करोड़ किमी की दूरी पर परिक्रमा करता है। हमेशा एक ही हिस्सा तारे के सामने रहता है।',
+        bn: 'নক্ষত্র থেকে প্রায় ২ কোটি ৪৪ লক্ষ কি.মি. (০.১৬৩ AU) দূরত্ব বজায় রেখে প্রতি ৩৭.৪২ দিনে এক পাক পূর্ণ করে। জোয়ারবদ্ধ হওয়ায় এর তারামুখী অংশে উন্মুক্ত নীল সমুদ্র থাকতে পারে।'
+      },
+      moons: {
+        en: 'None detected',
+        hi: 'कोई ज्ञात चंद्रमा नहीं',
+        bn: 'কোনো উপগ্রহ শনাক্ত হয়নি'
+      },
+      surface: {
+        en: 'May be an ocean-covered aquatic world or a terrestrial planet with continents, rolling hills, and expansive blue seas surrounded by coastal clouds.',
+        hi: 'एक महासागर से ढकी जलीय दुनिया या महाद्वीपों, हरी पहाड़ियों और नीले समुद्रों वाला एक स्थलीय ग्रह हो सकता है।',
+        bn: 'সমগ্র পৃষ্ঠ বিশাল জলরাশি ও সমুদ্রে ঢাকা হতে পারে অথবা মহাদেশ, উপকূলীয় সমভূমি ও নীল মহাসাগরে ঘেরা বৈচিত্র্যময় এক ভূত্বক।'
+      },
+      exploration: {
+        en: 'Discovered in January 2020 by NASA\'s TESS spacecraft and confirmed via observations with the Spitzer Space Telescope.',
+        hi: 'जनवरी 2020 में नासा के TESS अंतरिक्ष यान द्वारा खोजा गया और स्पिट्जर स्पेस टेलीस्कोप द्वारा पुष्टि की गई।',
+        bn: '২০২০ সালের জানুয়ারিতে নাসার টেস (TESS) মিশন এটি আবিষ্কার করে এবং স্পিটজার স্পেস টেলিস্কোপ দ্বারা এর সত্যতা নিশ্চিত করা হয়।'
+      },
+      didYouKnow: [
+        {
+          en: 'TOI-700 d is historic: it was the very first Earth-sized planet in a habitable zone discovered by NASA\'s TESS planet-hunter telescope!',
+          hi: 'टीओआई-700 डी ऐतिहासिक है: यह नासा के TESS टेलिस्कोप द्वारा रहने योग्य क्षेत्र में खोजा गया पहला पृथ्वी के आकार का ग्रह था!',
+          bn: 'টিওআই-৭০০ ডি ঐতিহাসিক: এটি নাসার গ্রহ-শিকারী টেলিস্কোপ টেস (TESS) দ্বারা বাসযোগ্য অঞ্চলে আবিষ্কৃত ইতিহাসের সর্বপ্রথম পৃথিবী-আকারের গ্রহ!'
+        },
+        {
+          en: 'It receives 86% of the stellar energy that Earth receives from the Sun, making its natural lighting and temperature remarkably Earth-like.',
+          hi: 'इसे सूर्य से पृथ्वी को मिलने वाली तारकीय ऊर्जा का 86% प्राप्त होता है, जिससे इसका प्रकाश और तापमान काफी हद तक पृथ्वी जैसा हो जाता है।',
+          bn: 'এটি পৃথিবী সূর্যের কাছ থেকে যে শক্তি পায় তার প্রায় ৮৬% শক্তি পায়, যার ফলে এর আলো ও আবহাওয়া অনেকটাই পৃথিবীর সাথে তুলনীয়।'
+        }
+      ]
+    }
   }
 ];
