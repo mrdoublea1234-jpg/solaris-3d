@@ -230,6 +230,71 @@ export const STAR_SYSTEMS: StarSystem[] = [
       'toi-700-e',
       'toi-700-d'
     ]
+  },
+  {
+    id: 'hd-10180',
+    name: {
+      en: 'HD 10180 System',
+      hi: 'एचडी 10180 प्रणाली',
+      bn: 'এইচডি ১০১৮০ সৌরজগৎ'
+    },
+    badge: '☀️',
+    hostStar: {
+      en: 'HD 10180 (G-type Star)',
+      hi: 'एचडी 10180 (जी-प्रकार तारा)',
+      bn: 'এইচডি ১০১৮০ (জি-টাইপ নক্ষত্র)'
+    },
+    distance: {
+      en: '127 Light Years',
+      hi: '127 प्रकाश वर्ष',
+      bn: '১২৭ আলোকবর্ষ'
+    },
+    tagline: {
+      en: 'A sun-like yellow star hosting a rich planetary system of at least seven diverse worlds.',
+      hi: 'एक सूर्य जैसा पीला तारा जो कम से कम सात विविध ग्रहों की एक समृद्ध प्रणाली की मेजबानी करता है।',
+      bn: 'আমাদের সূর্যের মতো একটি হলুদ নক্ষত্র, যা অন্তত ৭টি বৈচিত্র্যময় গ্রহ বিশিষ্ট এক বিশাল সৌরজগতের কেন্দ্র।'
+    },
+    planetIds: [
+      'hd-10180',
+      'hd-10180-c',
+      'hd-10180-d',
+      'hd-10180-e',
+      'hd-10180-f',
+      'hd-10180-g',
+      'hd-10180-h'
+    ]
+  },
+  {
+    id: 'gj-667-c',
+    name: {
+      en: 'GJ 667 C System',
+      hi: 'जीजे 667 सी प्रणाली',
+      bn: 'জিজে ৬৬৭ সি সৌরজগৎ'
+    },
+    badge: '🔴',
+    hostStar: {
+      en: 'GJ 667 C (Red Dwarf)',
+      hi: 'जीजे 667 सी (लाल बौना)',
+      bn: 'জিজে ৬৬৭ সি (লাল বামন নক্ষত্র)'
+    },
+    distance: {
+      en: '23.6 Light Years',
+      hi: '23.6 प्रकाश वर्ष',
+      bn: '২৩.৬ আলোকবর্ষ'
+    },
+    tagline: {
+      en: 'A red dwarf in a triple-star system famous for hosting multiple potentially habitable super-Earths with spectacular three-sun skies.',
+      hi: 'एक त्रि-तारा प्रणाली में एक लाल बौना तारा जो शानदार तीन-सूर्य वाले आसमान के साथ कई संभावित रहने योग्य सुपर-अर्थ की मेजबानी के लिए प्रसिद्ध है।',
+      bn: 'একটি ত্রৈত নক্ষত্রমণ্ডলীর লাল বামন নক্ষত্র, যা আকাশে ৩টি সূর্যের মনোরম দৃশ্য ও একাধিক বাসযোগ্য সুপার-আর্থের উপস্থিতির জন্য বিশ্বখ্যাত।'
+    },
+    planetIds: [
+      'gj-667-c',
+      'gj-667-c-b',
+      'gj-667-c-c',
+      'gj-667-c-e',
+      'gj-667-c-f',
+      'gj-667-c-g'
+    ]
   }
 ];
 
@@ -257,6 +322,11 @@ export function getSystemForPlanet(planetId: string): StarSystem | undefined {
   // 4. Special cases: Kepler habitable candidates (kepler-186f, kepler-22b, kepler-452b, etc.)
   if (cleanId.startsWith('kepler-') && !cleanId.startsWith('kepler-90')) {
     return STAR_SYSTEMS.find(sys => sys.id === 'kepler-habitable');
+  }
+
+  // 5. Special cases: GJ 667 C
+  if (cleanId.startsWith('gj-667') || cleanId.startsWith('gliese-667')) {
+    return STAR_SYSTEMS.find(sys => sys.id === 'gj-667-c');
   }
 
   return undefined;

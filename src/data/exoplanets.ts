@@ -3187,5 +3187,1084 @@ export const exoplanets: ExoplanetData[] = [
         }
       ]
     }
+  },
+  {
+    id: 'hd-10180',
+    type: 'Star',
+    name: {
+      en: 'HD 10180',
+      hi: 'एचडी 10180',
+      bn: 'এইচডি ১০১৮০'
+    },
+    description: {
+      en: 'A bright solar analog yellow dwarf star located 127 light-years away, anchoring one of the most crowded multi-planet systems known.',
+      hi: '127 प्रकाश वर्ष दूर स्थित एक चमकीला सूर्य जैसा पीला बौना तारा, जो सबसे व्यस्त बहु-ग्रह प्रणालियों में से एक का केंद्र है।',
+      bn: '১২৭ আলোকবর্ষ দূরে অবস্থিত আমাদের সূর্যের মতো এক উজ্জ্বল হলুদ বামন নক্ষত্র, যা অন্যতম সমৃদ্ধ এক বহুগ্রহীয় সৌরজগতের কেন্দ্র।'
+    },
+    distance: {
+      en: '127 Light Years',
+      hi: '127 प्रकाश वर्ष',
+      bn: '১২৭ আলোকবর্ষ'
+    },
+    radius: 18.0,
+    modelType: 'texture',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/hd-10180.jpg',
+    details: {
+      overview: {
+        en: 'HD 10180 is a G-type main-sequence star located approximately 127 light-years away in the southern constellation Hydrus. It is very similar to our Sun in mass, radius, and temperature, but roughly 2.7 billion years older. It gained global scientific prominence in 2010 when the HARPS spectrograph revealed an extraordinarily rich planetary system with at least seven (and possibly up to nine) orbiting exoplanets.',
+        hi: 'एचडी 10180 दक्षिणी तारामंडल हाइड्रेस में लगभग 127 प्रकाश वर्ष दूर स्थित एक जी-प्रकार का मुख्य-अनुक्रम तारा है। यह द्रव्यमान, त्रिज्या और तापमान में हमारे सूर्य के बहुत समान है, लेकिन लगभग 2.7 अरब वर्ष पुराना है। 2010 में हार्प्स स्पेक्ट्रोग्राफ द्वारा कम से कम सात ग्रहों की खोज के बाद यह प्रसिद्ध हुआ।',
+        bn: 'এইচডি ১০১৮০ হলো দক্ষিণ আকাশের জলসাপ (Hydrus) তারামণ্ডলে প্রায় ১২৭ আলোকবর্ষ দূরে অবস্থিত একটি জি-টাইপ (G1V) প্রধান পর্যায়ভুক্ত নক্ষত্র। ভর, আকার এবং পৃষ্ঠের তাপমাত্রায় এটি আমাদের সূর্যের প্রায় অবিকল যমজ হলেও বয়সে সূর্যের চেয়ে প্রায় ২.৭ বিলিয়ন বছর বেশি প্রাচীন। ২০১০ সালে ইউরোপীয় সাউদার্ন অবজারভেটরির হার্পস (HARPS) স্পেকট্রোগ্রাফের সাহায্যে এর চারপাশে অন্তত ৭টি (সম্ভাব্য ৯টি) গ্রহের সন্ধান পাওয়ার পর এটি বিশ্বজুড়ে জ্যোতির্বিজ্ঞানীদের বিশেষ মনোযোগ আকর্ষণ করে।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Approx. 1.06 Solar Masses (1.06 M☉)',
+          hi: 'लगभग 1.06 सौर द्रव्यमान',
+          bn: 'সূর্যের চেয়ে সামান্য ভারী (১.০৬ সৌর ভর)'
+        },
+        diameter: {
+          en: 'Approx. 1,670,000 km (1.20 Solar Radii)',
+          hi: 'लगभग 1,670,000 किमी (1.20 सौर त्रिज्या)',
+          bn: 'প্রায় ১৬,৭০,০০০ কি.মি. (সূর্যের ১.২ গুণ)'
+        },
+        gravity: {
+          en: 'Approx. 210 m/s² (0.76x Sun surface gravity)',
+          hi: 'लगभग 210 m/s² (सूर्य का 0.76x)',
+          bn: 'প্রায় ২১০ মি./সে.² (সূর্যের চেয়ে কিছুটা কম)'
+        }
+      },
+      atmosphere: {
+        en: 'A blazing yellow-white photosphere with an effective surface temperature of ~5,911 K (~5,638 °C), characterized by moderate solar-like magnetic cycles.',
+        hi: 'लगभग 5,911 K के प्रभावी तापमान वाला एक चमकदार पीला-सफेद फोटोस्फीयर।',
+        bn: 'প্রায় ৫,৯১১ কেলভিন (৫,৬৩৮ °C) তাপমাত্রার একটি উজ্জ্বল হলদে-সাদা ফটোস্ফিয়ার, যাতে সূর্যের মতোই চৌম্বকীয় কার্যকলাপের চক্র বিদ্যমান।'
+      },
+      orbitAndRotation: {
+        en: 'Rotates on its stellar axis once roughly every 24 Earth days, very close to our Sun\'s rotational speed.',
+        hi: 'लगभग हर 24 पृथ्वी दिनों में अपनी धुरी पर एक चक्कर पूरा करता है।',
+        bn: 'নিজের অক্ষে প্রতি ২৪ দিনে একবার সম্পূর্ণ আবর্তন সম্পন্ন করে, যা আমাদের সূর্যের ঘূর্ণন গতির প্রায় সমান।'
+      },
+      moons: {
+        en: 'Anchors a sprawling planetary system of at least 6 to 9 exoplanets (b, c, i, d, e, j, f, g, h).',
+        hi: 'कम से कम 6 से 9 एक्सोप्लैनेट्स की एक विशाल ग्रह प्रणाली का केंद्र है।',
+        bn: 'অন্তত ৬ থেকে ৯টি বৈচিত্র্যময় এক্সোপ্ল্যানেট নিয়ে গঠিত এক বিশাল পরিবারের কেন্দ্র।'
+      },
+      surface: {
+        en: 'A turbulent, convective plasma ocean undergoing thermonuclear hydrogen fusion in its core, glowing with golden-yellow brilliance.',
+        hi: 'एक उबलती हुई प्लाज्मा सतह जिसके केंद्र में थर्मोन्यूक्लियर हाइड्रोजन संलयन हो रहा है।',
+        bn: 'ভেতরের কেন্দ্রে অবিরত হাইড্রোজেন ফিউশন ঘটতে থাকা একটি উত্তপ্ত প্লাজমা সমুদ্র, যা সোনালী-হলুদ দীপ্তিতে জ্বলছে।'
+      },
+      exploration: {
+        en: 'Studied for years by the Geneva Extrasolar Planet Search team using the HARPS spectrograph on ESO\'s 3.6m telescope at La Silla, Chile.',
+        hi: 'चिली में ला सिला में ईएसओ के 3.6 मीटर टेलीस्कोप पर हार्प्स स्पेक्ट्रोग्राफ द्वारा अध्ययन किया गया।',
+        bn: 'চিলির লা সিলা অবজারভেটরিতে ইউরোপীয় সাউদার্ন অবজারভেটরির (ESO) ৩.৬ মিটার টেলিস্কোপের হার্পস স্পেকট্রোগ্রাফের সাহায্যে দীর্ঘ পর্যবেক্ষণে এর সন্ধান নিশ্চিত করা হয়।'
+      },
+      didYouKnow: [
+        {
+          en: 'HD 10180 was once nicknamed "the most populous planetary system" known, holding the record alongside Kepler-90 and TRAPPIST-1 for hosting the most planets!',
+          hi: 'एचडी 10180 को एक समय सबसे अधिक आबादी वाला ग्रह तंत्र माना गया था, जिसके पास सबसे अधिक ग्रहों की मेजबानी का रिकॉर्ड था!',
+          bn: 'এইচডি ১০১৮০ কে এক সময় সৌরজগতের বাইরে "সর্বাধিক গ্রহবিশিষ্ট সৌরজগৎ" হিসেবে গণ্য করা হতো, যা কেপলার-৯০ ও ট্রাপিস্ট-১ এর মতোই অত্যন্ত জনবহুল!'
+        },
+        {
+          en: 'It is a metal-rich star, containing roughly 20% more heavy elements than our own Sun, which provided ample raw material to form so many planets.',
+          hi: 'यह धातु से समृद्ध तारा है, जिसमें हमारे सूर्य की तुलना में लगभग 20% अधिक भारी तत्व हैं।',
+          bn: 'এটি একটি ধাতু-সমৃদ্ধ (metal-rich) নক্ষত্র, যাতে সূর্যের চেয়ে প্রায় ২০% বেশি ভারী মৌলিক উপাদান রয়েছে। এই অতিরিক্ত উপাদানের কারণেই এর চারপাশে এতগুলো গ্রহ সৃষ্টি হতে পেরেছে।'
+        }
+      ]
+    }
+  },
+  {
+    id: 'hd-10180-c',
+    type: 'Exoplanet',
+    name: {
+      en: 'HD 10180 c',
+      hi: 'एचडी 10180 सी',
+      bn: 'এইচডি ১০১৮০ সি'
+    },
+    description: {
+      en: 'A scorching Hot Neptune orbiting its sun-like star in under 6 days at a blistering proximity.',
+      hi: 'अपने सूर्य जैसे तारे की 6 दिनों से भी कम समय में अत्यधिक निकटता से परिक्रमा करने वाला एक बेहद गर्म नेपच्यून।',
+      bn: 'আমাদের সূর্যের মতো নক্ষত্রকে মাত্র ৬ দিনেরও কম সময়ে প্রচণ্ড উত্তপ্ত সান্নিধ্যে প্রদক্ষিণকারী একটি হট-নেপচুন গ্রহ।'
+    },
+    distance: {
+      en: '127 Light Years',
+      hi: '127 प्रकाश वर्ष',
+      bn: '১২৭ আলোকবর্ষ'
+    },
+    radius: 3.80,
+    modelType: 'texture',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/hd-10180-c.jpg',
+    details: {
+      overview: {
+        en: 'HD 10180 c is a Hot Neptune exoplanet orbiting close to the solar-analog star HD 10180. With a mass at least 13.1 times that of Earth, it closely mirrors the mass of Uranus or Neptune, but unlike our cold ice giants, HD 10180 c hurtles around its star in just 5.76 days, baking its outer atmosphere to fierce temperatures exceeding 550 °C.',
+        hi: 'एचडी 10180 सी सूर्य जैसे तारे एचडी 10180 के करीब परिक्रमा करने वाला एक हॉट नेपच्यून एक्सोप्लैनेट है। पृथ्वी के कम से कम 13.1 गुना द्रव्यमान के साथ, यह हमारे सौर मंडल के यूरेनस या नेपच्यून जैसा है, लेकिन यह केवल 5.76 दिनों में एक चक्कर पूरा करता है और 550 डिग्री सेल्सियस से अधिक तापमान पर तपता है।',
+        bn: 'এইচডি ১০১৮০ সি হলো সূর্যসদৃশ নক্ষত্র এইচডি ১০১৮০-কে প্রদক্ষিণকারী একটি অতি-উত্তপ্ত নেপচুন (Hot Neptune) শ্রেণীর এক্সোপ্ল্যানেট। পৃথিবীর চেয়ে অন্তত ১৩.১ গুণ ভারী হওয়ায় এটি আমাদের সৌরজগতের ইউরেনাস বা নেপচুনের ভরের কাছাকাছি। তবে আমাদের শীতল গ্যাসীয় গ্রহগুলোর বিপরীত এটি মাত্র ৫.৭৬ দিনে নক্ষত্রকে একবার প্রদক্ষিণ করে ফেলে, যার ফলে এর বায়ুমণ্ডল ৫০০ ডিগ্রি সেলসিয়াসেরও বেশি তাপমাত্রায় ক্রমাগত উত্তপ্ত থাকে।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'At least 13.1 Earth masses (13.1 M⊕)',
+          hi: 'कम से कम 13.1 पृथ्वी द्रव्यमान',
+          bn: 'কমপক্ষে পৃথিবীর ১৩.১ গুণ ভর (১৩.১ M⊕)'
+        },
+        diameter: {
+          en: 'Approx. 48,400 km (3.8 Earth diameters)',
+          hi: 'लगभग 48,400 किमी (3.8 पृथ्वी व्यास)',
+          bn: 'প্রায় ৪৮,৪০০ কি.মি. (পৃথিবীর ৩.৮ গুণ)'
+        },
+        gravity: {
+          en: 'Approx. 9.1 m/s² (0.93x Earth gravity)',
+          hi: 'लगभग 9.1 m/s² (पृथ्वी का 0.93x)',
+          bn: 'প্রায় ৯.১ মি./সে.² (পৃথিবীর চেয়ে সামান্য কম)'
+        }
+      },
+      atmosphere: {
+        en: 'A turbulent, superheated envelope of hydrogen, helium, methane, and ionized sodium, constantly whipped by powerful supersonic equatorial winds.',
+        hi: 'हाइड्रोजन, हीलियम, मीथेन और आयनित सोडियम का एक अशांत, अत्यधिक गर्म वातावरण, जो तीव्र सुपरसोनिक हवाओं से संचालित होता है।',
+        bn: 'হাইড্রোজেন, হিলিয়াম, মিথেন ও আয়নিত খনিজের সমন্বয়ে গঠিত এক উত্তাল বায়ুমণ্ডল, যাতে অবিরত তীব্র সুপারসনিক গতির ঝড় প্রবাহিত হয়।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits in just 5.76 Earth days at a distance of ~9.6 million km (0.0641 AU). Synchronously tidally locked to its parent star.',
+        hi: 'लगभग 96 लाख किमी की दूरी पर केवल 5.76 पृथ्वी दिनों में परिक्रमा करता है।',
+        bn: 'নক্ষত্র থেকে মাত্র ৯৬ লক্ষ কি.মি. (০.০৬৪১ AU) দূর দিয়ে মাত্র ৫.৭৬ দিনে এক পাক ঘুরে আসে। নক্ষত্রের চরম মহাকর্ষের কারণে এটি জোয়ারবদ্ধ।'
+      },
+      moons: {
+        en: 'None (strong stellar gravitational shearing makes stable moon orbits impossible)',
+        hi: 'कोई चंद्रमा नहीं',
+        bn: 'কোনো উপগ্রহ নেই (নক্ষত্রের তীব্র মহাকর্ষ বলের কারণে কোনো উপগ্রহ টিকে থাকা অসম্ভব)'
+      },
+      surface: {
+        en: 'Lacks any solid ground; high-temperature atmospheric gases smoothly compress into a supercritical mantle and a dense rocky-silicate core.',
+        hi: 'किसी भी ठोस सतह का अभाव है; उच्च तापमान वाली गैसें एक घने कोर में विलीन हो जाती हैं।',
+        bn: 'কোনো কঠিন ভূখণ্ড নেই; প্রচণ্ড তাপে গ্যাসীয় স্তর ধীরে ধীরে সুপারক্রিটিকাল তরল এবং ভেতরে একটি ঘন সিলিকেট কোরে রূপ নিয়েছে।'
+      },
+      exploration: {
+        en: 'Discovered in August 2010 by an international team using the ultra-precise HARPS spectrograph at ESO\'s La Silla Observatory in Chile.',
+        hi: 'अगस्त 2010 में चिली में ला सिला वेधशाला में HARPS स्पेक्ट्रोग्राफ द्वारा खोजा गया।',
+        bn: '২০১০ সালের আগস্টে চিলির লা সিলা অবজারভেটরির হার্পস (HARPS) স্পেকট্রোগ্রাফ ব্যবহার করে বিজ্ঞানীদের একটি আন্তর্জাতিক দল এটি আবিষ্কার করে।'
+      },
+      didYouKnow: [
+        {
+          en: 'Because it orbits so close to its yellow star, a "year" on HD 10180 c lasts less than a single Earth week!',
+          hi: 'क्योंकि यह अपने पीले तारे के इतने करीब परिक्रमा करता है, एचडी 10180 सी पर एक "वर्ष" एक पृथ्वी सप्ताह से भी कम समय तक रहता है!',
+          bn: 'নক্ষত্রের এত কাছে থাকায় এইচডি ১০১৮০ সি গ্রহের ১টি বছর পৃথিবীর মাত্র এক সপ্তাহের চেয়েও কম সময়ে শেষ হয়ে যায়!'
+        },
+        {
+          en: 'Despite having the mass of an ice giant, its blistering temperature prevents any ice from existing, classifying it as a classic "Hot Neptune".',
+          hi: 'बर्फ के विशालकाय ग्रह का द्रव्यमान होने के बावजूद, इसका अत्यधिक तापमान किसी भी बर्फ को पिघला देता है, जिससे इसे "हॉट नेपच्यून" कहा जाता है।',
+          bn: 'বরফীয় গ্রহ ইউরেনাস বা নেপচুনের সমান ভর থাকা সত্ত্বেও প্রচণ্ড তাপমাত্রার কারণে এর কোথাও বরফের অস্তিত্ব থাকতে পারে না, তাই একে "হট নেপচুন" বলা হয়।'
+        }
+      ]
+    }
+  },
+  {
+    id: 'hd-10180-d',
+    type: 'Exoplanet',
+    name: {
+      en: 'HD 10180 d',
+      hi: 'एचडी 10180 डी',
+      bn: 'এইচডি ১০১৮০ ডি'
+    },
+    description: {
+      en: 'A warm Neptune-class exoplanet roughly 12 times the mass of Earth, orbiting every 16.4 days.',
+      hi: 'पृथ्वी के द्रव्यमान का लगभग 12 गुना एक गर्म नेपच्यून-श्रेणी का एक्सोप्लैनेट, जो हर 16.4 दिनों में परिक्रमा करता है।',
+      bn: 'পৃথিবীর ভরের প্রায় ১২ গুণ ভারী একটি উষ্ণ নেপচুন-শ্রেণীর এক্সোপ্ল্যানেট, যা প্রতি ১৬.৪ দিনে নক্ষত্রকে প্রদক্ষিণ করে।'
+    },
+    distance: {
+      en: '127 Light Years',
+      hi: '127 प्रकाश वर्ष',
+      bn: '১২৭ আলোকবর্ষ'
+    },
+    radius: 3.50,
+    modelType: 'texture',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/hd-10180-d.jpg',
+    details: {
+      overview: {
+        en: 'HD 10180 d is a warm sub-giant exoplanet orbiting the sun-like star HD 10180. With a minimum mass of 11.8 Earth masses and a radius estimated around 3.5 Earths, it belongs to the Neptune-like family. It completes an orbit in approximately 16.36 Earth days at a distance of ~19.2 million km, basking in fierce stellar heat of ~440 °C.',
+        hi: 'एचडी 10180 डी सूर्य जैसे तारे एचडी 10180 की परिक्रमा करने वाला एक गर्म उप-विशालकाय एक्सोप्लैनेट है। 11.8 पृथ्वी द्रव्यमान के न्यूनतम द्रव्यमान के साथ, यह नेपच्यून जैसे परिवार से संबंधित है। यह लगभग 16.36 पृथ्वी दिनों में एक चक्कर पूरा करता है और लगभग 440 डिग्री सेल्सियस के तापमान में रहता है।',
+        bn: 'এইচডি ১০১৮০ ডি হলো সূর্যসদৃশ নক্ষত্র এইচডি ১০১৮০-এর পরিবারের একটি উষ্ণ নেপচুন-শ্রেণীর এক্সোপ্ল্যানেট। পৃথিবীর চেয়ে প্রায় ১১.৮ গুণ ভারী এবং আকারে পৃথিবীর প্রায় ৩.৫ গুণ বড় হওয়ায় এটি মূলত একটি গ্যাসীয় গ্রহ। নক্ষত্র থেকে প্রায় ১ কোটি ৯২ লক্ষ কি.মি. দূরত্বে অবস্থান করে এটি প্রতি ১৬.৩৬ দিনে একবার প্রদক্ষিণ সম্পন্ন করে এবং এর তাপমাত্রা প্রায় ৪৪০ ডিগ্রি সেলসিয়াস।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Approx. 11.8 Earth masses (11.75 M⊕)',
+          hi: 'लगभग 11.8 पृथ्वी द्रव्यमान',
+          bn: 'পৃথিবীর প্রায় ১১.৮ গুণ ভর (১১.৭৫ M⊕)'
+        },
+        diameter: {
+          en: 'Approx. 44,600 km (3.5 Earth diameters)',
+          hi: 'लगभग 44,600 किमी (3.5 पृथ्वी व्यास)',
+          bn: 'প্রায় ৪৪,৬০০ কি.মি. (পৃথিবীর ৩.৫ গুণ)'
+        },
+        gravity: {
+          en: 'Approx. 9.4 m/s² (0.96x Earth gravity)',
+          hi: 'लगभग 9.4 m/s² (पृथ्वी का 0.96x)',
+          bn: 'প্রায় ৯.৪ মি./সে.² (পৃথিবীর চেয়ে সামান্য কম)'
+        }
+      },
+      atmosphere: {
+        en: 'A deep, hazy atmosphere rich in hydrogen, helium, ammonia, and high-temperature methane vapors, displaying banded cloud patterns.',
+        hi: 'हाइड्रोजन, हीलियम, अमोनिया और उच्च तापमान वाले मीथेन वाष्प से समृद्ध एक गहरा, धुंधला वातावरण।',
+        bn: 'হাইড্রোজেন, হিলিয়াম, অ্যামোনিয়া ও উষ্ণ মিথেন গ্যাসের সমন্বয়ে গঠিত একটি ঘন বায়ুমণ্ডল, যাতে দীর্ঘ বলয়াকার মেঘের সারি রয়েছে।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits in 16.36 Earth days at ~19.2 million km (0.1286 AU) with low orbital eccentricity (~0.088).',
+        hi: '16.36 पृथ्वी दिनों में लगभग 1.92 करोड़ किमी की दूरी पर परिक्रमा करता है।',
+        bn: 'নক্ষত্র থেকে প্রায় ১ কোটি ৯২ লক্ষ কি.মি. (০.১২৮৬ AU) দূরত্বে থেকে প্রতি ১৬.৩৬ দিনে একবার প্রদক্ষিণ করে।'
+      },
+      moons: {
+        en: 'None detected',
+        hi: 'कोई ज्ञात चंद्रमा नहीं',
+        bn: 'কোনো উপগ্রহ শনাক্ত হয়নি'
+      },
+      surface: {
+        en: 'No solid crust; turbulent atmospheric clouds transition directly into a dense supercritical gas-liquid ocean wrapping a metallic rock core.',
+        hi: 'कोई ठोस परत नहीं; अशांत बादल सीधे एक घने कोर को घेरने वाले तरल में विलीन हो जाते हैं।',
+        bn: 'কোনো কঠিন ভূত্বক নেই; উত্তাল মেঘের স্তর সরাসরি সুপারক্রিটিকাল তরল এবং ভেতরে একটি ভারী ধাতব শিলাযুক্ত কোরে রূপ নিয়েছে।'
+      },
+      exploration: {
+        en: 'Discovered in 2010 by the Geneva Observatory planet search team utilizing high-precision Doppler spectroscopy with the HARPS instrument in Chile.',
+        hi: 'चिली में HARPS उपकरण के साथ डॉपलर स्पेक्ट्रोस्कोपी का उपयोग करके 2010 में खोजा गया।',
+        bn: '২০১০ সালে চিলির হার্পস (HARPS) যন্ত্রের মাধ্যমে অত্যন্ত সংবেদনশীল ডপলার স্পেকট্রোস্কোপি পদ্ধতি ব্যবহার করে জেনেভা অবজারভেটরির বিজ্ঞানীরা এটি আবিষ্কার করেন।'
+      },
+      didYouKnow: [
+        {
+          en: 'Although HD 10180 d is more than 11 times heavier than Earth, its thick gaseous composition gives it a surface gravity very similar to Earth\'s!',
+          hi: 'यद्यपि एचडी 10180 डी पृथ्वी से 11 गुना अधिक भारी है, इसकी गैसीय संरचना इसे पृथ्वी के समान गुरुत्वाकर्षण देती है!',
+          bn: 'এইচডি ১০১৮০ ডি পৃথিবীর চেয়ে ১১ গুণেরও বেশি ভারী হওয়া সত্ত্বেও এর গ্যাসীয় প্রকৃতির কারণে এর উপরিভাগের মহাকর্ষ বল প্রায় পৃথিবীর সমান!'
+        },
+        {
+          en: 'It is part of a remarkably dense inner planetary system where planets c, d, and e orbit closer to their star than Venus orbits our Sun.',
+          hi: 'यह एक घनी आंतरिक ग्रह प्रणाली का हिस्सा है जहां ग्रह सी, डी और ई हमारे शुक्र ग्रह की तुलना में अपने तारे के करीब परिक्रमा करते हैं।',
+          bn: 'এটি এই সৌরজগতের এমন এক ঘন অভ্যন্তরীণ অংশের গ্রহ, যেখানে গ্রহ c, d এবং e প্রত্যেকেই আমাদের শুক্র গ্রহের দূরত্বের চেয়েও নক্ষত্রের অনেক বেশি কাছে থেকে ঘোরে।'
+        }
+      ]
+    }
+  },
+  {
+    id: 'hd-10180-e',
+    type: 'Exoplanet',
+    name: {
+      en: 'HD 10180 e',
+      hi: 'एचडी 10180 ई',
+      bn: 'এইচডি ১০১৮০ ই'
+    },
+    description: {
+      en: 'A massive sub-Saturn exoplanet 25 times heavier than Earth, completing an orbit every 49.7 days.',
+      hi: 'पृथ्वी से 25 गुना भारी एक विशाल उप-शनि एक्सोप्लैनेट, जो हर 49.7 दिनों में एक परिक्रमा पूरी करता है।',
+      bn: 'পৃথিবীর চেয়ে প্রায় ২৫ গুণ ভারী একটি বিশাল সাব-শনি (Sub-Saturn) গ্রহ, যা প্রতি ৪৯.৭ দিনে নক্ষত্রকে প্রদক্ষিণ করে।'
+    },
+    distance: {
+      en: '127 Light Years',
+      hi: '127 प्रकाश वर्ष',
+      bn: '১২৭ আলোকবর্ষ'
+    },
+    radius: 4.50,
+    modelType: 'texture',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/hd-10180-e.jpg',
+    details: {
+      overview: {
+        en: 'HD 10180 e is a large gas giant classified as a sub-Saturn or super-Neptune exoplanet. With a minimum mass 25.1 times that of Earth and a diameter roughly 4.5 times Earth\'s, it is roughly half the mass of Saturn. It orbits its sun-like host star at a distance of ~40.4 million km (similar to Mercury\'s orbit) every 49.7 days.',
+        hi: 'एचडी 10180 ई एक बड़ा गैस विशालकाय ग्रह है जिसे उप-शनि या सुपर-नेपच्यून के रूप में वर्गीकृत किया गया है। पृथ्वी के 25.1 गुना न्यूनतम द्रव्यमान और पृथ्वी के व्यास के लगभग 4.5 गुना के साथ, यह शनि के द्रव्यमान का लगभग आधा है। यह हर 49.7 दिनों में लगभग 4.04 करोड़ किमी की दूरी पर परिक्रमा करता है।',
+        bn: 'এইচডি ১০১৮০ ই হলো সাব-শনি (Sub-Saturn) বা সুপার-নেপচুন শ্রেণীর এক সুবিশাল গ্যাস দানব। পৃথিবীর চেয়ে ২৫.১ গুণ ভারী এবং ব্যাসে পৃথিবীর প্রায় ৪.৫ গুণ বড় হওয়ায় এটি আমাদের সৌরজগতের শনি গ্রহের ভরের প্রায় অর্ধেক। আমাদের সূর্যের সাপেক্ষে বুধ গ্রহের দূরত্বের মতো (প্রায় ৪ কোটি ৪ লক্ষ কি.মি.) দূরত্বে থেকে এটি প্রতি ৪৯.৭ দিনে একবার নক্ষত্রকে ঘুরে আসে।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'At least 25.1 Earth masses (25.1 M⊕)',
+          hi: 'कम से कम 25.1 पृथ्वी द्रव्यमान',
+          bn: 'কমপক্ষে পৃথিবীর ২৫.১ গুণ ভর (২৫.১ M⊕)'
+        },
+        diameter: {
+          en: 'Approx. 57,400 km (4.5 Earth diameters)',
+          hi: 'लगभग 57,400 किमी (4.5 पृथ्वी व्यास)',
+          bn: 'প্রায় ৫৭,৪০০ কি.মি. (পৃথিবীর ৪.৫ গুণ)'
+        },
+        gravity: {
+          en: 'Approx. 12.1 m/s² (1.23x Earth gravity)',
+          hi: 'लगभग 12.1 m/s² (पृथ्वी का 1.23x)',
+          bn: 'প্রায় ১২.১ মি./সে.² (পৃথিবীর চেয়ে ২৩% বেশি)'
+        }
+      },
+      atmosphere: {
+        en: 'A thick, banded atmosphere predominantly composed of hydrogen, helium, ammonia ice crystals, and organic haze giving it an amber or pale golden tint.',
+        hi: 'हाइड्रोजन, हीलियम, अमोनिया बर्फ के क्रिस्टल और कार्बनिक धुंध से बना एक घना, धारीदार वातावरण।',
+        bn: 'হাইড্রোজেন, হিলিয়াম, অ্যামোনিয়া ও মিথেনের বাষ্পে ঘেরা এক সুবিশাল বায়ুমণ্ডল, যাতে অ্যাম্বার বা হালকা সোনালী আভার দীর্ঘ মেঘবলয় পরিলক্ষিত হয়।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits every 49.74 Earth days at ~40.4 million km (0.2699 AU) in a stable circular path.',
+        hi: 'स्थिर वृत्ताकार पथ में लगभग 4.04 करोड़ किमी की दूरी पर हर 49.74 पृथ्वी दिनों में परिक्रमा करता है।',
+        bn: 'নক্ষত্র থেকে প্রায় ৪ কোটি ৪ লক্ষ কি.মি. (০.২৬৯৯ AU) দূরত্বে থেকে প্রতি ৪৯.৭৪ দিনে একবার কক্ষপথ প্রদক্ষিণ সম্পন্ন করে।'
+      },
+      moons: {
+        en: 'Likely hosts a rich system of large icy moons similar to Jupiter and Saturn',
+        hi: 'बृहस्पति और शनि के समान बड़े बर्फीले चंद्रमाओं की एक समृद्ध प्रणाली होने की संभावना है',
+        bn: 'বৃহস্পতি ও শনি গ্রহের মতো এর চারপাশে বেশ কিছু সুবিশাল বরফাবৃত উপগ্রহ থাকার জোরালো সম্ভাবনা রয়েছে'
+      },
+      surface: {
+        en: 'Has no solid boundary; vast cloud layers compress under immense gravitational pressure into liquid metallic hydrogen surrounding a massive heavy-element core.',
+        hi: 'कोई ठोस सीमा नहीं है; विशाल बादल परतें अत्यधिक दबाव में तरल धात्विक हाइड्रोजन में बदल जाती हैं।',
+        bn: 'কোনো কঠিন পৃষ্ঠ নেই; তীব্র মহাকর্ষীয় চাপে ঘন মেঘের স্তর ধীরে ধীরে তরল ধাতব হাইড্রোজেন ও ভেতরে এক সুবিশাল ভারী কোরে পরিণত হয়েছে।'
+      },
+      exploration: {
+        en: 'Discovered in 2010 by the Geneva Extrasolar Planet Search team via radial velocity tracking at ESO\'s La Silla Observatory.',
+        hi: 'ईएसओ की ला सिला वेधशाला में रेडियल वेग ट्रैकिंग के माध्यम से 2010 में खोजा गया।',
+        bn: 'ইউরোপীয় সাউদার্ন অবজারভেটরির (ESO) লা সিলা মানমন্দিরে রেডিয়াল ভেলোসিটি ট্র্যাকিংয়ের মাধ্যমে ২০১০ সালে জেনেভা প্ল্যানেট সার্চ টিম এটি আবিষ্কার করে।'
+      },
+      didYouKnow: [
+        {
+          en: 'HD 10180 e is roughly half the mass of Saturn, making it a rare bridge between ice giants like Neptune and true gas giants like Saturn.',
+          hi: 'एचडी 10180 ई शनि के द्रव्यमान का लगभग आधा है, जो इसे नेपच्यून जैसे बर्फ के दिग्गजों और शनि जैसे वास्तविक गैस दिग्गजों के बीच एक दुर्लभ कड़ी बनाता है।',
+          bn: 'এইচডি ১০১৮০ ই শনি গ্রহের প্রায় অর্ধেক ভরের হওয়ায় এটি নেপচুনের মতো আইস জায়ান্ট এবং শনির মতো ট্রু গ্যাস জায়ান্টের মধ্যকার এক বিরল সেতুস্বরূপ।'
+        },
+        {
+          en: 'Its orbit is close to where Mercury orbits our Sun, but unlike tiny airless Mercury, HD 10180 e is a giant world of stormy swirling gases!',
+          hi: 'इसकी कक्षा हमारे सूर्य के चारों ओर बुध की कक्षा के करीब है, लेकिन छोटे बुध के विपरीत, एचडी 10180 ई तूफानी गैसों की एक विशाल दुनिया है!',
+          bn: 'আমাদের সৌরজগতের বুধ গ্রহের মতো দূরত্বের কক্ষপথে থাকলেও, প্রাণহীন ছোট্ট বুধের বদলে এটি ঝোড়ো ঘূর্ণিবায়ুতে ভরপুর এক সুবিশাল গ্যাস দানব!'
+        }
+      ]
+    }
+  },
+  {
+    id: 'hd-10180-f',
+    type: 'Exoplanet',
+    name: {
+      en: 'HD 10180 f',
+      hi: 'एचडी 10180 एफ',
+      bn: 'এইচডি ১০১৮০ এফ'
+    },
+    description: {
+      en: 'A temperate sub-Saturn gas giant orbiting within the system\'s warm zone every 123 days.',
+      hi: '123 दिनों में प्रणाली के गर्म क्षेत्र में परिक्रमा करने वाला एक समशीतोष्ण उप-शनि गैस विशालकाय ग्रह।',
+      bn: 'সৌরজগতের নাতিশীতোষ্ণ বলয়ে প্রতি ১২৩ দিনে নক্ষত্রকে প্রদক্ষিণকারী একটি সাব-শনি শ্রেণীর গ্যাস দানব।'
+    },
+    distance: {
+      en: '127 Light Years',
+      hi: '127 प्रकाश वर्ष',
+      bn: '১২৭ আলোকবর্ষ'
+    },
+    radius: 4.30,
+    modelType: 'texture',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/hd-10180-f.jpg',
+    details: {
+      overview: {
+        en: 'HD 10180 f is a gas giant with roughly 23.9 times the mass of Earth, orbiting at 0.49 AU from its parent star—a distance comparable to Venus\'s orbit in our Solar System. Because it takes ~122.7 days to complete an orbit, it sits near the warm inner boundary of the habitable zone, maintaining equilibrium temperatures between 17 °C and 57 °C.',
+        hi: 'एचडी 10180 एफ पृथ्वी के द्रव्यमान का लगभग 23.9 गुना एक गैस विशालकाय ग्रह है, जो अपने मूल तारे से 0.49 एयू की दूरी पर परिक्रमा करता है। क्योंकि एक परिक्रमा पूरी करने में लगभग 122.7 दिन लगते हैं, यह रहने योग्य क्षेत्र की गर्म आंतरिक सीमा के पास स्थित है।',
+        bn: 'এইচডি ১০১৮০ এফ হলো পৃথিবীর প্রায় ২৩.৯ গুণ ভরের একটি সাব-শনি বা সুপার-নেপচুন শ্রেণীর গ্যাসীয় গ্রহ। নক্ষত্র থেকে প্রায় ৭ কোটি ৩৭ লক্ষ কি.মি. (০.৪৯ AU) দূরত্বে থেকে এটি প্রতি ১২২.৭ দিনে একবার প্রদক্ষিণ করে, যা আমাদের সৌরজগতের শুক্র গ্রহের দূরত্বের কাছাকাছি। ফলে এর স্বাভাবিক তাপমাত্রা প্রায় ১৭°C থেকে ৫৭°C এর নাতিশীতোষ্ণ সীমার মধ্যে থাকে।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'At least 23.9 Earth masses (23.9 M⊕)',
+          hi: 'कम से कम 23.9 पृथ्वी द्रव्यमान',
+          bn: 'কমপক্ষে পৃথিবীর ২৩.৯ গুণ ভর (২৩.৯ M⊕)'
+        },
+        diameter: {
+          en: 'Approx. 54,800 km (4.3 Earth diameters)',
+          hi: 'लगभग 54,800 किमी (4.3 पृथ्वी व्यास)',
+          bn: 'প্রায় ৫৪,৮০০ কি.মি. (পৃথিবীর ৪.৩ গুণ)'
+        },
+        gravity: {
+          en: 'Approx. 11.5 m/s² (1.17x Earth gravity)',
+          hi: 'लगभग 11.5 m/s² (पृथ्वी का 1.17x)',
+          bn: 'প্রায় ১১.৫ মি./সে.² (পৃথিবীর চেয়ে ১৭% বেশি)'
+        }
+      },
+      atmosphere: {
+        en: 'A temperate upper atmosphere featuring water-vapor clouds, ammonia hazes, and dynamic jet streams in pale blue and cream bands.',
+        hi: 'जल-वाष्प के बादलों, अमोनिया धुंध और गतिशील जेट धाराओं से युक्त एक समशीतोष्ण ऊपरी वायुमंडल।',
+        bn: 'জলীয় বাষ্পের মেঘ, অ্যামোনিয়া ও মিথেনের সমন্বয়ে গঠিত একটি মনোরম নাতিশীতোষ্ণ বায়ুমণ্ডল, যাতে হালকা নীল ও ক্রীম রঙের মেঘের বলয় রয়েছে।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits every 122.7 Earth days at ~73.7 million km (0.4929 AU) in a nearly circular orbit.',
+        hi: 'लगभग 7.37 करोड़ किमी की दूरी पर हर 122.7 पृथ्वी दिनों में परिक्रमा करता है।',
+        bn: 'নক্ষত্র থেকে প্রায় ৭ কোটি ৩৭ লক্ষ কি.মি. (০.৪৯২৯ AU) দূরত্ব বজায় রেখে প্রতি ১২২.৭ দিনে একবার প্রদক্ষিণ সম্পন্ন করে।'
+      },
+      moons: {
+        en: 'Potential host to habitable exomoons where liquid water could exist on solid rocky surfaces',
+        hi: 'रहने योग्य चंद्रमाओं की मेजबानी करने की संभावना जहां ठोस सतहों पर तरल पानी हो सकता है',
+        bn: 'সম্ভাব্য বাসযোগ্য বরফাবৃত বা পাথুরে উপগ্রহের আশ্রয়দাতা, যার পৃষ্ঠে তরল পানি থাকার সম্ভাবনা রয়েছে'
+      },
+      surface: {
+        en: 'Lacks a solid crust; deep gaseous layers give way to high-pressure supercritical fluids and a heavy rocky-iron core.',
+        hi: 'ठोस परत का अभाव; गहरी गैसीय परतें उच्च दबाव वाले तरल पदार्थों और एक भारी कोर में विलीन हो जाती हैं।',
+        bn: 'কোনো কঠিন পৃষ্ঠ নেই; ঘন বায়ুমণ্ডল ক্রমশ উচ্চ চাপের সুপারক্রিটিকাল তরল এবং ভেতরে একটি বিশালাকার শিলাময়-লোহার কোরে রূপ নিয়েছে।'
+      },
+      exploration: {
+        en: 'Discovered in 2010 by the Geneva Extrasolar Planet Search team through ultra-precise radial velocity measurements.',
+        hi: 'अत्यधिक सटीक रेडियल वेग माप के माध्यम से 2010 में खोजा गया।',
+        bn: '২০১০ সালে অত্যন্ত নির্ভুল রেডিয়াল ভেলোসিটি পরিমাপের মাধ্যমে জেনেভা প্ল্যানেট সার্চ টিম এটি আবিষ্কার করে।'
+      },
+      didYouKnow: [
+        {
+          en: 'While HD 10180 f is a gas giant with no solid surface, any large moons orbiting it could theoretically possess liquid water and Earth-like climates!',
+          hi: 'यद्यपि एचडी 10180 एफ एक गैस विशालकाय है, इसकी परिक्रमा करने वाले किसी भी बड़े चंद्रमा पर सैद्धांतिक रूप से तरल पानी हो सकता है!',
+          bn: 'এইচডি ১০১৮০ এফ গ্যাসীয় গ্রহ হওয়ায় এতে কোনো কঠিন পৃষ্ঠ নেই, তবে এর কোনো বড় উপগ্রহ বা চাঁদ থাকলে তার পৃষ্ঠে তরল পানি ও প্রাণধারণ উপযোগী চমৎকার পরিবেশ থাকতে পারে!'
+        },
+        {
+          en: 'Its distance from its star is roughly halfway between the Sun and Earth (0.49 AU), making its stellar view almost identical in warmth to our inner Solar System.',
+          hi: 'तारे से इसकी दूरी लगभग 0.49 एयू है, जो इसे सूर्य और पृथ्वी के बीच की दूरी का लगभग आधा बनाती है।',
+          bn: 'এর নক্ষত্র থেকে দূরত্ব মাত্র ০.৪৯ AU (সূর্য ও পৃথিবীর দূরত্বের প্রায় অর্ধেক), যা আমাদের সৌরজগতের শুক্র গ্রহের কক্ষপথের সাথে অনেকটাই তুলনীয়।'
+        }
+      ]
+    }
+  },
+  {
+    id: 'hd-10180-g',
+    type: 'Exoplanet',
+    name: {
+      en: 'HD 10180 g',
+      hi: 'एचडी 10180 जी',
+      bn: 'এইচডি ১০১৮০ জি'
+    },
+    description: {
+      en: 'A gas giant residing directly inside the star\'s habitable zone, taking 602 days to orbit at a Mars-like distance.',
+      hi: 'तारे के रहने योग्य क्षेत्र में स्थित एक गैस विशालकाय ग्रह, जो मंगल जैसी दूरी पर 602 दिनों में परिक्रमा करता है।',
+      bn: 'নক্ষত্রের বাসযোগ্য অঞ্চলের ভেতরে অবস্থিত একটি বিশাল গ্যাসীয় গ্রহ, যা মঙ্গল গ্রহের মতো দূরত্বে প্রতি ৬০২ দিনে একবার প্রদক্ষিণ করে।'
+    },
+    distance: {
+      en: '127 Light Years',
+      hi: '127 प्रकाश वर्ष',
+      bn: '১২৭ আলোকবর্ষ'
+    },
+    radius: 4.10,
+    modelType: 'texture',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/hd-10180-g.jpg',
+    details: {
+      overview: {
+        en: 'HD 10180 g is a fascinating gas giant with at least 21.4 times the mass of Earth, situated right inside the circumstellar habitable zone of HD 10180. Orbiting at ~1.42 AU (closely matching the orbit of Mars around our Sun), it takes about 601.7 days (1.65 Earth years) to complete a single year. While the planet itself is a gaseous giant without a solid surface, any large exomoons orbiting HD 10180 g could potentially sustain liquid surface water and life.',
+        hi: 'एचडी 10180 जी पृथ्वी के द्रव्यमान का कम से कम 21.4 गुना एक आकर्षक गैस विशालकाय ग्रह है, जो एचडी 10180 के रहने योग्य क्षेत्र में स्थित है। लगभग 1.42 एयू की दूरी पर (हमारे सूर्य के चारों ओर मंगल की कक्षा से मिलता-जुलता), यह एक वर्ष पूरा करने में लगभग 601.7 दिन लेता है। इसके किसी भी बड़े चंद्रमा पर तरल पानी और जीवन हो सकता है।',
+        bn: 'এইচডি ১০১৮০ জি হলো পৃথিবীর চেয়ে অন্তত ২১.৪ গুণ ভারী এক চমৎকার গ্যাস দানব, যা সরাসরি এইচডি ১০১৮০ নক্ষত্রের বাসযোগ্য অঞ্চলে (Habitable Zone) অবস্থিত। নক্ষত্র থেকে প্রায় ১.৪২ AU (আমাদের সৌরজগতে সূর্যের সাপেক্ষে মঙ্গল গ্রহের দূরত্বের সমান) দূরত্বে থেকে এটি প্রতি ৬০১.৭ দিনে (প্রায় ১.৬৫ বছর) একবার নক্ষত্রকে প্রদক্ষিণ করে। গ্রহটি গ্যাসীয় হওয়ায় এতে কঠিন পৃষ্ঠ নেই, তবে এর কোনো পাথুরে উপগ্রহ থাকলে তাতে তরল পানি ও প্রাণের বিকাশ ঘটার মতো আদর্শ পরিবেশ বিরাজ করতে পারে।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'At least 21.4 Earth masses (21.4 M⊕)',
+          hi: 'कम से कम 21.4 पृथ्वी द्रव्यमान',
+          bn: 'কমপক্ষে পৃথিবীর ২১.৪ গুণ ভর (২১.৪ M⊕)'
+        },
+        diameter: {
+          en: 'Approx. 52,200 km (4.1 Earth diameters)',
+          hi: 'लगभग 52,200 किमी (4.1 पृथ्वी व्यास)',
+          bn: 'প্রায় ৫২,২০০ কি.মি. (পৃথিবীর ৪.১ গুণ)'
+        },
+        gravity: {
+          en: 'Approx. 11.1 m/s² (1.13x Earth gravity)',
+          hi: 'लगभग 11.1 m/s² (पृथ्वी का 1.13x)',
+          bn: 'প্রায় ১১.১ মি./সে.² (পৃথিবীর চেয়ে ১৩% বেশি)'
+        }
+      },
+      atmosphere: {
+        en: 'A cool, calm upper atmosphere with white water-ice cirrus clouds, blue methane hazes, and deep swirling storms.',
+        hi: 'सफेद पानी-बर्फ के बादलों, नीली मीथेन धुंध और गहरे तूफानों वाला एक शांत ऊपरी वायुमंडल।',
+        bn: 'জলীয় বাষ্প ও বরফকণার তৈরি শুভ্র মেঘ, নীলাভ মিথেনের আস্তরণ এবং ধীরগতির বিশাল ঘূর্ণিবায়ু বিশিষ্ট একটি শান্ত বায়ুমণ্ডল।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits every 601.7 Earth days at ~212.7 million km (1.422 AU) right in the sweet spot of the habitable zone.',
+        hi: 'रहने योग्य क्षेत्र में लगभग 21.27 करोड़ किमी की दूरी पर हर 601.7 पृथ्वी दिनों में परिक्रमा करता है।',
+        bn: 'বাসযোগ্য অঞ্চলের ঠিক কেন্দ্রে প্রায় ২১ কোটি ২৭ লক্ষ কি.মি. (১.৪২২ AU) দূরত্ব বজায় রেখে প্রতি ৬০১.৭ দিনে এক পাক ঘুরে আসে।'
+      },
+      moons: {
+        en: 'High potential for habitable, Earth-sized rocky exomoons possessing their own protective atmospheres and liquid oceans',
+        hi: 'रहने योग्य, पृथ्वी के आकार के चट्टानी चंद्रमाओं की उच्च संभावना जिनमें अपने स्वयं के महासागर हो सकते हैं',
+        bn: 'পৃথিবীর আকারের পাথুরে উপগ্রহ থাকার জোরালো সম্ভাবনা রয়েছে, যার নিজস্ব বায়ুমণ্ডল এবং তরল পানির মহাসমুদ্র থাকতে পারে'
+      },
+      surface: {
+        en: 'No solid crust; layers of molecular hydrogen and helium descend into an ocean of supercritical water and ammonia over an iron-silicate core.',
+        hi: 'कोई ठोस परत नहीं है; हाइड्रोजन और हीलियम की परतें एक गहरे कोर के ऊपर तरल पदार्थों में बदल जाती हैं।',
+        bn: 'কোনো কঠিন ভূখণ্ড নেই; হাইড্রোজেন ও হিলিয়ামের ঘন স্তর ক্রমশ গভীরে তরল জল ও অ্যামোনিয়ার মহাসমুদ্রে এবং ভেতরে এক বিশাল শিলা-লোহার কোরে রূপ নিয়েছে।'
+      },
+      exploration: {
+        en: 'Discovered in 2010 by astronomers using the HARPS spectrograph at ESO\'s La Silla Observatory in Chile.',
+        hi: 'चिली में ईएसओ की ला सिला वेधशाला में HARPS स्पेक्ट्रोग्राफ का उपयोग करके खगोलविदों द्वारा 2010 में खोजा गया।',
+        bn: '২০১০ সালে চিলির লা সিলা মানমন্দিরে ইউরোপীয় সাউদার্ন অবজারভেটরির হার্পস (HARPS) স্পেকট্রোগ্রাফের সাহায্যে এটি আবিষ্কৃত হয়।'
+      },
+      didYouKnow: [
+        {
+          en: 'HD 10180 g is considered one of the best targets in astronomy to search for habitable "Pandora-like" exomoons!',
+          hi: 'एचडी 10180 जी को खगोल विज्ञान में रहने योग्य "पैंडोरा जैसे" चंद्रमाओं की खोज के लिए सबसे अच्छे लक्ष्यों में से एक माना जाता है!',
+          bn: 'জ্যোতির্বিজ্ঞানে অবতার সিনেমার "প্যান্ডোরা" এর মতো বাসযোগ্য উপগ্রহ বা এক্সোমুন খোঁজার জন্য এইচডি ১০১৮০ জি গ্রহটিকে অন্যতম সেরা সম্ভাব্য স্থান বিবেচনা করা হয়!'
+        },
+        {
+          en: 'Its orbit around HD 10180 closely mimics the distance between Mars and the Sun (1.42 AU vs 1.52 AU).',
+          hi: 'एचडी 10180 के चारों ओर इसकी कक्षा मंगल और सूर्य के बीच की दूरी (1.42 AU बनाम 1.52 AU) से काफी मिलती-जुलती है।',
+          bn: 'এর কক্ষপথটি আমাদের সৌরজগতের সূর্য ও মঙ্গল গ্রহের দূরত্বের সাথে আশ্চর্যজনকভাবে মিলে যায় (১.৪২ AU বনাম ১.৫২ AU)।'
+        }
+      ]
+    }
+  },
+  {
+    id: 'hd-10180-h',
+    type: 'Exoplanet',
+    name: {
+      en: 'HD 10180 h',
+      hi: 'एचडी 10180 एच',
+      bn: 'এইচডি ১০১৮০ এইচ'
+    },
+    description: {
+      en: 'The massive outermost gas giant of the HD 10180 system, orbiting in the frigid outer reaches every 6.16 years.',
+      hi: 'एचडी 10180 प्रणाली का सबसे विशाल बाहरी गैस दानव, जो हर 6.16 साल में ठंडे बाहरी क्षेत्र की परिक्रमा करता है।',
+      bn: 'এইচডি ১০১৮০ সৌরজগতের সবচেয়ে বিশাল বহিঃস্থ গ্যাস দানব, যা দূরবর্তী শীতল বলয়ে প্রতি ৬.১৬ বছরে একবার নক্ষত্রকে প্রদক্ষিণ করে।'
+    },
+    distance: {
+      en: '127 Light Years',
+      hi: '127 प्रकाश वर्ष',
+      bn: '১২৭ আলোকবর্ষ'
+    },
+    radius: 7.0,
+    modelType: 'texture',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/hd-10180-h.jpg',
+    details: {
+      overview: {
+        en: 'HD 10180 h is the largest and outermost known planet in the HD 10180 system, possessing at least 65.8 times the mass of Earth (roughly two-thirds the mass of Saturn). Orbiting at an average distance of ~3.42 AU (~512 million km), it takes about 2,248 Earth days (6.16 years) to complete a single revolution. As a frigid Jovian giant, it maintains equilibrium temperatures around -138 °C (135 K) and likely commands an extensive family of icy moons.',
+        hi: 'एचडी 10180 एच इस तारा तंत्र का सबसे बड़ा और सबसे दूर स्थित ज्ञात ग्रह है, जिसका द्रव्यमान पृथ्वी के द्रव्यमान का कम से कम 65.8 गुना (शनि ग्रह के दो-तिहाई) है। लगभग 3.42 एयू (51.2 करोड़ किमी) की दूरी पर परिक्रमा करते हुए, यह एक चक्कर पूरा करने में लगभग 2,248 दिन (6.16 वर्ष) लेता है। लगभग -138 °C तापमान के साथ, यह एक बेहद ठंडा गैस विशालकाय ग्रह है और इसके कई बर्फीले चंद्रमा हो सकते हैं।',
+        bn: 'এইচডি ১০১৮০ এইচ হলো এইচডি ১০১৮০ সৌরজগতের সবচেয়ে ভারী ও সর্ববহিঃস্থ নিশ্চিত গ্যাসীয় গ্রহ, যার ভর পৃথিবীর চেয়ে অন্তত ৬৫.৮ গুণ (শনি গ্রহের প্রায় দুই-তৃতীয়াংশ)। নক্ষত্র থেকে গড়ে প্রায় ৩.৪২ AU (প্রায় ৫১ কোটি ১৬ লক্ষ কি.মি.) দূরত্বে থেকে এটি প্রতি ২,২৪৮ দিনে (প্রায় ৬.১৬ বছরে) এক পাক ঘুরে আসে। তীব্র শীতল (প্রায় -১৩৮°C) এই জোভিয়ান দৈত্যাকার গ্রহটির চারপাশে বৃহস্পতি বা শনির মতো বহু বরফাবৃত চাঁদের বিশাল বলয় থাকার জোরালো সম্ভাবনা রয়েছে।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'At least 65.8 Earth masses (~0.21 Jupiter mass / 0.69 Saturn mass)',
+          hi: 'कम से कम 65.8 पृथ्वी द्रव्यमान (~0.21 बृहस्पति द्रव्यमान)',
+          bn: 'কমপক্ষে পৃথিবীর ৬৫.৮ গুণ ভর (~০.২১ বৃহস্পতি ভর / ০.৬৯ শনি ভর)'
+        },
+        diameter: {
+          en: 'Approx. 91,500 km (7.2 Earth diameters)',
+          hi: 'लगभग 91,500 किमी (7.2 पृथ्वी व्यास)',
+          bn: 'প্রায় ৯১,৫০০ কি.মি. (পৃথিবীর ৭.২ গুণ)'
+        },
+        gravity: {
+          en: 'Approx. 12.3 m/s² (1.25x Earth gravity)',
+          hi: 'लगभग 12.3 m/s² (पृथ्वी का 1.25x)',
+          bn: 'প্রায় ১২.৩ মি./সে.² (পৃথিবীর চেয়ে ২৫% বেশি)'
+        }
+      },
+      atmosphere: {
+        en: 'A frigid, deeply banded atmosphere dominated by hydrogen and helium with high-altitude ammonia ice clouds, deep ammonium hydrosulfide decks, and massive anticyclonic storms.',
+        hi: 'हाइड्रोजन और हीलियम से भरपूर एक बेहद ठंडा वायुमंडल, जिसमें अमोनिया बर्फ के बादल और विशाल तूफानी चक्रवात मौजूद हैं।',
+        bn: 'হাইড্রোজেন ও হিলিয়ামে পূর্ণ এক অতি-শীতল বায়ুমণ্ডল, যাতে অ্যামোনিয়া বরফের শুভ্র মেঘের বলয় এবং সুবিশাল ঘূর্ণিঝড় রয়েছে।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits in the cold outer realm every 2,248 Earth days (~6.16 Earth years) at ~511.6 million km (3.42 AU) in a slightly eccentric orbit.',
+        hi: 'लगभग 51.16 करोड़ किमी (3.42 एयू) की दूरी पर हर 2,248 पृथ्वी दिनों (~6.16 वर्ष) में एक परिक्रमा पूरी करता है।',
+        bn: 'নক্ষত্র থেকে প্রায় ৫১ কোটি ১৬ লক্ষ কি.মি. (৩.৪২ AU) দূরত্ব বজায় রেখে প্রতি ২,২৪৮ দিনে (৬.১৬ বছর) একবার প্রদক্ষিণ সম্পন্ন করে।'
+      },
+      moons: {
+        en: 'Likely harbors an extensive system of icy moons similar to Jupiter and Saturn, where tidal heating could sustain subterranean liquid oceans',
+        hi: 'बृहस्पति और शनि की तरह बर्फीले चंद्रमाओं की एक विशाल प्रणाली होने की संभावना है, जहां भूमिगत तरल महासागर मौजूद हो सकते हैं',
+        bn: 'বৃহস্পতি ও শনির মতো বরফাবৃত উপগ্রহের এক বিশাল পরিবারের আবাসস্থল হওয়ার সম্ভাবনা রয়েছে, যাদের বরফের নিচে ভূগর্ভস্থ মহাসমুদ্র থাকতে পারে'
+      },
+      surface: {
+        en: 'No solid surface; serene banded cloud decks gradually compress under crushing atmospheric pressures into supercritical fluid hydrogen and a deep metallic mantle over a rocky core.',
+        hi: 'कोई ठोस सतह नहीं है; बादलों की परतें अत्यधिक दबाव के कारण तरल धात्विक हाइड्रोजन और एक गहरे चट्टानी कोर में परिवर्तित हो जाती हैं।',
+        bn: 'কোনো কঠিন ভূপৃষ্ঠ নেই; মেঘের ঘন স্তর গভীরে তীব্র চাপে সুপারক্রিটিকাল তরল হাইড্রোজেন ও ধাতব হাইড্রোজেন পেরিয়ে এক সুবিশাল শিলাময় কোরে পর্যবসিত হয়েছে।'
+      },
+      exploration: {
+        en: 'Discovered in 2010 by astronomers using the HARPS spectrograph at ESO\'s La Silla Observatory in Chile through radial velocity tracking.',
+        hi: 'चिली में ईएसओ की ला सिला वेधशाला में HARPS स्पेक्ट्रोग्राफ द्वारा रेडियल वेग पद्धति से 2010 में खोजा गया।',
+        bn: 'ইউরোপীয় সাউদার্ন অবজারভেটরির (ESO) লা সিলা মানমন্দিরে HARPS স্পেকট্রোগ্রাফের সাহায্যে রেডিয়াল ভেলোসিটি পদ্ধতিতে ২০১০ সালে এটি আবিষ্কৃত হয়।'
+      },
+      didYouKnow: [
+        {
+          en: 'HD 10180 h is the heavyweight champion of its system—weighing more than all the other planets in the HD 10180 system combined!',
+          hi: 'एचडी 10180 एच अपने सौर मंडल का सबसे भारी ग्रह है—इसका भार प्रणाली के अन्य सभी ग्रहों के कुल भार से भी अधिक है!',
+          bn: 'এইচডি ১০১৮০ এইচ হলো এই সৌরজগতের সবচেয়ে ভারী ও প্রভাবশালী গ্রহ—এর ভর এই সিস্টেমের অন্য সব গ্রহের সম্মিলিত ভরের চেয়েও বেশি!'
+        },
+        {
+          en: 'Orbiting at 3.42 AU, it sits comfortably between where Mars and Jupiter would be in our own Solar System, acting as a gravitational anchor for the entire outer planetary family.',
+          hi: '3.42 एयू की दूरी पर स्थित होने के कारण, यह हमारे सौर मंडल के मंगल और बृहस्पति के बीच के क्षेत्र जैसी स्थिति में रहकर पूरे बाहरी तंत्र को संतुलित रखता है।',
+          bn: 'সূর্য ও বৃহস্পতির দূরত্বের কিছুটা ভেতরে (৩.৪২ AU) অবস্থিত হওয়ায় এটি আমাদের সৌরজগতের গ্রহাণু বলয় ও বৃহস্পতির মাঝামাঝি অঞ্চলের এক নিখুঁত প্রতিচ্ছবি।'
+        }
+      ]
+    }
+  },
+  {
+    id: 'gj-667-c',
+    type: 'Star',
+    name: {
+      en: 'GJ 667 C',
+      hi: 'जीजे 667 सी',
+      bn: 'জিজে ৬৬৭ সি'
+    },
+    description: {
+      en: 'A quiet red dwarf star located 23.6 light-years away in a triple-star system, famously hosting multiple potentially habitable super-Earths.',
+      hi: 'एक त्रि-तारा प्रणाली में 23.6 प्रकाश वर्ष दूर स्थित एक शांत लाल बौना तारा, जो कई संभावित रहने योग्य सुपर-अर्थ की मेजबानी के लिए प्रसिद्ध है।',
+      bn: 'একটি ত্রৈত নক্ষত্রমণ্ডলীর অংশ হিসেবে ২৩.৬ আলোকবর্ষ দূরে অবস্থিত এক শান্ত লাল বামন নক্ষত্র, যা একাধিক বাসযোগ্য সুপার-আর্থের জন্য বিশ্বখ্যাত।'
+    },
+    distance: {
+      en: '23.6 Light Years',
+      hi: '23.6 प्रकाश वर्ष',
+      bn: '২৩.৬ আলোকবর্ষ'
+    },
+    radius: 14.0,
+    modelType: 'texture',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/gj-667-c.jpg',
+    details: {
+      overview: {
+        en: 'GJ 667 C (also known as Gliese 667 C) is a cool M-dwarf red dwarf star located approximately 23.6 light-years away in the southern constellation Scorpius. It is the tertiary member of the Gliese 667 triple-star system, orbiting around the closer stellar pair GJ 667 AB at a vast distance of ~230 AU. Despite its diminutive size compared to our Sun, GJ 667 C gained global fame because it hosts a packed family of up to seven super-Earth exoplanets, with up to three orbiting simultaneously inside its circumstellar habitable zone.',
+        hi: 'जीजे 667 सी (जिसे ग्लीज़ 667 सी भी कहा जाता है) दक्षिणी तारामंडल स्कॉर्पियस में लगभग 23.6 प्रकाश वर्ष दूर स्थित एक ठंडा लाल बौना तारा है। यह ग्लीज़ 667 त्रि-तारा प्रणाली का तीसरा सदस्य है। हमारे सूर्य की तुलना में छोटा होने के बावजूद, यह विश्व प्रसिद्ध है क्योंकि यह सात सुपर-अर्थ ग्रहों की मेजबानी करता है, जिनमें से तीन इसके रहने योग्य क्षेत्र में परिक्रमा करते हैं।',
+        bn: 'জিজে ৬৬৭ সি (বা গ্লিস ৬৬৭ সি) হলো দক্ষিণ আকাশের বৃশ্চিক (Scorpius) তারামণ্ডলে মাত্র ২৩.৬ আলোকবর্ষ দূরে অবস্থিত একটি লাল বামন (M1.5V) নক্ষত্র। এটি একটি ত্রৈত নক্ষত্রমণ্ডলীর (Triple star system) তৃতীয় সদস্য, যা মূল বাইনারি নক্ষত্রযুগল জিজে ৬৬৭ এ ও বি-কে প্রায় ২৩০ AU দূর থেকে প্রদক্ষিণ করছে। সূর্যের তুলনায় আকারে ছোট ও শীতল হলেও, এটি বিজ্ঞানবিশ্বে অত্যন্ত জনপ্রিয় কারণ এর চারপাশে অন্তত ৭টি সুপার-আর্থ গ্রহ রয়েছে, যার মধ্যে ৩টি গ্রহই সরাসরি নক্ষত্রের বাসযোগ্য অঞ্চলে (Habitable Zone) অবস্থান করছে।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'Approx. 0.33 Solar Masses (33% of our Sun)',
+          hi: 'लगभग 0.33 सौर द्रव्यमान (हमारे सूर्य का 33%)',
+          bn: 'সূর্যের প্রায় ৩৩% ভর (০.৩৩ সৌর ভর)'
+        },
+        diameter: {
+          en: 'Approx. 528,000 km (0.38 Solar Radii)',
+          hi: 'लगभग 528,000 किमी (0.38 सौर त्रिज्या)',
+          bn: 'প্রায় ৫,২৮,০০০ কি.মি. (সূর্যের ০.৩৮ গুণ)'
+        },
+        gravity: {
+          en: 'Approx. 620 m/s² (2.25x Sun surface gravity)',
+          hi: 'लगभग 620 m/s² (सूर्य का 2.25x)',
+          bn: 'প্রায় ৬২০ মি./সে.² (সূর্যের চেয়ে বেশি ঘনীভূত)'
+        }
+      },
+      atmosphere: {
+        en: 'A cool, deep reddish-orange photosphere with an effective surface temperature of ~3,350 K (~3,077 °C), exhibiting steady, low-intensity stellar magnetic activity.',
+        hi: 'लगभग 3,350 K तापमान वाला एक ठंडा, गहरा लाल-नारंगी फोटोस्फीयर, जो स्थिर तारकीय गतिविधि प्रदर्शित करता है।',
+        bn: 'প্রায় ৩,৩৫০ কেলভিন (৩,০৭৭ °C) তাপমাত্রার একটি শীতল লালচে-কমলা ফটোস্ফিয়ার, যা তুলনামূলক শান্ত ও মৃদু চৌম্বকীয় কার্যকলাপ সম্পন্ন।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits the primary binary pair (Gliese 667 AB) once every ~42,000 years at an orbital separation of roughly 230 AU (34 billion km).',
+        hi: 'लगभग 230 एयू की दूरी पर हर 42,000 वर्षों में प्राथमिक युग्म (ग्लीज़ 667 एबी) की परिक्रमा करता है।',
+        bn: 'মূল নক্ষত্রযুগল (জিজে ৬৬৭ এ ও বি) থেকে প্রায় ২৩০ AU (৩৪ বিলিয়ন কি.মি.) দূরত্ব বজায় রেখে প্রতি ৪২,০০০ বছরে একবার বিশাল প্রদক্ষিণ সম্পন্ন করে।'
+      },
+      moons: {
+        en: 'Anchors a renowned system of at least 5 to 7 exoplanets (b, c, d, e, f, g, h), including multiple habitable super-Earth candidates.',
+        hi: 'कम से कम 5 से 7 एक्सोप्लैनेट्स की एक प्रसिद्ध प्रणाली का केंद्र, जिसमें कई रहने योग्य सुपर-अर्थ शामिल हैं।',
+        bn: 'কমপক্ষে ৫ থেকে ৭টি এক্সোপ্ল্যানেটের (b, c, d, e, f, g, h) এক বিখ্যাত সৌরজগতের কেন্দ্র, যার মধ্যে একাধিক বাসযোগ্য সুপার-আর্থ রয়েছে।'
+      },
+      surface: {
+        en: 'A dense, slowly simmering convective plasma sphere fusing hydrogen into helium deep within its core with extreme fuel efficiency.',
+        hi: 'एक घना, धीरे-धीरे उबलता प्लाज्मा क्षेत्र जो अपने कोर में अत्यधिक दक्षता के साथ हाइड्रोजन को हीलियम में संलयित कर रहा है।',
+        bn: 'একটি অত্যন্ত ঘন ও দীর্ঘজীবী কনভেক্টিভ প্লাজমা গোলক, যা অত্যন্ত ধীর গতিতে হাইড্রোজেন ফিউশন ঘটিয়ে ট্রিলিয়ন বছর ধরে টিকে থাকার সক্ষমতা রাখে।'
+      },
+      exploration: {
+        en: 'Planets initially discovered using the HARPS spectrograph at ESO\'s La Silla Observatory in 2011–2013 by the European Southern Observatory and High Accuracy Radial Velocity team.',
+        hi: 'यूरोपीय दक्षिणी वेधशाला और HARPS टीम द्वारा 2011-2013 में ईएसओ की ला सिला वेधशाला में खोजा गया।',
+        bn: '২০১১-২০১৩ সালে চিলির লা সিলা অবজারভেটরিতে ইউরোপীয় সাউদার্ন অবজারভেটরির (ESO) হার্পস (HARPS) স্পেকট্রোগ্রাফের সাহায্যে গ্রহগুলো আবিষ্কৃত হয়।'
+      },
+      didYouKnow: [
+        {
+          en: 'Because GJ 667 C is in a triple-star system, standing on any of its planets would offer an alien sky with THREE suns: a large red host sun and two bright companion stars!',
+          hi: 'क्योंकि जीजे 667 सी एक त्रि-तारा प्रणाली में है, इसके किसी भी ग्रह पर खड़े होने पर तीन सूर्यों वाला एक अद्भुत आसमान दिखाई देगा!',
+          bn: 'জিজে ৬৬৭ সি একটি ত্রৈত নক্ষত্রমণ্ডলীর অংশ হওয়ায় এর যেকোনো গ্রহের আকাশ থেকে একসাথে ৩টি সূর্য দেখা যাবে: একটি সুবিশাল লাল নক্ষত্র এবং আকাশে উজ্জ্বল জ্বলজ্বল করা আরও দুটি নক্ষত্র!'
+        },
+        {
+          en: 'At just 23.6 light-years away, GJ 667 C is one of our closest stellar neighbors and a top candidate for future interstellar reconnaissance.',
+          hi: 'मात्र 23.6 प्रकाश वर्ष दूर स्थित, जीजे 667 सी हमारे सबसे निकटतम तारों में से एक है और भविष्य के अंतरतारकीय मिशनों के लिए एक प्रमुख लक्ष्य है।',
+          bn: 'মাত্র ২৩.৬ আলোকবর্ষ দূরত্বে অবস্থিত হওয়ায় এটি আমাদের নিকটবর্তী নক্ষত্রদের অন্যতম এবং ভবিষ্যৎ আন্তঃনাক্ষত্রিক অনুসন্ধানের জন্য বিজ্ঞানীদের প্রধান পছন্দের একটি।'
+        }
+      ]
+    }
+  },
+  {
+    id: 'gj-667-c-b',
+    type: 'Exoplanet',
+    name: {
+      en: 'GJ 667 C b',
+      hi: 'जीजे 667 सी बी',
+      bn: 'জিজে ৬৬৭ সি বি'
+    },
+    description: {
+      en: 'A scorched, massive super-Earth orbiting perilously close to its host red dwarf star every 7.2 days.',
+      hi: 'एक झुलसी हुई विशाल सुपर-अर्थ जो हर 7.2 दिनों में अपने मेजबान लाल बौने तारे की अत्यधिक निकटता से परिक्रमा करती है।',
+      bn: 'নক্ষত্রের খুব নিকটবর্তী কক্ষপথে প্রতি ৭.২ দিনে একবার প্রদক্ষিণকারী একটি উত্তপ্ত ও ভারী সুপার-আর্থ এক্সোপ্ল্যানেট।'
+    },
+    distance: {
+      en: '23.6 Light Years',
+      hi: '23.6 प्रकाश वर्ष',
+      bn: '২৩.৬ আলোকবর্ষ'
+    },
+    radius: 1.65,
+    modelType: 'texture',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/gj-667-c-b.jpg',
+    details: {
+      overview: {
+        en: 'GJ 667 C b is the innermost known planet of the GJ 667 C system, located approximately 23.6 light-years away in Scorpius. With a minimum mass of roughly 5.66 Earth masses, it is classified as a super-Earth. Orbiting at a blistering distance of merely 0.05 AU (~7.5 million km) from its host red dwarf, it completes an entire orbit in just 7.2 Earth days. Because of this proximity, it is tidally locked and scorched to temperatures exceeding 150 °C, making liquid water impossible on its daylit hemisphere.',
+        hi: 'जीजे 667 सी बी जीजे 667 सी प्रणाली का सबसे आंतरिक ज्ञात ग्रह है, जो स्कॉर्पियस में लगभग 23.6 प्रकाश वर्ष दूर स्थित है। लगभग 5.66 पृथ्वी द्रव्यमान के न्यूनतम द्रव्यमान के साथ, इसे सुपर-अर्थ के रूप में वर्गीकृत किया गया है। अपने मूल तारे से मात्र 0.05 एयू (~75 लाख किमी) की दूरी पर परिक्रमा करते हुए, यह सिर्फ 7.2 पृथ्वी दिनों में एक वर्ष पूरा करता है। अत्यधिक निकटता के कारण, यह ज्वारीय रूप से बंधा हुआ (tidally locked) है और इसका तापमान 150 °C से अधिक रहता है।',
+        bn: 'জিজে ৬৬৭ সি বি হলো জিজে ৬৬৭ সি সিস্টেমের সবচেয়ে ভেতরের দিকের পরিচিত গ্রহ, যা পৃথিবী থেকে প্রায় ২৩.৬ আলোকবর্ষ দূরে বৃশ্চিক রাশিতে অবস্থিত। পৃথিবীর ভরের অন্তত ৫.৬৬ গুণ হওয়ায় এটি একটি ভারী ‘সুপার-আর্থ’ শ্রেণির গ্রহ। নক্ষত্র থেকে মাত্র ০.০৫ AU (প্রায় ৭৫ লক্ষ কি.মি.) দূরত্বে থেকে এটি মাত্র ৭.২ দিনে একবার প্রদক্ষিণ সম্পন্ন করে। এত কাছাকাছি অবস্থানের কারণে গ্রহটি জোয়ারবদ্ধ (tidally locked) এবং এর স্বাভাবিক তাপমাত্রা প্রায় ১৫০ °C এর বেশি, যার ফলে এর তারামুখী অংশে তরল পানির অস্তিত্ব থাকা সম্ভব নয়।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'At least 5.66 Earth masses (5.66 M⊕)',
+          hi: 'कम से कम 5.66 पृथ्वी द्रव्यमान',
+          bn: 'কমপক্ষে পৃথিবীর ভরের ৫.৬৬ গুণ (৫.৬৬ M⊕)'
+        },
+        diameter: {
+          en: 'Approx. 21,000 km (1.65 Earth diameters)',
+          hi: 'लगभग 21,000 किमी (1.65 पृथ्वी व्यास)',
+          bn: 'প্রায় ২১,০০০ কি.মি. (পৃথিবীর ১.৬৫ গুণ)'
+        },
+        gravity: {
+          en: 'Approx. 20.4 m/s² (2.08x Earth gravity)',
+          hi: 'लगभग 20.4 m/s² (पृथ्वी का 2.08x)',
+          bn: 'প্রায় ২০.৪ মি./সে.² (পৃথিবীর মহাকর্ষের ২.০৮ গুণ)'
+        }
+      },
+      atmosphere: {
+        en: 'A dense, superheated atmosphere likely composed of carbon dioxide, vaporized silicates, and volcanic sulfur haze whipped by fierce day-to-night gale winds.',
+        hi: 'कार्बन डाइऑक्साइड और ज्वालामुखीय सल्फर धुंध से युक्त एक घना, अत्यधिक गर्म वायुमंडल, जिसमें तेज तूफानी हवाएं चलती हैं।',
+        bn: 'কার্বন ডাই-অক্সাইড এবং আগ্নেয়গিরির সালফার বাষ্পে ঘেরা অত্যন্ত উত্তপ্ত ও ঘন এক বায়ুমণ্ডল, যাতে দিন ও রাতের গোলার্ধের মধ্যে তীব্র গতিবেগে ঝড়ো বাতাস বয়ে যায়।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits tightly every 7.20 Earth days at ~7.55 million km (0.0505 AU) in a synchronous tidal lock with permanent day and night sides.',
+        hi: 'स्थायी दिन और रात के पक्षों के साथ लगभग 75.5 लाख किमी की दूरी पर हर 7.20 पृथ्वी दिनों में परिक्रमा करता है।',
+        bn: 'স্থায়ী দিন ও রাতের গোলার্ধ নিয়ে নক্ষত্র থেকে মাত্র ৭৫ লক্ষ কি.মি. (০.০৫০৫ AU) দূরত্বে প্রতি ৭.২০ দিনে একবার আবর্তন করে।'
+      },
+      moons: {
+        en: 'None detected; intense stellar gravitational tides would destabilize any orbiting satellites.',
+        hi: 'कोई ज्ञात चंद्रमा नहीं; तीव्र गुरुत्वाकर्षण किसी भी उपग्रह को नष्ट कर देगा।',
+        bn: 'কোনো উপগ্রহ নেই; নক্ষত্রের তীব্র মহাকর্ষীয় টান যেকোনো চাঁদের অস্তিত্বকে ধ্বংস করে দেবে।'
+      },
+      surface: {
+        en: 'A scorched, rugged terrain of basaltic rock, cracked lava plains, and active volcanic rifts baking under the immense red sun.',
+        hi: 'बेसाल्टिक चट्टानों, फटी हुई लावा की मैदानों और विशाल लाल सूर्य के नीचे तपती सक्रिय ज्वालामुखीय दरारों वाली एक झुलसी हुई सतह।',
+        bn: 'লাভা দ্বারা আবৃত রুক্ষ পাথুরে ভূখণ্ড, ফাটলযুক্ত ব্যাসাল্ট সমভূমি এবং বিশাল রক্তিম নক্ষত্রের উত্তাপে ফুটতে থাকা সক্রিয় আগ্নেয়গিরিময় পৃষ্ঠ।'
+      },
+      exploration: {
+        en: 'Discovered in 2009 by the High Accuracy Radial Velocity Planet Searcher (HARPS) spectrograph at ESO\'s La Silla Observatory in Chile.',
+        hi: 'चिली में ईएसओ की ला सिला वेधशाला में HARPS स्पेक्ट्रोग्राफ द्वारा 2009 में खोजा गया।',
+        bn: '২০০৯ সালে চিলির লা সিলা অবজারভেটরিতে ইউরোপীয় সাউদার্ন অবজারভেটরির (ESO) হার্পস (HARPS) স্পেকট্রোগ্রাফের সাহায্যে এটি আবিষ্কৃত হয়।'
+      },
+      didYouKnow: [
+        {
+          en: 'From the scorched surface of GJ 667 C b, the red host sun appears more than 4 times wider in the sky than the Sun looks from Earth!',
+          hi: 'जीजे 667 सी बी की सतह से, लाल मेजबान सूर्य आसमान में पृथ्वी से सूर्य के दिखने की तुलना में 4 गुना अधिक चौड़ा दिखाई देता है!',
+          bn: 'জিজে ৬৬৭ সি বি-র উত্তপ্ত পৃষ্ঠ থেকে এর লাল সূর্যটিকে পৃথিবী থেকে দেখা সূর্যের চেয়ে আকাশে চার গুণেরও বেশি বড় দেখায়!'
+        },
+        {
+          en: 'Even on the permanent nightside of the planet, the distant binary twin stars GJ 667 A and B shine bright enough to cast clear shadows on the ground.',
+          hi: 'ग्रह के स्थायी रात वाले हिस्से पर भी, दूर के जुड़वां तारे जीजे 667 ए और बी जमीन पर स्पष्ट छाया डालने के लिए पर्याप्त चमकते हैं।',
+          bn: 'গ্রহটির স্থায়ী অন্ধকার রাতের অংশেও দূরের জোড়া নক্ষত্র GJ 667 A ও B এত উজ্জ্বল আলো ছড়ায় যে মাটিতে স্পষ্ট ছায়া তৈরি হতে পারে!'
+        }
+      ]
+    }
+  },
+  {
+    id: 'gj-667-c-c',
+    type: 'Exoplanet',
+    name: {
+      en: 'GJ 667 C c',
+      hi: 'जीजे 667 सी सी',
+      bn: 'জিজে ৬৬৭ সি সি'
+    },
+    description: {
+      en: 'A famous super-Earth in the habitable zone of a triple-star system, capable of supporting liquid water and alien life under a three-sun sky.',
+      hi: 'एक त्रि-तारा प्रणाली के रहने योग्य क्षेत्र में एक प्रसिद्ध सुपर-अर्थ, जो तीन-सूर्य वाले आसमान के नीचे तरल पानी और जीवन का समर्थन करने में सक्षम है।',
+      bn: 'ত্রৈত নক্ষত্রমণ্ডলীর বাসযোগ্য অঞ্চলে অবস্থিত এক বিখ্যাত সুপার-আর্থ, যেখানে ৩টি সূর্যের আকাশের নিচে তরল পানি ও প্রাণের অনুকূল পরিবেশ থাকার সম্ভাবনা রয়েছে।'
+    },
+    distance: {
+      en: '23.6 Light Years',
+      hi: '23.6 प्रकाश वर्ष',
+      bn: '২৩.৬ আলোকবর্ষ'
+    },
+    radius: 1.50,
+    modelType: 'texture',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/gj-667-c-c.jpg',
+    details: {
+      overview: {
+        en: 'GJ 667 C c (or Gliese 667 C c) is one of the most celebrated and promising potentially habitable exoplanets ever discovered. Located just 23.6 light-years away in Scorpius, it is a super-Earth with roughly 3.8 to 4.5 times the mass of Earth. Orbiting comfortably inside the habitable zone of its red dwarf star at 0.125 AU (~18.7 million km), it receives approximately 90% of the stellar energy that Earth receives from the Sun. With an estimated equilibrium temperature of ~4 °C (277 K), it could easily sustain liquid surface oceans and a stable climate.',
+        hi: 'जीजे 667 सी सी (या ग्लीज़ 667 सी सी) अब तक खोजे गए सबसे प्रसिद्ध और संभावित रूप से रहने योग्य एक्सोप्लैनेट्स में से एक है। स्कॉर्पियस में केवल 23.6 प्रकाश वर्ष दूर स्थित, यह पृथ्वी के द्रव्यमान का लगभग 3.8 से 4.5 गुना एक सुपर-अर्थ है। यह अपने लाल बौने तारे के रहने योग्य क्षेत्र में 0.125 एयू (~1.87 करोड़ किमी) की दूरी पर परिक्रमा करता है और इसे सूर्य से पृथ्वी को मिलने वाली ऊर्जा का लगभग 90% प्राप्त होता है। लगभग 4 °C के औसत तापमान के साथ, यह तरल पानी और जीवन के लिए अत्यधिक अनुकूल माना जाता है।',
+        bn: 'জিজে ৬৬৭ সি সি (বা গ্লিস ৬৬৭ সি সি) হলো মহাকাশে এ যাবৎকালে আবিষ্কৃত অন্যতম সর্বাধিক আলোচিত ও সম্ভাবনাময় বাসযোগ্য এক্সোপ্ল্যানেট। পৃথিবী থেকে মাত্র ২৩.৬ আলোকবর্ষ দূরে বৃশ্চিক রাশিতে অবস্থিত এই গ্রহটি পৃথিবীর চেয়ে প্রায় ৩.৮ থেকে ৪.৫ গুণ ভারী এক ‘সুপার-আর্থ’। নক্ষত্র থেকে প্রায় ১ কোটি ৮৭ লক্ষ কি.মি. (০.১২৫ AU) দূরত্বে এর বাসযোগ্য অঞ্চলের ঠিক কেন্দ্রস্থলে থেকে এটি প্রতি ২৮.১ দিনে একবার প্রদক্ষিণ করে। পৃথিবী সূর্যের কাছ থেকে যে পরিমাণ শক্তি পায়, এটিও তার প্রায় ৯০% শক্তি লাভ করে, ফলে এর গড় তাপমাত্রা প্রায় ৪ °C (২৭৭ K) যা তরল পানির মহাসমুদ্র ও প্রাণ ধারণের জন্য অত্যন্ত চমৎকার।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'At least 3.8 Earth masses (est. ~4.5 M⊕)',
+          hi: 'कम से कम 3.8 पृथ्वी द्रव्यमान (लगभग ~4.5 M⊕)',
+          bn: 'কমপক্ষে পৃথিবীর ভরের ৩.৮ গুণ (আনুমানিক ~৪.৫ M⊕)'
+        },
+        diameter: {
+          en: 'Approx. 19,100 km (1.50 Earth diameters)',
+          hi: 'लगभग 19,100 किमी (1.50 पृथ्वी व्यास)',
+          bn: 'প্রায় ১৯,১০০ কি.মি. (পৃথিবীর ১.৫ গুণ)'
+        },
+        gravity: {
+          en: 'Approx. 16.0 m/s² (1.63x Earth gravity)',
+          hi: 'लगभग 16.0 m/s² (पृथ्वी का 1.63x)',
+          bn: 'প্রায় ১৬.০ মি./সে.² (পৃথিবীর চেয়ে ৬৩% বেশি)'
+        }
+      },
+      atmosphere: {
+        en: 'A dense, protective atmosphere rich in nitrogen, water vapor, and carbon dioxide, effectively moderating temperatures between day and night hemispheres.',
+        hi: 'नाइट्रोजन, जल वाष्प और कार्बन डाइऑक्साइड से समृद्ध एक घना, सुरक्षात्मक वायुमंडल जो तापमान को संतुलित रखता है।',
+        bn: 'নাইট্রোজেন, জলীয় বাষ্প ও কার্বন ডাই-অক্সাইডে সমৃদ্ধ একটি ঘন ও জীবনরক্ষাকারী বায়ুমণ্ডল, যা দিন ও রাতের গোলার্ধের মধ্যে উত্তাপের ভারসাম্য বজায় রাখে।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits every 28.14 Earth days at ~18.7 million km (0.125 AU) directly inside the circumstellar habitable zone; likely tidally locked into an "eyeball world".',
+        hi: 'रहने योग्य क्षेत्र में लगभग 1.87 करोड़ किमी की दूरी पर हर 28.14 पृथ्वी दिनों में परिक्रमा करता है। संभवतः एक "आईबॉल वर्ल्ड" के रूप में ज्वारीय रूप से बंधा हुआ है।',
+        bn: 'বাসযোগ্য অঞ্চলের ঠিক মাঝে প্রায় ১ কোটি ৮৭ লক্ষ কি.মি. (০.১২৫ AU) দূরত্ব বজায় রেখে প্রতি ২৮.১৪ দিনে একবার প্রদক্ষিণ করে; সম্ভবত জোয়ারবদ্ধ এক ‘আইবল ওয়ার্ল্ড’ (Eyeball World)।'
+      },
+      moons: {
+        en: 'Potential for small captured rocky asteroidal moonlets',
+        hi: 'छोटे पकड़े गए चट्टानी क्षुद्रग्रह जैसे चंद्रमाओं की संभावना',
+        bn: 'ছোট আকৃতির মহাজাগতিক গ্রহাণু সদৃশ উপগ্রহ থাকার সম্ভাবনা রয়েছে'
+      },
+      surface: {
+        en: 'Likely features vast liquid water oceans with island continents beneath the red sub-stellar point, fringed by temperate coastlines and glacial nightside ice sheets.',
+        hi: 'संभवतः लाल तारे के ठीक नीचे द्वीप महाद्वीपों के साथ विशाल तरल महासागर हैं, जो शीतोष्ण तटरेखाओं और बर्फीली चादरों से घिरे हैं।',
+        bn: 'নক্ষত্রের ঠিক নিচে এক সুবিশাল তরল পানির উন্মুক্ত মহাসমুদ্র ও দ্বীপ মহাদেশ, এবং গ্রহের অন্যপাশে চিরস্থায়ী বরফের আস্তরণ ও নাতিশীতোষ্ণ উপকূলীয় অঞ্চল।'
+      },
+      exploration: {
+        en: 'Discovered in 2011 by an international team of astronomers led by Guillem Anglada-Escudé using radial velocity data from the ESO HARPS spectrograph in Chile.',
+        hi: 'चिली में ईएसओ हार्प्स स्पेक्ट्रोग्राफ से रेडियल वेग डेटा का उपयोग करके 2011 में खोजा गया।',
+        bn: '২০১১ সালে চিলির লা সিলা মানমন্দিরে ইউরোপীয় সাউদার্ন অবজারভেটরির হার্পস (HARPS) স্পেকট্রোগ্রাফের ডাটা বিশ্লেষণ করে একদল আন্তর্জাতিক জ্যোতির্বিদ এটি আবিষ্কার করেন।'
+      },
+      didYouKnow: [
+        {
+          en: 'GJ 667 C c has an Earth Similarity Index (ESI) of ~0.84, consistently ranking among the top five most Earth-like candidate exoplanets known to humankind!',
+          hi: 'जीजे 667 सी सी का अर्थ सिमिलरिटी इंडेक्स (ESI) लगभग 0.84 है, जो इसे मानव जाति द्वारा खोजे गए शीर्ष 5 सबसे अधिक पृथ्वी जैसे ग्रहों में शामिल करता है!',
+          bn: 'জিজে ৬৬৭ সি সি-র আর্থ সিমিলারিটি ইনডেক্স (ESI) প্রায় ০.৮৪, যা এটিকে মানবজাতির জানা পৃথিবীর সাথে সর্বাধিক সাদৃশ্যপূর্ণ শীর্ষ পাঁচটি গ্রহের একটিতে পরিণত করেছে!'
+        },
+        {
+          en: 'A colonist standing on its temperate shores would look up to see a massive crimson sun stationary in the sky, illuminated in the evening by the brilliant twin stars of the Gliese 667 AB binary pair.',
+          hi: 'इसके तटों पर खड़ा व्यक्ति आसमान में एक विशाल लाल सूर्य को स्थिर देखेगा, जो शाम को ग्लीज़ 667 एबी जुड़वां तारों से भी जगमगाएगा।',
+          bn: 'এই গ্রহের কোনো শান্ত সৈকতে দাঁড়ালে আকাশে দেখা যাবে স্থির এক রক্তিম সূর্য এবং দিগন্তে ভেসে বেড়ানো উজ্জ্বল জোড়া নক্ষত্র GJ 667 A ও B এর এক শ্বাসরুদ্ধকর অপার্থিব দৃশ্য!'
+        }
+      ]
+    }
+  },
+  {
+    id: 'gj-667-c-f',
+    type: 'Exoplanet',
+    name: {
+      en: 'GJ 667 C f',
+      hi: 'जीजे 667 सी एफ',
+      bn: 'জিজে ৬৬৭ সি এফ'
+    },
+    description: {
+      en: 'A chilly, potentially habitable super-Earth nestled in the outer habitable zone, orbiting its red sun every 39 days.',
+      hi: 'बाहरी रहने योग्य क्षेत्र में स्थित एक ठंडी, संभावित रूप से रहने योग्य सुपर-अर्थ, जो हर 39 दिनों में अपने लाल सूर्य की परिक्रमा करती है।',
+      bn: 'বাসযোগ্য অঞ্চলের বহির্ভাগে অবস্থিত একটি শীতল ও সম্ভাবনাময় সুপার-আর্থ, যা প্রতি ৩৯ দিনে নক্ষত্রকে প্রদক্ষিণ করে।'
+    },
+    distance: {
+      en: '23.6 Light Years',
+      hi: '23.6 प्रकाश वर्ष',
+      bn: '২৩.৬ আলোকবর্ষ'
+    },
+    radius: 1.40,
+    modelType: 'texture',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/gj-667-c-f.jpg',
+    details: {
+      overview: {
+        en: 'GJ 667 C f is a confirmed super-Earth exoplanet located 23.6 light-years away in Scorpius. With a minimum mass of approximately 2.7 Earth masses, it orbits within the middle-to-outer bands of GJ 667 C\'s habitable zone at an average distance of 0.156 AU (~23.3 million km). Taking roughly 39 Earth days to complete an orbit, it receives about 56% to 60% of the stellar flux Earth receives from the Sun (similar to sunlight received by Mars). A planet of this mass could maintain a thick, insulating atmosphere, allowing liquid oceans and snow-draped temperate landmasses to thrive.',
+        hi: 'जीजे 667 सी एफ 23.6 प्रकाश वर्ष दूर स्थित एक सुपर-अर्थ एक्सोप्लैनेट है। लगभग 2.7 पृथ्वी द्रव्यमान के न्यूनतम द्रव्यमान के साथ, यह 0.156 एयू (~2.33 करोड़ किमी) की दूरी पर जीजे 667 सी के रहने योग्य क्षेत्र में परिक्रमा करता है। एक परिक्रमा पूरी करने में लगभग 39 दिन लगते हैं और इसे सूर्य से पृथ्वी को मिलने वाले प्रकाश का लगभग 56-60% प्राप्त होता है (मंगल ग्रह के समान)। यह तरल महासागरों और बर्फीले समशीतोष्ण क्षेत्रों का समर्थन कर सकता है।',
+        bn: 'জিজে ৬৬৭ সি এফ হলো পৃথিবী থেকে মাত্র ২৩.৬ আলোকবর্ষ দূরে বৃশ্চিক রাশিতে অবস্থিত একটি সম্ভাবনাময় সুপার-আর্থ। পৃথিবীর ভরের অন্তত ২.৭ গুণ বিশিষ্ট এই গ্রহটি নক্ষত্র থেকে প্রায় ২ কোটি ৩৩ লক্ষ কি.মি. (০.১৫৬ AU) দূরত্বে থেকে এর বাসযোগ্য অঞ্চলের মধ্য-বহিঃস্থ অংশে অবস্থান করছে। প্রতি ৩৯ দিনে একবার প্রদক্ষিণ সম্পন্ন করা এই গ্রহটি আমাদের মঙ্গল গ্রহের সমান (পৃথিবীর প্রায় ৫৬% থেকে ৬০%) তারকীয় তাপ ও শক্তি পায়। পর্যাপ্ত ঘন বায়ুমণ্ডল ও গ্রিনহাউস প্রভাব থাকলে এর পৃষ্ঠে বরফাবৃত শীতল উপকূল ও তরল পানির অস্তিত্ব থাকা অত্যন্ত সম্ভব।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'At least 2.7 Earth masses (2.7 M⊕)',
+          hi: 'कम से कम 2.7 पृथ्वी द्रव्यमान',
+          bn: 'কমপক্ষে পৃথিবীর ভরের ২.৭ গুণ (২.৭ M⊕)'
+        },
+        diameter: {
+          en: 'Approx. 17,800 km (1.40 Earth diameters)',
+          hi: 'लगभग 17,800 किमी (1.40 पृथ्वी व्यास)',
+          bn: 'প্রায় ১৭,৮০০ কি.মি. (পৃথিবীর ১.৪ গুণ)'
+        },
+        gravity: {
+          en: 'Approx. 13.5 m/s² (1.38x Earth gravity)',
+          hi: 'लगभग 13.5 m/s² (पृथ्वी का 1.38x)',
+          bn: 'প্রায় ১৩.৫ মি./সে.² (পৃথিবীর চেয়ে ৩৮% বেশি)'
+        }
+      },
+      atmosphere: {
+        en: 'A crisp, cool atmosphere enriched with carbon dioxide, nitrogen, and cirrus ice clouds that trap crucial thermal heat to prevent planetary freeze-out.',
+        hi: 'कार्बन डाइऑक्साइड और नाइट्रोजन से समृद्ध एक ठंडा वायुमंडल जो अत्यधिक ठंड को रोकने के लिए गर्मी को रोकता है।',
+        bn: 'কার্বন ডাই-অক্সাইড, নাইট্রোজেন এবং শুভ্র বরফ-মেঘে সমৃদ্ধ একটি শীতল বায়ুমণ্ডল, যা গ্রিনহাউস প্রক্রিয়ায় প্রয়োজনীয় উত্তাপ ধরে রেখে গ্রহকে বরফস্তূপে পরিণত হওয়া থেকে রক্ষা করে।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits every 39.03 Earth days at ~23.3 million km (0.156 AU) in a gentle, nearly circular orbit within the habitable zone.',
+        hi: 'रहने योग्य क्षेत्र में लगभग 2.33 करोड़ किमी की दूरी पर हर 39.03 पृथ्वी दिनों में परिक्रमा करता है।',
+        bn: 'বাসযোগ্য অঞ্চলের ভেতরে প্রায় ২ কোটি ৩৩ লক্ষ কি.মি. (০.১৫৬ AU) দূরত্বে প্রতি ৩৯.০৩ দিনে একবার নক্ষত্রকে প্রদক্ষিণ করে।'
+      },
+      moons: {
+        en: 'None detected',
+        hi: 'कोई ज्ञात चंद्रमा नहीं',
+        bn: 'কোনো উপগ্রহ শনাক্ত হয়নি'
+      },
+      surface: {
+        en: 'A dramatic terrain of vast ice-capped continents, subpolar tundras, alpine valleys, and deep navy-blue oceans illuminated by scarlet sunlight.',
+        hi: 'लाल धूप से जगमगाते विशाल बर्फ से ढके महाद्वीपों, टुंड्रा और गहरे नीले महासागरों वाला एक सुंदर इलाका।',
+        bn: 'বিশাল বরফাবৃত মহাদেশ, আল্পাইন উপত্যকা, শীতপ্রধান তুন্দ্রা অঞ্চল এবং রক্তিম সূর্যের আলোয় আলোকিত গাঢ় নীল তরল সমুদ্রবিশিষ্ট এক মনোরম ভূপৃষ্ঠ।'
+      },
+      exploration: {
+        en: 'Discovered in 2013 by a team led by Guillem Anglada-Escudé and Mikko Tuomi through reanalysis of high-precision HARPS radial velocity measurements.',
+        hi: 'उच्च परिशुद्धता हार्प्स रेडियल वेग माप के माध्यम से 2013 में खोजा गया।',
+        bn: '২০১৩ সালে চিলির লা সিলা মানমন্দিরে HARPS স্পেকট্রোগ্রাফের উচ্চ নির্ভুল ডাটা পুনর্বিশ্লেষণ করে জ্যোতির্বিদ দল এটি আবিষ্কার করেন।'
+      },
+      didYouKnow: [
+        {
+          en: 'GJ 667 C f is one of three planets in the same star system (alongside c and e) that were found to reside in the circumstellar habitable zone at the same time!',
+          hi: 'जीजे 667 सी एफ उसी तारा तंत्र के उन तीन ग्रहों में से एक है (सी और ई के साथ) जो एक साथ रहने योग्य क्षेत्र में पाए गए थे!',
+          bn: 'জিজে ৬৬৭ সি এফ হলো একই সৌরজগতের সেই তিনটি বিরল গ্রহের একটি (c এবং e সহ), যারা একই সাথে একই নক্ষত্রের বাসযোগ্য অঞ্চলে সহাবস্থান করছে!'
+        },
+        {
+          en: 'Because it receives less stellar glare, looking at the host red sun and the distant golden binary stars (GJ 667 AB) from planet f gives one of the clearest and most breathtaking night skies in the galaxy.',
+          hi: 'तारे की कम चकाचौंध के कारण, ग्रह एफ से लाल सूर्य और जुड़वां तारों को देखना आकाशगंगा के सबसे आश्चर्यजनक दृश्यों में से एक प्रदान करता है।',
+          bn: 'অতিরিক্ত উত্তাপ ও আলোর ঝলকানি কম থাকায়, এই গ্রহের আকাশ থেকে লাল সূর্য এবং দূরের দুটি সোনালী নক্ষত্রের দৃশ্য গ্যালাক্সির সবচেয়ে মনোমুগ্ধকর মহাজাগতিক রূপগুলোর একটি সৃষ্টি করে।'
+        }
+      ]
+    }
+  },
+  {
+    id: 'gj-667-c-e',
+    type: 'Exoplanet',
+    name: {
+      en: 'GJ 667 C e',
+      hi: 'जीजे 667 सी ई',
+      bn: 'জিজে ৬৬৭ সি ই'
+    },
+    description: {
+      en: 'A glaciated super-Earth marking the outer edge of the habitable zone, taking 62 days to orbit under a pale scarlet sky.',
+      hi: 'रहने योग्य क्षेत्र की बाहरी सीमा पर स्थित एक बर्फीली सुपर-अर्थ, जो हल्के लाल आसमान के नीचे 62 दिनों में परिक्रमा करती है।',
+      bn: 'বাসযোগ্য অঞ্চলের বহিঃসীমায় অবস্থিত বরফাচ্ছন্ন একটি সুপার-আর্থ, যা প্রতি ৬২ দিনে নক্ষত্রকে প্রদক্ষিণ করে।'
+    },
+    distance: {
+      en: '23.6 Light Years',
+      hi: '23.6 प्रकाश वर्ष',
+      bn: '২৩.৬ আলোকবর্ষ'
+    },
+    radius: 1.45,
+    modelType: 'texture',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/gj-667-c-e.jpg',
+    details: {
+      overview: {
+        en: 'GJ 667 C e is an intriguing super-Earth with at least 2.7 times the mass of Earth, situated right at the chilly outer boundary of the circumstellar habitable zone. Orbiting at ~0.213 AU (~31.8 million km) from the red dwarf GJ 667 C, it completes a revolution every 62.24 Earth days. Because it receives approximately one-third (30–33%) of the light and heat Earth receives from the Sun, it would be predominantly frozen into a global snowball state unless enveloped by a dense, greenhouse-insulating atmosphere of carbon dioxide or hydrogen.',
+        hi: 'जीजे 667 सी ई पृथ्वी के द्रव्यमान का कम से कम 2.7 गुना एक दिलचस्प सुपर-अर्थ है, जो रहने योग्य क्षेत्र की ठंडी बाहरी सीमा पर स्थित है। लाल बौने तारे से लगभग 0.213 एयू (~3.18 करोड़ किमी) की दूरी पर परिक्रमा करते हुए, यह हर 62.24 पृथ्वी दिनों में एक चक्कर पूरा करता है। सूर्य से पृथ्वी को मिलने वाले प्रकाश का लगभग एक-तिहाई (30-33%) प्राप्त करने के कारण, यह कार्बन डाइऑक्साइड के घने वायुमंडल के बिना मुख्य रूप से एक बर्फीली दुनिया होगी।',
+        bn: 'জিজে ৬৬৭ সি ই হলো পৃথিবীর ভরের অন্তত ২.৭ গুণ বিশিষ্ট এক কৌতূহলোদ্দীপক সুপার-আর্থ, যা নক্ষত্রের বাসযোগ্য অঞ্চলের শীতল বহিঃসীমায় অবস্থিত। নক্ষত্র থেকে প্রায় ৩ কোটি ১৮ লক্ষ কি.মি. (০.২১৩ AU) দূরত্ব বজায় রেখে এটি প্রতি ৬২.২৪ দিনে একবার প্রদক্ষিণ সম্পন্ন করে। পৃথিবী সূর্যের কাছ থেকে যে পরিমাণ আলো ও তাপ পায়, এটি পায় তার মাত্র এক-তৃতীয়াংশ (প্রায় ৩০–৩৩%)। তাই কার্বন ডাই-অক্সাইডের মতো গ্রিনহাউস গ্যাসের ঘন বায়ুমণ্ডলীয় চাদর ছাড়া এটি মূলত একটি বৈশ্বিক বরফাবৃত জগৎ (Snowball World) হিসেবে বিরাজ করবে।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'At least 2.7 Earth masses (2.7 M⊕)',
+          hi: 'कम से कम 2.7 पृथ्वी द्रव्यमान',
+          bn: 'কমপক্ষে পৃথিবীর ভরের ২.৭ গুণ (২.৭ M⊕)'
+        },
+        diameter: {
+          en: 'Approx. 18,500 km (1.45 Earth diameters)',
+          hi: 'लगभग 18,500 किमी (1.45 पृथ्वी व्यास)',
+          bn: 'প্রায় ১৮,৫০০ কি.মি. (পৃথিবীর ১.৪৫ গুণ)'
+        },
+        gravity: {
+          en: 'Approx. 13.6 m/s² (1.39x Earth gravity)',
+          hi: 'लगभग 13.6 m/s² (पृथ्वी का 1.39x)',
+          bn: 'প্রায় ১৩.৬ মি./সে.² (পৃথিবীর চেয়ে ৩৯% বেশি)'
+        }
+      },
+      atmosphere: {
+        en: 'A dense, frosty atmosphere predominantly consisting of carbon dioxide, molecular nitrogen, and icy methane hazes that generate vital greenhouse heat.',
+        hi: 'कार्बन डाइऑक्साइड और नाइट्रोजन से युक्त एक घना, ठंडा वायुमंडल जो आवश्यक ग्रीनहाउस गर्मी पैदा करता है।',
+        bn: 'কার্বন ডাই-অক্সাইড, আণবিক নাইট্রোজেন ও মিথেন কুয়াশায় আবৃত একটি ঘন ও শীতল বায়ুমণ্ডল, যা গ্রিনহাউস প্রক্রিয়ায় প্রয়োজনীয় তাপ ধরে রাখে।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits every 62.24 Earth days at ~31.8 million km (0.213 AU) in a gently elliptical orbit near the system\'s snowline.',
+        hi: 'प्रणाली की बर्फ रेखा के पास लगभग 3.18 करोड़ किमी की दूरी पर हर 62.24 पृथ्वी दिनों में परिक्रमा करता है।',
+        bn: 'সৌরজগতের তুষাররেখার (Snowline) কাছাকাছি প্রায় ৩ কোটি ১৮ লক্ষ কি.মি. (০.২১৩ AU) দূরত্বে প্রতি ৬২.২৪ দিনে এক পাক পূর্ণ করে।'
+      },
+      moons: {
+        en: 'Potential for small captured rocky satellites',
+        hi: 'छोटे पकड़े गए चट्टानी उपग्रहों की संभावना',
+        bn: 'ছোট আকৃতির পাথুরে উপগ্রহ থাকার সম্ভাবনা রয়েছে'
+      },
+      surface: {
+        en: 'Glaciated continental landmasses, crystalline ice plains, frost-rimmed crevasses, and equatorial meltwater channels warmed by subterranean volcanic activity.',
+        hi: 'बर्फ से ढके महाद्वीप, क्रिस्टलीय बर्फ के मैदान और ज्वालामुखीय गतिविधि से गर्म होने वाले भूमध्यरेखीय चैनल।',
+        bn: 'বিশাল হিমবাহে ঢাকা মহাদেশ, স্ফটিক বরফের সমভূমি, হিমশীতল ফাটল এবং ভূগর্ভস্থ আগ্নেয় উত্তাপে গলিত নিরক্ষীয় অঞ্চলের জলপ্রণালী।'
+      },
+      exploration: {
+        en: 'Discovered in 2013 by Guillem Anglada-Escudé and Mikko Tuomi using combined HARPS, UVES, and Keck radial velocity datasets.',
+        hi: 'HARPS, UVES और केक डेटासेट का उपयोग करके 2013 में खोजा गया।',
+        bn: '২০১৩ সালে হার্পস (HARPS), ইউভেস (UVES) এবং কেক (Keck) অবজারভেটরির সম্মিলিত ডাটা বিশ্লেষণ করে এটি আবিষ্কৃত হয়।'
+      },
+      didYouKnow: [
+        {
+          en: 'GJ 667 C e is the outermost of the system\'s "habitable trio" (planets c, f, and e), illustrating that red dwarfs can pack multiple habitable candidates into tiny orbital spans!',
+          hi: 'जीजे 667 सी ई इस प्रणाली के "रहने योग्य तिकड़ी" (ग्रह सी, एफ और ई) में सबसे बाहरी है, जो दर्शाता है कि लाल बौने कई रहने योग्य ग्रहों को छोटे अंतराल में रख सकते हैं!',
+          bn: 'জিজে ৬৬৭ সি ই হলো এই সিস্টেমের "বাসযোগ্য ত্রয়ী" (গ্রহ c, f ও e)-র সর্ববহিঃস্থ গ্রহ, যা প্রমাণ করে লাল বামন নক্ষত্রগুলো কত ক্ষুদ্র দূরত্বের মধ্যেই একাধিক বাসযোগ্য গ্রহ ধারণ করতে পারে!'
+        },
+        {
+          en: 'Even at this distance from its dim star, the two companion stars of the triple system (GJ 667 A and B) shine as bright in its sky as the full Moon does on Earth.',
+          hi: 'अपने मंद तारे से इतनी दूरी पर भी, त्रि-प्रणाली के दो साथी तारे (जीजे 667 ए और बी) इसके आसमान में पृथ्वी पर पूर्णिमा के चंद्रमा जितने उज्ज्वल चमकते हैं।',
+          bn: 'নক্ষত্র থেকে এই দূরত্বের পর্যায়ও, ত্রৈত সিস্টেমের অপর দুটি সাথী নক্ষত্র (GJ 667 A ও B) এই গ্রহের আকাশে পৃথিবীর পূর্ণিমার চাঁদের চেয়েও উজ্জ্বলভাবে দীপ্তি ছড়ায়!'
+        }
+      ]
+    }
+  },
+  {
+    id: 'gj-667-c-g',
+    type: 'Exoplanet',
+    name: {
+      en: 'GJ 667 C g',
+      hi: 'जीजे 667 सी जी',
+      bn: 'জিজে ৬৬৭ সি জি'
+    },
+    description: {
+      en: 'The outermost and coldest planet of the GJ 667 C system, orbiting in the freezing outer dark every 256 days.',
+      hi: 'जीजे 667 सी प्रणाली का सबसे बाहरी और सबसे ठंडा ग्रह, जो हर 256 दिनों में अंधेरे बर्फीले क्षेत्र में परिक्रमा करता है।',
+      bn: 'জিজে ৬৬৭ সি সৌরজগতের সর্ববহিঃস্থ ও শীতলতম গ্রহ, যা দূরবর্তী অন্ধকার শীতল বলয়ে প্রতি ২৫৬ দিনে একবার প্রদক্ষিণ করে।'
+    },
+    distance: {
+      en: '23.6 Light Years',
+      hi: '23.6 प्रकाश वर्ष',
+      bn: '২৩.৬ আলোকবর্ষ'
+    },
+    radius: 1.60,
+    modelType: 'texture',
+    modelPath: 'https://res.cloudinary.com/eek2fkwv/image/upload/f_auto,q_auto/gj-667-c-g.jpg',
+    details: {
+      overview: {
+        en: 'GJ 667 C g is the outermost known exoplanet candidate in the GJ 667 C system, situated 23.6 light-years away in Scorpius. With a minimum mass of approximately 4.6 Earth masses, it is a substantial super-Earth or mini-Neptune. Orbiting at ~0.55 AU (~82 million km)—well beyond the star\'s habitable boundary—it takes roughly 256 Earth days (about 8.5 months) to complete a single year. Because the dim host star radiates very little heat at this distance (less than 5% of Earth\'s sunlight), GJ 667 C g is an intensely cold, perpetually twilight world with temperatures hovering around -141 °C (132 K).',
+        hi: 'जीजे 667 सी जी जीजे 667 सी प्रणाली में सबसे बाहरी ज्ञात एक्सोप्लैनेट उम्मीदवार है, जो 23.6 प्रकाश वर्ष दूर स्थित है। लगभग 4.6 पृथ्वी द्रव्यमान के न्यूनतम द्रव्यमान के साथ, यह एक सुपर-अर्थ या मिनी-नेपच्यून है। तारे के रहने योग्य क्षेत्र से बहुत दूर 0.55 एयू (~8.2 करोड़ किमी) पर परिक्रमा करते हुए, यह एक वर्ष पूरा करने में लगभग 256 दिन लेता है। सूर्य के प्रकाश का 5% से भी कम प्राप्त करने के कारण, यह लगभग -141 °C तापमान वाली एक बेहद ठंडी दुनिया है।',
+        bn: 'জিজে ৬৬৭ সি জি হলো পৃথিবী থেকে ২৩.৬ আলোকবর্ষ দূরে অবস্থিত জিজে ৬৬৭ সি সৌরজগতের সর্ববহিঃস্থ পরিচিত গ্রহ। পৃথিবীর ভরের অন্তত ৪.৬ গুণ ভারী হওয়ায় এটি একটি বড় সুপার-আর্থ বা মিনি-নেপচুন শ্রেণির গ্রহ। নক্ষত্রের বাসযোগ্য অঞ্চলের বহু দূরে প্রায় ৮ কোটি ২০ লক্ষ কি.মি. (০.৫৫ AU) দূরত্বে থেকে এটি প্রতি ২৫৬ দিনে (প্রায় ৮.৫ মাসে) একবার প্রদক্ষিণ সম্পন্ন করে। লাল বামন নক্ষত্রের মৃদু আলো এই দূরত্বে পৃথিবীর প্রাপ্ত আলোর ৫%-এরও কম পৌঁছায়, ফলে এর পৃষ্ঠের তাপমাত্রা প্রায় -১৪১ °C (১৩২ K) যা এক চিরন্তন অন্ধকার ও তীব্র শীতল বরফের সাম্রাজ্য।'
+      },
+      physicalCharacteristics: {
+        mass: {
+          en: 'At least 4.6 Earth masses (4.6 M⊕)',
+          hi: 'कम से कम 4.6 पृथ्वी द्रव्यमान',
+          bn: 'কমপক্ষে পৃথিবীর ভরের ৪.৬ গুণ (৪.৬ M⊕)'
+        },
+        diameter: {
+          en: 'Approx. 20,400 km (1.60 Earth diameters)',
+          hi: 'लगभग 20,400 किमी (1.60 पृथ्वी व्यास)',
+          bn: 'প্রায় ২০,৪০০ কি.মি. (পৃথিবীর ১.৬০ গুণ)'
+        },
+        gravity: {
+          en: 'Approx. 17.5 m/s² (1.78x Earth gravity)',
+          hi: 'लगभग 17.5 m/s² (पृथ्वी का 1.78x)',
+          bn: 'প্রায় ১৭.৫ মি./সে.² (পৃথিবীর চেয়ে ৭৮% বেশি)'
+        }
+      },
+      atmosphere: {
+        en: 'A frigid, pale-blue envelope of hydrogen, helium, and frozen methane crystals creating high-altitude reflective cirrus sheets over deep dark abysses.',
+        hi: 'हाइड्रोजन, हीलियम और मीथेन बर्फ के क्रिस्टल से बना एक बेहद ठंडा हल्का-नीला वायुमंडल।',
+        bn: 'হাইড্রোজেন, হিলিয়াম ও জমাট বাঁধা মিথেন বরফের স্ফটিকে আবৃত এক হিমশীতল নীলাভ বায়ুমণ্ডল, যাতে উচ্চ স্তরের প্রতিফলক মেঘের আস্তরণ রয়েছে।'
+      },
+      orbitAndRotation: {
+        en: 'Orbits every 256.2 Earth days at ~82.1 million km (0.549 AU) in the cold, silent outskirts of the planetary system.',
+        hi: 'लगभग 8.21 करोड़ किमी (0.549 एयू) की दूरी पर हर 256.2 पृथ्वी दिनों में परिक्रमा करता है।',
+        bn: 'সৌরজগতের শান্ত ও দূরবর্তী বহিঃসীমান্তে প্রায় ৮ কোটি ২১ লক্ষ কি.মি. (০.৫৪৯ AU) দূরত্ব বজায় রেখে প্রতি ২৫৬.২ দিনে একবার আবর্তন করে।'
+      },
+      moons: {
+        en: 'Likely commands a family of small frozen icy satellites that orbit undisturbed in the quiet outer perimeter.',
+        hi: 'छोटे बर्फीले उपग्रहों की एक प्रणाली होने की संभावना है।',
+        bn: 'শান্ত বহিঃস্থ অঞ্চলে নিরাপদে প্রদক্ষিণরত একাধিক ক্ষুদ্র বরফাবৃত উপগ্রহের পরিবার থাকার প্রবল সম্ভাবনা রয়েছে।'
+      },
+      surface: {
+        en: 'An immense expanse of nitrogen and methane frost, rock-solid water-ice bedrock, and deep chasms potentially sheltering geothermal liquid pockets underneath.',
+        hi: 'नाइट्रोजन और मीथेन बर्फ के विशाल मैदान और गहरी घाटियां जहां नीचे भू-तापीय तरल मौजूद हो सकता है।',
+        bn: 'নাইট্রোজেন ও মিথেন বরফে ঢাকা বিস্তীর্ণ প্রান্তর, পাথরের মতো শক্ত বরফের ভূত্বক এবং গভীর গিরিখাত যার নিচে ভূ-তাপীয় তরল পানির স্তর থাকতে পারে।'
+      },
+      exploration: {
+        en: 'Discovered in 2013 through rigorous Doppler velocity analyses by international teams using the HARPS and UVES astronomical instruments.',
+        hi: 'HARPS और UVES उपकरणों का उपयोग करके डॉपलर वेग विश्लेषण के माध्यम से 2013 में खोजा गया।',
+        bn: '২০১৩ সালে হার্পস (HARPS) ও ইউভেস (UVES) যন্ত্রের ডপলার ভেলোসিটি ডাটার সূক্ষ্ম বিশ্লেষণের মাধ্যমে এটি শনাক্ত করা হয়।'
+      },
+      didYouKnow: [
+        {
+          en: 'Although 0.55 AU is comparable to Venus\'s distance in our Solar System, around this dim red dwarf it is as bitterly cold as Jupiter\'s frozen moons!',
+          hi: 'यद्यपि 0.55 एयू हमारे सौर मंडल में शुक्र की दूरी के बराबर है, लेकिन इस मंद लाल बौने के चारों ओर यह बृहस्पति के बर्फीले चंद्रमाओं जितना ठंडा है!',
+          bn: 'আমাদের সৌরজগতে ০.৫৫ AU দূরত্ব শুক্র গ্রহের মতো হলেও, অনুজ্জ্বল লাল বামন নক্ষত্রটির দুর্বল আলোর কারণে এই দূরত্বে এটি বৃহস্পতির বরফাবৃত উপগ্রহের মতোই হাড়কাঁপানো তীব্র শীতল!'
+        },
+        {
+          en: 'From the surface of GJ 667 C g, the red host sun appears only as a dim ruby coin, while the distant twin companion stars GJ 667 A and B appear as brilliant diamond lanterns in the night.',
+          hi: 'जीजे 667 सी जी की सतह से, लाल सूर्य केवल एक छोटे सिक्के जैसा दिखता है, जबकि दूर के जुड़वां साथी तारे हीरे के लालटेन की तरह चमकते हैं।',
+          bn: 'জিজে ৬৬৭ সি জি-র পৃষ্ঠ থেকে মূল লাল সূর্যটিকে ছোট একটি রক্তিম মুদ্রার মতো দেখায়, আর দূরবর্তী দুই সাথী নক্ষত্র অন্ধকার আকাশে হীরকখণ্ডের মতো দীপ্তিমান হয়ে জ্বলে।'
+        }
+      ]
+    }
   }
 ];

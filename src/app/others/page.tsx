@@ -87,22 +87,8 @@ export default function OthersPage() {
   const isTabsRestoredRef = useRef(false);
   
   const [searchQuery, setSearchQuery] = useState('');
-  const [typeFilter, setTypeFilter] = useState<'ALL' | 'STARS' | 'EXOPLANETS'>(() => {
-    if (typeof window !== 'undefined') {
-      try {
-        return (sessionStorage.getItem('others_type_filter') as any) || 'ALL';
-      } catch (e) {}
-    }
-    return 'ALL';
-  });
-  const [selectedSystemId, setSelectedSystemId] = useState<string>(() => {
-    if (typeof window !== 'undefined') {
-      try {
-        return sessionStorage.getItem('others_selected_system') || 'ALL';
-      } catch (e) {}
-    }
-    return 'ALL';
-  });
+  const [typeFilter, setTypeFilter] = useState<'ALL' | 'STARS' | 'EXOPLANETS'>('ALL');
+  const [selectedSystemId, setSelectedSystemId] = useState<string>('ALL');
   const [collapsedSystems, setCollapsedSystems] = useState<Record<string, boolean>>({});
   const [highlightedCardId, setHighlightedCardId] = useState<string | null>(null);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -166,12 +152,24 @@ export default function OthersPage() {
     let savedScrollTop: string | null = null;
     let savedTabsScroll: string | null = null;
     let targetPlanetId: string | null = null;
+    let savedSystem: string | null = null;
+    let savedType: string | null = null;
 
     try {
       savedScrollTop = sessionStorage.getItem('others_scroll_top');
       savedTabsScroll = sessionStorage.getItem('others_tabs_scroll');
       targetPlanetId = sessionStorage.getItem('others_last_planet');
+      savedSystem = sessionStorage.getItem('others_selected_system');
+      savedType = sessionStorage.getItem('others_type_filter');
     } catch (e) {}
+
+    const activeSysId = savedSystem || 'ALL';
+    if (savedSystem && savedSystem !== 'ALL') {
+      setSelectedSystemId(savedSystem);
+    }
+    if (savedType && (savedType === 'ALL' || savedType === 'STARS' || savedType === 'EXOPLANETS')) {
+      setTypeFilter(savedType);
+    }
 
     // Restore horizontal tab scroll immediately before paint
     if (tabsContainerRef.current) {
@@ -181,8 +179,8 @@ export default function OthersPage() {
           tabsContainerRef.current.scrollLeft = targetLeft;
           isTabsRestoredRef.current = true;
         }
-      } else if (selectedSystemId !== 'ALL') {
-        centerPill(selectedSystemId, false);
+      } else if (activeSysId !== 'ALL') {
+        centerPill(activeSysId, false);
         isTabsRestoredRef.current = true;
       }
     }
@@ -647,7 +645,7 @@ export default function OthersPage() {
                 <Orbit className="w-3.5 h-3.5 text-blue-400" />
                 {language === 'en' ? 'Filter by Star System' : language === 'hi' ? 'सौरमंडल द्वारा फ़िल्टर करें' : 'সৌরজগৎ ফিল্টার'}
               </span>
-              <span className="text-[11px] font-mono text-white/40">
+              <span className="text-[11px] font-mono text-white/40" suppressHydrationWarning>
                 {filteredExoplanets.length} {UI_LABELS.totalBodies[language]}
               </span>
             </div>
@@ -671,7 +669,7 @@ export default function OthersPage() {
               >
                 <span>🌌</span>
                 <span>{UI_LABELS.allSystems[language]}</span>
-                <span className={`text-[10px] px-1.5 py-0.5 rounded-full ${
+                <span suppressHydrationWarning className={`text-[10px] px-1.5 py-0.5 rounded-full ${
                   selectedSystemId === 'ALL' ? 'bg-white/20 text-white' : 'bg-white/10 text-white/60'
                 }`}>
                   {exoplanets.length}
@@ -696,7 +694,7 @@ export default function OthersPage() {
                   >
                     <span>{sys.badge}</span>
                     <span>{sys.name[language]}</span>
-                    <span className={`text-[10px] px-1.5 py-0.5 rounded-full ${
+                    <span suppressHydrationWarning className={`text-[10px] px-1.5 py-0.5 rounded-full ${
                       isSelected ? 'bg-white/20 text-white' : 'bg-white/10 text-white/60'
                     }`}>
                       {count}
@@ -738,7 +736,7 @@ export default function OthersPage() {
                     <span className="bg-white/5 border border-white/10 px-2.5 py-1 rounded-md text-white/80">
                       📡 {UI_LABELS.distanceLabel[language]}: <strong className="text-white">{activeSystem.distance[language]}</strong>
                     </span>
-                    <span className="bg-white/5 border border-white/10 px-2.5 py-1 rounded-md text-blue-300">
+                    <span suppressHydrationWarning className="bg-white/5 border border-white/10 px-2.5 py-1 rounded-md text-blue-300">
                       🪐 {activeSystem.planetIds.length} {UI_LABELS.totalBodies[language]}
                     </span>
                   </div>
