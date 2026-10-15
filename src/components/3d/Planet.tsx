@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState, useMemo } from 'react';
+import { useRef, useState, useMemo, Suspense, useEffect } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 import { useTexture } from '@react-three/drei';
@@ -48,10 +48,25 @@ export function Planet({ planet, sizeScale = 1, distanceScale = 1, speedScale = 
   const planetMeshRef = useRef<THREE.Mesh>(null);
   const ringsRef = useRef<THREE.Mesh>(null);
   const [hovered, setHovered] = useState(false);
+  const [shouldLoadTexture, setShouldLoadTexture] = useState(false);
   const { setSelectedPlanet, selectedPlanet, performanceMode, qualityMode } = useAppStore();
   const { playClick } = useAudio();
 
   const isSelected = selectedPlanet === planet.id;
+
+  useEffect(() => {
+    // If selected or hovered, load texture immediately
+    if (isSelected || hovered) {
+      setShouldLoadTexture(true);
+      return;
+    }
+    // Stagger loading so textures don't choke the mobile network on startup
+    const delay = 1000 + (planet.distance * 70);
+    const timer = setTimeout(() => {
+      setShouldLoadTexture(true);
+    }, delay);
+    return () => clearTimeout(timer);
+  }, [isSelected, hovered, planet.distance]);
   
   // Use qualityMode for textures and performanceMode for segments/effects
   const effectiveSegments = performanceMode === 'auto' 
@@ -104,8 +119,10 @@ export function Planet({ planet, sizeScale = 1, distanceScale = 1, speedScale = 
         }}
       >
         <sphereGeometry args={[scaledRadius, segments, segments]} />
-        {currentTextureUrl ? (
-          <TexturedMaterial planet={{...planet, textureUrl: currentTextureUrl}} />
+        {currentTextureUrl && shouldLoadTexture ? (
+          <Suspense fallback={<meshStandardMaterial color={planet.color} roughness={0.8} metalness={0.2} />}>
+            <TexturedMaterial planet={{...planet, textureUrl: currentTextureUrl}} />
+          </Suspense>
         ) : (
           <meshStandardMaterial 
             color={planet.color} 
@@ -127,18 +144,27 @@ export function Planet({ planet, sizeScale = 1, distanceScale = 1, speedScale = 
       {planet.hasRings && (
         <mesh ref={ringsRef} rotation={[-Math.PI / 2 + 0.3, 0, 0]}>
           <ringGeometry args={[scaledRadius * 1.2, scaledRadius * 2.1, segments]} />
-          {planet.id === 'saturn' ? (
-            <GeneratedRingMaterial />
-          ) : planet.ringTextureUrl ? (
-            <TexturedRingMaterial textureUrl={planet.ringTextureUrl} />
-          ) : (
+          <Suspense fallback={
             <meshStandardMaterial 
               color={planet.color} 
               transparent 
               opacity={0.8} 
               side={THREE.DoubleSide} 
             />
-          )}
+          }>
+            {planet.id === 'saturn' ? (
+              <GeneratedRingMaterial />
+            ) : planet.ringTextureUrl ? (
+              <TexturedRingMaterial textureUrl={planet.ringTextureUrl} />
+            ) : (
+              <meshStandardMaterial 
+                color={planet.color} 
+                transparent 
+                opacity={0.8} 
+                side={THREE.DoubleSide} 
+              />
+            )}
+          </Suspense>
         </mesh>
       )}
 

@@ -3,15 +3,34 @@
 import { useAppStore } from '@/store/useAppStore';
 import { planets } from '@/data/planets';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X } from 'lucide-react';
-import Link from 'next/link';
+import { X, Loader2 } from 'lucide-react';
 import { useAudio } from '@/hooks/useAudio';
+import { useRouter } from 'next/navigation';
+import { useState, useEffect } from 'react';
 
 export function PlanetInfoPanel() {
   const { selectedPlanet, language, setSelectedPlanet } = useAppStore();
   const { playExplore } = useAudio();
+  const router = useRouter();
+  const [isNavigating, setIsNavigating] = useState(false);
 
   const planet = planets.find((p) => p.id === selectedPlanet);
+
+  // Prefetch the explorer route as soon as a planet is selected
+  useEffect(() => {
+    if (planet) {
+      setIsNavigating(false);
+      router.prefetch(`/planets/${planet.id}`);
+    }
+  }, [planet?.id, router]);
+
+  const handleExplore = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (!planet || isNavigating) return;
+    setIsNavigating(true);
+    try { playExplore(); } catch (err) { /* ignore audio error */ }
+    router.push(`/planets/${planet.id}`);
+  };
 
   return (
     <AnimatePresence>
@@ -52,13 +71,20 @@ export function PlanetInfoPanel() {
               </div>
             </div>
             
-            <Link 
-              href={`/planets/${planet.id}`}
-              onClick={playExplore}
-              className="block w-full py-3 bg-white text-black text-center font-medium rounded-lg hover:bg-white/90 transition-colors uppercase tracking-widest text-xs"
+            <button 
+              onClick={handleExplore}
+              disabled={isNavigating}
+              className="w-full py-3 bg-white text-black text-center font-medium rounded-lg hover:bg-white/90 active:scale-98 transition-all uppercase tracking-widest text-xs flex items-center justify-center gap-2"
             >
-              {language === 'en' ? `Explore ${planet.name.en}` : language === 'hi' ? `${planet.name.hi} के बारे में जानें` : `${planet.name.bn} অন্বেষণ করুন`}
-            </Link>
+              {isNavigating ? (
+                <>
+                  <Loader2 className="w-3.5 h-3.5 animate-spin" />
+                  <span>Loading...</span>
+                </>
+              ) : (
+                language === 'en' ? `Explore ${planet.name.en}` : language === 'hi' ? `${planet.name.hi} के बारे में जानें` : `${planet.name.bn} অন্বেষণ করুন`
+              )}
+            </button>
           </motion.div>
 
           {/* Mobile Minimal Button */}
@@ -68,13 +94,20 @@ export function PlanetInfoPanel() {
             exit={{ opacity: 0, scale: 0.9, transition: { duration: 0.2 } }}
             className="md:hidden fixed top-[100px] right-4 z-40 pointer-events-auto flex items-center gap-2"
           >
-            <Link 
-              href={`/planets/${planet.id}`}
-              onClick={playExplore}
-              className="py-2.5 px-6 bg-white/10 backdrop-blur-md border border-white/20 text-white text-center font-medium rounded-full hover:bg-white/20 transition-colors uppercase tracking-widest text-[11px]"
+            <button 
+              onClick={handleExplore}
+              disabled={isNavigating}
+              className="py-2.5 px-6 bg-white/20 active:bg-white/30 backdrop-blur-md border border-white/30 text-white text-center font-medium rounded-full transition-all uppercase tracking-widest text-[11px] flex items-center gap-2 active:scale-95 shadow-lg"
             >
-              {language === 'en' ? 'Explore' : language === 'hi' ? 'खोजें' : 'অন্বেষণ করুন'}
-            </Link>
+              {isNavigating ? (
+                <>
+                  <Loader2 className="w-3.5 h-3.5 animate-spin" />
+                  <span>Loading...</span>
+                </>
+              ) : (
+                language === 'en' ? 'Explore' : language === 'hi' ? 'खोजें' : 'অন্বেষণ করুন'
+              )}
+            </button>
             <button 
               onClick={() => setSelectedPlanet(null)}
               className="p-2.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 transition-colors"

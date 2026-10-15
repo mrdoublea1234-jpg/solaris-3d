@@ -185,16 +185,16 @@ export function Navbar() {
       </div>
 
       <div className="absolute top-[60px] left-[68px] md:static grid grid-cols-2 md:flex w-auto md:flex-1 justify-items-start md:justify-center gap-x-4 gap-y-1 md:gap-6 pointer-events-auto">
-        <Link href="/compare" className="text-white/70 hover:text-white text-[11px] md:text-xs uppercase tracking-widest transition-colors whitespace-nowrap">
-          {language === 'en' ? 'Compare' : language === 'hi' ? 'तुलना' : 'তুলনা'}
+        <Link href="/compare" prefetch={false} className="text-white/70 hover:text-white text-[11px] md:text-xs uppercase tracking-widest transition-colors whitespace-nowrap">
+          {language === 'en' ? 'Compare' : language === 'hi' ? 'तুলনা' : 'তুলনা'}
         </Link>
-        <Link href="/scale" className="text-white/70 hover:text-white text-[11px] md:text-xs uppercase tracking-widest transition-colors whitespace-nowrap">
+        <Link href="/scale" prefetch={false} className="text-white/70 hover:text-white text-[11px] md:text-xs uppercase tracking-widest transition-colors whitespace-nowrap">
           {language === 'en' ? 'Scale' : language === 'hi' ? 'स्केल' : 'স্কেল'}
         </Link>
-        <Link href="/learn" className="text-white/70 hover:text-white text-[11px] md:text-xs uppercase tracking-widest transition-colors whitespace-nowrap">
+        <Link href="/learn" prefetch={false} className="text-white/70 hover:text-white text-[11px] md:text-xs uppercase tracking-widest transition-colors whitespace-nowrap">
           {language === 'en' ? 'Learn' : language === 'hi' ? 'सीखें' : 'শিখুন'}
         </Link>
-        <Link href="/missions" className="text-white/70 hover:text-white text-[11px] md:text-xs uppercase tracking-widest transition-colors whitespace-nowrap">
+        <Link href="/missions" prefetch={false} className="text-white/70 hover:text-white text-[11px] md:text-xs uppercase tracking-widest transition-colors whitespace-nowrap">
           {language === 'en' ? 'Missions' : language === 'hi' ? 'मिशन' : 'মিশন'}
         </Link>
       </div>

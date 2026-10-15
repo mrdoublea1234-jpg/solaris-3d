@@ -1,6 +1,6 @@
 'use client';
 
-import { useRef, useState } from 'react';
+import { useRef, useState, Suspense } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 import { useTexture } from '@react-three/drei';
@@ -57,7 +57,9 @@ export function Sun({ sizeScale = 1 }: SunProps) {
       }}
     >
       <sphereGeometry args={[3 * sizeScale, segments, segments]} />
-      <SunTexturedMaterial textureUrl={currentTextureUrl} />
+      <Suspense fallback={<meshBasicMaterial color="#ffaa00" />}>
+        <SunTexturedMaterial textureUrl={currentTextureUrl} />
+      </Suspense>
       
       {/* Selection Highlight */}
       {isSelected && (
