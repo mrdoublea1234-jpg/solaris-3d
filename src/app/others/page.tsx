@@ -88,12 +88,26 @@ export default function OthersPage() {
   
   const [searchQuery, setSearchQuery] = useState('');
   const [typeFilter, setTypeFilter] = useState<'ALL' | 'STARS' | 'EXOPLANETS'>('ALL');
-  const [selectedSystemId, setSelectedSystemId] = useState<string>('ALL');
+  const [selectedSystemId, setSelectedSystemId] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const saved = sessionStorage.getItem('others_selected_system');
+        if (saved) return saved;
+      } catch (e) {}
+    }
+    return 'ALL';
+  });
+  const [targetCardId, setTargetCardId] = useState<string | null>(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        return sessionStorage.getItem('others_last_planet');
+      } catch (e) {}
+    }
+    return null;
+  });
   const [collapsedSystems, setCollapsedSystems] = useState<Record<string, boolean>>({});
   const [highlightedCardId, setHighlightedCardId] = useState<string | null>(null);
   const [isScrolled, setIsScrolled] = useState(false);
-
-  const isInitialRestoredRef = useRef(false);
 
   // Helper to reliably center card inside main scroll container (Mobile & Desktop)
   const centerCard = (cardId: string) => {
@@ -115,8 +129,11 @@ export default function OthersPage() {
     // Mathematical vertical centering relative to visible area
     const targetTop = currentScrollTop + (elRect.top - containerRect.top) - stickyHeight - (availableHeight / 2) + (elRect.height / 2);
 
-    // Center card immediately without any scroll animation across all tabs to eliminate lag on mobile devices
-    container.scrollTop = Math.max(0, targetTop);
+    try {
+      container.scrollTo({ top: Math.max(0, targetTop), behavior: 'instant' as ScrollBehavior });
+    } catch (e) {
+      container.scrollTop = Math.max(0, targetTop);
+    }
 
     setHighlightedCardId(cardId);
     setTimeout(() => setHighlightedCardId(null), 2500);
@@ -165,7 +182,7 @@ export default function OthersPage() {
       savedType = sessionStorage.getItem('others_type_filter');
     } catch (e) {}
 
-    const activeSysId = savedSystem || 'ALL';
+    const activeSysId = savedSystem || selectedSystemId || 'ALL';
     if (savedSystem && savedSystem !== selectedSystemId) {
       setSelectedSystemId(savedSystem);
     }
@@ -188,7 +205,8 @@ export default function OthersPage() {
     }
 
     // Restore vertical main scroll immediately before paint only if not centering a specific card
-    if (mainRef.current && savedScrollTop !== null && !targetPlanetId) {
+    const targetId = targetPlanetId || targetCardId;
+    if (mainRef.current && savedScrollTop !== null && !targetId) {
       const top = parseFloat(savedScrollTop);
       if (!isNaN(top)) {
         mainRef.current.scrollTop = top;
@@ -196,50 +214,32 @@ export default function OthersPage() {
     }
 
     // Ensure target section is expanded if in ALL view
-    if (targetPlanetId) {
-      const sys = getSystemForPlanet(targetPlanetId);
-      if (sys && (savedSystem === 'ALL' || !savedSystem)) {
+    if (targetId) {
+      const sys = getSystemForPlanet(targetId);
+      if (sys && (activeSysId === 'ALL')) {
         setCollapsedSystems(prev => ({ ...prev, [sys.id]: false }));
       }
     }
-
-    isInitialRestoredRef.current = true;
   }, []);
 
   // 2. Fine-tune card centering and highlight on mount across ALL systems
   useEffect(() => {
-    let targetPlanetId: string | null = null;
-    let savedSystem: string | null = null;
-    try {
-      targetPlanetId = sessionStorage.getItem('others_last_planet');
-      savedSystem = sessionStorage.getItem('others_selected_system');
-    } catch (e) {}
-
-    if (!targetPlanetId) return;
-
-    const expectedSystem = savedSystem || 'ALL';
-    // If the active tab hasn't switched to the saved system yet, DO NOT center or delete target ID!
-    if (selectedSystemId !== expectedSystem) {
-      return;
-    }
-
-    // Ensure the system tab pill is centered in the horizontal tabs bar
-    if (selectedSystemId !== 'ALL') {
-      centerPill(selectedSystemId, false);
-    }
+    const cardId = targetCardId || (typeof window !== 'undefined' ? sessionStorage.getItem('others_last_planet') : null);
+    if (!cardId) return;
 
     let isCancelled = false;
     let attempts = 0;
-    const maxAttempts = 20;
+    const maxAttempts = 25;
 
     const tryCentering = () => {
       if (isCancelled) return;
       attempts++;
-      if (centerCard(targetPlanetId)) {
+      if (centerCard(cardId)) {
         try {
           sessionStorage.removeItem('others_last_planet');
           sessionStorage.removeItem('others_scroll_top');
         } catch (e) {}
+        setTargetCardId(null);
         return;
       }
       if (attempts < maxAttempts) {
@@ -247,17 +247,24 @@ export default function OthersPage() {
       }
     };
 
-    // Retry on animation frame and short intervals to ensure DOM layout has settled
-    requestAnimationFrame(tryCentering);
+    // Ensure the system tab pill is centered in the horizontal tabs bar
+    if (selectedSystemId !== 'ALL') {
+      centerPill(selectedSystemId, false);
+    }
+
+    // Small delay to allow layout and DOM to paint, then center
+    const timer = setTimeout(() => {
+      requestAnimationFrame(tryCentering);
+    }, 40);
 
     return () => {
       isCancelled = true;
+      clearTimeout(timer);
     };
-  }, [selectedSystemId]);
+  }, [selectedSystemId, targetCardId]);
 
-  // 3. Persist state changes in sessionStorage (Only after initial mount restoration is complete)
+  // 3. Persist state changes in sessionStorage
   useEffect(() => {
-    if (!isInitialRestoredRef.current) return;
     try {
       sessionStorage.setItem('others_selected_system', selectedSystemId);
       sessionStorage.setItem('others_type_filter', typeFilter);
