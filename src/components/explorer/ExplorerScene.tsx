@@ -55,9 +55,7 @@ function IsolatedBody({ planet, interactingRef }: IsolatedBodyProps & { interact
       <mesh ref={meshRef}>
         <sphereGeometry args={[planet.radius, segments, segments]} />
         {currentTextureUrl ? (
-          <Suspense fallback={<meshBasicMaterial color="#ffcc00" />}>
-            <SunTexturedMaterial planet={planet} textureUrl={currentTextureUrl} />
-          </Suspense>
+          <SunTexturedMaterial planet={planet} textureUrl={currentTextureUrl} />
         ) : (
           <meshBasicMaterial color="#ffcc00" />
         )}
@@ -75,15 +73,7 @@ function IsolatedBody({ planet, interactingRef }: IsolatedBodyProps & { interact
       <mesh ref={meshRef}>
         <sphereGeometry args={[planet.radius, segments, segments]} />
         {currentTextureUrl ? (
-          <Suspense fallback={
-            <meshStandardMaterial
-              color={planet.color}
-              roughness={0.8}
-              metalness={0.2}
-            />
-          }>
-            <TexturedMaterial planet={planet} textureUrl={currentTextureUrl} />
-          </Suspense>
+          <TexturedMaterial planet={planet} textureUrl={currentTextureUrl} />
         ) : (
           <meshStandardMaterial
             color={planet.color}
