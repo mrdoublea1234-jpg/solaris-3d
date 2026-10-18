@@ -93,6 +93,8 @@ export default function OthersPage() {
   const [highlightedCardId, setHighlightedCardId] = useState<string | null>(null);
   const [isScrolled, setIsScrolled] = useState(false);
 
+  const isInitialRestoredRef = useRef(false);
+
   // Helper to reliably center card inside main scroll container (Mobile & Desktop)
   const centerCard = (cardId: string) => {
     const el = document.getElementById(`card-${cardId}`);
@@ -164,7 +166,7 @@ export default function OthersPage() {
     } catch (e) {}
 
     const activeSysId = savedSystem || 'ALL';
-    if (savedSystem && savedSystem !== 'ALL') {
+    if (savedSystem && savedSystem !== selectedSystemId) {
       setSelectedSystemId(savedSystem);
     }
     if (savedType && (savedType === 'ALL' || savedType === 'STARS' || savedType === 'EXOPLANETS')) {
@@ -185,8 +187,8 @@ export default function OthersPage() {
       }
     }
 
-    // Restore vertical main scroll immediately before paint
-    if (mainRef.current && savedScrollTop !== null) {
+    // Restore vertical main scroll immediately before paint only if not centering a specific card
+    if (mainRef.current && savedScrollTop !== null && !targetPlanetId) {
       const top = parseFloat(savedScrollTop);
       if (!isNaN(top)) {
         mainRef.current.scrollTop = top;
@@ -196,45 +198,66 @@ export default function OthersPage() {
     // Ensure target section is expanded if in ALL view
     if (targetPlanetId) {
       const sys = getSystemForPlanet(targetPlanetId);
-      if (sys && selectedSystemId === 'ALL') {
+      if (sys && (savedSystem === 'ALL' || !savedSystem)) {
         setCollapsedSystems(prev => ({ ...prev, [sys.id]: false }));
       }
     }
+
+    isInitialRestoredRef.current = true;
   }, []);
 
-  // 2. Fine-tune card centering and highlight on mount (Fast, single requestAnimationFrame)
+  // 2. Fine-tune card centering and highlight on mount across ALL systems
   useEffect(() => {
     let targetPlanetId: string | null = null;
+    let savedSystem: string | null = null;
     try {
       targetPlanetId = sessionStorage.getItem('others_last_planet');
+      savedSystem = sessionStorage.getItem('others_selected_system');
     } catch (e) {}
 
     if (!targetPlanetId) return;
 
-    const performCentering = () => {
-      if (targetPlanetId && centerCard(targetPlanetId)) {
+    const expectedSystem = savedSystem || 'ALL';
+    // If the active tab hasn't switched to the saved system yet, DO NOT center or delete target ID!
+    if (selectedSystemId !== expectedSystem) {
+      return;
+    }
+
+    // Ensure the system tab pill is centered in the horizontal tabs bar
+    if (selectedSystemId !== 'ALL') {
+      centerPill(selectedSystemId, false);
+    }
+
+    let isCancelled = false;
+    let attempts = 0;
+    const maxAttempts = 20;
+
+    const tryCentering = () => {
+      if (isCancelled) return;
+      attempts++;
+      if (centerCard(targetPlanetId)) {
         try {
           sessionStorage.removeItem('others_last_planet');
           sessionStorage.removeItem('others_scroll_top');
         } catch (e) {}
-        return true;
+        return;
       }
-      return false;
+      if (attempts < maxAttempts) {
+        setTimeout(tryCentering, 40);
+      }
     };
 
-    // Try centering immediately; if not ready retry on next frame
-    if (!performCentering()) {
-      const raf = requestAnimationFrame(() => {
-        if (!performCentering()) {
-          setTimeout(performCentering, 50);
-        }
-      });
-      return () => cancelAnimationFrame(raf);
-    }
+    // Retry on animation frame and short intervals to ensure DOM layout has settled
+    requestAnimationFrame(tryCentering);
+
+    return () => {
+      isCancelled = true;
+    };
   }, [selectedSystemId]);
 
-  // 3. Persist state changes in sessionStorage
+  // 3. Persist state changes in sessionStorage (Only after initial mount restoration is complete)
   useEffect(() => {
+    if (!isInitialRestoredRef.current) return;
     try {
       sessionStorage.setItem('others_selected_system', selectedSystemId);
       sessionStorage.setItem('others_type_filter', typeFilter);
@@ -352,7 +375,8 @@ export default function OthersPage() {
       let systemMatch = true;
       if (selectedSystemId !== 'ALL') {
         const sys = getSystemForPlanet(item.id);
-        systemMatch = sys?.id === selectedSystemId;
+        const activeSys = STAR_SYSTEMS.find(s => s.id === selectedSystemId);
+        systemMatch = sys?.id === selectedSystemId || (activeSys ? activeSys.planetIds.includes(item.id) : false);
       }
 
       return nameMatch && typeMatch && systemMatch;
@@ -814,7 +838,7 @@ export default function OthersPage() {
                     <div className="flex items-center gap-2">
                       {/* Button to isolate this system */}
                       <button
-                        onClick={() => setSelectedSystemId(system.id)}
+                        onClick={() => handleSelectSystem(system.id)}
                         className="hidden sm:flex items-center gap-1 text-[11px] font-mono text-blue-400 hover:text-blue-300 bg-blue-500/10 hover:bg-blue-500/20 px-2.5 py-1 rounded-lg border border-blue-500/20 transition-colors"
                       >
                         <span>{UI_LABELS.systemFocus[language]}</span>
